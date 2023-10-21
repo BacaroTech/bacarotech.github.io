@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .label-head {
+        @apply text-white font-bac-family text-center;
+    }
+}
