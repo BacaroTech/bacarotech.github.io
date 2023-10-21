@@ -1,129 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link href="css/output.css" rel="stylesheet" />
+  <link href="dist/output.css" rel="stylesheet" />
 </head>
 
-<body class="bg-bacaro-body">
-  <header class="w-full">
-    <div class="bg-bacaro relative isolate overflow-hidden px-1 0 pt-2 pb-10 ">
-      <div class="w-full">
-        <img src="img/head.png" class="w-[428px] mx-auto"></img>
-      </div>
-      <div class="w-full flex items-center justify-center gap-16">
-        <div class="">
-          <a href="#who" >
-            <label class="hover:cursor-pointer text-white font-bac-family text-center text-bac-head font-light">
-              Chi siamo
-            </label>
-          </a>
+<body class="w-screen h-screen xl:max-w-6xl m-auto bg-bac-primary-p-200">
+  <!-- Bottom-Right Corner -->
+  <div class="float-button fixed bottom-4 right-4">
+    <button class="bg-bac-sec-p-500 hover:bg-bac-sec-p-600 text-white font-bold py-2 px-4 rounded-full shadow-lg">
+      <a href="#headBac">
+        HOME
+      </a>
+    </button>
+  </div>
+  <div class="bg-bacaro-body overflow-hidden">
+    <header class="w-full" id="headBac">
+      <div class="bg-bacaro relative isolate overflow-hidden px-1 pt-2 pb-2 sm:pb-10 ">
+        <div class="w-full">
+          <img src="assets/head.png" class="w-[30vh] mx-auto"></img>
         </div>
-        <div class="">
-          <a href="#what">
-            <label class="hover:cursor-pointer text-white font-bac-family text-center text-bac-head font-light">
-              Cosa facciamo
-            </label>
-          </a>
-        </div>
-        <div class="">
-          <a href="#where">
-            <label class="hover:cursor-pointer text-white font-bac-family text-center text-bac-head font-light">
-              Dove siamo
-            </label>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main class="px-10">
-    <section id="who" class="h-[672px] py-10">
-      <div class="grid grid-cols-2">
-        <div>
-          <h1 class="text-bac-sec font-bac-family text-bac-section-title text-right font-light">
-            CHI SIAMO
-          </h1>
-        </div>
-        <div>
-          <p class="p-5 text-white font-bac-family text-bac-section-desc text-left font-light">
-            Bacaro tech nasce dall&#39;esigenza di fornire delle informazioni chiare e che arrivano dritte al punto
-            rispetto i miliori di argomenti che vi sono in rete, i quali o non sono chiari oppure se non si hanno delle
-            conoscenze pregresse non é possibile apprezzarli. Bacaro tech ha come mission far scoprire e far avvicinare
-            il
-            mondo dell&#39;informatica a tutti coloro che vorrebbero ma non sanno da dove partire e che risorse
-            consultare.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-    <section id="what" class="h-[672px] py-10">
-      <div class="grid grid-cols-2">
-
-        <div>
-          <p class="p-5 text-white font-bac-family text-bac-section-desc text-left font-light">
-            Ci occupiamo di raccontare su instagram i diversi argomenti con cui ci scontriamo nel mondo del lavoro tutti i giorni.
-            Naturalmente in base all nostra visioni lo facciamo in modo tale che la maggior parte delle persone possano
-            fruire dei diversi argomenti.
-          </p>
-        </div>
-        <div>
-          <h1 class="text-bac-sec font-bac-family text-bac-section-title text-right font-light">
-            COSA FACCIAMO
-          </h1>
-        </div>
-      </div>
-    </section>
-    <section id="where" class="w-full py-10 flex flex-col gap-2">
-      <div class="grid grid-cols-2 w-full">
-        <div>
-          <h1 class="text-bac-sec font-bac-family text-bac-section-title text-left font-light">
-            DOVE SIAMO
-          </h1>
-        </div>
-        <div>
-          <p class="p-5 text-white font-bac-family text-bac-section-desc text-right font-light">
-            Ci potete trovare sui seguenti social, dove vi invitiamo a lasciare un flollow
-          </p>
-        </div>
-      </div>
-      <div class="w-full">
-        <div class="w-1/2 flex gap-1 items-center bg-bac-sec rounded-[7rem]">
-          <div class="m-10 rounded-full bg-bac-primary rounded-full">
-            <img src="img/head-ellipse.svg" class="w-[150px] mx-auto"></img>
+        <div class="grid grid-cols-3 justify-center gap-4 sm:gap-16">
+          <div class="w-full flex justify-center">
+            <a href="#who" class="w-fit hover:cursor-pointer text-white font-bac-family text-center text-[1.4rem] font-light">
+              <label class="">
+                Chi siamo
+              </label>
+            </a>
           </div>
-          <div class="flex flex-col text-bac-primary font-bac-family text-bac-section-desc text-left font-light">
-            <label>Instagram</label>
-            <span>@bacarotech23</span>
+          <div class="w-full flex justify-center">
+            <a href="#what" class="w-fit hover:cursor-pointer text-white font-bac-family text-center text-[1.4rem] font-light">
+              <label class="">
+                Cosa facciamo
+              </label>
+            </a>
+          </div>
+          <div class="w-full flex justify-center">
+            <a href="#where" class="w-fit hover:cursor-pointer text-white font-bac-family text-center text-[1.4rem] font-light">
+              <label class="">
+                Dove siamo
+              </label>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="h-[336px] w-full grid px-20 py-10 grid-cols-4 gap-2 text-white">
-    <div class="mx-2">
-      <img src="img/head.png" class="w-[300px] mx-auto"></img>
-    </div>
-    <div class="flex flex-col mx-2">
-      <label>Chi siamo</label>
-      <span>Giorgio Basile</span>
-      <span>Michele Scarpa</span>
-    </div>
-    <div class="flex flex-col mx-2">
-      <label>Link Utili</label>
-      <span>Instagram</span>
-      <span>Github</span>
-    </div>
-    <div class="flex flex-col mx-2">
-      <label>Contatti</label>
-      <span>bacarotech23@gmail.com</span>
-      <span></span>
-    </div>
-  </footer>
+    </header>
+    <main class="px-2 sm:px-10">
+      <section id="who" class="h-fit pt-5 sm:py-10">
+        <div class="flex flex-col sm:grid sm:grid-cols-2">
+          <div class="w-full">
+            <p class="text-bac-sec font-bac-family text-[3rem] text-center sm:text-left font-light">
+              CHI SIAMO
+            </p>
+          </div>
+          <div>
+            <p class="p-5 text-white font-bac-family text-[1rem] text-center sm:text-left font-light">
+              Bacaro tech nasce dall&#39;esigenza di fornire delle informazioni chiare e che arrivano dritte al punto
+              rispetto i miliori di argomenti che vi sono in rete, i quali o non sono chiari oppure se non si hanno
+              delle conoscenze pregresse non é possibile apprezzarli.
+              <br>
+              <br>
+              Bacaro tech ha come mission far scoprire e far avvicinare il mondo dell&#39;informatica a tutti coloro che
+              vorrebbero ma non sanno da dove partire e che risorse consultare.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="what" class="h-fit pt-5 sm:py-10">
+        <div class="flex flex-col sm:grid sm:grid-cols-2">
+          <div class="sm:hidden w-full">
+            <p class="w-full text-bac-sec font-bac-family text-[3rem] text-center sm:text-left font-light">
+              COSA FACCIAMO
+            </p>
+          </div>
+          <div>
+            <p class="p-5 text-white font-bac-family text-[1rem] text-center sm:text-left font-light">
+              Ci occupiamo di raccontare su instagram i diversi argomenti con cui ci scontriamo nel mondo del lavoro
+              tutti i giorni.
+              <br><br>
+              Naturalmente in base all nostra visioni lo facciamo in modo tale che la maggior parte delle persone
+              possano fruire dei diversi argomenti.
+            </p>
+          </div>
+          <div class="hidden sm:block w-full">
+            <p class="w-full text-bac-sec font-bac-family text-[3rem] text-center sm:text-left font-light">
+              COSA FACCIAMO
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="where" class="h-fit pt-5 sm:py-10">
+        <div class="flex flex-col">
+          <div class="flex flex-col sm:grid sm:grid-cols-2">
+            <div>
+              <p class="text-bac-sec font-bac-family text-[3rem] text-center sm:text-left font-light">
+                DOVE SIAMO
+              </p>
+            </div>
+            <div>
+              <p class="p-5 text-white font-bac-family text-[1rem] text-center sm:text-right font-light">
+                Ci potete trovare sui seguenti social, dove vi invitiamo a lasciare un flollow
+              </p>
+            </div>
+            <div class="sm:hidden my-5 mx-10 ">
+              <div class="flex gap-1 items-center bg-bac-sec rounded-[4rem]">
+                <div class="m-4 basis-1/4 bg-bac-primary rounded-full">
+                  <img src="assets/head-ellipse.svg" class="w-[10vh] mx-auto"></img>
+                </div>
+                <div
+                  class="basis-1/2 flex flex-col text-bac-primary font-bac-family text-[1.2rem] items-end font-normal">
+                  <label>Instagram</label>
+                  <span>@bacarotech23</span>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="hidden sm:block">
+            <div class="h-fit w-1/2 flex gap-1 items-center bg-bac-sec rounded-[4rem]">
+              <div class="m-4 rounded-full bg-bac-primary rounded-full">
+                <img src="assets/head-ellipse.svg" class="w-[10vh] mx-auto"></img>
+              </div>
+              <div class="flex flex-col text-bac-primary font-bac-family text-bac-section-desc text-left font-normal">
+                <label>Instagram</label>
+                <span>@bacarotech23</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer class="h-fit w-full grid px-20 py-10 grid-cols-4 gap-2 text-white bg-bacaro">
+      <div class="mx-2">
+        <img src="assets/head.png" class="w-[300px] mx-auto"></img>
+      </div>
+      <div class="flex flex-col mx-2">
+        <label>Chi siamo</label>
+        <span>Giorgio Basile</span>
+        <span>Michele Scarpa</span>
+      </div>
+      <div class="flex flex-col mx-2">
+        <label>Link Utili</label>
+        <span>Instagram</span>
+        <span>Github</span>
+      </div>
+      <div class="flex flex-col mx-2">
+        <label>Contatti</label>
+        <span>bacarotech23@gmail.com</span>
+        <span></span>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    document.querySelector(".float-button").style.display = "block";
+		  } else {
+		    document.querySelector(".float-button").style.display = "none";
+		  }
+		}
+	</script>
 </body>
 
 </html>

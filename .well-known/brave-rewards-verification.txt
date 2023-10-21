@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: jollymick90.github.io
-Token: brave-ledger-verification=acca91ab71c85073d26f6545f227c165d0358cdfd5ca97bfa4bf69d72ece47f1
