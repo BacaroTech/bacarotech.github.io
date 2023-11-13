@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth">
+<html class="scroll-smooth dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
 
 <body class="bg-gray-50 dark:bg-primary-900 h-screen">
   <!-- toogle btn -->
-  <div class="fixed m-4 h-fit w-fit top-0 right-0">
+  <div class="fixed m-4 h-fit w-fit top-5 right-5">
     <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
     <button type="button" id="dark-mode-toogle-button"
       class="focus:ring-primary-600 dark:focus:ring-primary-300 dark:ring-primary-300 ring-primary-500 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-2 ring-offset-2"
@@ -18,16 +18,20 @@
       <span class="sr-only">Use setting</span>
       <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
       <span aria-hidden="true" id="dark-mode-toogle-span"
-        class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+        class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
     </button>
   </div>
-  <div class="flex flex-col items-center justify-center md:grid md:grid-cols-2 h-full overflow-hidden">
+  <div class="flex flex-col  md:grid md:grid-cols-2 h-full scroll-m-2 scrollbar overflow-y-auto md:overflow-hidden">
+
     <!-- mobile -->
     <header class="my-4 px-12 w-full flex flex-col h-fit md:h-screen">
 
       <div class="w-full my-6 px-5 md:my-auto">
         <!-- image -->
-        <img src="img/2.png" class="mx-auto object-contain h-40 w-40 rounded-full"></img>
+
+        <img src="img/2.png"
+          class="mx-auto object-contain h-40 w-40 rounded-full dark:ring-primary-100 ring-primary-600 ring-4 ring-offset-2">
+        </img>
         <!-- title -->
         <h1 class="text-primary-800 my-2 dark:text-primary-200 font-bac-family text-center font-semibold text-3xl">
           Bacaro Tech
@@ -36,64 +40,69 @@
         <h3 class="text-secondary-400 my-2 font-sans text-center font-semibold text-2xl">Code and Fun</h3>
         <!-- description -->
         <label class="text-black dark:text-primary-200 my-2 font-bac-family text-center text-[1rem] font-normal">
-          La tua guida nel mondo dell'informatica, chiara e alla portata di tutti. <br>Il nostro obiettivo è rendere
-          l'informatica comprensibile per tutti, con spiegazioni dirette e utili</label>
+          Bacaro tech è un'inizitiva che ha il compito di voler avvicinare le persone che hanno un interesse verso il
+          mondo del tech e della programmazione, ma non hanno trovato ancora un luogo dove potersi informare, oltre al
+          fornire informazioni nuove a coloro che bazzicano in questo settore già da tempo.🍷</label>
       </div>
     </header>
     <!-- desktop -->
-    <section class="w-full mb-10 px-8 md:my-16 h-full md:h-screen overflow-y-auto">
+    <section class="w-full mb-10 px-8 md:my-16 h-full md:h-screen md:overflow-y-auto">
       <div class="h-full md:flex md:flex-col md:justify-center items-center">
         <div class="h-fit flex flex-col items-center gap-10 lg:grid grid-cols-2">
           <!-- card blog -->
           <div
-            class="max-w-full w-[600px] h-[200px] border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex items-center bg-gradient-to-r from-secondary-300 to-primary-300">
+            class="max-w-full w-5/6 h-16 md:w-3/4 md:h-20 border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex items-start bg-gradient-to-r from-secondary-300 to-secondary-400">
             <label class="p-4 text-primary-800 font-semibold text-xl">
               <a href="https://bacarotech.it/" target="_blank">
-                BACAROTECH.IT
+                🍷 BACAROTECH.IT
               </a>
             </label>
           </div>
           <!-- card eventi -->
           <div
-            class="max-w-full w-[600px] h-[200px] relative border-gray-600 dark:border-gray-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600">
+            class="max-w-full w-5/6 h-16 hover:h-56 md:w-3/4 md:h-20 md:hover:h-28 relative border-gray-600 dark:border-gray-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 overflow-hidden">
             <div class="absolute z-0 max-w-full w-full h-full dark:text-primary-200 brightness-50 rounded-lg"
               style="background-image: url(https://picsum.photos/600/300?random=2);">
             </div>
-            <div class="absolute z-10 flex items-center">
-
-              <label class="p-4 text-white font-semibold text-xl">
+            <div class="absolute z-10 w-full h-full flex flex-col items-start">
+              
+              <label class="w-full p-4 text-white font-semibold text-xl">
                 <a href="https://bacarotech.it/" target="_blank">
-                  Eventi
+                  🍷 Eventi
                 </a>
+              </label>
+              <label class="w-full p-4 text-white font-semibold text-xl">
+                
+                  Organizziamo conferenze e workshop per favorire la condivisione di conoscenze e la crescita professionale.
+                
               </label>
             </div>
           </div>
           <!-- card guide -->
           <div
-            class="max-w-full w-[600px] h-[200px] relative border-gray-600 dark:border-gray-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600">
-            <div class="absolute z-0 max-w-full w-full h-full dark:text-primary-200 brightness-150 rounded-lg"
+            class="max-w-full w-5/6 h-16 md:w-3/4 md:h-20 relative border-gray-600 dark:border-gray-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 bg-gradient-to-r from-primary-300 to-primary-400">
+            <!-- <div class="absolute z-0 max-w-full w-full h-full dark:text-primary-200 brightness-150 rounded-lg"
               style="background-image: url(https://picsum.photos/600/300?random=1&blur&grayscale);">
-            </div>
-            <div class="absolute z-10 flex items-center">
+            </div> -->
+            <div class="absolute z-10 flex items-start">
 
               <label class="p-4 text-primary-800 font-semibold text-xl">
                 <a href="https://bacarotech.it/" target="_blank">
-                  Guide
+                  🍷 Guide
                 </a>
               </label>
             </div>
           </div>
           <!-- card youtube comming soon -->
           <div
-            class="max-w-full w-[600px] h-[200px] border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex items-center bg-gradient-to-r from-red-100 to-red-400"
-           >
+            class="max-w-full w-5/6 h-16 md:w-3/4 md:h-20 border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-lg border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex items-start bg-gradient-to-r from-red-100 to-red-400">
             <label class="p-4 text-red-950 font-semibold text-xl">
-              Card Youtube Comming soon
+              🍷 Card Youtube Comming soon
             </label>
           </div>
           <!-- contact -->
           <div
-            class="max-w-full w-[600px] h-[200px] border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-lg border-2 drop-shadow-md flex items-center bg-gradient-to-r from-primary-500 to-secondary-300">
+            class="max-w-full w-5/6 h-16 md:w-3/4 md:h-20 border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-lg border-2 drop-shadow-md flex items-center bg-gradient-to-r from-primary-500 to-secondary-300">
             <div class="w-full flex justify-center items-center m-4">
               <div class="text-secondary-100 hover:text-secondary-500 flex">
                 <span class="sr-only">Github</span>
@@ -122,6 +131,7 @@
         </div>
       </div>
     </section>
+
   </div>
 
   <script>
@@ -136,14 +146,14 @@
         toogleTarkMode();
         return;
       }
-      if (window.matchMedia) {
-        const query = window.matchMedia('(prefers-color-scheme: dark)');
-        if (query.matches) {
-          isSystemDarkMode = true;
-          toogleTarkMode();
-          return;
-        }
-      }
+      // if (window.matchMedia) {
+      //   const query = window.matchMedia('(prefers-color-scheme: dark)');
+      //   if (query.matches) {
+      //     isSystemDarkMode = true;
+      //     toogleTarkMode();
+      //     return;
+      //   }
+      // }
 
     }
 
