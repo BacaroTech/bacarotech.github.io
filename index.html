@@ -14,19 +14,19 @@
 
 <body class="bg-gray-50 dark:bg-primary-900 h-screen">
   <!-- toogle btn -->
-  <div class="fixed m-4 h-fit w-fit top-5 right-5">
-    <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-    <button type="button" id="dark-mode-toogle-button"
-      class="focus:ring-primary-600 dark:focus:ring-primary-300 dark:ring-primary-300 ring-primary-500 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-2 ring-offset-2"
-      role="switch" aria-checked="false" onclick="darkModeClick()">
-      <span class="sr-only">Use setting</span>
-      <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-      <span aria-hidden="true" id="dark-mode-toogle-span"
-        class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
-    </button>
-  </div>
+  
   <div class="h-full scroll-m-2 scrollbar overflow-y-auto">
-
+    <div class="m-4 h-fit w-fit">
+      <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
+      <button type="button" id="dark-mode-toogle-button"
+        class="focus:ring-primary-600 dark:focus:ring-primary-300 dark:ring-primary-300 ring-primary-500 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-2 ring-offset-2"
+        role="switch" aria-checked="false" onclick="darkModeClick()">
+        <span class="sr-only">Use setting</span>
+        <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+        <span aria-hidden="true" id="dark-mode-toogle-span"
+          class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+      </button>
+    </div>
     <!--header-->
     <header class="m-5 mt-10">
       <div class="m-auto text-center w-96 leading-8 text-3xl">
@@ -43,24 +43,29 @@
         <h3 class="text-secondary-400 my-2 font-sans text-center font-semibold text-3xl">Code and Fun</h3>
         <!-- description -->
         <label class="text-black dark:text-primary-200 text-xl">
-          BacaroTech è un’entusiasmante iniziativa dedicata alla divulgazione di contenuti nel vasto mondo della tecnologia e della programmazione
+          BacaroTech è un’entusiasmante iniziativa dedicata alla divulgazione di contenuti nel vasto mondo della tecnologia e della programmazione!
         </label>
       </div>
     </header>
 
     <!-- all cards -->
     <div class="md:justify-center items-center">
-      <h3 class="text-secondary-400 my-2 font-sans text-center font-semibold text-2xl">Scoprici qui!</h3>
-      <div class="h-fit flex flex-col items-center gap-5">
+      <h3 class="text-secondary-400 my-5 font-sans text-center font-semibold text-2xl">Scoprici qui!</h3>
+      <div class="h-fit flex flex-col items-center gap-5 mb-10">
         <!-- card blog -->
         <a href="https://bacarotech.it/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
           <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
               visita il nostro blog🍷          
           </label>
         </a>
+        <a href="https://www.youtube.com/@Bacarotech" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
+          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
+              Canale Youtube🍷          
+          </label>
+        </a>
         <a href="https://github.com/BacaroTech" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
           <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-              GitHub🍷          
+              Profilo GitHub🍷          
           </label>
         </a>
         <a href="https://www.instagram.com/bacarotech23/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
@@ -71,6 +76,20 @@
         <a href="https://www.tiktok.com/@bacarotech.coding?_t=8kWprqFksAT&_r=1" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
           <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
               TikTok🍷          
+          </label>
+        </a>
+      </div>
+
+      <hr>
+      <div class="grid grid-cols-2 md:flex md:flex-col gap-4 my-8 mx-5 md:items-center">
+        <a href="https://www.linkedin.com/in/giorgio-basile-382430170/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
+          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
+            Linkedin Giorgio<br>🚀        
+          </label>
+        </a>
+        <a href="https://www.linkedin.com/in/michele-scarpa-90-arco/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
+          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
+            Linkedin Michele<br>🚀         
           </label>
         </a>
       </div>
