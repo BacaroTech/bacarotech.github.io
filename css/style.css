@@ -1,3 +1,31 @@
 .round{
     border-radius: 7%;
 }
+
+/* The slow way */
+.make-it-slow {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Transition to a bigger shadow on hover */
+  .make-it-slow:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* The fast way */
+  .make-it-fast {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  }
+  
+  /* Pre-render the bigger shadow, but hide it */
+  .make-it-fast::after {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Transition to showing the bigger shadow on hover */
+  .make-it-fast:hover::after {
+    opacity: 1;
+  }
