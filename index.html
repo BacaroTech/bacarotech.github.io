@@ -2,194 +2,83 @@
 <html class="scroll-smooth dark">
 
 <head>
+  <title>BacaroTech</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="./css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-gray-50 dark:bg-primary-900 h-screen">
-  <!-- toogle btn -->
-  
-  <div class="h-full scroll-m-2 scrollbar overflow-y-auto">
-    <div class="m-4 h-fit w-fit">
-      <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-      <button type="button" id="dark-mode-toogle-button"
-        class="focus:ring-primary-600 dark:focus:ring-primary-300 dark:ring-primary-300 ring-primary-500 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-2 ring-offset-2"
-        role="switch" aria-checked="false" onclick="darkModeClick()">
-        <span class="sr-only">Use setting</span>
-        <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
-        <span aria-hidden="true" id="dark-mode-toogle-span"
-          class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
-      </button>
-    </div>
+<body class="bg-purple-700 dark:bg-primary-900">
+
+  <div class="bg-purple-400 my-10 mx-10 round">
     <!--header-->
-    <header class="m-5 mt-10">
+    <header class="pt-5">
       <div class="m-auto text-center w-96 leading-8 text-3xl">
         <!-- image -->
-
-        <img src="img/2.png"
+        <img src="img/icon.png"
           class="mx-auto object-contain h-40 w-40 rounded-full dark:ring-primary-100 ring-primary-600 ring-1 ring-offset-2 my-10">
         </img>
         <!-- title -->
         <h1 class="text-primary-800 my-2 dark:text-primary-200 font-bac-family text-center font-semibold text-4xl">
-          🍷 BacaroTech 🍷
+          BacaroTech
         </h1>
         <!-- subtitle -->
-        <h3 class="text-secondary-400 my-2 font-sans text-center font-semibold text-3xl">Code and Fun</h3>
+        <h3 class="text-primary-600 my-2 dark:text-primary-200 font-bac-family text-center font-semibold text-3xl">Code
+          and Fun</h3>
         <!-- description -->
         <label class="text-black dark:text-primary-200 text-xl">
-          BacaroTech è un’entusiasmante iniziativa dedicata alla divulgazione di contenuti nel vasto mondo della tecnologia e della programmazione!
+          La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, cariera
+          tech
+          e molto altro!
         </label>
       </div>
     </header>
 
     <!-- all cards -->
-    <div class="md:justify-center items-center">
+    <div class="pb-5 md:justify-center items-center">
       <h3 class="text-secondary-400 my-5 font-sans text-center font-semibold text-2xl">Scoprici qui!</h3>
       <div class="h-fit flex flex-col items-center gap-5 mb-10">
         <!-- card blog -->
-        <a href="https://bacarotech.it/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
+        <a href="https://bacarotech.it/"
+          class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
           <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-              visita il nostro blog🍷          
+            visita il nostro blog🍷
           </label>
         </a>
-        <a href="https://www.youtube.com/@Bacarotech" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
+        <a href="https://www.youtube.com/@Bacarotech"
+          class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
           <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-              Canale Youtube🍷          
+            Canale Youtube🍷
           </label>
         </a>
-        <a href="https://github.com/BacaroTech" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
-          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-              Profilo GitHub🍷          
-          </label>
-        </a>
-        <a href="https://www.instagram.com/bacarotech23/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
-          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-              Instagram🍷          
-          </label>
-        </a>
-        <a href="https://www.tiktok.com/@bacarotech.coding?_t=8kWprqFksAT&_r=1" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
-          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-              TikTok🍷          
-          </label>
-        </a>
-      </div>
+        <a href="https://github.com/BacaroTech"
+          class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
 
-      <hr>
-      <div class="grid grid-cols-2 md:flex md:flex-col gap-4 my-8 mx-5 md:items-center">
-        <a href="https://www.linkedin.com/in/giorgio-basile-382430170/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
-          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-            Linkedin Giorgio<br>🚀        
+          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize ">
+            Profilo GitHub🍷
           </label>
         </a>
-        <a href="https://www.linkedin.com/in/michele-scarpa-90-arco/" class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
+        <a href="https://www.instagram.com/bacarotech23/"
+          class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
           <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
-            Linkedin Michele<br>🚀         
+            Instagram🍷
+          </label>
+        </a>
+        <a href="https://www.tiktok.com/@bacarotech.coding?_t=8kWprqFksAT&_r=1"
+          class="max-w-full w-min h-min border-gray-600 dark:border-gray-200 dark:text-primary-200 rounded-xl border-2 shadow-lg hover:dark:shadow-primary-100 hover:shadow-primary-600 flex">
+          <label class="w-96 py-6 px-10 text-black dark:text-primary-200 font-semibold text-xl text-center capitalize">
+            TikTok🍷
           </label>
         </a>
       </div>
     </div>
-  
   </div>
 
-  <script>
-    let isSystemDarkMode = true;
-    const darkModeBtnId = "dark-mode-toogle-button";
-    const darkModeSpanId = "dark-mode-toogle-span";
-
-    function init() {
-      const config = retriveLS();
-      if (config?.darkmode === true) {
-        isSystemDarkMode = config.darkmode;
-        toogleTarkMode();
-        return;
-      }
-      // if (window.matchMedia) {
-      //   const query = window.matchMedia('(prefers-color-scheme: dark)');
-      //   if (query.matches) {
-      //     isSystemDarkMode = true;
-      //     toogleTarkMode();
-      //     return;
-      //   }
-      // }
-
-    }
-
-    function setDarkMode() {
-      document.documentElement.classList.add('dark');
-    }
-
-    function unsetDarkMode() {
-      document.documentElement.classList.remove('dark');
-    }
-
-    function toogleTarkMode() {
-      const spanToogle = document.getElementById(darkModeSpanId);
-      const btnToogle = document.getElementById(darkModeBtnId);
-      if (!spanToogle || !btnToogle)
-        return;
-
-      if (isSystemDarkMode) {
-        spanToogle.classList.add("translate-x-5");
-        spanToogle.classList.remove("translate-x-0");
-
-        //spanToogle.classList.add("bg-primary-600");
-        btnToogle.classList.add("bg-primary-600");
-        btnToogle.classList.remove("bg-gray-200");
-
-        setDarkMode();
-      } else {
-        spanToogle.classList.add("translate-x-0");
-        spanToogle.classList.remove("translate-x-5");
-        btnToogle.classList.remove("bg-primary-600");
-        btnToogle.classList.add("bg-gray-200");
-        unsetDarkMode();
-      }
-
-      saveLS({ darkmode: isSystemDarkMode });
-
-      retriveLS();
-    }
-
-    function darkModeClick() {
-      isSystemDarkMode = !isSystemDarkMode;
-      toogleTarkMode();
-    }
-
-    function retriveLS() {
-      return null;
-      // Disable until add cookies preferences
-      // try {
-      //   const configStr = localStorage.getItem("config");
-      //   return JSON.parse(configStr);
-      // } catch (error) {
-      //   console.warn(error)
-      //   return null;
-      // }
-    }
-
-    function saveLS(config) {
-      return
-      // Disable until add cookies preferences
-      // try {
-
-      //   localStorage.setItem("config", JSON.stringify(config));
-      // } catch (error) {
-      //   console.warn(error)
-
-      // }
-    }
-
-    window.onload = () => {
-      init();
-    }
-
-  </script>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>
