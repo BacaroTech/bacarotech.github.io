@@ -1,4 +1,12 @@
 # bacarotech.github.io
-La nostra personale landing page :)
+## La nostra landing page personale!
 
-La struttura è quella di un TreeLink ma fatto da noi in modalità frameworkless, con blackjack e squillo di lusso(semi cit)
+Abbiamo creato una struttura simile a un TreeLink, ma completamente personalizzata e senza l'uso di framework. Il risultato? Una soluzione leggera, su misura, con quel tocco di classe che non guasta (per citare un famoso detto, con "blackjack e squillo di lusso").
+
+## Social e Contatti
+Se hai dei conigli facci sapere!
+- 🌳 [Link Tree Homemade](https://bacarotech.github.io/)
+- 📷 [Instagram](https://www.instagram.com/bacarotech23/)
+- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
+- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
+- 📫 Email: **bacarotech@gmail.com**
