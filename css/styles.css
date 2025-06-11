@@ -6631,6 +6631,11 @@ fieldset:disabled .btn {
 
 .carousel {
   position: relative;
+  width: 45%;
+  height: 45%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .carousel.pointer-event {
@@ -6641,6 +6646,7 @@ fieldset:disabled .btn {
   position: relative;
   width: 100%;
   overflow: hidden;
+  border: solid 1px;
 }
 
 .carousel-inner::after {
@@ -6658,6 +6664,11 @@ fieldset:disabled .btn {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -7668,7 +7679,7 @@ fieldset:disabled .btn {
 }
 
 .link-secondary {
-  color: #32325b !important !important;
+  color: #32325b !important;
 }
 
 .link-secondary:hover,
