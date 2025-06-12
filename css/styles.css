@@ -6677,6 +6677,13 @@ fieldset:disabled .btn {
   }
 }
 
+@media (max-width: 768px) {
+  .carousel {
+    width: 90%;
+    height: 90%;
+  }
+}
+
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
