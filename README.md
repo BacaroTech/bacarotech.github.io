@@ -1,6 +1,4 @@
 # bacarotech.github.io
-## La nostra landing page personale!
-
 All'interno di questa repo potrai trovare:
 1. Il nostro sito, che puoi trovare nella main folder: https://bacarotech.github.io/
 2. Il nostro tree link realizzato, senza tool esterni, sotto la cartella link: https://bacarotech.github.io/link/
