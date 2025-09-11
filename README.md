@@ -1,7 +1,13 @@
 # bacarotech.github.io
-## La nostra landing page personale!
+All'interno di questa repo potrai trovare:
+1. Il nostro sito, che puoi trovare nella main folder: https://bacarotech.github.io/
+2. Il nostro tree link realizzato, senza tool esterni, sotto la cartella link: https://bacarotech.github.io/link/
 
-Abbiamo creato una struttura simile a un TreeLink, ma completamente personalizzata e senza l'uso di framework. Il risultato? Una soluzione leggera, su misura, con quel tocco di classe che non guasta (per citare un famoso detto, con "blackjack e squillo di lusso").
+La metodologia che abbiamo scelto è quella frameworkless, ovvero lavorare senza l’utilizzo di framework o librerie esterne (ad eccezione di Tailwind, adottata solo come libreria grafica).
+
+Si tratta di un approccio molto sfidante che, in senso positivo, ti costringe a sfruttare al massimo le potenzialità del linguaggio di riferimento – nel nostro caso HTML e CSS. Lo stesso principio si può applicare anche ad altri linguaggi in contesti analoghi.
+
+È un ottimo esercizio per ripassare le basi e consolidare le proprie competenze, soprattutto oggi che, grazie alle librerie esterne, molti passaggi vengono dati per scontati.
 
 ## Social e Contatti
 Se hai dei consigli facci sapere!
