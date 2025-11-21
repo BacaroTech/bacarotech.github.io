@@ -10,30 +10,17 @@ draft = false
     subtitle="Subtitle - coming from <code>home.md</code>"
     buttonText="Email"
     description="<strong>Strong</strong>, <em>italic</em> and normal text. This comes from <a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'><code>home.md</code></a>, using the <code>showcase-section</code> <a href=''>shortcode</a>.<br/>Below you can see the social links, provided by the <code>platform-links</code> shortcode."
-    imgSrc="images/showcase/showcase.png"
+    imgSrc="images/icon.png"
     imgScale="0.5"
  >}}
 
 {{< platform-links >}}
-    {{< link icon="square-facebook" url="https://facebook.com/yourpage" >}}
-    {{< link icon="square-twitter" url="https://twitter.com/yourpage" >}}
-    {{< link icon="linkedin" url="https://www.linkedin.com/in/adrianmoreno/" >}}
-    {{< link icon="square-github" url="https://github.com/zetxek" >}}
-    {{< link icon="x-twitter" url="https://twitter.com/zetxek" >}}
-    {{< link icon="dribbble" url="#" >}}
-    {{< link icon="behance" url="#" >}}
-    {{< link icon="youtube" url="#" >}}
-    {{< link icon="instagram" url="https://www.instagram.com/zetxek/" >}}
-    {{< link icon="square-facebook" url="https://www.facebook.com/zetxek/" >}}
-    {{< link icon="codepen" url="#" >}}
-    {{< link icon="yelp" url="https://www.yelp.com/" >}}
-    {{< link icon="bluesky" url="https://www.bluesky.com/" >}}
-    {{< link icon="threads" url="https://www.threads.net/" >}}
-    {{< link icon="face-smile" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="user" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="quote-left" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="cloud-arrow-down" url="https://www.adrianmoreno.info/" >}}
-    {{< link icon="square-xing" url="https://www.adrianmoreno.info/" >}}
+    {{< link icon="whatsapp" url="https://whatsapp.com/channel/0029Vb62oilIyPtNZRvjI61K" >}}
+    {{< link icon="linkedin" url="https://www.linkedin.com/company/bacarotech" >}}
+    {{< link icon="square-github" url="https://github.com/BacaroTech" >}}
+    {{< link icon="tiktok" url="https://www.tiktok.com/@bacarotech" >}}
+    {{< link icon="youtube" url="https://www.youtube.com/@Bacarotech" >}}
+    {{< link icon="instagram" url="https://www.instagram.com/bacarotechofficial/" >}}
 
 {{< /platform-links >}}
 
@@ -50,30 +37,12 @@ draft = false
     text_align="center"
  >}}
 
-{{< education-list
-    title="Formal Education (education-list)" >}}
+{{< project-list
+    title="I nostri progetti" >}}
 
-{{< experience-section
-    title="My job experience (title)"
-    intro_title="Intro (intro_title)"
-    intro_description="Description (intro_description).<br>You can use HTML,with <strong>strong</strong> formatting, or lists <ul><li>one</li><li>two</li></ul>" 
-    button1_url="https://example.com"
-    button1_text="(1) Visit Example"
-    button1_icon="icon-globe"
-    button2_text="(2) Skills"
-    button2_url="/skills"
-    hideViewAll="false"
->}}
-
-{{< experience-list
-    title="Experience (as list)"
-    padding="false" >}}
-
-{{< client-and-work-section
-    title="A selection of my work" >}} 
 
 {{< testimonial-section
-    title="What they say about me" >}}
+    title="Cosa dicono di noi" >}}
 
 {{< spacer size="large" >}}
 

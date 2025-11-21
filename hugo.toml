@@ -63,9 +63,9 @@ target = "assets/css/bootstrap-print.css"
 
 
 [params]
-title = 'Adritian - a high performance hugo theme by Adrián Moreno'
-description = 'This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications.'
-images = ['/img/og-img.png']
+title = 'BacaroTech'
+description = 'La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!'
+images = ['/img/icon.png']
 sections = [
     "showcase",
     "about",
@@ -116,32 +116,32 @@ header = false
 mobileHeader = false
 
 [languages]
-[languages.en]
+[languages.it]
 disabled = false
-languageCode = 'en'
+languageCode = 'it'
 languageDirection = 'ltr'
-languageName = 'English'
+languageName = 'Italian'
 title = ''
 weight = 0
 
-[languages.en.menus]
-[[languages.en.menus.header]]
+[languages.it.menus]
+[[languages.it.menus.header]]
 name = "Home"
 URL = "/"
 weight = 1
-[[languages.en.menus.header]]
+[[languages.it.menus.header]]
 name = 'About'
 URL = '#about'
 weight = 2
-[[languages.en.menus.header]]
-name = 'Skills'
-URL = '/skills'
+[[languages.it.menus.header]]
+name = 'Blog'
+URL = '/blog'
 weight = 3
-[[languages.en.menus.header]]
+[[languages.it.menus.header]]
 name = 'Portfolio'
 URL = '#portfolio'
 weight = 4
-#  [[languages.en.menus.header]]
+#  [[languages.it.menus.header]]
 #  name = "Experience"
 #  URL = "#experience"
 #  weight = 4
@@ -240,3 +240,11 @@ keepWhitespace = false
 precision = 0
 [minify.tdewolff.js]
 precision = 0
+
+
+[params.sharing]
+enabled = true
+twitter = true
+linkedin = true
+facebook = true
+email = true
