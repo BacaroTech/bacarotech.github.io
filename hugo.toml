@@ -145,7 +145,10 @@ weight = 4
 #  name = "Experience"
 #  URL = "#experience"
 #  weight = 4
-
+[[languages.it.menus.header]]
+name = 'Cerca'
+URL = '/search'
+weight = 5
 
 [params.plugins]
 
