@@ -27,6 +27,8 @@ Nel tempo il progetto si è arricchito con contenuti formativi, racconti persona
 BacaroTech non è solo un progetto social: è uno stile di comunicazione e condivisione dell’informatica, fondato sulla convinzione che la conoscenza vada diffusa con passione, empatia e la voglia autentica di costruire qualcosa di utile insieme agli altri.
 Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusciti a mettere a terra una community di appassionati che ammonta a quasi 3000 sviluppatori* *Dato aggregato 
 
+---
+
 ## Il Team
 
 
@@ -110,12 +112,3 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     v_align="center"
     h_align="left"
  >}}
-
-
-<div class="carousel-item">
-    <img src="assets/vittorio.png" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-md-block">
-        <h5><a href="https://www.linkedin.com/in/vittorio-terreran/">Vittorio Terreran</a></h5>
-        <p>Grafico</p>
-    </div>
-</div>
