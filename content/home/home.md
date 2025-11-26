@@ -26,16 +26,6 @@ draft = false
 
 {{< /showcase-section >}}
 
-{{< about-section
-    title="About me"
-    content="This content is using the <code>about-section</code> shortcode. <br/>You can write <code>HTML</code>, as long as you <em>wrap it</em> accordingly. "
-    button_icon="icon-user"
-    button_text="Check my skills"
-    button_url="/skills"
-    imgSrc="images/about/user-picture.png"
-    imgScale="0.5"
-    text_align="center"
- >}}
 
 {{< project-list
     title="I nostri progetti" >}}

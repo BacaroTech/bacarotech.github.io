@@ -130,17 +130,21 @@ name = "Home"
 URL = "/"
 weight = 1
 [[languages.it.menus.header]]
-name = 'About'
-URL = '#about'
+name = 'Chi siamo'
+URL = '/about'
 weight = 2
 [[languages.it.menus.header]]
 name = 'Blog'
 URL = '/blog'
 weight = 3
 [[languages.it.menus.header]]
-name = 'Portfolio'
+name = 'Progetti'
 URL = '#projects'
 weight = 4
+[[languages.it.menus.header]]
+name = 'Workshop'
+URL = '#workshop'
+weight = 5
 #  [[languages.it.menus.header]]
 #  name = "Experience"
 #  URL = "#experience"
@@ -148,7 +152,7 @@ weight = 4
 [[languages.it.menus.header]]
 name = 'Cerca'
 URL = '/search'
-weight = 5
+weight = 10
 
 [params.plugins]
 
@@ -178,19 +182,15 @@ URL = "scss/adritian.scss"
 [params.colorTheme]
 
 ## the following configuration would disable automatic theme selection
-#  [params.colorTheme.auto]
-#    disable = true
-#  [params.colorTheme.forced]
-#    theme = "dark"
+# [params.colorTheme.auto]
+# disable = true
+[params.colorTheme.forced]
+theme = "dark"
 
 ## the following parameter will disable theme override in the footer
-#  [params.colorTheme.selector.disable]
-#  footer = true
-
-
 [params.colorTheme.selector.disable]
-footer = false
-header = false
+footer = true
+header = true
 mobileHeader = false
 ## by default we allow override AND automatic selection
 
