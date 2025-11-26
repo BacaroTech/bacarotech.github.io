@@ -17,6 +17,8 @@ sectionId: Optional argument to override the default HTML id for this section. I
 {{- $title = i18n "education_title" -}}
 {{ end }}
 
+{{ $format := "2 Jan 2006" }}
+
 <section
 	id="{{ $sectionId }}"
 	class="section section--border-bottom rad-animation-group">
@@ -28,7 +30,7 @@ sectionId: Optional argument to override the default HTML id for this section. I
 					{{ range where .Site.RegularPages "Type" "project" }}
 					<div class="col-12 col-sm-6 mb-4 mb-sm-0">
 						<div class="education">
-							<div class="education__date">{{ .Params.date }}</div>
+							<div class="education__date">{{ .Params.date.Format $format }}</div>
 							<div class="education__title">{{ .Params.title }}</div>
 							<div class="education__degree">{{ .Content }}</div>
 							<div class="education__link"><a href="{{ .Params.link }}">Link</a></div>
