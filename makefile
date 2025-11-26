@@ -25,6 +25,10 @@ gomodule: ## Update Go Module
 update: clean ## Update the site requirements
 	@npm update
 
+
+hugo: ## Run the site local
+	@hugo server --disableFastRender --renderToMemory
+
 develop: ## Run the site local
 	@hugo server --disableFastRender --renderToMemory
 
