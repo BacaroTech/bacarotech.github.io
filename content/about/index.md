@@ -30,3 +30,92 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 ## Il Team
 
 
+{{< about-section
+    title="Giorgio Basile"
+    content="CoFounder - Sviluppatore Frontend"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/giorgiobasile00/"
+    imgSrc="images/giorgio.jpg"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+{{< about-section
+    title="Michele Scarpa"
+    content="CoFounder - Sviluppatore Full-Stack"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/giorgiobasile00/"
+    imgSrc="images/michele.jpg"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+{{< about-section
+    title="Moreno Frigo Turco"
+    content="Sviluppatore Backend"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/"
+    imgSrc="images/moreno.jpg"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+{{< about-section
+    title="Danilo Macchion"
+    content="IT Specialist"
+    imgSrc="images/danilo.jpg"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+{{< about-section
+    title="Davide Carraretto"
+    content="Sviluppatore Full-Stack"
+    imgSrc="images/davide.jpg"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+{{< about-section
+    title="Antonio Labranca"
+    content="Mobile developer"
+    imgSrc="images/antonio.png"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+{{< about-section
+    title="Lorenzo Dalla Costa"
+    content="Editor"
+    imgSrc="images/lorenzo.jpg"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+{{< about-section
+    title="Vittorio Terreran"
+    content="Grafico"
+    imgSrc="images/vittorio.png"
+    imgScale="0.5"
+    v_align="center"
+    h_align="left"
+ >}}
+
+
+<div class="carousel-item">
+    <img src="assets/vittorio.png" class="d-block w-100" alt="...">
+    <div class="carousel-caption d-md-block">
+        <h5><a href="https://www.linkedin.com/in/vittorio-terreran/">Vittorio Terreran</a></h5>
+        <p>Grafico</p>
+    </div>
+</div>
