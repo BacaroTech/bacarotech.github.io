@@ -6,18 +6,16 @@ draft = false
 
 
 {{< contact-section
-    sectionId="contacto"
-    title="Contáctame" 
-    contact_form_name="Tu nombre"
-    contact_form_email="Tu correo"
-    contact_form_message="Tu mensaje"
-    contact_button="Enviar mensaje"
-    contact_phone_title="Mi teléfono"
-    contact_phone_number="<a href='tel:+555666777'>555 666 777</a>"
+    sectionId="contatti"
+    title="Contattaci" 
+    contact_form_name="Nome"
+    contact_form_email="Cognome"
+    contact_form_message="Messaggio"
+    contact_button="Invia messaggio"
     contact_email_title="Mi correo"
-    contact_email_email="demo@demosite.com"
-    contact_address_title="Mi ubicación"
-    contact_address_address="🇩🇰 Denmark"
+    contact_email_email="bacarotech@gmail.com"
+    contact_address_title="La nostra location"
+    contact_address_address="🇮🇹 Italia"
     form_action="https://formspree.io/f/mail@example.com"
     form_method="POST"
 >}}
