@@ -267,6 +267,7 @@
       "page-_index.es",
       "page-bacaro-cli",
       "page-bacaro-foodtrack",
+      "page-bacaro-tech-gym",
       "page-blog",
       "page-getting-started",
       "page-home",
@@ -438,14 +439,14 @@
       "step-6-using-the-new-icon",
       "syntax-highlighting",
       "tables",
-      "testimonial",
       "theme-dropdown-footer",
       "theme-dropdown-header",
       "title",
       "traditional-installation-as-git-submodule",
       "troubleshooting",
       "unordered",
-      "wordcount"
+      "wordcount",
+      "workshop"
     ]
   }
 }

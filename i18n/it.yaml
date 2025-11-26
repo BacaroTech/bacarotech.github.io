@@ -69,3 +69,6 @@
   translation: "Spiacenti, ma la pagina che stavi cercando non è stata trovata."
 - id: "404_button"
   translation: "Torna alla homepage"
+
+- id: "workshop_title"
+  translation: "Workshop"

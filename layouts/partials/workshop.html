@@ -3,7 +3,7 @@
 
 {{/*
 sectionId: Optional argument to override the default HTML id for this section. If not provided, the default id is used. */}}
-{{ $sectionId := "projects" }}
+{{ $sectionId := "workshop" }}
 {{ with .Get "sectionId" }}
 {{ $sectionId = . }}
 {{ end }}
@@ -12,9 +12,9 @@ sectionId: Optional argument to override the default HTML id for this section. I
 {{- $title := "" -}}
 
 {{- if $isShortcode }}
-{{- $title = .Get "title" | default ( i18n "education_title" ) -}}
+{{- $title = .Get "title" | default ( i18n "workshop_title" ) -}}
 {{ else }}
-{{- $title = i18n "education_title" -}}
+{{- $title = i18n "workshop_title" -}}
 {{ end }}
 
 {{ $format := "2 Jan 2006" }}
@@ -27,7 +27,7 @@ sectionId: Optional argument to override the default HTML id for this section. I
 			<div class="col-12">
 				<h2>{{ $title }}</h2>
 				<div class="row pt-2 pt-md-4">
-					{{ range where .Site.RegularPages "Type" "project" }}
+					{{ range where .Site.RegularPages "Type" "workshop" }}
 					<div class="col-12 col-sm-6 mb-4 mb-sm-0">
 						<div class="education">
 							<div class="education__date">{{ .Params.date.Format $format }}</div>

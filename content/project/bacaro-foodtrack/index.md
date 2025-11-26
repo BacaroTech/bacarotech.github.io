@@ -8,4 +8,6 @@ link: "https://github.com/BacaroTech/BacaroFoodTruckMobileApp" # optional URL to
 ## The content is used for the description of the project
 ---
 
+![bacaro-foodtruck.png](bacaro-foodtruck.png)
+
 🚚 Mobile App for Bacarotruck 📌 Descrizione del Progetto **Mobile App for Bacarotruck** è l'applicazione ufficiale sviluppata per supportare il progetto Bacarofoodtruck. L’app nasce con l’obiettivo di offrire agli utenti un’esperienza semplice e intuitiva, permettendo loro di interagire con i servizi del Bacarofoodtruck direttamente dal proprio smartphone. L’applicazione è stata sviluppata con **React Native** utilizzando il framework Expo, garantendo così: Compatibilità multipiattaforma (iOS e Android) Performance ottimizzate grazie ai componenti nativi Velocità di sviluppo e possibilità di test rapidi con Expo 

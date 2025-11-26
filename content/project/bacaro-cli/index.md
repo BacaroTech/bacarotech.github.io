@@ -8,6 +8,8 @@ link: "https://github.com/BacaroTech/blueprint-bacaro-architecture" # optional U
 ## The content is used for the description of the project
 ---
 
+![Bacaro Cli](bacaro-cli.png)
+
  blueprint-bacaro-architecture è uno strumento da linea di comando (CLI) che consente di generare automaticamente la struttura di un progetto full-stack composto da:
 
 ✅ Frontend Angular ✅ Backend Node.js con Express ✅ Database PostgreSQL ✅ Ambiente Docker configurato con docker-compose ✅ Gestione delle variabili con file .env

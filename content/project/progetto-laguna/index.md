@@ -8,4 +8,6 @@ link: "https://github.com/BacaroTech/Progetto-laguna" # optional URL to link the
 ## The content is used for the description of the project
 ---
 
+![Progetto-laguna.png](Progetto-laguna.png)
+
 Progetto Laguna è un progetto che sfruttando le API offerte dal comune di venezia reperibili a questo url https://dati.venezia.it/?q=formato/json, vogliamo realizzare un'applicazione react che permetta di visualizzare su mappa tutti i rilevatori sparsi per la nostra amata laguna con i relativi dati 

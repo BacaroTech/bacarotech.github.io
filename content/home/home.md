@@ -41,8 +41,8 @@ draft = false
     title="I nostri progetti" >}}
 
 
-{{< testimonial-section
-    title="Cosa dicono di noi" >}}
+{{< workshop-list
+    title="I nostri Workshop" >}}
 
 {{< spacer size="large" >}}
 
