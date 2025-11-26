@@ -21,26 +21,22 @@ draft = false
 >}}
 
 {{< newsletter-section 
-    newsletter_title="Subscríbete"
-    newsletter_placeholder="Tu correo"
-    newsletter_button="Subscríbete"
-    newsletter_success_message="Gracias por suscribirte!"
-    newsletter_error_message="Algo ha fallado, por favor inténtalo de nuevo."
-    newsletter_note="Respetamos tu privacidad."
+    newsletter_title="Subscribe"
+    newsletter_placeholder="Il tuo indirizzo"
+    newsletter_button="Iscriviti"
+    newsletter_success_message="Grazie per la tua iscrizione!"
+    newsletter_error_message="C'é stato un errore riprova grazie."
+    newsletter_note="Rispettiamo la tua privacy."
     form_action="/"
     form_method="POST"
 >}}
 
 
 {{< text-section
-title="Contenido extra"
+title="Extra"
 centered="true"
 >}}
 
-Puedes añadir contenido adicional después de los bloques de `section`.
-
-Aquí puedes ser creativo, utilizar otros shortcodes, ... O dejarlo vacío.
-
-Para añadir texto que quede bien en el pie, puedes utilizar el shortcode `text-section`.
+Ciao questo é la nostra sezione extra
 
 {{< /text-section >}}

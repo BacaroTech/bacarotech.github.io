@@ -6,10 +6,10 @@ draft = false
 
 
 {{< showcase-section
-    title="Showcase section"
-    subtitle="Subtitle - coming from <code>home.md</code>"
+    title="Bacaro Tech"
+    subtitle="The Site</code>"
     buttonText="Email"
-    description="<strong>Strong</strong>, <em>italic</em> and normal text. This comes from <a href='https://github.com/zetxek/adritian-demo/blob/main/content/home/home.md?plain=1'><code>home.md</code></a>, using the <code>showcase-section</code> <a href=''>shortcode</a>.<br/>Below you can see the social links, provided by the <code>platform-links</code> shortcode."
+    description="La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!"
     imgSrc="images/icon.png"
     imgScale="0.5"
  >}}
@@ -46,19 +46,3 @@ draft = false
 
 {{< spacer size="large" >}}
 
-## Extra home content
-
-Additional content added after the `section` blocks, in the `home.md` file. 
-
-Here you could freestyle, add other shortcodes, ...  Or just let the content empty, and rely on the shortcode sections alone.
-
-{{< spacer size="small" >}}
-
-{{< text-section
-title="Extra (centered) content"
-centered="true"
->}}
-
-You can also use the `text-section` shortcode to add centered texts
-
-{{< /text-section >}}

@@ -139,7 +139,7 @@ URL = '/blog'
 weight = 3
 [[languages.it.menus.header]]
 name = 'Portfolio'
-URL = '#portfolio'
+URL = '#projects'
 weight = 4
 #  [[languages.it.menus.header]]
 #  name = "Experience"
