@@ -7,7 +7,7 @@ draft = false
 
 {{< showcase-section
     title="BacaroTech"
-    subtitle=""
+    subtitle=" "
     buttonText="Email"
     description="La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!"
     imgSrc="images/icon.png"
