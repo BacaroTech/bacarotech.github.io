@@ -13,8 +13,8 @@ clean: cache gomodule ## Clean the directory of the project of cache e meta file
 	@find . -type d -empty -delete
 
 .PHONY: run
-run: clean ## Build the site cleaning all
-	@hugo --minify
+run:  ## Build the site for showing
+	@hugo server --disableFastRender --renderToMemory
 
 .PHONY: gomodule
 gomodule: ## Update Go Module
