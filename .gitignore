@@ -171,6 +171,7 @@ themes/f333/assets/css/style.css
 
 themes/f333/assets/css/style.css.map
 node_modules
+
 .hugo_build.lock
 !scripts
 !scripts/lib
@@ -189,3 +190,5 @@ build
 log_syndication.csv
 
 log_feed.csv
+
+/package-lock.json
