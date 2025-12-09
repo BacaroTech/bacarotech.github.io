@@ -19,7 +19,7 @@
   translation: "BacaroTech"
 
 - id: "logo_text2"
-  translation: "The Site"
+  translation: ""
 
 ## General
 - id: "skipToMainContent"
