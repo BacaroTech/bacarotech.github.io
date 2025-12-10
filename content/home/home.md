@@ -16,14 +16,13 @@ draft = false
 
 {{< platform-links >}}
 
-    {{< link icon="whatsapp" url="https://whatsapp.com/channel/0029Vb62oilIyPtNZRvjI61K" >}}
-    {{< link icon="linkedin" url="https://www.linkedin.com/company/bacarotech" >}}
-    {{< link icon="square-github" url="https://github.com/BacaroTech" >}}
-    {{< link icon="tiktok" url="https://www.tiktok.com/@bacarotech" >}}
-    {{< link icon="youtube" url="https://www.youtube.com/@Bacarotech" >}}
-    {{< link icon="instagram" url="https://www.instagram.com/bacarotechofficial/" >}}
-    {{< link icon="whatsapp" url="https://whatsapp.com/channel/0029Vb62oilIyPtNZRvjI61K" >}}
-    {{< link icon="email" url="mailto:bacarotech@gmail.com">}}
+    {{< link-brand icon="whatsapp" url="https://whatsapp.com/channel/0029Vb62oilIyPtNZRvjI61K" >}}
+    {{< link-brand icon="linkedin" url="https://www.linkedin.com/company/bacarotech" >}}
+    {{< link-brand icon="square-github" url="https://github.com/BacaroTech" >}}
+    {{< link-brand icon="tiktok" url="https://www.tiktok.com/@bacarotech" >}}
+    {{< link-brand icon="youtube" url="https://www.youtube.com/@Bacarotech" >}}
+    {{< link-brand icon="instagram" url="https://www.instagram.com/bacarotechofficial/" >}}
+    {{< link-regular icon="envelope" url="mailto:bacarotech@gmail.com">}}
 
 {{< /platform-links >}}
 
