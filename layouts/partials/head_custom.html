@@ -1,1 +1,5 @@
 <script src="https://kit.fontawesome.com/6153160269.js" crossorigin="anonymous"></script>
+
+{{ $sass := resources.Get "scss/custom.scss" }}
+{{ $style := $sass | css.Sass | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">

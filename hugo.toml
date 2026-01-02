@@ -225,7 +225,7 @@ showJobCard = true # Set to false to hide the job card
 unsafe = true
 [markup.highlight]
 lineNos = false
-style = "github"
+style = "catppuccin-frappe"
 
 [imaging]
 resampleFilter = "Lanczos"

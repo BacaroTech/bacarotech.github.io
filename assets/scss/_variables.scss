@@ -3,6 +3,8 @@ $base-color: #fff; // #478079 - Your theme's primary color
 $primary: $base-color;
 $dark-primary: #32325b; // Brighter primary color for dark mode - enhanced contrast
 
+$background-color-dark: #32325b; // Light background color
+
 // Link colors
 $link-color: $base-color;
 $link-hover-color: darken($base-color, 15%);
@@ -18,6 +20,14 @@ $sidebar-link-color: #32325b; // increased contrast
     --bs-link-hover-color-rgb: #{red(darken($base-color, 15%))},
         #{green(darken($base-color, 15%))}, #{blue(darken($base-color, 15%))};
     --bs-link-decoration: none;
+
+    --bs-body-bg: $base-color;
+}
+
+[data-bs-theme="dark"] {
+    body {
+        --bs-body-bg: #32325b;
+    }
 }
 
 // Explicit link override for all <a> tags
