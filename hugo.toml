@@ -220,12 +220,13 @@ showJobCard = true # Set to false to hide the job card
 
 # Performance optimizations
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
 [markup.highlight]
-lineNos = false
-style = "catppuccin-frappe"
+codeFences = true
+noClasses = false
+tabWidth = 4
+guessSyntax = true
+wrapperClass = 'highlight-code'
+style = "catppuccin-mocha"
 
 [imaging]
 resampleFilter = "Lanczos"

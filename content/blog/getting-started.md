@@ -23,7 +23,7 @@ A very good place to start is the Quick start guide: [https://gohugo.io/getting-
 
 _💡Tip:__ keep your repository clean and tidy by creating a [relevant `.gitignore` file](https://github.com/github/gitignore/blob/main/community/Golang/Hugo.gitignore) since the beginning:
 
-```
+``` gitignore
 # Generated files by hugo
 /public/
 /resources/_gen/
@@ -57,7 +57,7 @@ Once you have a site created, you can add the theme to your site by following th
 <details>
 <summary>hugo.toml configuration</summary>
 
-```
+``` toml
 baseURL = "<your website url>"
 languageCode = "en"
 

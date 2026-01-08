@@ -16,7 +16,7 @@ If you prefer to manually set your site, you need to replace the contents of you
 <details>
 <summary>hugo.toml configuration</summary>
 
-```
+``` toml
 baseURL = "<your website url>"
 languageCode = "en"
 

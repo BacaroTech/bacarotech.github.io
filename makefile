@@ -8,6 +8,7 @@ install: ## Install
 
 cache: ## Clean the cache
 	@hugo --gc
+	@hugo gen chromastyles --style=catppuccin-frappe > assets/code-highlight.css
 
 clean: cache gomodule ## Clean the directory of the project of cache e meta file and other things
 	@find . -type d -empty -delete

@@ -3,3 +3,6 @@
 {{ $sass := resources.Get "scss/custom.scss" }}
 {{ $style := $sass | css.Sass | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+{{- $code_syntax_highlight_css := resources.Get "code-highlight.css" | minify | fingerprint }}
+<link href="{{ $code_syntax_highlight_css.RelPermalink }}" rel="stylesheet">
