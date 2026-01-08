@@ -8,6 +8,6 @@ link: "https://github.com/BacaroTech/pokedex-frontend" # optional URL to link th
 ## The content is used for the description of the project
 ---
 
-![pokedex-frontend.png](pokedex-frontend.png)
+![pokedex-frontend.png](img/project/pokedex-frontend.png)
 
 Questo progetto nasce come un'esplorazione pratica e divertente nel mondo dello sviluppo frontend. Sfruttando le PokeAPI , ho deciso di creare un Pokedex completo, implementandolo con una varietà di framework UI popolari come Angular, Vue, Next.js, e Svelte

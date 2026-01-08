@@ -8,6 +8,6 @@ link: "https://github.com/BacaroTech/Bacaro-tech-gym" # optional URL to link the
 ## The content is used for the description of the project
 ---
 
-![Bacaro-tech-gym.png](Bacaro-tech-gym.png)
+![Bacaro-tech-gym.png](img/workshop/Bacaro-tech-gym.png)
 
 Questa repository nasce per essere un HUB digitale nel mondo del coding, pensato sia per chi sta iniziando a programmare, sia per chi vuole affinare le proprie abilità.
