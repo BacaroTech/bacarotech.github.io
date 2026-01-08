@@ -219,13 +219,17 @@ showJobCard = true # Set to false to hide the job card
 
 
 # Performance optimizations
+
+# set markup.highlight.noClasses=false to enable code highlight
 [markup]
 [markup.highlight]
-codeFences = true
 noClasses = false
-tabWidth = 4
-guessSyntax = true
-wrapperClass = 'highlight-code'
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+startLevel = 2             # ToC starts from H2
+endLevel = 4               # ToC ends at H4
+ordered = false            # generates <ul> instead of <ol>
 style = "catppuccin-mocha"
 
 [imaging]
