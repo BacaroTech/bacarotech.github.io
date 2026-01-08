@@ -352,7 +352,7 @@ If everything has gone well asn you have the right configuration, the output for
 <details>
 <summary>Example output for the serve command</summary>
 
-```
+``` bash
 adritian-demo git:(master) ✗ hugo server -D
 Watching for changes in /Users/adrianmorenopena/tmp/theme-test/themes/adritian-free-hugo-theme/{archetypes,assets,data,exampleSite,i18n,layouts,static}
 Watching for config changes in /Users/adrianmorenopena/tmp/theme-test/themes/adritian-free-hugo-theme/exampleSite/hugo.toml
