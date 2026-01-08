@@ -3,6 +3,7 @@ title =  "Home"
 type = "home"
 draft = false
 +++
+<hr>
 
 ![Logo](img/logo.png)
 

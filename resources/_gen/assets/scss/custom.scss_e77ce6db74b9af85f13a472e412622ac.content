@@ -10,3 +10,7 @@ body {
 
 .about__profile-picture picture img {
   max-height: 200px; }
+
+.rad-showcase {
+  padding-top: 20px;
+  min-height: 20px !important; }
