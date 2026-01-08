@@ -4,6 +4,7 @@ type = "home"
 draft = false
 +++
 
+![Logo](img/logo.png)
 
 {{< showcase-section
     title="BacaroTech"

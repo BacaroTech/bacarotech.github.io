@@ -90,7 +90,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Antonio Labranca"
     content="Mobile developer"
     imgSrc="images/antonio.png"
-    imgScale="0.5"
+    imgScale="1"
     v_align="center"
     h_align="left"
  >}}
@@ -108,7 +108,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Vittorio Terreran"
     content="Grafico"
     imgSrc="images/vittorio.png"
-    imgScale="0.5"
+    imgScale="1"
     v_align="center"
     h_align="left"
  >}}
