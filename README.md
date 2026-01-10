@@ -11,6 +11,7 @@ Si tratta di un approccio molto sfidante che, in senso positivo, ti costringe a 
 È un ottimo esercizio per ripassare le basi e consolidare le proprie competenze, soprattutto oggi che, grazie alle librerie esterne, molti passaggi vengono dati per scontati.
 
 ## Social e Contatti
+
 Se hai dei consigli facci sapere!
 - 🌳 [Link Tree Homemade](https://bacarotech.github.io/)
 - 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
