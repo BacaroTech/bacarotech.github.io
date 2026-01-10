@@ -10,4 +10,4 @@ link: "https://github.com/BacaroTech/Repository-utili" # optional URL to link th
 
 ![Repository-utili.png](Repository-utili.png)
 
- Repository-utili nasce per raccogliere le repository più utili trovate su GitHub e le presentiamo nei nostri video pubblicati su diverse piattaforme. Per facilitarne la consultazione, abbiamo creato questa raccolta dove troverai tutte le segnalazioni con una breve descrizione per ciascuna. 
+In questa serie raccogliamo le repository più interessanti e utili trovate su GitHub e ve le presentiamo nei nostri video pubblicati su diverse piattaforme. Per semplificarne la consultazione, abbiamo creato questa raccolta con tutte le segnalazioni, ognuna accompagnata da una breve descrizione.

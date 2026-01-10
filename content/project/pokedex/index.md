@@ -10,6 +10,4 @@ link: "https://github.com/BacaroTech/pokedex-frontend" # optional URL to link th
 
 ![pokedex-frontend.png](pokedex-frontend.png)
 
-Pokédex in 4 Framework è un progetto educativo e comparativo che mostra come sviluppare la stessa applicazione — un semplice Pokédex — utilizzando quattro diversi framework/librerie frontend, sfruttando le PokéAPI. L'obiettivo è confrontare l'approccio, la struttura e la sintassi dei principali strumenti frontend moderni nel realizzare la stessa funzionalità.
-
-✅ Mostrare come i vari framework gestiscono fetch API, stati, componenti e routing. ✅ Favorire l'apprendimento pratico attraverso la comparazione diretta. ✅ Creare una base comune per workshop, talk o studio individuale. 
+Questo progetto nasce come un'esplorazione pratica e divertente nel mondo dello sviluppo frontend. Sfruttando le PokeAPI , ho deciso di creare un Pokedex completo, implementandolo con una varietà di framework UI popolari come Angular, Vue, Next.js, e Svelte

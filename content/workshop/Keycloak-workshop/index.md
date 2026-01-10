@@ -10,4 +10,4 @@ link: "https://github.com/BacaroTech/keycloak-workshop" # optional URL to link t
 
 ![keycloak-workshop.png](keycloak-workshop.png)
 
-Benvenuto al workshop su Keycloak! In questo repository troverai tutto il necessario per partecipare al workshop e imparare a utilizzare Keycloak per gestire l'autenticazione e l'autorizzazione nelle tue applicazioni. 
+Benvenuto al workshop su Keycloak! In questo repository troverai tutto il necessario per partecipare al workshop e imparare a utilizzare Keycloak per gestire l'autenticazione e l'autorizzazione nelle tue applicazioni.

@@ -10,4 +10,5 @@ link: "https://github.com/BacaroTech/SerieSpringBoot" # optional URL to link the
 
 ![serie-springboot.png](serie-springboot.png)
 
-Serie SpringBoot Progetto che contiene un backend Spring Boot, dalla creazione di base fino ad implementazioni più avanzate. Ogni video della serie corrisponde ad un branch dedicato nella repository. 
+Progetto che contiene un backend Spring Boot, dalla creazione di base fino ad implementazioni più avanzate.
+Ogni video della serie corrisponde ad un branch dedicato nella repository.

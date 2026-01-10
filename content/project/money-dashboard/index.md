@@ -10,4 +10,4 @@ link: "https://github.com/BacaroTech/Money-dashboard" # optional URL to link the
 
 ![Money-dashboard.png](Money-dashboard.png)
 
-MoneyDashboard è un'applicazione web sviluppata con Angular che ti permette di gestire le tue finanze personali e le tue spese su base mensile. Con MoneyDashboard, puoi monitorare le tue entrate e uscite, creare budget, e avere una visione chiara delle tue finanze per prendere decisioni informate. 
+MoneyDashboard è un'applicazione web sviluppata con Angular che permette di gestire le finanze personali e le spese su base mensile. Con MoneyDashboard è possibile monitorare entrate e uscite, creare budget e avere una visione chiara delle proprie finanze per prendere decisioni informate.

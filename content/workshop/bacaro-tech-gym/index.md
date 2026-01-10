@@ -10,6 +10,4 @@ link: "https://github.com/BacaroTech/Bacaro-tech-gym" # optional URL to link the
 
 ![Bacaro-tech-gym.png](Bacaro-tech-gym.png)
 
-Bacaro-tech-gym nasce con lo scopo di essere un HUB digitale nel mondo del coding, sia per chi sta iniziando a programmare, sia per coloro che vogliono affinare le loro abilità.
-
-Troverete all'interno della repository sia teoria sugli algoritmi e le strutture dati, sia soluzioni per problemi di diversa difficoltà presi dal sito LeetCode 
+Questa repository nasce per essere un HUB digitale nel mondo del coding, pensato sia per chi sta iniziando a programmare, sia per chi vuole affinare le proprie abilità.
