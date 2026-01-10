@@ -87,15 +87,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
  >}}
 
 {{< about-section
-    title="Antonio Labranca"
-    content="Mobile developer"
-    imgSrc="images/antonio.png"
-    imgScale="1"
-    v_align="center"
-    h_align="left"
- >}}
-
-{{< about-section
     title="Lorenzo Dalla Costa"
     content="Editor"
     imgSrc="images/lorenzo.jpg"
