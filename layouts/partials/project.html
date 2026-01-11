@@ -1,0 +1,44 @@
+{{- $contextType := printf "%T" . -}}
+{{- $isShortcode := (eq $contextType "*hugolib.ShortcodeWithPage") -}}
+
+{{/*
+sectionId: Optional argument to override the default HTML id for this section. If not provided, the default id is used. */}}
+{{ $sectionId := "projects" }}
+{{ with .Get "sectionId" }}
+{{ $sectionId = . }}
+{{ end }}
+
+{{- /* Title */}}
+{{- $title := "" -}}
+
+{{- if $isShortcode }}
+{{- $title = .Get "title" | default ( i18n "education_title" ) -}}
+{{ else }}
+{{- $title = i18n "education_title" -}}
+{{ end }}
+
+{{ $format := "2 Jan 2006" }}
+
+<section
+	id="{{ $sectionId }}"
+	class="section section--border-bottom rad-animation-group">
+	<div class="container-education">
+		<div class="row rad-fade-down">
+			<div class="col-12">
+				<h2>{{ $title }}</h2>
+				<div class="row pt-2 pt-md-4">
+					{{ range where .Site.RegularPages "Type" "project" }}
+					<div class="col-12 col-sm-6 mb-4 mb-sm-0">
+						<div class="education">
+							<div class="education__date">{{ .Params.date.Format $format }}</div>
+							<div class="education__title">{{ .Params.title }}<span class="education__link"><a target="_blank" href="{{ .Params.link }}"><i
+											class="icon-square-github"></i></a></span></div>
+							<div class="education__degree"><a target="_blank" href="{{ .Params.link }}">{{ .Content }}</a></div>
+						</div>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

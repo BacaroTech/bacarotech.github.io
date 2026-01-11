@@ -1,0 +1,263 @@
+baseURL = "https://bacarotech.github.io/"
+title = "BacaroTech"
+languageCode = "it"
+
+# Exclude footer section from generating list pages (index.html and index.xml)
+[outputs]
+page = ["HTML"]
+home = ["HTML", "RSS", "JSON"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+term = ["HTML", "RSS"]
+footer = []
+
+# Explicitly prevent the footer section from generating any output
+[outputFormats.footerSection]
+# Empty configuration to prevent any output
+
+# Specifically disable generation of these kinds for the footer content
+disableKinds = ["footerSection", "RSS"]
+
+[module]
+[[module.imports]]
+path = "github.com/zetxek/adritian-free-hugo-theme"
+
+## Base mounts - so your site's assets are available
+[[module.mounts]]
+source = "archetypes"
+target = "archetypes"
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "i18n"
+target = "i18n"
+
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+# The following mounts are required for the theme to be able to load bootstrap
+# Remember also to copy the theme's `package.json` to your site, and run `npm install`
+[[module.mounts]]
+source = "node_modules/bootstrap/scss"
+target = "assets/scss/bootstrap"
+
+[[module.mounts]]
+source = "node_modules/bootstrap/dist/js"
+target = "assets/js/bootstrap"
+
+[[module.mounts]]
+source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+target = "assets/js/vendor/bootstrap.bundle.min.js"
+
+[[module.mounts]]
+source = "node_modules/bootstrap-print-css/css/bootstrap-print.css"
+target = "assets/css/bootstrap-print.css"
+
+
+[params]
+title = 'BacaroTech'
+description = 'La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!'
+images = ['/img/icon.png']
+sections = [
+    "showcase",
+    "about",
+    "education",
+    "experience",
+    "client-and-work",
+    "testimonial",
+    "contact",
+    "newsletter",
+]
+# If you want to display an image logo in the header, you can add it here
+# logo = '/img/hugo.svg'
+
+homepageExperienceCount = 6
+
+[params.analytics]
+## Analytics parameters.
+### Supported so far: Vercel (Page Insights, Analytics)
+### And Google (Tag Manager, Analytics)
+
+# controls vercel page insights - disabled by default
+# to enable, just set to true
+vercelPageInsights = false
+vercelAnalytics = false
+
+# google analytics and tag manager. to enable, set "enabled" to true
+# and add the tracking code (UA-something for analytics, GTM-something for tag manager)
+[params.analytics.googleAnalytics]
+code = "UA-XXXXX-Y"
+enabled = false
+[params.analytics.googleTagManager]
+code = "GTM-XXXXX"
+enabled = false
+
+[build]
+writeStats = true
+
+[build.buildStats]
+enabledFor = ["scss"]
+disableClasses = false
+disableIDs = false
+disableTags = false
+enable = true
+
+[params.languages.selector.disable]
+footer = false
+header = false
+mobileHeader = false
+
+[languages]
+[languages.it]
+disabled = false
+languageCode = 'it'
+languageDirection = 'ltr'
+languageName = 'Italian'
+title = ''
+weight = 0
+
+[languages.it.menus]
+[[languages.it.menus.header]]
+name = "Home"
+URL = "/"
+weight = 1
+[[languages.it.menus.header]]
+name = 'Chi siamo'
+URL = '/about'
+weight = 5
+[[languages.it.menus.header]]
+name = 'Blog'
+URL = '/blog'
+weight = 6
+[[languages.it.menus.header]]
+name = 'Progetti'
+URL = '#projects'
+weight = 2
+[[languages.it.menus.header]]
+name = 'Workshop'
+URL = '#workshop'
+weight = 3
+[[languages.it.menus.header]]
+name = 'Entra nel Team'
+URL = '#entra-nel-team'
+weight = 4
+
+#  [[languages.it.menus.header]]
+#  name = "Experience"
+#  URL = "#experience"
+#  weight = 4
+# [[languages.it.menus.header]]
+# name = 'Cerca'
+# URL = '/search'
+# weight = 10
+
+[params.plugins]
+
+# CSS Plugins
+[[params.plugins.css]]
+URL = "css/custom.css"
+[[params.plugins.css]]
+URL = "css/adritian-icons.css"
+## Print css
+[[params.plugins.css]]
+URL = "css/bootstrap-print.css"
+
+# JS Plugins
+[[params.plugins.js]]
+URL = "js/rad-animations.js"
+[[params.plugins.js]]
+URL = "js/sticky-header.js"
+[[params.plugins.js]]
+URL = "js/library/fontfaceobserver.js"
+
+# SCSS Plugins
+[[params.plugins.scss]]
+URL = "scss/adritian.scss"
+
+
+# theme/color style
+[params.colorTheme]
+
+## the following configuration would disable automatic theme selection
+# [params.colorTheme.auto]
+# disable = true
+[params.colorTheme.forced]
+theme = "dark"
+
+## the following parameter will disable theme override in the footer
+[params.colorTheme.selector.disable]
+footer = true
+header = true
+mobileHeader = false
+## by default we allow override AND automatic selection
+
+# Page transition settings
+[params.pageTransition]
+enabled = true # Set to false to disable the page fade transition effect
+
+[params.blog]
+layout = "sidebar-right"       # options: default (no sidebar), sidebar, sidebar-right
+sidebarWidth = "25"            # percentage width of the sidebar
+showCategories = true
+showRecentPosts = true
+recentPostCount = 5
+listStyle = "summary"          # options: simple, summary
+featured_sort_by_weight = true
+featured_sort_by_date = false
+
+
+[params.experience]
+showJobCard = true # Set to false to hide the job card
+
+
+# Performance optimizations
+
+# set markup.highlight.noClasses=false to enable code highlight
+[markup]
+[markup.highlight]
+noClasses = false
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+startLevel = 2             # ToC starts from H2
+endLevel = 4               # ToC ends at H4
+ordered = false            # generates <ul> instead of <ol>
+style = "catppuccin-mocha"
+
+[imaging]
+resampleFilter = "Lanczos"
+quality = 85
+anchor = "Smart"
+
+[minify]
+disableCSS = false
+disableHTML = false
+disableJS = false
+disableJSON = false
+disableSVG = false
+disableXML = false
+minifyOutput = true
+[minify.tdewolff]
+[minify.tdewolff.html]
+keepDefaultAttrVals = true
+keepWhitespace = false
+[minify.tdewolff.css]
+precision = 0
+[minify.tdewolff.js]
+precision = 0
+
+
+[params.sharing]
+enabled = true
+twitter = true
+linkedin = true
+facebook = true
+email = true

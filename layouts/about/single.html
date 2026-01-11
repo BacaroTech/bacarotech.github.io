@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section id="blog-single" class="blog-single section section--border-bottom rad-animation-group flex-grow-1">
+	<div id="main-content">
+		<h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+
+		{{ partial "toc.html" . }}
+
+		<div class="row flex-column-reverse flex-md-row rad-fade-down">
+			<div class="col-12">{{ .Content }}</div>
+		</div>
+	</div>
+</section>
+{{ end }}

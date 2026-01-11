@@ -1,0 +1,19 @@
+<script src="https://kit.fontawesome.com/6153160269.js" crossorigin="anonymous"></script>
+
+{{ $sass := resources.Get "scss/custom.scss" }}
+{{ $style := $sass | css.Sass | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+{{- $code_syntax_highlight_css := resources.Get "code-highlight.css" | minify | fingerprint }}
+<link href="{{ $code_syntax_highlight_css.RelPermalink }}" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X2VZRNKV03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X2VZRNKV03');
+</script>
+
+<meta name="google-site-verification" content="fyPba-w1q6HQyK8CaObq_7ZCiJfjDKkR1vpVwSa_rHo" />

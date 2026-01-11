@@ -1,0 +1,74 @@
+## Meta tags
+- id: "meta_title"
+  translation: "BacaroTech"
+- id: "meta_description"
+  translation: "La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!"
+- id: "meta_keywords"
+  translation: "hugo, theme, bootstrap, BacaroTech, adrian moreno, personal site, portfolio, single page application"
+- id: "meta_author"
+  translation: "Adrián Moreno Peña"
+- id: "meta_image"
+  translation: "/img/general/og-image.jpg"
+
+## Header
+
+- id: "logo_alt"
+  translation: "BacaroTech logo"
+
+- id: "logo_text1"
+  translation: "BacaroTech"
+
+- id: "logo_text2"
+  translation: ""
+
+## General
+- id: "skipToMainContent"
+  translation: "Salta al contenuto principale"
+
+- id: "toggle_navigation"
+  translation: "Toggle"
+
+## Footer
+- id: "footer_notice"
+  translation: "© BacaroProject"
+
+- id: "language"
+  translation: "Lingua"
+
+- id: "toggle_theme"
+  translation: "Toggle tema"
+
+- id: "theme_light"
+  translation: "☀️ Light"
+- id: "theme_dark"
+  translation: "🌑 Dark"
+- id: "theme_auto"
+  translation: "✨ Auto"
+
+## Homepage head title
+- id: "head_title"
+  translation: "BacaroTech - La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!"
+
+- id: "head_description"
+  translation: "BacaroTech non è solo un progetto social: è uno stile di comunicazione e condivisione dell’informatica, fondato sulla convinzione che la conoscenza vada diffusa con passione, empatia e la voglia autentica di costruire qualcosa di utile insieme agli altri."
+
+## Blog
+- id: "read_more"
+  translation: "Leggi di piú"
+
+- id: "published_on"
+  translation: "Pubblicato il "
+
+- id: "continue_reading"
+  translation: "Continua a leggere"
+
+## 404 Page
+- id: "404_title"
+  translation: "Pagina non trovata"
+- id: "404_description"
+  translation: "Spiacenti, ma la pagina che stavi cercando non è stata trovata."
+- id: "404_button"
+  translation: "Torna alla homepage"
+
+- id: "workshop_title"
+  translation: "Workshop"
