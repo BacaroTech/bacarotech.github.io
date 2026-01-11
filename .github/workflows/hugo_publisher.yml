@@ -1,4 +1,4 @@
-name: Build and deploy
+name: Build and deploy Site
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -10,13 +10,13 @@ permissions:
   id-token: write
 
 on:
-  # Run when the main branch is pushed or a pull request is made
+  # Run when the master branch is pushed or a pull request is made
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
@@ -26,7 +26,7 @@ on:
     workflows:
       - Fetch webmentions
     branches:
-      - main
+      - master
     types:
       - completed
 
@@ -108,7 +108,7 @@ jobs:
 
   deploy:
     name: Deploy Hugo into GitHub Pages
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
