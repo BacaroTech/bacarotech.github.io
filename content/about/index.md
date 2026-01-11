@@ -49,7 +49,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     content="CoFounder - Sviluppatore Full-Stack"
     button_icon="icon-user"
     button_text="Linkedin"
-    button_url="https://www.linkedin.com/in/giorgiobasile00/"
+    button_url="https://www.linkedin.com/in/michele-scarpa-90-arco/"
     imgSrc="images/michele.jpg"
     imgScale="0.5"
     v_align="center"
@@ -75,6 +75,9 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     imgScale="0.5"
     v_align="center"
     h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/danilo-macchion/"
  >}}
 
 {{< about-section
@@ -84,7 +87,12 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     imgScale="0.5"
     v_align="center"
     h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/davide-carraretto-57a855239/"
  >}}
+
+ 
 
 {{< about-section
     title="Lorenzo Dalla Costa"
@@ -93,6 +101,9 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     imgScale="0.5"
     v_align="center"
     h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url=" https://www.linkedin.com/in/lorenzo-dalla-costa/"
  >}}
 
 {{< about-section
@@ -102,4 +113,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     imgScale="1"
     v_align="center"
     h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/vittorio-terreran/"
  >}}
