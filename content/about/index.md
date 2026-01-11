@@ -117,3 +117,15 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     button_text="Linkedin"
     button_url="https://www.linkedin.com/in/vittorio-terreran/"
  >}}
+
+{{< about-section
+    title="Matteo Scarpa"
+    content="Backendista"
+    imgSrc="images/vittorio.png"
+    imgScale="1"
+    v_align="center"
+    h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/matteo-scarpa-03031992/"
+ >}}
