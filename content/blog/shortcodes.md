@@ -1,7 +1,7 @@
 ---
 title: 'Theme shortcodes'
 date: 2025-02-14T14:38:33+02:00
-draft: fatruelse
+draft: true
 type: 'blog'
 tags: 
   - adritian
