@@ -121,7 +121,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 {{< about-section
     title="Matteo Scarpa"
     content="Backendista"
-    imgSrc="images/vittorio.png"
+    imgSrc="images/matteo.jpg"
     imgScale="1"
     v_align="center"
     h_align="left"
