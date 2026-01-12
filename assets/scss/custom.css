@@ -1,3 +1,8 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto;
+  }
+}
 body {
   background-color: var(--bs-body-bg) !important;
 }
@@ -8,4 +13,29 @@ body {
   padding: 16px;
   margin-bottom: 24px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about__profile-picture picture img {
+  max-height: 200px;
+}
+
+.rad-showcase {
+  padding-top: 20px;
+  min-height: 20px !important;
+}
+
+[data-bs-theme=dark] .blog .post .post-title a {
+  color: var(--bs-link-color);
+}
+
+::-moz-selection {
+  color: black !important;
+}
+
+::selection {
+  color: black !important;
+}
+
+::-moz-selection {
+  color: black !important;
 }/*# sourceMappingURL=custom.css.map */
