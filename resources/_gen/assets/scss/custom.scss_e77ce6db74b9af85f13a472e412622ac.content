@@ -14,3 +14,11 @@ body {
 .rad-showcase {
   padding-top: 20px;
   min-height: 20px !important; }
+
+::selection {
+  color: black;
+  text-shadow: none; }
+
+::-moz-selection {
+  color: black;
+  text-shadow: none; }
