@@ -44,7 +44,7 @@ build: clean ## Build for dev
 	@hugo mod get -u
 	@hugo
 
-deploy: update characters meet webmention syndication## Ready to deploy
+deploy: update ## Ready to deploy
 	@hugo --minify
 
 broadcast: clean ## broadcast the site
