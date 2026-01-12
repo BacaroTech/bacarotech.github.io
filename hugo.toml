@@ -187,8 +187,8 @@ URL = "scss/adritian.scss"
 [params.colorTheme]
 
 ## the following configuration would disable automatic theme selection
-# [params.colorTheme.auto]
-# disable = true
+[params.colorTheme.auto]
+disable = true
 [params.colorTheme.forced]
 theme = "dark"
 
