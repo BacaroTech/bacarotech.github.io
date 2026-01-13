@@ -1,4 +1,68 @@
-{{- if .IsBlock -}}
+{{/* Original code from: https://fundor333.com/post/2024/new-render-image-for-hugo/ */}}
+{{/* Just modified a bit to work with render_image hook and output webp images */}}
+{{/* get file that matches the filename as specified as src="" */}}
+
+{{ $src := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
+{{ $alt := .PlainText | safeHTML }}
+
+{{/* So for posts that aren't setup in the page bundles, it doesn't fail */}}
+{{ if $src }}
+
+{{ $format := cond (eq $src.MediaType.SubType "gif") "" "webp" -}}
+
+{{ $xs := .Page.Site.Params.maciaimage.tiny }}
+{{ $s := .Page.Site.Params.maciaimage.small }}
+{{ $m := .Page.Site.Params.maciaimage.medium }}
+{{ $l := .Page.Site.Params.maciaimage.large }}
+
+{{ $tinyw := default (printf "%s %s" $xs $format) }}
+{{ $smallw := default (printf "%s %s" $s $format) }}
+{{ $mediumw := default (printf "%s %s" $m $format) }}
+{{ $largew := default (printf "%s %s" $l $format) }}
+
+{{/* resize the src image to the given sizes */}}
+{{/* We create a a temp scratch because it`s not available in this context */}}
+{{ $data := newScratch }}
+
+{{ $data.Set "tiny" ($src.Resize $tinyw) }}
+{{ $data.Set "small" ($src.Resize $smallw) }}
+{{ $data.Set "medium" ($src.Resize $mediumw) }}
+{{ $data.Set "large" ($src.Resize $largew) }}
+
+{{/* add the processed images to the scratch */}}
+
+{{ $tiny := $data.Get "tiny" }}
+{{ $small := $data.Get "small" }}
+{{ $medium := $data.Get "medium" }}
+{{ $large := $data.Get "large" }}
+
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+
+<a href="{{ $src.RelPermalink }}">
+	<picture>
+
+		<source media="(max-width: 376px)"
+			srcset="{{with $tiny.RelPermalink }}{{.}}{{ end }}">
+
+		<source media="(max-width: 992px)"
+			srcset="{{with $small.RelPermalink }}{{.}}{{ end }}">
+
+		<source media="(max-width: 1400px)"
+			srcset="{{with $medium.RelPermalink }}{{.}}{{ end }}">
+
+		<source media="(min-width: 1600px)"
+			srcset="{{with $large.RelPermalink }}{{.}}{{ end }}">
+
+		<img alt="{{ $alt }}" title="{{ $alt }}" src="{{ $src }}" loading="lazy" decoding="async" height="{{ $src.Height}}" width="{{ $src.Width }}"
+			class="{{.Page.Site.Params.maciaimage.imgclass}}">
+
+	</picture>
+</a>
+
+{{/* Since I do image-response class, the only thing that really
+matters is the height and width matches the image aspect ratio */}}
+
+{{- else if .IsBlock -}}
 <figure>
 	<img loading="lazy" class="center-img u-photo img-fluid" src="{{ .Destination | safeURL }}"
 		{{- with .PlainText }} alt="{{ . }}" {{ end -}}>

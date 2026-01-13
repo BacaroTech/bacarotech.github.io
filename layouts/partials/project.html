@@ -31,9 +31,12 @@ sectionId: Optional argument to override the default HTML id for this section. I
 					<div class="col-12 col-sm-6 mb-4 mb-sm-0">
 						<div class="education">
 							<div class="education__date">{{ .Params.date.Format $format }}</div>
-							<div class="education__title">{{ .Params.title }}<span class="education__link"><a target="_blank" href="{{ .Params.link }}"><i
-											class="icon-square-github"></i></a></span></div>
-							<div class="education__degree"><a target="_blank" href="{{ .Params.link }}">{{ .Content }}</a></div>
+							<div class="education__title">{{ .Params.title }}<span class="education__link">
+									<a target="_blank" href="{{ .Params.link }}">
+										<i class="icon-square-github"></i></a></span></div>
+							<div class="education__degree svg-img">
+								<a target="_blank" href="{{ .Params.link }}">{{ .Content }}</a>
+							</div>
 						</div>
 					</div>
 					{{ end }}

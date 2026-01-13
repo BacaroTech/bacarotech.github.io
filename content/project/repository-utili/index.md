@@ -8,6 +8,6 @@ link: "https://github.com/BacaroTech/Repository-utili" # optional URL to link th
 ## The content is used for the description of the project
 ---
 
-![Repository-utili.png](img/project/Repository-utili.png)
+![Repository-utili.svg](img/project/Repository-utili.svg)
 
 In questa serie raccogliamo le repository più interessanti e utili trovate su GitHub e ve le presentiamo nei nostri video pubblicati su diverse piattaforme. Per semplificarne la consultazione, abbiamo creato questa raccolta con tutte le segnalazioni, ognuna accompagnata da una breve descrizione.

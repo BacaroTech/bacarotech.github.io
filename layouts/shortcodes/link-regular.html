@@ -4,5 +4,7 @@
 	href="{{ $url | absURL }}"
 	target="_blank"
 	rel="noopener noreferrer"
-	{{ if $icon }}aria-label="{{ $icon }}" {{ end }}>{{ if $icon }}<i class="fa-regular fa-{{ $icon }} fa-2xl"></i>{{ end }}
+	class="col"
+	{{ if $icon }}aria-label="{{ $icon }}" {{ end }}>{{ if $icon }}
+	<i class="fa-regular fa-{{ $icon }} fa-2xl"></i>{{ end }}
 </a>

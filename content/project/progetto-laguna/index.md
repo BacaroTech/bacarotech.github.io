@@ -8,6 +8,6 @@ link: "https://github.com/BacaroTech/Progetto-laguna" # optional URL to link the
 ## The content is used for the description of the project
 ---
 
-![Progetto-laguna.png](img/project/Progetto-laguna.png)
+![Progetto-laguna.svg](img/project/Progetto-laguna.svg)
 
 Il Progetto Laguna nasce con l’obiettivo di valorizzare e rendere più accessibili i dati aperti messi a disposizione dal Comune di Venezia.
