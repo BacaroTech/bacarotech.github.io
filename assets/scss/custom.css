@@ -68,4 +68,9 @@ body {
 }
 .svg-img img {
   background: #fff;
+}
+
+.content-center {
+  vertical-align: center;
+  text-align: center;
 }/*# sourceMappingURL=custom.css.map */
