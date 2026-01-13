@@ -8,7 +8,7 @@ link: "https://github.com/BacaroTech/SerieSpringBoot" # optional URL to link the
 ## The content is used for the description of the project
 ---
 
-![serie-springboot.png](img/workshop/serie-springboot.png)
+![serie-springboot.svg](img/workshop/serie-springboot.svg)
 
 Progetto che contiene un backend Spring Boot, dalla creazione di base fino ad implementazioni più avanzate.
 Ogni video della serie corrisponde ad un branch dedicato nella repository.
