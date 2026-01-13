@@ -1,3 +1,4 @@
+$spacer: 1rem;
 @media (prefers-reduced-motion: no-preference) {
     :root {
         scroll-behavior: auto;
@@ -59,5 +60,27 @@ body {
         color-scheme: light;
         --bs-body-color: #fff;
         --bs-body-bg: #181818;
+    }
+}
+
+.breadcrumb-item {
+    &:not(:last-child) {
+        &::after {
+            content: "";
+        }
+    }
+}
+
+.breadcrumb-link {
+    padding: 0.25rem;
+}
+.p-3 {
+    padding: $spacer !important;
+}
+
+.svg-img {
+    fill: #fff;
+    img {
+        background: #fff;
     }
 }

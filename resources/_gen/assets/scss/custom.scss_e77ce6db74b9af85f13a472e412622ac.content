@@ -37,3 +37,17 @@ body {
   color-scheme: light;
   --bs-body-color: #fff;
   --bs-body-bg: #181818; }
+
+.breadcrumb-item:not(:last-child)::after {
+  content: ""; }
+
+.breadcrumb-link {
+  padding: 0.25rem; }
+
+.p-3 {
+  padding: 1rem !important; }
+
+.svg-img {
+  fill: #fff; }
+  .svg-img img {
+    background: #fff; }

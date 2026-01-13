@@ -22,6 +22,11 @@ draft = false
     {{< link-brand icon="linkedin" url="https://www.linkedin.com/company/bacarotech" >}}
     {{< link-brand icon="square-github" url="https://github.com/BacaroTech" >}}
     {{< link-brand icon="tiktok" url="https://www.tiktok.com/@bacarotech" >}}
+
+{{< /platform-links >}}
+
+{{< platform-links >}}
+
     {{< link-brand icon="youtube" url="https://www.youtube.com/@Bacarotech" >}}
     {{< link-brand icon="instagram" url="https://www.instagram.com/bacarotechofficial/" >}}
     {{< link-brand icon="discord" url="https://discord.gg/bnMSXkyy" >}}
