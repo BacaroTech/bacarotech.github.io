@@ -5,6 +5,7 @@ help: ## Show this help
 install: ## Install
 	@npm install
 	@hugo mod get -u
+	@uv sync
 
 cache: ## Clean the cache
 	@hugo --gc
@@ -25,6 +26,9 @@ gomodule: ## Update Go Module
 
 update: clean ## Update the site requirements
 	@npm update
+	@uv lock --upgrade
+	@uv sync
+	@uv export --no-dev --no-hashes --format requirements-txt > requirements.txt
 
 
 hugo: ## Run the site local
@@ -59,3 +63,7 @@ deploy_prod: ## Ready to deploy
 .PHONY: submodule
 submodule: ## Get submodule for this repo
 	git submodule update --init --recursive
+
+.PHONY: new
+new: ## Make new object for the blog
+	@uv run python3 make-post.py

@@ -1,0 +1,33 @@
+[project]
+name = "bacarotech-github-io"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "feedparser",
+    "requests",
+    "python-dotenv",
+    "weeknotebot",
+    "pillow",
+    "beautifulsoup4",
+    "pyyaml",
+    "lxml",
+    "typer",
+    "python-frontmatter",
+    "bleach",
+]
+
+[project.entry-points.dotenv]
+ignore = "false"
+location = ".env"
+
+[dependency-groups]
+dev = [
+    "hugo-nbconvert>=2025.5.24.3",
+    "jupyterlab>=4.4.6",
+    "langchain>=0.3.27",
+    "langchain-ollama>=0.3.7",
+    "pandas>=2.3.2",
+    "pre-commit>=4.1.0,<5",
+]
