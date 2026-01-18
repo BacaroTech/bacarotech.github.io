@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AnandChowdhary//calendar-link//EN
+BEGIN:VEVENT
+DTSTART:20260123T193000Z
+DTEND:20260123T203000Z
+DTSTAMP:20260118T115551Z
+SUMMARY:Cloudflare E Altri Drammi Con Angela Petraglia
+DESCRIPTION:Link alla live: https://www.youtube.com/watch?v=JlYzA5bUqAk\n\nNegli ultimi giorni si è acceso un forte dibattito tra Cloudflare e AGCOM sul cosiddetto Piracy Shield, il sistema italiano pensato per contrastare la pirateria online, in particolare lo streaming illegale di eventi sportivi.\nL’Autorità ha sanzionato Cloudflare con una multa molto rilevante, accusandola di non aver rispettato gli obblighi di blocco rapido di siti e indirizzi segnalati. Cloudflare, dal canto suo, ha reagito duramente, sostenendo che queste richieste pongano seri problemi tecnici, giuridici e di principio, toccando temi come la neutralità della rete, il giusto processo, la trasparenza e il ruolo delle grandi infrastrutture globali di Internet.\n\nQuello che inizialmente poteva sembrare uno scontro “tecnico” si è trasformato in un caso simbolo, che solleva domande molto più ampie:\nfino a che punto uno Stato può imporre obblighi a operatori globali?\nQual è il confine tra tutela del diritto d’autore e rischio di censura?\nE quali sono le implicazioni legali per il futuro della regolamentazione digitale in Europa?\n\nPer analizzare questi aspetti con uno sguardo giuridico solido e aggiornato, oggi ne parliamo con Angela Petraglia, avvocato e legal advisor, esperta di Emerging Technology Law, GDPR, AI, blockchain, fintech e legal informatics, con una forte attenzione all’innovazione e alle startup.\nCon lei cercheremo di capire cosa c’è davvero in gioco in questo scontro e quali scenari si aprono per il diritto e la tecnologia nei prossimi anni.
+LOCATION:Il nostro canale Youtube
+UID:18146
+END:VEVENT
+END:VCALENDAR
