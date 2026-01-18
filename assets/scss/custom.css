@@ -73,4 +73,12 @@ body {
 .content-center {
   vertical-align: center;
   text-align: center;
+}
+
+.badge {
+  color: var(--bs-body-bg);
+}
+
+.input-group-text {
+  color: var(--bs-body-bg) !important;
 }/*# sourceMappingURL=custom.css.map */

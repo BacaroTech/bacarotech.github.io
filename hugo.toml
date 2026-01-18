@@ -151,6 +151,11 @@ name = 'Entra nel Team'
 URL = '#entra-nel-team'
 weight = 4
 
+[[languages.it.menus.header]]
+name = '🔍'
+URL = '/search'
+weight = 99
+
 #  [[languages.it.menus.header]]
 #  name = "Experience"
 #  URL = "#experience"

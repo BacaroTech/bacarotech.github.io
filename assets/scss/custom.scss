@@ -88,3 +88,11 @@ body {
     vertical-align: center;
     text-align: center;
 }
+
+.badge {
+    color: var(--bs-body-bg);
+}
+
+.input-group-text {
+    color: var(--bs-body-bg) !important;
+}

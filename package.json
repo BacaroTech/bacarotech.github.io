@@ -10,7 +10,10 @@
       "postcss-cli": "github.com/zetxek/adritian-free-hugo-theme"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "fuse.js": "^7.1.0",
+    "dompurify": "^3.3.1"
+  },
   "devDependencies": {
     "@zetxek/adritian-theme-helper": "^1.0.5",
     "autoprefixer": "^10.4.17",

@@ -14,11 +14,12 @@ $sidebar-link-color: #32325b; // increased contrast
 // Create CSS custom properties for Bootstrap
 :root {
     --bs-link-color: #{$base-color};
-    --bs-link-color-rgb: #{red($base-color)}, #{green($base-color)},
-        #{blue($base-color)};
+    --bs-link-color-rgb:
+        #{red($base-color)}, #{green($base-color)}, #{blue($base-color)};
     --bs-link-hover-color: #{darken($base-color, 15%)};
-    --bs-link-hover-color-rgb: #{red(darken($base-color, 15%))},
-        #{green(darken($base-color, 15%))}, #{blue(darken($base-color, 15%))};
+    --bs-link-hover-color-rgb:
+        #{red(darken($base-color, 15%))}, #{green(darken($base-color, 15%))},
+        #{blue(darken($base-color, 15%))};
     --bs-link-decoration: none;
 
     --bs-body-bg: $base-color;
