@@ -26,10 +26,10 @@
     "postcss-cli": "^11.0.0"
   },
   "name": "bacarotech.github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
-    "content": "node make-post.js",
-    "post": "node make-post.js post",
-    "redirect": "node make-post.js redirect"
+    "content": "node scripts/make-post.js",
+    "post": "node scripts/make-post.js post",
+    "redirect": "node scripts/make-post.js redirect"
   }
 }
