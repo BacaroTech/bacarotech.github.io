@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Rome
+LAST-MODIFIED:20250410T142247Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/Rome
+X-LIC-LOCATION:Europe/Rome
+BEGIN:DAYLIGHT
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20260202T205732Z
+UID:1770065822458-63265@ical.marudot.com
+DTSTART;TZID=Europe/Rome:20260204T203000
+DTEND;TZID=Europe/Rome:20260204T223000
+SUMMARY:BacaroLive EP 8 - hybris\, gdg lecce e tanto altro
+URL:https://www.youtube.com/watch?v=WBeyVgprmGk
+DESCRIPTION:BacaroLive EP 8 - hybris\, gdg lecce e tanto altro con Biagio Nuzzo e Martino Scarcia\nIl 4 febbraio alle 20:30 avremo con noi Biagio e Martino\, due persone che — proprio come noi — fanno mille cose.\nSono infatti due dei fondatori di Hybris Hub\, azienda di consulenza leccese\, e Martino è anche founder del GDG Lecce\, dove siamo stati ospiti alla loro DevFest… ed è stato fighissimo.\nDurante la serata faremo una chiacchierata su tantissimi aspetti\, sia informatici che non.\nPiccolo spoiler: 🎹
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BacaroLive EP 8 - hybris, gdg lecce e tanto altro
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BacaroLive EP 8 - hybris, gdg lecce e tanto altro
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

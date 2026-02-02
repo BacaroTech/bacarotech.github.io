@@ -43,9 +43,7 @@ def main_checker():
 
 def main(text: Annotated[str, typer.Argument()] = None):
     if text is None:
-        text = input(
-            "You need a new [post], a new [photo], a new [micro], a [weekly_cover] or [now]\n"
-        )
+        text = input("You need a new [post]?\n")
     ANSWER.get(text, main)()
 
 
