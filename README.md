@@ -38,3 +38,23 @@ o se non hai make
 ~~~ bash
 hugo server --disableFastRender --renderToMemory
 ~~~ 
+
+## Utility e creazione nuovi post
+
+Perché ricordarsi tutti i comandi e come funzionano le cose é un casino, sono stati predisposti dei comandi make utili per la creazione di nuovi post ma richiedono, oltre la installazione standard il pacchetto python UV ([installare UV](https://docs.astral.sh/uv/getting-started/installation/)).
+
+Una volta installato é possibile lanciare il seguente comando e rispondere alle sue domande per generare un nuovo post e, se necessario, il file ics collegato
+
+~~~ bash
+make new
+~~~
+
+## Scrivere un post
+
+Una volta creato il post (vedi punto prima) é possibile iniziare la scrittura del post.
+Ogni post é diviso in due parti:
+
+- Una prima parte, autogenerata da Hugo, che ha i metadati del post ([documentazione](https://gohugo.io/content-management/shortcodes/#embedded)) e che va completata in base al post
+- Una seconda parte, vuota, che altro non é che il corpo del post, che usa delle parole chiave generate da Hugo e il markdown github ([documentazione della sintassi](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax))
+
+Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione del post

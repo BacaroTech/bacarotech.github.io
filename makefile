@@ -62,7 +62,7 @@ deploy_prod: ## Ready to deploy
 
 .PHONY: submodule
 submodule: ## Get submodule for this repo
-	git submodule update --init --recursive
+	@git submodule update --init --recursive
 
 .PHONY: new
 new: ## Make new object for the blog
