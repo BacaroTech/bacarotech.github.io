@@ -41,8 +41,7 @@ hugo server --disableFastRender --renderToMemory
 
 ## Utility e creazione nuovi post
 
-Perché ricordarsi tutti i comandi e come funzionano le cose é un casino, sono stati predisposti dei comandi make utili per la creazione di nuovi post ma richiedono, oltre la installazione standard il pacchetto python UV ([installare UV](https://docs.astral.sh/uv/getting-started/installation/)).
-
+Perché ricordarsi tutti i comandi e come funzionano le cose é un casino, sono stati predisposti dei comandi make utili per la creazione di nuovi post.
 Una volta installato é possibile lanciare il seguente comando e rispondere alle sue domande per generare un nuovo post e, se necessario, il file ics collegato
 
 ~~~ bash
