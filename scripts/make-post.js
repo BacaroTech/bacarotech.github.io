@@ -74,7 +74,7 @@ function generaIcs(directoryPath, titoloEvento) {
 		`DTSTART;TZID=Europe/Rome:${formatDateIcs(inizioDt)}`, // Aggiunto TZID
 		`DTEND;TZID=Europe/Rome:${formatDateIcs(fineDt)}`, // Aggiunto TZID
 		`SUMMARY:${titoloEvento}`,
-		`DESCRIPTION:${readline.question("Breve descrizione: ")}`,
+		`DESCRIPTION:${readline.question("Breve descrizione: ")} - ${readline.question("Link alla diretta: ")}`,
 		"END:VEVENT",
 		"END:VCALENDAR",
 	].join("\n");
