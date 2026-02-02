@@ -16,6 +16,7 @@ dependencies = [
     "typer",
     "python-frontmatter",
     "bleach",
+    "dateparser>=1.2.2",
 ]
 
 [project.entry-points.dotenv]
