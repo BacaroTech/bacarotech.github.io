@@ -12,8 +12,28 @@ function nameCleaning(name) {
 }
 
 function formatDateIcs(date) {
-	// Formato: AAAAMMGGTHHMMSS
-	return date.toISOString().replace(/[-:]/g, "").split(".")[0];
+	// Formatta la data secondo il fuso di Roma per l'ICS
+	const options = {
+		timeZone: "Europe/Rome",
+		year: "numeric",
+		month: "2-digit",
+		day: "2-digit",
+		hour: "2-digit",
+		minute: "2-digit",
+		second: "2-digit",
+		hour12: false,
+	};
+
+	const parts = new Intl.DateTimeFormat("it-IT", options).formatToParts(
+		date,
+	);
+	const p = parts.reduce(
+		(acc, part) => ({ ...acc, [part.type]: part.value }),
+		{},
+	);
+
+	// Restituisce il formato AAAAMMGGTHHMMSS
+	return `${p.year}${p.month}${p.day}T${p.hour}${p.minute}${p.second}`;
 }
 
 function generaIcs(directoryPath, titoloEvento) {
@@ -28,30 +48,33 @@ function generaIcs(directoryPath, titoloEvento) {
 
 	// Parsing date con chrono-node (supporta inglese/italiano via custom locale se necessario)
 	// Per l'italiano base, chrono gestisce bene i formati standard
+
 	const inizioDt = chrono.it.parseDate(inizioRaw, new Date(), {
 		forwardDate: true,
 	});
 	const fineDt = chrono.it.parseDate(fineRaw, inizioDt);
 
 	if (!inizioDt || !fineDt) {
-		console.log("❌ Errore: Non ho capito le date. Riprova.");
+		console.log("❌ Errore: Date non valide.");
 		return;
 	}
 
-	const desc = readline.question("Breve descrizione: ");
 	const uid = crypto.randomUUID();
-	const now = formatDateIcs(new Date()) + "Z";
+	// DTSTAMP è l'unico che deve restare UTC (Z)
+	const dtStamp =
+		new Date().toISOString().replace(/[-:]/g, "").split(".")[0] +
+		"Z";
 
 	const icsContent = [
 		"BEGIN:VCALENDAR",
 		"VERSION:2.0",
 		"BEGIN:VEVENT",
 		`UID:${uid}`,
-		`DTSTAMP:${now}`,
-		`DTSTART:${formatDateIcs(inizioDt)}`,
-		`DTEND:${formatDateIcs(fineDt)}`,
+		`DTSTAMP:${dtStamp}`,
+		`DTSTART;TZID=Europe/Rome:${formatDateIcs(inizioDt)}`, // Aggiunto TZID
+		`DTEND;TZID=Europe/Rome:${formatDateIcs(fineDt)}`, // Aggiunto TZID
 		`SUMMARY:${titoloEvento}`,
-		`DESCRIPTION:${desc}`,
+		`DESCRIPTION:${readline.question("Breve descrizione: ")}`,
 		"END:VEVENT",
 		"END:VCALENDAR",
 	].join("\n");
