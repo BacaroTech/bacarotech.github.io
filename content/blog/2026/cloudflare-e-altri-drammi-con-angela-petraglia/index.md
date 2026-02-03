@@ -13,7 +13,7 @@ series = []
 
 [Link alla live](https://www.youtube.com/watch?v=JlYzA5bUqAk) 
 
-[Aggiungi al Calendario](event.ics)
+[Aggiungi al Calendario](/blog/2026/cloudflare-e-altri-drammi-con-angela-petraglia/event.ics)
 
 Negli ultimi giorni si è acceso un forte dibattito tra Cloudflare e AGCOM sul cosiddetto Piracy Shield, il sistema italiano pensato per contrastare la pirateria online, in particolare lo streaming illegale di eventi sportivi.
 L’Autorità ha sanzionato Cloudflare con una multa molto rilevante, accusandola di non aver rispettato gli obblighi di blocco rapido di siti e indirizzi segnalati. Cloudflare, dal canto suo, ha reagito duramente, sostenendo che queste richieste pongano seri problemi tecnici, giuridici e di principio, toccando temi come la neutralità della rete, il giusto processo, la trasparenza e il ruolo delle grandi infrastrutture globali di Internet.
