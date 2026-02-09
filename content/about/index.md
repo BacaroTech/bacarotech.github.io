@@ -120,7 +120,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 
 {{< about-section
     title="Matteo Scarpa"
-    content="Backendista"
+    content="Sviluppatore"
     imgSrc="images/matteo.jpg"
     imgScale="1"
     v_align="center"
@@ -128,4 +128,42 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     button_icon="icon-user"
     button_text="Linkedin"
     button_url="https://www.linkedin.com/in/matteo-scarpa-03031992/"
+ >}}
+
+
+{{< about-section
+    title="Alessandro Gigliarano"
+    content="Sviluppatore"
+    imgSrc="images/Gigliarano.jpg"
+    imgScale="1"
+    v_align="center"
+    h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/alessandro-gigliarano-99609147/"
+ >}}
+
+{{< about-section
+    title="Andrea Della Porta"
+    content="Divulgatore"
+    imgSrc="images/DallaPorta.jpg"
+    imgScale="1"
+    v_align="center"
+    h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/andrea-della-porta-01/"
+ >}}
+
+
+{{< about-section
+    title="Andrea Volterrani"
+    content="Sviluppatore"
+    imgSrc="images/Volterrani.jpg"
+    imgScale="1"
+    v_align="center"
+    h_align="left"
+    button_icon="icon-user"
+    button_text="Linkedin"
+    button_url="https://www.linkedin.com/in/andrea-volterrani-b50a70131/"
  >}}
