@@ -1,5 +1,10 @@
 # bacarotech.github.io
 
+## Cosa ti serve per cominciare
+
+- da [questo sito](https://github.com/gohugoio/hugo/releases) scaricare la versione '_extended' più recente, compatibile con il vostro sistema operativo
+- seguire da [questa pagina](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation) la guida per l'installazione di hugo, go ed npm
+
 ## Dev
 
 Per lanciare il sito in dev devi prima lanciare il comando per le dipendenze (lo fai solo la prima volta)
