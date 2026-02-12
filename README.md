@@ -1,15 +1,5 @@
 # bacarotech.github.io
 
-## Social e Contatti
-
-Se hai dei consigli facci sapere!
-- 🌳 [Linkedin](https://www.linkedin.com/company/bacarotech)
-- 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
-- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
-- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
-- 📫 Email: **bacarotech@gmail.com**
-
-
 ## Dev
 
 Per lanciare il sito in dev devi prima lanciare il comando per le dipendenze (lo fai solo la prima volta)
@@ -57,3 +47,12 @@ Ogni post é diviso in due parti:
 - Una seconda parte, vuota, che altro non é che il corpo del post, che usa delle parole chiave generate da Hugo e il markdown github ([documentazione della sintassi](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax))
 
 Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione del post
+
+## Social e Contatti
+
+Se hai dei consigli facci sapere!
+- 🌳 [Linkedin](https://www.linkedin.com/company/bacarotech)
+- 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
+- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
+- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
+- 📫 Email: **bacarotech@gmail.com**
