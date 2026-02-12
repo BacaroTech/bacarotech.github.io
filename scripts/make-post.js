@@ -135,6 +135,17 @@ function postRedirect() {
 	}
 }
 
+function postAuthor() {
+	const name = readline.question("Give me the title: ");
+	const title = nameCleaning(name);
+	try {
+		execSync(`hugo new authors/${title}/index.md`, {
+			stdio: "inherit",
+		});
+	} catch (error) {
+		console.error("Errore:", error.message);
+	}
+}
 const main = () => {
 	let actionType = process.argv[2];
 
@@ -147,6 +158,8 @@ const main = () => {
 	const actions = {
 		post: postFc,
 		redirect: postRedirect,
+		author: postAuthor,
+		authors: postAuthor,
 	};
 
 	if (actions[actionType]) {
