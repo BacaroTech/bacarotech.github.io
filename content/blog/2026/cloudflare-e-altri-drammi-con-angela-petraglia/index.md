@@ -1,5 +1,5 @@
 +++
-title = "Cloudflare E Altri Drammi Con Angela Petraglia"
+title = "BacaroLive EP7 - Cloudflare E Altri Drammi Con Angela Petraglia"
 date = 2026-01-18T12:30:04+01:00
 featured = false
 weight = 100  # Lower weight appears first in featured sections
