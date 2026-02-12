@@ -34,6 +34,8 @@ o se non hai make
 hugo server --disableFastRender --renderToMemory
 ~~~ 
 
+NB: il sito è dotato di Hot realod, quindi non è necessario ricompilare ogni volta lo stesso dopo qualsiasi modifica
+
 ## Utility e creazione nuovi post
 
 Perché ricordarsi tutti i comandi e come funzionano le cose é un casino, sono stati predisposti dei comandi make utili per la creazione di nuovi post.
@@ -42,6 +44,8 @@ Una volta installato é possibile lanciare il seguente comando e rispondere alle
 ~~~ bash
 make new
 ~~~
+
+seguire lo step successivo per la creazione completa del post
 
 ## Scrivere un post
 
