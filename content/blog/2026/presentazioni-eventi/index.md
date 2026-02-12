@@ -48,6 +48,9 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [Git Bare](/presentazioniNostre/Git%20Bare.pdf)
 - [GitFlow, caratteristiche ed alternative](/presentazioniNostre/GitFlow,%20caratteristiche%20ed%20alternative.pdf)
 - [Workshop su Keycloak](/presentazioniNostre/Workshop%20su%20Keycloak%20eng.pdf)
+- [Debito Tecnico](/presentazioniNostre/Debito%20Tecnico.pdf)
+- [ENG Debito tecnico](/presentazioniNostre/ENG%20Debito%20tecnico.pdf)
+- [ENG pokedex a confronto](/presentazioniNostre/ENG%20pokedex%20a%20confronto.pdf)
 
 ### Crediti dei diversi speaker che abbiamo avuto live:
 
