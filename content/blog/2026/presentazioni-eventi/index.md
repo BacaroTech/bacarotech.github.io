@@ -53,26 +53,20 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [ENG pokedex a confronto - Michele Scarpa](/presentazioniNostre/ENG%20pokedex%20a%20confronto.pdf)
 - [Docker Happy Hour - Builda e Brinda](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Builda%20e%20Brinda.pdf)
 
-### Crediti dei diversi speaker che abbiamo avuto live:
+### Crediti dei diversi speaker che abbiamo avuto live
+- [Loredana Frontino](https://www.linkedin.com/in/loredana-frontino-0a2367132/)
+- [Gianfranco Di Pietro](https://www.linkedin.com/in/gianfrancodipietro/)
+- [Matteo Guidotto](https://www.linkedin.com/in/matteoguidotto/)
+- [Diego Benna](https://www.linkedin.com/in/diego-benna-58865548/)
+- [Nicola Lovo](https://www.linkedin.com/in/nicola-lovo-b208072bb/)
+- [Alessandro Micelli](https://www.linkedin.com/in/alessandro-micelli-5674a8236/)
+- [Angela Petraglia](https://www.linkedin.com/in/avv-angela-petraglia/)
+- [Biagio Nuzzo](https://www.linkedin.com/in/biagio-nuzzo-332a99112/)
+- [Martino Scarcia](https://www.linkedin.com/in/martinoscarcia/)
 
-[Loredana Frontino](https://www.linkedin.com/in/loredana-frontino-0a2367132/)
-
-[Gianfranco Di Pietro](https://www.linkedin.com/in/gianfrancodipietro/)
-
-[Matteo Guidotto](https://www.linkedin.com/in/matteoguidotto/)
-
-[Diego Benna](https://www.linkedin.com/in/diego-benna-58865548/)
-
-[Nicola Lovo](https://www.linkedin.com/in/nicola-lovo-b208072bb/)
-
---- 
-
-[Giorgio Basile](https://www.linkedin.com/in/giorgiobasile00/)
-
-[Michele Scarpa](https://www.linkedin.com/in/michele-scarpa-90-arco/)
-
-[Moreno Frigo Turco](https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/)
-
-[Danilo Macchion](https://www.linkedin.com/in/danilo-macchion/)
-
-[Vittorio Terreran](https://www.linkedin.com/in/vittorio-terreran/)
+### Crediti di ragazzi del team di BacaroTech che hanno partecipato ad almeno un talk
+- [Giorgio Basile](https://www.linkedin.com/in/giorgiobasile00/)
+- [Michele Scarpa](https://www.linkedin.com/in/michele-scarpa-90-arco/)
+- [Moreno Frigo Turco](https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/)
+- [Danilo Macchion](https://www.linkedin.com/in/danilo-macchion/)
+- [Vittorio Terreran](https://www.linkedin.com/in/vittorio-terreran/)
