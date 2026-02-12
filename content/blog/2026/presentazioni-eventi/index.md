@@ -38,25 +38,22 @@ Queste sono le presentazioni delle persone che sono state ospiti in live da noi 
 ## Presentazioni nostre
 Queste sono le presentazioni che abbiamo portato personalmente agli eventi come speaker, se vi è piaciuto il nostro intervento oppure ve lo siete perso qua trovate tutti i pdf relativi 
 
-- [Svelte - A Game-Changer for Web Developer](https://michele-scarpa-svelte.vercel.app/gdgdevfestlecce2025)
-- [Accenni di GIS](/presentazioniNostre/Accenni%20di%20GIS.pdf)
-- [Array, un modo da scoprire](/presentazioniNostre/Array,%20un%20modo%20da%20scoprire.pdf)
-- [Clean code e gitflow, come li abbiamo usati per risollevare un progetto](/presentazioniNostre/Clean%20code%20e%20gitflow,%20come%20li%20abbiamo%20usati%20per%20risollevare%20un%20progetto.pdf)
-- [Clean code, perchè il tuo codice puzza](/presentazioniNostre/Clean%20Code,%20perchè%20il%20tuo%20codice%20puzza.pdf)
-- [Design pattern, come costruire una codebase di successo](/presentazioniNostre/Design%20pattern,%20come%20costruire%20una%20codebase%20di%20successo.pdf)
-- [Frontend dilemma](/presentazioniNostre/Frontend%20dilemma.pdf)
-- [Git Bare](/presentazioniNostre/Git%20Bare.pdf)
-- [GitFlow, caratteristiche ed alternative](/presentazioniNostre/GitFlow,%20caratteristiche%20ed%20alternative.pdf)
-- [Workshop su Keycloak](/presentazioniNostre/Workshop%20su%20Keycloak%20eng.pdf)
-- [Debito Tecnico](/presentazioniNostre/Debito%20Tecnico.pdf)
-- [ENG Debito tecnico](/presentazioniNostre/ENG%20Debito%20tecnico.pdf)
-- [ENG pokedex a confronto](/presentazioniNostre/ENG%20pokedex%20a%20confronto.pdf)
+- [Svelte - A Game-Changer for Web Developer - Michele Scarpa](https://michele-scarpa-svelte.vercel.app/gdgdevfestlecce2025)
+- [Accenni di GIS - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Accenni%20di%20GIS.pdf)
+- [Array, un modo da scoprire - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Array,%20un%20modo%20da%20scoprire.pdf)
+- [Clean code e gitflow, come li abbiamo usati per risollevare un progetto - Giorgio Basile](/presentazioniNostre/Clean%20code%20e%20gitflow,%20come%20li%20abbiamo%20usati%20per%20risollevare%20un%20progetto.pdf)
+- [Clean code, perchè il tuo codice puzza - Giorgio Basile](/presentazioniNostre/Clean%20Code,%20perchè%20il%20tuo%20codice%20puzza.pdf)
+- [Design pattern, come costruire una codebase di successo - Giorgio Basile](/presentazioniNostre/Design%20pattern,%20come%20costruire%20una%20codebase%20di%20successo.pdf)
+- [Frontend dilemma - Michele Scarpa](/presentazioniNostre/Frontend%20dilemma.pdf)
+- [Git Bare - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Git%20Bare.pdf)
+- [GitFlow, caratteristiche ed alternative - Giorgio Basile](/presentazioniNostre/GitFlow,%20caratteristiche%20ed%20alternative.pdf)
+- [Workshop su Keycloak - Michele Scarpa](/presentazioniNostre/Workshop%20su%20Keycloak%20eng.pdf)
+- [Debito Tecnico - Danilo Macchion](/presentazioniNostre/Debito%20Tecnico.pdf)
+- [ENG Debito tecnico - Danilo Macchion](/presentazioniNostre/ENG%20Debito%20tecnico.pdf)
+- [ENG pokedex a confronto - Michele Scarpa](/presentazioniNostre/ENG%20pokedex%20a%20confronto.pdf)
+- [Docker Happy Hour - Builda e Brinda](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Builda%20e%20Brinda.pdf)
 
 ### Crediti dei diversi speaker che abbiamo avuto live:
-
-[Michele Scarpa](https://www.linkedin.com/in/michele-scarpa-90-arco/)
-
-[Moreno Frigo Turco](https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/)
 
 [Loredana Frontino](https://www.linkedin.com/in/loredana-frontino-0a2367132/)
 
@@ -67,3 +64,15 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 [Diego Benna](https://www.linkedin.com/in/diego-benna-58865548/)
 
 [Nicola Lovo](https://www.linkedin.com/in/nicola-lovo-b208072bb/)
+
+--- 
+
+[Giorgio Basile](https://www.linkedin.com/in/giorgiobasile00/)
+
+[Michele Scarpa](https://www.linkedin.com/in/michele-scarpa-90-arco/)
+
+[Moreno Frigo Turco](https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/)
+
+[Danilo Macchion](https://www.linkedin.com/in/danilo-macchion/)
+
+[Vittorio Terreran](https://www.linkedin.com/in/vittorio-terreran/)
