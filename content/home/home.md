@@ -3,7 +3,7 @@ title =  "Home"
 type = "home"
 draft = false
 +++
-<hr>
+
 
 ![Logo](img/logo.png)
 
@@ -53,5 +53,3 @@ Vuoi diventare membro di BacaroTech? Compila il Google Form cliccando il pulsant
 [Vai al form](https://docs.google.com/forms/d/e/1FAIpQLSdARSHfPwsEmbwq9DKZflc8GdHvZKXI6WxGZb5j3wD7oeNIng/viewform?usp=sharing&ouid=115289466104316446562)
 
 {{< spacer size="large" >}}
-
-

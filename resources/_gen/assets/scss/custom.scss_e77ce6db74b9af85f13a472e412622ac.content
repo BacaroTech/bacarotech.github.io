@@ -61,3 +61,14 @@ body {
 
 .input-group-text {
   color: var(--bs-body-bg) !important; }
+
+.post-excerpt {
+  color: var(--bs-body-color) !important; }
+
+.term-page .col-12.col-lg-8 ul.posts-list-simple li.post .meta,
+.term-page ul.posts-list-simple li.post .meta {
+  color: var(--bs-body-color) !important; }
+
+.term-page .col-12.col-lg-8 ul.posts-list-simple li.post .post-tags a,
+.term-page ul.posts-list-simple li.post .post-tags a {
+  color: var(--bs-body-color) !important; }

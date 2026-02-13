@@ -139,7 +139,7 @@ function postAuthor() {
 	const name = readline.question("Give me the title: ");
 	const title = nameCleaning(name);
 	try {
-		execSync(`hugo new authors/${title}/index.md`, {
+		execSync(`hugo new authors/${title}/_index.md`, {
 			stdio: "inherit",
 		});
 	} catch (error) {

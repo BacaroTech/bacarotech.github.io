@@ -1,14 +1,20 @@
-+++
-title = " BacaroLive EP 8 - hybris, gdg lecce e tanto altro con Biagio e Martino "
-date = 2026-02-02T19:56:04+01:00
-featured = false
-weight = 100  # Lower weight appears first in featured sections
-description = ""
-tags = ["live"]
-topics = ["gdg", "hybris","founder", "consulenza"]
-authors = []
-series = []
-+++
+---
+title: " BacaroLive EP 8 - hybris, gdg lecce e tanto altro con Biagio e Martino "
+date: 2026-02-02T19:56:04+01:00
+featured: false
+weight: 100  # Lower weight appears first in featured sections
+description: ""
+tags: 
+ - "live"
+topics:  
+ - "gdg"
+ - "hybris"
+ - "founder"
+ -  "consulenza"
+authors: 
+ - matteo-scarpa
+series: 
+---
 
 [Link alla live](https://www.youtube.com/watch?v=WBeyVgprmGk) 
 

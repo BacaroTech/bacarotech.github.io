@@ -31,6 +31,21 @@ $sidebar-link-color: #32325b; // increased contrast
     }
 }
 
+[data-bs-theme="dark"] {
+    .blog {
+        .pagination {
+            .page-link {
+                color: $base-color !important;
+            }
+        }
+    }
+    .author-links {
+        a {
+            color: $base-color !important;
+        }
+    }
+}
+
 // Explicit link override for all <a> tags
 a {
     color: $base-color;

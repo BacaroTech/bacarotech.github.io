@@ -13,6 +13,12 @@
 [data-bs-theme="dark"] body {
   --bs-body-bg: #32325b; }
 
+[data-bs-theme="dark"] .blog .pagination .page-link {
+  color: #fff !important; }
+
+[data-bs-theme="dark"] .author-links a {
+  color: #fff !important; }
+
 a {
   color: #fff;
   text-decoration: none; }

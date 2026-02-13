@@ -4,6 +4,9 @@ languageCode = "it"
 
 theme = ["hugo-redirect", "github.com/zetxek/adritian-free-hugo-theme"]
 # Exclude footer section from generating list pages (index.html and index.xml)
+[pagination]
+pagerSize = 3
+
 [outputs]
 page = ["HTML"]
 home = ["HTML", "RSS", "JSON"]
@@ -12,9 +15,14 @@ taxonomy = ["HTML", "RSS"]
 term = ["HTML", "RSS"]
 footer = []
 
-# Explicitly prevent the footer section from generating any output
+[taxonomies]
+tag = "tags"
+category = "categories"
+author = "authors"
+series = "series"
+topic = "topics"
+
 [outputFormats.footerSection]
-# Empty configuration to prevent any output
 
 # Specifically disable generation of these kinds for the footer content
 disableKinds = ["footerSection", "RSS"]
@@ -216,6 +224,7 @@ showCategories = true
 showRecentPosts = true
 recentPostCount = 5
 listStyle = "summary"          # options: simple, summary
+listLayout = "default"         # options: default, cards
 featured_sort_by_weight = true
 featured_sort_by_date = false
 
