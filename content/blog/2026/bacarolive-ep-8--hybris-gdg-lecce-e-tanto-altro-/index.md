@@ -12,7 +12,6 @@ topics:
  - "founder"
  -  "consulenza"
 authors: 
- - matteo-scarpa
 series: 
 ---
 
