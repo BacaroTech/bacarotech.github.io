@@ -34,6 +34,7 @@ Queste sono le presentazioni delle persone che sono state ospiti in live da noi 
 - [BacaroLive 4 - atomic design by Loredana Frontino](/ospitiDelBacarotech/BacaroLive%204%20-%20atomic%20design%20by%20Loredana%20Frontino.pdf)
 - [BacaroLive 5 - wetambara progetto by Diego Benna](/ospitiDelBacarotech/BacaroLive%205%20-%20wetambara%20progetto%20by%20Diego%20Benna.pdf)
 - [BacaroLive 5 - wetambara tecnico by Nicola Lovo](/ospitiDelBacarotech/BacaroLive%205%20-%20wetambara%20tecnico%20by%20Nicola%20Lovo.pdf)
+- [BacaroLive 7 - cloudflare e altri drammi by Angela Petraglia](/ospitiDelBacarotech/BacaroLive%207%20-%20cloudflare%20e%20altri%20drammi%20by%20Angela%20Petraglia.pdf)
 
 ## Presentazioni nostre
 Queste sono le presentazioni che abbiamo portato personalmente agli eventi come speaker, se vi è piaciuto il nostro intervento oppure ve lo siete perso qua trovate tutti i pdf relativi 
@@ -51,7 +52,8 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [Debito Tecnico - Danilo Macchion](/presentazioniNostre/Debito%20Tecnico.pdf)
 - [ENG Debito tecnico - Danilo Macchion](/presentazioniNostre/ENG%20Debito%20tecnico.pdf)
 - [ENG pokedex a confronto - Michele Scarpa](/presentazioniNostre/ENG%20pokedex%20a%20confronto.pdf)
-- [Docker Happy Hour - Builda e Brinda](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Builda%20e%20Brinda.pdf)
+- [Docker Happy Hour - Builda e Brinda - Vittorio Terreran](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Builda%20e%20Brinda.pdf)
+- [Docker Happy Hour - Approfondimento - Vittorio Terreran](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Approfondimento.pdf)
 
 ### Crediti dei diversi speaker che abbiamo avuto live
 - [Loredana Frontino](https://www.linkedin.com/in/loredana-frontino-0a2367132/)
