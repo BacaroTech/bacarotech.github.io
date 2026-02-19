@@ -39,21 +39,35 @@ Queste sono le presentazioni delle persone che sono state ospiti in live da noi 
 ## Presentazioni nostre
 Queste sono le presentazioni che abbiamo portato personalmente agli eventi come speaker, se vi è piaciuto il nostro intervento oppure ve lo siete perso qua trovate tutti i pdf relativi 
 
-- [Svelte - A Game-Changer for Web Developer - Michele Scarpa](https://michele-scarpa-svelte.vercel.app/gdgdevfestlecce2025)
-- [Accenni di GIS - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Accenni%20di%20GIS.pdf)
-- [Array, un modo da scoprire - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Array,%20un%20modo%20da%20scoprire.pdf)
+### Giorgio Basile
+
 - [Clean code e gitflow, come li abbiamo usati per risollevare un progetto - Giorgio Basile](/presentazioniNostre/Clean%20code%20e%20gitflow,%20come%20li%20abbiamo%20usati%20per%20risollevare%20un%20progetto.pdf)
 - [Clean code, perchè il tuo codice puzza - Giorgio Basile](/presentazioniNostre/Clean%20Code,%20perchè%20il%20tuo%20codice%20puzza.pdf)
 - [Design pattern, come costruire una codebase di successo - Giorgio Basile](/presentazioniNostre/Design%20pattern,%20come%20costruire%20una%20codebase%20di%20successo.pdf)
-- [Frontend dilemma - Michele Scarpa](/presentazioniNostre/Frontend%20dilemma.pdf)
-- [Git Bare - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Git%20Bare.pdf)
 - [GitFlow, caratteristiche ed alternative - Giorgio Basile](/presentazioniNostre/GitFlow,%20caratteristiche%20ed%20alternative.pdf)
+- [Da flask ad angular, la mia evoluzione - Giorgio Basile](/presentazioniNostre/Da%20flask%20ad%20angular,%20la%20mia%20evoluzione.pdf)
+
+
+### Michele Scarpa
+
+- [Svelte - A Game-Changer for Web Developer - Michele Scarpa](https://michele-scarpa-svelte.vercel.app/gdgdevfestlecce2025)
+- [Frontend dilemma - Michele Scarpa](/presentazioniNostre/Frontend%20dilemma.pdf)
 - [Workshop su Keycloak - Michele Scarpa](/presentazioniNostre/Workshop%20su%20Keycloak%20eng.pdf)
-- [Debito Tecnico - Danilo Macchion](/presentazioniNostre/Debito%20Tecnico.pdf)
-- [ENG Debito tecnico - Danilo Macchion](/presentazioniNostre/ENG%20Debito%20tecnico.pdf)
 - [ENG pokedex a confronto - Michele Scarpa](/presentazioniNostre/ENG%20pokedex%20a%20confronto.pdf)
+
+
+### Vittorio Terreran
 - [Docker Happy Hour - Builda e Brinda - Vittorio Terreran](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Builda%20e%20Brinda.pdf)
 - [Docker Happy Hour - Approfondimento - Vittorio Terreran](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Approfondimento.pdf)
+
+### Danilo Macchion
+- [Debito Tecnico - Danilo Macchion](/presentazioniNostre/Debito%20Tecnico.pdf)
+- [ENG Debito tecnico - Danilo Macchion](/presentazioniNostre/ENG%20Debito%20tecnico.pdf)
+
+### Collaborative
+- [Accenni di GIS - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Accenni%20di%20GIS.pdf)
+- [Array, un modo da scoprire - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Array,%20un%20modo%20da%20scoprire.pdf)
+- [Git Bare - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Git%20Bare.pdf)
 
 ### Crediti dei diversi speaker che abbiamo avuto live
 - [Loredana Frontino](https://www.linkedin.com/in/loredana-frontino-0a2367132/)
@@ -65,6 +79,7 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [Angela Petraglia](https://www.linkedin.com/in/avv-angela-petraglia/)
 - [Biagio Nuzzo](https://www.linkedin.com/in/biagio-nuzzo-332a99112/)
 - [Martino Scarcia](https://www.linkedin.com/in/martinoscarcia/)
+- [Romina Alina Danci](https://www.linkedin.com/in/romina-alina-danci-62ba59248/)
 
 ### Crediti di ragazzi del team di BacaroTech che hanno partecipato ad almeno un talk
 - [Giorgio Basile](https://www.linkedin.com/in/giorgiobasile00/)
