@@ -47,14 +47,12 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [GitFlow, caratteristiche ed alternative - Giorgio Basile](/presentazioniNostre/GitFlow,%20caratteristiche%20ed%20alternative.pdf)
 - [Da flask ad angular, la mia evoluzione - Giorgio Basile](/presentazioniNostre/Da%20flask%20ad%20angular,%20la%20mia%20evoluzione.pdf)
 
-
 ### Michele Scarpa
 
 - [Svelte - A Game-Changer for Web Developer - Michele Scarpa](https://michele-scarpa-svelte.vercel.app/gdgdevfestlecce2025)
 - [Frontend dilemma - Michele Scarpa](/presentazioniNostre/Frontend%20dilemma.pdf)
 - [Workshop su Keycloak - Michele Scarpa](/presentazioniNostre/Workshop%20su%20Keycloak%20eng.pdf)
 - [ENG pokedex a confronto - Michele Scarpa](/presentazioniNostre/ENG%20pokedex%20a%20confronto.pdf)
-
 
 ### Vittorio Terreran
 - [Docker Happy Hour - Builda e Brinda - Vittorio Terreran](/presentazioniNostre/Docker%20Happy%20Hour%20-%20Builda%20e%20Brinda.pdf)
