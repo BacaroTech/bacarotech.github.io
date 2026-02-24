@@ -10,7 +10,7 @@ topics:
  - "gdg"
  - "hybris"
  - "founder"
- -  "consulenza"
+ - "consulenza"
 authors: 
 series: 
 ---
