@@ -110,3 +110,13 @@ body {
 .term-page ul.posts-list-simple li.post .post-tags a {
     color: var(--bs-body-color) !important;
 }
+
+[data-bs-theme="dark"] {
+    .term-page {
+        .pagination {
+            .page-link {
+                color: var(--bs-link-color);
+            }
+        }
+    }
+}
