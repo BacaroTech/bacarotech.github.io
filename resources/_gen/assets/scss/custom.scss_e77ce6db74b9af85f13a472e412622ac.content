@@ -75,3 +75,6 @@ body {
 
 [data-bs-theme="dark"] .term-page .pagination .page-link {
   color: var(--bs-link-color); }
+
+.badge {
+  color: var(--bs-link-color); }
