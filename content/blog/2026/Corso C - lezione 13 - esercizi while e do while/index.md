@@ -1,6 +1,6 @@
 +++
 title = "Corso C - lezione 13 - esercizi while e do while"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:55Z
 draft = false
 featured = false
 weight = 100

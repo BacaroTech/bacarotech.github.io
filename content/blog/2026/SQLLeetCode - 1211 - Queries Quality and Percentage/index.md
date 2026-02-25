@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 1211 - Queries Quality and Percentage"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:31Z
 draft = false
 featured = false
 weight = 100

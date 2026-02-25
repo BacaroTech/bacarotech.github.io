@@ -1,6 +1,6 @@
 +++
 title = "DesingPatternTeoria - Structural"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:09Z
 draft = false
 featured = false
 weight = 100

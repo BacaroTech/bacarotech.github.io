@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 1731 - The Number of Employees Which Report to Each Employee"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:40Z
 draft = false
 featured = false
 weight = 100

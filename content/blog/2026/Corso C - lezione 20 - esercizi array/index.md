@@ -1,6 +1,6 @@
 +++
 title = "Corso C - lezione 20 - esercizi array"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:02Z
 draft = false
 featured = false
 weight = 100

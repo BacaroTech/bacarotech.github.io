@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 1633 - Percentage of Users Attended a Contest"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:36Z
 draft = false
 featured = false
 weight = 100

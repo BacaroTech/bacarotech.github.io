@@ -1,6 +1,6 @@
 +++
 title = "Corso C - lezione 6 - tabelle di verita"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:48Z
 draft = false
 featured = false
 weight = 100

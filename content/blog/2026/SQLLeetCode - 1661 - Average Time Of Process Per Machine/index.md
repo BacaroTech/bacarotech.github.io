@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 1661 - Average Time Of Process Per Machine"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:37Z
 draft = false
 featured = false
 weight = 100

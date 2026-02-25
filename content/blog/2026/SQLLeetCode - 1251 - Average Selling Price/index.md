@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 1251 - Average Selling Price"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:32Z
 draft = false
 featured = false
 weight = 100

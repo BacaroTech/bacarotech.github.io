@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 570 - Managers with at Least 5 Direct Reports"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:15Z
 draft = false
 featured = false
 weight = 100

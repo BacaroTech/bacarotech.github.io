@@ -1,6 +1,6 @@
 +++
 title = "Corso C - lezione 5 - esercizi if else"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:47Z
 draft = false
 featured = false
 weight = 100

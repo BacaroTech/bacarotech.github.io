@@ -1,6 +1,6 @@
 +++
 title = "Corso C - lezione 23 - stringhe"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:05Z
 draft = false
 featured = false
 weight = 100

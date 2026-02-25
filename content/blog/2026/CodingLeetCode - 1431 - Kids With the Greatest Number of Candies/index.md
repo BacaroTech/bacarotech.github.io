@@ -1,6 +1,6 @@
 +++
 title = "CodingLeetCode - 1431 - Kids With the Greatest Number of Candies"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:36Z
 draft = false
 featured = false
 weight = 100

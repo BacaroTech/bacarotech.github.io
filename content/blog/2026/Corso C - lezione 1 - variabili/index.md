@@ -1,6 +1,6 @@
 +++
 title = "Corso C - lezione 1 - variabili"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:43Z
 draft = false
 featured = false
 weight = 100

@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 197 - Rising Temperature"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:13Z
 draft = false
 featured = false
 weight = 100

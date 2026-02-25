@@ -1,6 +1,6 @@
 +++
 title = "CodingLeetCode - 169 - Majority Element"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:26Z
 draft = false
 featured = false
 weight = 100

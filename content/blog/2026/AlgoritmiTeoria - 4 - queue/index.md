@@ -1,6 +1,6 @@
 +++
 title = "AlgoritmiTeoria - 4 - queue"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:04Z
 draft = false
 featured = false
 weight = 100

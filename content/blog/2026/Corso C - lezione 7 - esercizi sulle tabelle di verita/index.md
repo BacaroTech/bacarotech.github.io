@@ -1,6 +1,6 @@
 +++
 title = "Corso C - lezione 7 - esercizi sulle tabelle di verita"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:49Z
 draft = false
 featured = false
 weight = 100

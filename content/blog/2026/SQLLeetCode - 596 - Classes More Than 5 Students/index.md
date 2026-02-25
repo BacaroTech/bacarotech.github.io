@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 596 - Classes More Than 5 Students"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:19Z
 draft = false
 featured = false
 weight = 100

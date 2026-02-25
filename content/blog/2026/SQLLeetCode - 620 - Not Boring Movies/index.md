@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 620 - Not Boring Movies"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:21Z
 draft = false
 featured = false
 weight = 100

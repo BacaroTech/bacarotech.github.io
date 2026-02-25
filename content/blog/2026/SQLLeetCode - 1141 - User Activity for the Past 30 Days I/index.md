@@ -1,6 +1,6 @@
 +++
 title = "SQLLeetCode - 1141 - User Activity for the Past 30 Days I"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:01:26Z
 draft = false
 featured = false
 weight = 100

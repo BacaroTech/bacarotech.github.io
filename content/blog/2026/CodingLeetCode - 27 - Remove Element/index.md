@@ -1,6 +1,6 @@
 +++
 title = "CodingLeetCode - 27 - Remove Element"
-date = 2026-02-25T14:00:00Z
+date = 2026-02-25T14:00:17Z
 draft = false
 featured = false
 weight = 100
