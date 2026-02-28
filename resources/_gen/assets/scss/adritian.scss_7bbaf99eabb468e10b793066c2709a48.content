@@ -10550,6 +10550,7 @@ a.nav-link::after {
   -webkit-box-align: center;
   align-items: center;
   position: relative;
+  z-index: 1;
   margin-bottom: -20px;
   padding-top: 120px; }
 
@@ -11217,6 +11218,30 @@ sup {
 .custom-select,
 [type="search"] {
   -webkit-appearance: none; }
+
+/* Reading progress bar */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 1031;
+  background: transparent;
+  pointer-events: none; }
+
+.reading-progress-fill {
+  height: 100%;
+  width: 0;
+  background: #fff;
+  transition: width 0.1s linear; }
+
+[data-bs-theme="dark"] .reading-progress-fill {
+  background: #32325b; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reading-progress-fill {
+    transition: none; } }
 
 .blog .post .post-title a {
   color: #fff; }
@@ -12221,25 +12246,52 @@ body.home div.experience {
 [data-bs-theme="dark"] .border-bottom {
   border-color: #333 !important; }
 
-.transition-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 9999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease; }
+/* View Transitions API (progressive enhancement) */
+@view-transition {
+  navigation: auto; }
 
-/* For dark mode */
-html[data-bs-theme="dark"] .transition-overlay {
-  background-color: #181818; }
+/*
+ * Only tag main content for view transitions.
+ * Header and footer are excluded because the header changes height
+ * between sticky (scrolled) and non-sticky states, which causes a
+ * visible jump during transitions.
+ */
+main {
+  view-transition-name: main-content; }
 
-.transition-active .transition-overlay {
-  opacity: 1;
-  pointer-events: all; }
+/*
+ * Root transition is instant to prevent the header height jump
+ * (header changes between sticky and non-sticky padding).
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none; }
+
+/*
+ * Main content gets a quick, subtle fade to smooth the page swap
+ * without conflicting with the rad-animation scroll entries.
+ */
+::view-transition-old(main-content) {
+  animation: 0.15s ease-out both vt-fade-out; }
+
+::view-transition-new(main-content) {
+  animation: 0.15s ease-in both vt-fade-in; }
+
+@keyframes vt-fade-out {
+  to {
+    opacity: 0; } }
+
+@keyframes vt-fade-in {
+  from {
+    opacity: 0; } }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none; }
+  ::view-transition-old(main-content),
+  ::view-transition-new(main-content) {
+    animation: none; } }
 
 .skill-bar {
   height: 10px;
@@ -12449,6 +12501,20 @@ html[data-bs-theme="dark"] .transition-overlay {
       .social-sharing .share-button.share-facebook:hover {
         background: #155db2;
         border-color: #155db2; }
+    .social-sharing .share-button.share-bluesky {
+      background: #0085ff;
+      color: white;
+      border-color: #0085ff; }
+      .social-sharing .share-button.share-bluesky:hover {
+        background: #0070d6;
+        border-color: #0070d6; }
+    .social-sharing .share-button.share-mastodon {
+      background: #6364FF;
+      color: white;
+      border-color: #6364FF; }
+      .social-sharing .share-button.share-mastodon:hover {
+        background: #4e4fdb;
+        border-color: #4e4fdb; }
     .social-sharing .share-button.share-email {
       background: var(--bs-gray-700);
       color: white;
@@ -13055,6 +13121,57 @@ html[dir="rtl"] .float-start {
 html[dir="rtl"] .float-end {
   float: left !important; }
 
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+  cursor: zoom-out; }
+
+.lightbox-overlay.lightbox-active {
+  opacity: 1;
+  visibility: visible; }
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  cursor: default; }
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.2s; }
+  .lightbox-close:hover, .lightbox-close:focus-visible {
+    opacity: 1; }
+  .lightbox-close:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lightbox-overlay {
+    transition: none; }
+  .lightbox-close {
+    transition: none; } }
+
 /** main style **/
 .header .navbar-brand span:first-child {
   color: #fff; }
@@ -13065,10 +13182,6 @@ html[dir="rtl"] .float-end {
 html body ::selection {
   background-color: #fff;
   color: #fff; }
-
-.container {
-  padding-left: 24px;
-  padding-right: 24px; }
 
 .container {
   padding-left: 24px;
@@ -13547,3 +13660,77 @@ footer_links .nav-item .nav-link::after {
     font-size: 0.8rem; }
 
 /* end dark mode */
+/* Scroll-triggered entry animations (rad-animations.js) */
+.rad-waiting {
+  opacity: 0; }
+
+.rad-waiting.rad-fade-down {
+  transform: translateY(-20px); }
+
+.rad-waiting.rad-scale-down {
+  transform: scale(1.1); }
+
+@keyframes radFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes radFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes radScaleDown {
+  from {
+    opacity: 0;
+    transform: scale(1.1); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.rad-animate.rad-fade-in {
+  animation: radFadeIn 0.4s ease-out both; }
+
+.rad-animate.rad-fade-in-long {
+  animation: radFadeIn 0.6s ease-out both; }
+
+.rad-animate.rad-fade-down {
+  animation: radFadeDown 0.4s ease-out both; }
+
+.rad-animate.rad-scale-down {
+  animation: radScaleDown 0.4s ease-out both; }
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable scroll-triggered animations */
+  .rad-fade-down,
+  .rad-fade-in,
+  .rad-fade-in-long,
+  .rad-scale-down {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important; }
+  .rad-waiting {
+    opacity: 1 !important;
+    transform: none !important; }
+  /* Disable page transition overlay */
+  .transition-overlay {
+    transition: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important; }
+  .transition-active .transition-overlay {
+    opacity: 0 !important;
+    pointer-events: none !important; }
+  /* Disable hover transforms */
+  .related-post-item:hover,
+  .share-button:hover {
+    transform: none !important; }
+  ul.tags li a:hover,
+  ul.topics li a:hover,
+  ul.list-taxonomy li a:hover {
+    transform: none !important; } }
