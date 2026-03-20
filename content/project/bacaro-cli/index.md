@@ -2,7 +2,7 @@
 date: '2025-03-15T09:53:42+02:00' 
 title: 'Bacaro CLI'
 draft: false 
-link: "https://github.com/BacaroTech/blueprint-bacaro-architecture" 
+link: "https://github.com/BacaroTech/blueprint-bacarotech-architecture" 
 ---
 
 ![Bacaro Cli](img/project/bacaro-cli.svg)

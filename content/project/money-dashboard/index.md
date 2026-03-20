@@ -3,7 +3,7 @@ date: '2024-05-24T09:53:42+02:00' # date in which the content is created - defau
 title: 'Money Dashboard'
 draft: false # set to "true" if you want to hide the content 
 
-link: "https://github.com/BacaroTech/Money-dashboard" # optional URL to link the logo to
+link: "https://github.com/BacaroTech/BacaroTech-Money-dashboard" # optional URL to link the logo to
 
 ## The content is used for the description of the project
 ---

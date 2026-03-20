@@ -141,7 +141,7 @@ Un progetto di base per avvicinarsi al mondo dello sviluppo web full stack, tram
 **Descrizione:**  
 Un nostro progetto pensato per aiutarti a esercitarti con LeetCode, algoritmi, strutture dati e molto altro ancora(e sopratutto è made in BacaroTech)!
 
-🔗 [Bacaro Tech Gym](https://github.com/BacaroTech/Bacaro-tech-gym)
+🔗 [Bacaro Tech Gym](https://github.com/BacaroTech/BacaroTech-tech-gym)
 
 ---
 
