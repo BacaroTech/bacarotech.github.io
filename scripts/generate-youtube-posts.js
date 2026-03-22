@@ -55,17 +55,37 @@ function getApiKey() {
 	return apiKey;
 }
 
-// Ottiene l'ID del canale dall'handle
-async function getChannelId(youtube, channelHandle) {
-	const response = await youtube.channels.list({
-		forHandle: channelHandle,
-		part: "id,snippet",
-	});
+// Ottiene l'ID del canale e la playlist uploads dall'handle
+async function getChannelInfo(youtube, channelHandle) {
+	console.log(`Cercando canale con handle: ${channelHandle}`);
+	try {
+		const response = await youtube.channels.list({
+			forHandle: channelHandle,
+			part: "id,snippet,contentDetails",
+		});
 
-	if (response.data.items && response.data.items.length > 0) {
-		return response.data.items[0].id;
+		console.log("Response status:", response.status);
+		if (response.data && response.data.items) {
+			console.log(
+				"Numero di canali trovati:",
+				response.data.items.length,
+			);
+		}
+
+		if (response.data.items && response.data.items.length > 0) {
+			const channel = response.data.items[0];
+			return {
+				id: channel.id,
+				uploadsPlaylistId:
+					channel.contentDetails.relatedPlaylists
+						.uploads,
+			};
+		}
+		return null;
+	} catch (error) {
+		console.error("Errore nel recupero del canale:", error.message);
+		throw error;
 	}
-	return null;
 }
 
 // Parsa la durata ISO 8601 e ritorna i secondi
@@ -93,22 +113,30 @@ function isShort(duration) {
  *
  * Esempi:
  * - "BacaroLive EP 8 - hybris, gdg lecce..." -> "BacaroLive"
- * - "Tutorial Python #1 - Introduzione" -> "Tutorial Python"
- * - "Live Coding: Progetto X" -> "Live Coding"
+ * - "Self Hosting PT6 - Self Hosting PT6 - Impostazioni" -> "Self Hosting PT6"
+ * - "Corso C zero to hero - PT26 - ricerca" -> "Corso C zero to hero"
  */
 function extractSeries(title) {
+	// Rimuovi i duplicati come "NomeSerie - NomeSerie - Titolo"
+	// Trova pattern come "X - X - Y" e sostituisci con "X - Y"
+	let cleanedTitle = title.replace(
+		/^([A-Za-z0-9\s]+?)\s*-\s*\1\s*-\s*/i,
+		"$1 - ",
+	);
+
 	// Pattern comuni per le serie
 	const patterns = [
-		/^([A-Za-z0-9\s]+?)\s*EP\s*\d+/, // "NomeSerie EP 1"
-		/^([A-Za-z0-9\s]+?)\s*#\d+/, // "NomeSerie #1"
-		/^([A-Za-z0-9\s]+?)\s*-\s*/, // "NomeSerie - Titolo"
-		/^([A-Za-z0-9\s]+?):\s*/, // "NomeSerie: Titolo"
+		/^([A-Za-z0-9]+(?:\s+[A-Za-z0-9]+)*?)\s+EP\s*\d+/i, // "NomeSerie EP 1"
+		/^([A-Za-z0-9]+(?:\s+[A-Za-z0-9]+)*?)\s*#\s*\d+/i, // "NomeSerie #1"
+		/^([A-Za-z0-9]+(?:\s+[A-Za-z0-9]+)*?)\s+PT\s*\d+/i, // "NomeSerie PT 1"
+		/^([A-Za-z0-9]+(?:\s+[A-Za-z0-9]+)*?)\s+-\s+[A-Za-z]/i, // "NomeSerie - Titolo"
+		/^([A-Za-z0-9]+(?:\s+[A-Za-z0-9]+)*?):\s+/i, // "NomeSerie: Titolo"
 	];
 
 	for (const pattern of patterns) {
-		const match = title.match(pattern);
+		const match = cleanedTitle.match(pattern);
 		if (match) {
-			let seriesName = match[1].strip();
+			let seriesName = match[1].trim();
 			// Pulisci il nome della serie
 			seriesName = seriesName.replace(/\s+/g, " ");
 			return seriesName;
@@ -193,46 +221,66 @@ function generateContent(video, isShortVideo) {
 
 	// Aggiungi lo shortcode alla fine
 	if (isShortVideo) {
-		content += `\n\n{{< youtube-short id="${videoId}" >}}\n`;
+		content += `\n\n{{< youtube ${videoId} >}}\n`;
 	} else {
-		content += `\n\n{{< youtube id="${videoId}" >}}\n`;
+		content += `\n\n{{< youtube ${videoId} >}}\n`;
 	}
 
 	return content;
 }
 
-// Ottiene tutti i video del canale
-async function getAllVideos(youtube, channelId) {
+// Ottiene tutti i video del canale dalla playlist uploads
+async function getAllVideos(youtube, uploadsPlaylistId) {
 	const videos = [];
 	let nextPageToken = null;
 
-	console.log("Recupero i video del canale...");
+	console.log(
+		"Recupero i video dalla playlist uploads...",
+		uploadsPlaylistId,
+	);
 
-	do {
-		const response = await youtube.search.list({
-			channelId: channelId,
-			part: "snippet",
-			maxResults: 50,
-			pageToken: nextPageToken,
-			order: "date",
-			type: "video",
-		});
+	try {
+		do {
+			const response = await youtube.playlistItems.list({
+				playlistId: uploadsPlaylistId,
+				part: "snippet",
+				maxResults: 50,
+				pageToken: nextPageToken,
+			});
 
-		if (response.data.items) {
-			for (const item of response.data.items) {
-				videos.push({
-					id: item.id.videoId,
-					snippet: item.snippet,
-				});
+			console.log(
+				"Playlist response status:",
+				response.status,
+			);
+			console.log(
+				"Numero di risultati:",
+				response.data.items
+					? response.data.items.length
+					: 0,
+			);
+
+			if (response.data.items) {
+				for (const item of response.data.items) {
+					// I video nella playlist hanno l'ID in resourceId
+					const videoId =
+						item.snippet.resourceId.videoId;
+					videos.push({
+						id: videoId,
+						snippet: item.snippet,
+					});
+				}
 			}
-		}
 
-		nextPageToken = response.data.nextPageToken;
-		console.log(`Trovati ${videos.length} video...`);
-	} while (nextPageToken);
+			nextPageToken = response.data.nextPageToken;
+			console.log(`Trovati ${videos.length} video...`);
+		} while (nextPageToken);
 
-	console.log(`Totale video trovati: ${videos.length}`);
-	return videos;
+		console.log(`Totale video trovati: ${videos.length}`);
+		return videos;
+	} catch (error) {
+		console.error("Errore nel recupero video:", error.message);
+		throw error;
+	}
 }
 
 // Ottiene i dettagli completi dei video (tag, durata, ecc.)
@@ -275,19 +323,23 @@ async function main() {
 	console.log("YouTube BacaroTech Post Generator");
 	console.log("==================================\n");
 
-	// Ottieni l'ID del canale
+	// Ottieni l'ID del canale e la playlist uploads
 	console.log(`Cerco il canale ${CHANNEL_HANDLE}...`);
-	const channelId = await getChannelId(youtube, CHANNEL_HANDLE);
+	const channelInfo = await getChannelInfo(youtube, CHANNEL_HANDLE);
 
-	if (!channelId) {
+	if (!channelInfo) {
 		console.error("Canale non trovato!");
 		process.exit(1);
 	}
 
-	console.log(`Canale trovato! Channel ID: ${channelId}`);
+	console.log(`Canale trovato! Channel ID: ${channelInfo.id}`);
+	console.log(`Uploads Playlist ID: ${channelInfo.uploadsPlaylistId}`);
 
-	// Ottieni tutti i video
-	const videos = await getAllVideos(youtube, channelId);
+	// Ottieni tutti i video dalla playlist uploads
+	const videos = await getAllVideos(
+		youtube,
+		channelInfo.uploadsPlaylistId,
+	);
 
 	if (videos.length === 0) {
 		console.log("Nessun video trovato!");
