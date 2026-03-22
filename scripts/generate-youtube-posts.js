@@ -183,7 +183,11 @@ function generateFrontmatter(video, isShortVideo, seriesName) {
 
 	// Costruisci il frontmatter
 	const title = video.snippet.title.replace(/"/g, '\\"');
-	const description = (video.snippet.description || "")
+	// Pulisci la descrizione rimuovendo i link social
+	const cleanedDescription = removeSocialLinks(
+		video.snippet.description || "",
+	);
+	const description = cleanedDescription
 		.substring(0, 200)
 		.replace(/"/g, '\\"');
 
@@ -214,9 +218,77 @@ tags:
 	return { frontmatter, year };
 }
 
+// Rimuove i link social dalla descrizione del video
+function removeSocialLinks(description) {
+	if (!description) return "";
+
+	const lines = description.split("\n");
+	const cleanedLines = [];
+
+	// Pattern per le sezioni di link social nella descrizione (intestazioni)
+	const socialSectionPatterns = [
+		/^link\s*e\s*crediti?$/i,
+		/^crediti?$/i,
+		/^🔗\s*(link|links|social|seguici|contact|contatti)/i,
+		/^(link|links|social|seguici|contact|contatti|connect|seguimi|follow)\s*[:|-]?$/i,
+		/^📱\s*(social|contatti|follow)/i,
+	];
+
+	// Flag per indicare se siamo nella sezione dei link social
+	let inSocialSection = false;
+
+	for (let i = 0; i < lines.length; i++) {
+		const line = lines[i];
+		const trimmedLine = line.trim();
+
+		// Se la linea è vuota, resetta il contatore
+		if (trimmedLine === "") {
+			// Mantieni solo una linea vuota, non multiple consecutive
+			if (
+				cleanedLines.length > 0 &&
+				cleanedLines[cleanedLines.length - 1] !== ""
+			) {
+				cleanedLines.push(line);
+			}
+			continue;
+		}
+
+		// Controlla se questa linea è l'inizio della sezione social
+		const isSocialSectionHeader = socialSectionPatterns.some(
+			(pattern) => pattern.test(trimmedLine),
+		);
+
+		if (isSocialSectionHeader) {
+			// Trovata l'intestazione della sezione social - inizia a rimuovere
+			inSocialSection = true;
+			continue;
+		}
+
+		// Se siamo nella sezione social, continua a rimuovere tutto fino allo shortcode youtube
+		if (inSocialSection) {
+			// Termina la pulizia quando arrivi allo shortcode youtube
+			if (
+				trimmedLine.includes("{{< youtube") ||
+				trimmedLine.includes("{{< youtube-short")
+			) {
+				inSocialSection = false;
+				cleanedLines.push(line);
+				continue;
+			}
+			// Rimuovi questa linea (è parte della sezione LINK E CREDITI)
+			continue;
+		}
+
+		cleanedLines.push(line);
+	}
+
+	return cleanedLines.join("\n").trim();
+}
+
 // Genera il contenuto del post
 function generateContent(video, isShortVideo) {
-	let content = video.snippet.description || "";
+	// Pulisci la descrizione rimuovendo i link social
+	let content = removeSocialLinks(video.snippet.description || "");
 	const videoId = video.id;
 
 	// Aggiungi lo shortcode alla fine
