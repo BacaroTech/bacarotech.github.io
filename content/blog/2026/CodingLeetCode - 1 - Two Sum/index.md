@@ -18,8 +18,16 @@ Oggi vediamo il seguente esercizio di LeetCode:
 > You may assume that each input would have exactly one solution, and you may not use the same element twice.
 > You can return the answer in any order.
 
+Possiamo risolvere questo problema sfruttando una struttura dati che ci permetta di controllare rapidamente se esiste il complemento di un numero rispetto al target.
 
-Ragionamenti vari...
+L’idea chiave è:
+
+- mentre scorriamo l’array, per ogni numero num
+- calcoliamo il suo complemento target - num
+- verifichiamo se lo abbiamo già visto
+- se sì, abbiamo trovato la coppia 
+
+Questo approccio permette di ottenere una complessità O(n) invece di O(n²).
 
 Detto ciò, la soluzione che proponiamo noi è la seguente:
 
