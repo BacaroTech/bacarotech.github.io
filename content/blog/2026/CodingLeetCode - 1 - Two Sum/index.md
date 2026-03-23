@@ -10,7 +10,18 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+
+> Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+>
+> You may assume that each input would have exactly one solution, and you may not use the same element twice.
+> You can return the answer in any order.
+
+
+Ragionamenti vari...
+
+Detto ciò, la soluzione che proponiamo noi è la seguente:
 
 ```typescript
 function twoSum(nums: number[], target: number): number[] {
@@ -26,7 +37,6 @@ function twoSum(nums: number[], target: number): number[] {
         }
         i++
     });
-    console.log(mapOfCipher);
 
     let couple: number[] = [];
 
@@ -46,4 +56,6 @@ function twoSum(nums: number[], target: number): number[] {
     return couple
 }
 ```
+
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)
 
