@@ -63,3 +63,6 @@ submodule: ## Get submodule for this repo
 .PHONY: new
 new: ## Make new object for the blog
 	@npm run content
+
+youtube: ## Generate posts from youtube channel
+	@npm run youtube-posts
