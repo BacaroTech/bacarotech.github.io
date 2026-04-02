@@ -10,17 +10,42 @@ authors = []
 series = ["SQLLeetCode"]
 +++
 
-## sol1.sql
+Oggi vediamo il seguente esercizio di LeetCode a tema SQL:
+
+> Write an SQL query to find for each month and country, the number of transactions and their total amount, the number of approved transactions and their total amount.
+>
+> Return the result table in any order.
+
+Guardando le tabelle fornite dall'esercizio si può notare che la tabella Transactions contiene le informazioni sulle transazioni: `id`, `country`, `state` (approved/void), `amount`, `trans_date`.
+
+L'obiettivo è raggruppare le transazioni per mese (anno-mese) e paese, e calcolare:
+- Il numero totale di transazioni (`trans_count`)
+- Il numero di transazioni approvate (`approved_count`)
+- L'importo totale delle transazioni (`trans_total_amount`)
+- L'importo totale delle transazioni approvate (`approved_total_amount`)
+
+Detto ciò, la soluzione che proponiamo noi è la seguente:
 
 ```sql
-select substring(trans_date,1,7) as month,
-        country,
-        count(state) as trans_count,
-        sum(state='approved') as approved_count,
-        sum(amount) as trans_total_amount,
-        sum(if(state='approved',amount,0)) as approved_total_amount
-from Transactions
-group by month,country;
-
+SELECT 
+    SUBSTRING(trans_date, 1, 7) AS month,
+    country,
+    COUNT(*) AS trans_count,
+    SUM(CASE WHEN state = 'approved' THEN 1 ELSE 0 END) AS approved_count,
+    SUM(amount) AS trans_total_amount,
+    SUM(CASE WHEN state = 'approved' THEN amount ELSE 0 END) AS approved_total_amount
+FROM Transactions
+GROUP BY month, country
 ```
 
+In questa query:
+- `SUBSTRING(trans_date, 1, 7)` estrae l'anno e il mese dalla data (formato YYYY-MM)
+- `COUNT(*)` conta tutte le transazioni per ogni gruppo
+- `SUM(CASE WHEN state = 'approved' THEN 1 ELSE 0 END)` conta le transazioni approvate
+- `SUM(amount)` somma l'importo di tutte le transazioni
+- `SUM(CASE WHEN state = 'approved' THEN amount ELSE 0 END)` somma solo gli importi delle transazioni approvate
+- `GROUP BY month, country` raggruppa per mese e paese
+
+Questo esercizio richiede l'uso di aggregazioni condizionali con CASE.
+
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)
