@@ -10,7 +10,24 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> Given a roman numeral, convert it to an integer.
+
+Possiamo risolvere questo problema scorrendo la stringa e gestendo separatamente i casi “standard” e quelli in cui una cifra più piccola precede una più grande (notazione sottrattiva), come nel codice proposto.
+
+L’idea chiave è:
+
+- utilizziamo una mappa per associare ogni simbolo romano al suo valore numerico
+- scorriamo la stringa carattere per carattere
+- per ogni simbolo, controlliamo se forma una coppia speciale (IV, IX, XL, XC, CD, CM)
+- se sì, sottraiamo il valore corrente da quello successivo e saltiamo il prossimo carattere
+- altrimenti, sommiamo semplicemente il valore del simbolo corrente
+- continuiamo fino alla fine della stringa
+
+Questo approccio permette di ottenere una complessità O(n), dove n è la lunghezza della stringa, ed è efficace nel gestire correttamente tutti i casi. Tuttavia, nel codice proposto la gestione delle coppie speciali è suddivisa in più funzioni (checkI, checkX, checkC), rendendo la soluzione più verbosa: può essere semplificata confrontando direttamente il valore corrente con quello successivo in un unico passaggio.
+
+Detto ciò, la soluzione che proponiamo noi è la seguente:
 
 ```typescript
 function romanToInt(s: string): number {
@@ -50,3 +67,4 @@ function checkC(s: string, i: number): boolean{
 }
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

@@ -10,18 +10,19 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 22 - esercizi matrici.c
+# ESERCIZI SULLE MATRICI
+
+## ES 1 
+Disegno di una scacchiera su una matrice di char
+
+## ES 2 
+Calcolo della diagonale maggiore
+
+## ES 3 
+Calcolo della diagonale minore
+
 
 ```c
-/*
-ESERCIZI SULLE MATRICI
-es 1: disegno di una scacchiera su una matrice di char
-
-es 2: calcolo della diagonale maggiore
-
-es 3: calcolo della diagonale minore
-*/
-
 #include <stdio.h>
 
 //es 1: disegno di una scacchiera su una matrice di char

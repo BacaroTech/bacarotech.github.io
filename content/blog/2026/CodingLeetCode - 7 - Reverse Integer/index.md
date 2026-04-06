@@ -10,7 +10,25 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> Given a signed 32-bit integer x, return x with its digits reversed.
+> If reversing x causes the value to go outside the signed 32-bit integer range
+
+Possiamo risolvere questo problema invertendo le cifre del numero, come nel codice proposto, ma prestando attenzione alla gestione del segno e dell’overflow.
+
+L’idea chiave è:
+
+- gestiamo separatamente il segno del numero (positivo o negativo)
+- convertiamo il numero in stringa per poter lavorare facilmente sulle singole cifre
+- invertiamo l’array di caratteri scambiando gli elementi simmetrici
+- ricostruiamo il numero a partire dalle cifre invertite
+- riapplichiamo il segno se necessario
+- infine, controlliamo che il risultato rientri nei limiti di un intero a 32 bit
+
+Questo approccio permette di ottenere una soluzione semplice da implementare, ma nel codice proposto la gestione dell’overflow è hardcoded su alcuni casi specifici, rendendola poco scalabile. Una soluzione più robusta prevede invece un controllo generale sui limiti, evitando di elencare manualmente i casi fuori range.
+
+Detto ciò, la soluzione che proponiamo noi è la seguente:
 
 ```typescript
 function reverse(x: number): number {
@@ -52,3 +70,4 @@ function reverse(x: number): number {
 };
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

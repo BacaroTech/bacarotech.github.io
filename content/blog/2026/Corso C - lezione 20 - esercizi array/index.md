@@ -10,21 +10,20 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 20 - esercizi array.c
+# ESERCIZI SUGLI ARRAY
 
-```c
-/*
-ESERCIZI SUGLI ARRAY
+## ES 1
+Determinare se un array contiene solo numeri pari
 
-es 1: Determinare se un array contiene solo numeri pari
+## ES 2 
+Scrivere una funzione sub_mult che dato un array di interi v e un intero n, stampi solo i multipli di n
 
-es 2: Scrivere una funzione sub_mult che dato un array di interi v e un intero n, stampi solo i multipli di n
-
-es 3: Scrivere una funzione cumulative_sum che dato un array di interi v, stampi un nuovo array di interi
+## ES 3 
+Scrivere una funzione cumulative_sum che dato un array di interi v, stampi un nuovo array di interi
 contenente le somme cumulative per ogni elemento del vettore in input. Ovvero, in ogni posizione i
 del nuovo array, dovrà essere la somma di tutti gli elementi in v fino alla posizione i (compresa).
-*/
 
+```c
 #include <stdio.h>
 
 //es 1: Determinare se un array contiene solo numeri pari

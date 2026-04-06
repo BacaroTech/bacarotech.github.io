@@ -10,17 +10,24 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 19 - array.c
+# ARRAY
 
+Nel linguaggio C, gli array sono strutture dati che permettono di memorizzare più valori dello stesso tipo in una sequenza ordinata.
+
+## COSA SONO
+
+Un array è una collezione di elementi omogenei, cioè tutti dello stesso tipo, memorizzati in posizioni di memoria contigue. Ogni elemento è accessibile tramite un indice che rappresenta la sua posizione.
+
+## REGOLE
+
+Gli array in C hanno una dimensione fissa definita al momento della dichiarazione e non può essere modificata successivamente. Gli indici partono da zero, quindi il primo elemento si trova sempre in posizione zero. È importante non accedere a posizioni fuori dai limiti, perché può causare errori gravi.
+
+## DICHIARAZIONE
+
+Un array viene dichiarato specificando il tipo degli elementi, il nome e la dimensione. Questo permette al compilatore di allocare una quantità di memoria sufficiente per contenere tutti gli elementi./
+
+## CODICE
 ```c
-/*
-ARRAY
-1. cosa sono
-2. regole
-3. dichirazione
-4. prove d'uso
-*/
-
 #include <stdio.h>
 
 int main() {

@@ -10,17 +10,29 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 23 - stringhe.c
 
+# STRING IN C
+
+Nel linguaggio C, le stringhe non sono un tipo di dato primitivo, ma vengono rappresentate come array di caratteri terminati da un carattere speciale che indica la fine della sequenza.
+
+## COSA SONO?
+
+Una stringa è una sequenza di caratteri memorizzata in memoria in modo contiguo. La sua particolarità è la presenza di un terminatore finale che segnala dove la stringa finisce, permettendo alle funzioni di riconoscerne la lunghezza.
+
+## COME MANIPOLARLE?
+
+Le stringhe in C possono essere manipolate lavorando direttamente sui singoli caratteri oppure utilizzando funzioni dedicate. È possibile copiarle, confrontarle, concatenarle o calcolarne la lunghezza, sempre tenendo conto della gestione manuale della memoria.
+
+## COME INTERAGIRCI?
+
+Per interagire con le stringhe è possibile leggerle da input, modificarle o stamparle a schermo. Questo avviene trattandole come array di caratteri e utilizzando funzioni di input/output o operazioni sui singoli elementi.
+
+## STRING.H -> LIBRERIA PER LE STRINGHE
+
+Il linguaggio C mette a disposizione una libreria standard dedicata alle stringhe, che include funzioni utili per semplificare le operazioni più comuni. Questa libreria permette di evitare di implementare manualmente operazioni frequenti, rendendo il codice più semplice e leggibile.
+
+## CODICE
 ```c
-/*
-STRING IN C
-- cosa sono?
-- come manipolarle?
-- come ierargirci?
-- string.h -> libreria per le stringhe
-*/
-
 #include <stdio.h>
 #include <string.h>
 

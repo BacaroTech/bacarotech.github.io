@@ -10,17 +10,25 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 21 - matrici.c
+# MATRICI
 
+Nel linguaggio C, le matrici sono un’estensione degli array che permettono di organizzare i dati in più dimensioni, tipicamente in forma di tabella con righe e colonne.
+
+## COSA SONO
+
+Una matrice è una struttura dati bidimensionale composta da elementi dello stesso tipo, disposti in righe e colonne. Ogni elemento è identificato da una coppia di indici che rappresentano la sua posizione.
+
+## REGOLE
+
+Le matrici in C hanno dimensioni fisse definite al momento della dichiarazione. Gli indici partono da zero per ogni dimensione, quindi sia righe che colonne seguono questa convenzione. È fondamentale rispettare i limiti per evitare accessi a memoria non validi.
+
+## DICHIARAZIONE
+
+Una matrice viene dichiarata specificando il tipo degli elementi, il nome e le dimensioni (numero di righe e colonne). Questo consente al compilatore di allocare correttamente la memoria necessaria.
+
+
+## CODICE
 ```c
-/*
-MATRICI
-1. cosa sono
-2. regole
-3. dichirazione
-4. prove d'uso
-*/
-
 #include <stdio.h>
 
 int main() {

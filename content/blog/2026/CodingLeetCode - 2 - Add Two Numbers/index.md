@@ -10,7 +10,24 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes > contains a single digit. Add the two numbers and return the sum as a linked list.
+
+Possiamo analizzare questo problema partendo da un approccio in due fasi, come nel codice proposto, in cui utilizziamo una struttura dati per memorizzare le informazioni utili durante l’elaborazione.
+
+L’idea chiave è:
+
+- prima scorriamo l’array per costruire una mappa che associa ogni numero agli indici in cui compare
+- questo ci permette di gestire anche il caso di numeri duplicati
+- successivamente, per ogni numero num, calcoliamo il complemento target - num
+- verifichiamo se il complemento è presente nella mappa
+- gestiamo separatamente il caso in cui num e il complemento coincidano (servono almeno due occorrenze)
+- se troviamo una corrispondenza, restituiamo gli indici
+
+Questo approccio permette di ottenere una complessità O(n), ma introduce una gestione più complessa dei casi rispetto alla soluzione ottimale, poiché mantiene tutti gli indici e richiede un secondo passaggio sull’array.
+
+Detto ciò, la soluzione che proponiamo noi è la seguente:
 
 ```typescript
 /**
@@ -24,6 +41,8 @@ series = ["CodingLeetCode"]
  *     }
  * }
  */
+
+Oggi vediamo il seguente esercizio di LeetCode:
 
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
     let sumL: Array<number> = new Array<number>();
@@ -74,4 +93,6 @@ function buildList(sumL: number[], pos: number): ListNode | null{
     return new ListNode(sumL[pos], buildList(sumL, pos+1));
 }
 ```
+
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)
 
