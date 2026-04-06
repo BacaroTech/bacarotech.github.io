@@ -10,63 +10,60 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## avlTree.ts
 
-```typescript
-/*
-──────────────────────────────
-  STRUTTURA DATI: ALBERO AVL
-──────────────────────────────
+
+# STRUTTURA DATI: ALBERO AVL
+
 L'**Albero AVL** (Adelson-Velsky e Landis) è una variante bilanciata 
 dei **Binary Search Tree (BST)**.  
 Mantiene l'altezza dei sottoalberi sempre bilanciata, evitando il problema 
 degli alberi sbilanciati e garantendo prestazioni efficienti.  
 
-──────────────────────────────
-  PROPRIETÀ DI BILANCIAMENTO
-──────────────────────────────
+
+## PROPRIETÀ DI BILANCIAMENTO
+
 Per ogni nodo `N`:  
   |altezza(sottoalbero sinistro) - altezza(sottoalbero destro)| ≤ 1  
 
 Questa proprietà viene mantenuta **dinamicamente** attraverso **rotazioni** 
 dopo inserimenti o eliminazioni.  
 
-──────────────────────────────
-  PROPRIETÀ DI RICERCA
-──────────────────────────────
+
+## PROPRIETÀ DI RICERCA
+
 Come in un **BST**:  
 - Nel sottoalbero sinistro → valori < `N.key`  
 - Nel sottoalbero destro → valori > `N.key`  
 
-──────────────────────────────
-  TERMINOLOGIA
-──────────────────────────────
+
+## TERMINOLOGIA
+
 - **Nodo** → contiene una chiave, altezza e puntatori ai figli.  
 - **Radice (Root)** → nodo principale dell'albero.  
 - **Foglia (Leaf)** → nodo senza figli.  
 - **Sottoalbero (Subtree)** → albero discendente da un nodo.  
 - **Altezza del Nodo** → percorso più lungo fino a una foglia.  
 
-──────────────────────────────
-  OPERAZIONI PRINCIPALI
-──────────────────────────────
+
+## OPERAZIONI PRINCIPALI
+
 - `inserisci(key)` → aggiunge una chiave e riequilibra con rotazioni.  
 - `cerca(key)` → verifica la presenza di una chiave sfruttando la proprietà BST.  
 - `elimina(key)` → rimuove un nodo, aggiornando l'altezza e riequilibrando.  
 - `visitaInOrdine()` → attraversa i nodi in ordine crescente.  
 - `getAltezza()` → restituisce la profondità massima dell'albero.  
 
-──────────────────────────────
-  MECCANISMI DI BILANCIAMENTO
-──────────────────────────────
+
+## MECCANISMI DI BILANCIAMENTO
+
 - **Rotazione Destra (Right Rotation)** → quando il sottoalbero sinistro è troppo alto.  
 - **Rotazione Sinistra (Left Rotation)** → quando il sottoalbero destro è troppo alto.  
 - **Rotazione Sinistra-Destra (Left-Right)** → sbilanciamento nel figlio sinistro del destro.  
 - **Rotazione Destra-Sinistra (Right-Left)** → sbilanciamento nel figlio destro del sinistro.  
 
-──────────────────────────────
-  EFFICIENZA
-──────────────────────────────
+
+## EFFICIENZA
+
 - Ricerca → **O(log n)**  
 - Inserimento → **O(log n)**  
 - Eliminazione → **O(log n)**  
@@ -74,37 +71,37 @@ Come in un **BST**:
 
 ➡ Prestazioni garantite grazie al bilanciamento automatico.  
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - Mantiene sempre un albero bilanciato.  
 - Prestazioni prevedibili e stabili anche con frequenti inserimenti/eliminazioni.  
 - Più efficiente dei BST tradizionali nei contesti dinamici.  
 
-──────────────────────────────
-  OPERAZIONI AUSILIARIE
-──────────────────────────────
+
+## OPERAZIONI AUSILIARIE
+
 - `getMin()` → restituisce la chiave minima.  
 - `getMax()` → restituisce la chiave massima.  
 - `isBalance()` → verifica il rispetto della proprietà AVL.  
 
-──────────────────────────────
-  APPLICAZIONI
-──────────────────────────────
+
+## APPLICAZIONI
+
 Gli alberi AVL sono usati in sistemi che richiedono accesso rapido e aggiornamenti frequenti:  
 - Database con indici ordinati.  
 - Motori di ricerca.  
 - Implementazioni di **set** e **mappe ordinate**.  
 - Algoritmi su intervalli e dati gerarchici.  
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - Più complessi da gestire rispetto ai BST semplici.  
 - Il costo aggiuntivo è giustificato perché il bilanciamento migliora le prestazioni complessive.  
-*/
 
-
+## CODICE
+```typescript
 class Node<E> {
     key: E;
     left: Node<E> | null;

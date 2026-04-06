@@ -10,13 +10,9 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## builder.ts
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: BUILDER
-──────────────────────────────
+# DESIGN PATTERN: BUILDER
+
 Il Builder è un pattern creazionale che consente di costruire oggetti
 complessi passo dopo passo.
 
@@ -24,37 +20,38 @@ A differenza del Factory, che si concentra solo sulla creazione,
 il Builder gestisce anche la composizione graduale dell'oggetto,
 rendendo il processo più leggibile e flessibile.
 
-──────────────────────────────
-  QUANDO UTILIZZARLO
-──────────────────────────────
+
+## QUANDO UTILIZZARLO
+
 - La costruzione dell'oggetto richiede molti passaggi o parametri opzionali.
 - Vuoi evitare il "telescoping constructor" (costruttori con troppi parametri).
 - Vuoi che l'oggetto finale sia immutabile, ma la sua creazione rimanga flessibile.
 - Necessiti di creare varianti partendo da una configurazione di base.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - **Chiarezza**: sequenze come `.setX().setY().build()` rendono il codice leggibile e modulare.
 - **Flessibilità**: permette di configurare solo ciò che serve.
 - **Immutabilità**: l'oggetto finale può essere reso non modificabile.
 - **Pulizia del costruttore**: evita l'uso di costruttori con troppi parametri.
 - **Riutilizzo**: puoi partire da un builder già configurato per creare varianti.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+## POTENZIALI SVANTAGGI
+
 - **Maggiore complessità**: richiede classi aggiuntive anche per casi semplici.
 - **Overkill**: non necessario per oggetti con poche proprietà.
 - **Validazione assente**: di default non impone controlli sui dati forniti.
 
-──────────────────────────────
-  CHICCA OPZIONALE: DIRETTIVE
-──────────────────────────────
+
+## CHICCA OPZIONALE: DIRETTIVE
+
 Nel caso in cui notiamo nel codice dei casi in cui abbiamo diversi build che hanno lo stesso set di parametri
 allora conviene utilizzare oltre ai builder anche le DIRETTIVE, ovvero dei builder pre-compilati
-*/
 
+## CODICE
+```typescript
 /**
  * Classe di partenza 
  * Rappresenta cosa vogliamo costruire

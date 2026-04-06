@@ -10,13 +10,30 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 9 - esercizi switch.c
 
+# ESERCIZI SWITCH
+
+## ES 1
+Scrivi un programma che, dato un numero da 1 a 7, stampi il nome del giorno corrispondente.
+1 → Lunedì
+2 → Martedì
+…
+7 → Domenica
+
+## ES 2
+Scrivi un programma che, dato un voto scolastico da 1 a 10, stampi il giudizio:
+1–4 → "Insufficiente"
+5 → "Mediocre"
+6 → "Sufficiente"
+7–8 → "Buono"
+9–10 → "Ottimo"
+
+## ES 3
+Chiedi all’utente di inserire due numeri e un’operazione (+, -, *, /).
+Utilizza uno switch per eseguire l’operazione scelta e stampare il risultato.
+
+## SOLUZIONI
 ```c
-/*
-ESERCIZI SWITCH
-*/
-
 #include <stdio.h>
 
 int main()

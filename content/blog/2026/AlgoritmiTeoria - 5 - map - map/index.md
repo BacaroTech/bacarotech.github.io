@@ -10,13 +10,9 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## map.ts
 
-```typescript
-/*
-──────────────────────────────
-  STRUTTURA DATI: MYMAP
-──────────────────────────────
+# STRUTTURA DATI: MYMAP
+
 La **MyMap** è una struttura dati che implementa il concetto di 
 **mappa (o dizionario)**:  
 ➡ Consente di memorizzare e recuperare coppie **chiave-valore** 
@@ -28,18 +24,18 @@ a un valore, ad esempio:
 - cache di dati,  
 - configurazioni applicative.  
 
-──────────────────────────────
-  STRUTTURA INTERNA
-──────────────────────────────
+
+## STRUTTURA INTERNA
+
 - Utilizza un **array** come struttura sottostante.  
 - Una **funzione di hash** converte la chiave in un indice dell'array.  
 - In caso di collisione (più chiavi con stesso indice), viene 
 utilizzato il **chaining** → ogni bucket contiene una lista di coppie 
 `[chiave, valore]`.  
 
-──────────────────────────────
-  OPERAZIONI PRINCIPALI
-──────────────────────────────
+
+## OPERAZIONI PRINCIPALI
+
 - `set(key, value)` → inserisce una nuova coppia o aggiorna il valore se la chiave esiste già.  
 - `get(key)` → restituisce il valore associato a una chiave, oppure `undefined` se non trovata.  
 - `has(key)` → verifica se una chiave è presente nella mappa (true/false).  
@@ -49,9 +45,9 @@ utilizzato il **chaining** → ogni bucket contiene una lista di coppie
 - `size()` → restituisce il numero totale di coppie presenti.  
 - `clear()` → rimuove tutte le coppie chiave-valore.  
 
-──────────────────────────────
-  PRESTAZIONI
-──────────────────────────────
+
+## PRESTAZIONI
+
 - `set` → **O(1)** in media, **O(n)** in caso di collisioni estreme.  
 - `get` → **O(1)** in media, **O(n)** in caso di collisioni estreme.  
 - `has` → **O(1)** in media.  
@@ -61,17 +57,19 @@ utilizzato il **chaining** → ogni bucket contiene una lista di coppie
 ➡ La mappa è molto efficiente per la maggior parte delle operazioni, 
 ma la qualità della funzione di hash influisce notevolmente sulle prestazioni.  
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - È concettualmente simile alla `Map` nativa di JavaScript.  
 - L'efficienza dipende dal **load factor** e dalla funzione di hash.  
 - Possibili estensioni:  
   • gestione dinamica della dimensione dell'array,  
   • funzioni hash più robuste,  
   • gestione di valori complessi come oggetti o array.  
-*/
 
+## CODICE
+
+```typescript
 type Entry<K, V> = { key: K, value: V };
 
 class MyMap<K extends string | number, V> {

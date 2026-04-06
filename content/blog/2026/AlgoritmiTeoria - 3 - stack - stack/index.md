@@ -10,13 +10,10 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## stack.ts
 
-```typescript
-/*
-──────────────────────────────
-  STRUTTURA DATI: STACK (PILA)
-──────────────────────────────
+
+# STRUTTURA DATI: STACK (PILA)
+
 Lo **Stack** (pila) è una struttura dati lineare che segue il principio
 **LIFO (Last In, First Out)**:  
 ➡ L'ultimo elemento inserito è il primo a essere rimosso.  
@@ -27,16 +24,16 @@ inverso rispetto all'inserimento, ad esempio:
 - algoritmi di backtracking,  
 - undo/redo in editor di testo.
 
-──────────────────────────────
-  STRUTTURA INTERNA
-──────────────────────────────
+
+## STRUTTURA INTERNA
+
 - Gli elementi vengono inseriti e rimossi **solo dalla cima** (top).  
 - Gli elementi sottostanti restano temporaneamente **inaccessibili** finché
 non si rimuove quello in cima.  
 
-──────────────────────────────
-  OPERAZIONI PRINCIPALI
-──────────────────────────────
+
+## OPERAZIONI PRINCIPALI
+
 - `push(element)` → inserisce un elemento in cima allo stack.  
 - `pop()` → rimuove e restituisce l'elemento in cima (oppure `undefined` se vuoto).  
 - `peek()` → restituisce l'elemento in cima senza rimuoverlo.  
@@ -44,9 +41,9 @@ non si rimuove quello in cima.
 - `size()` → restituisce il numero di elementi nello stack.  
 - `printStack()` → stampa tutti gli elementi dallo **top** alla **base**.
 
-──────────────────────────────
-  PRESTAZIONI
-──────────────────────────────
+
+## PRESTAZIONI
+
 - `push` → **O(1)**  
 - `pop` → **O(1)**  
 - `peek` → **O(1)**  
@@ -56,14 +53,16 @@ non si rimuove quello in cima.
 ➡ Tutte le operazioni avvengono in tempo costante, poiché non richiedono
 spostamenti o ridistribuzioni degli elementi.
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - Struttura semplice ma estremamente efficiente.  
 - Usata come building block di numerosi algoritmi.  
 - Spesso implementata con array o liste collegate.
-*/
 
+
+## CODICE
+```typescript
 class Stack<T> {
     private items: T[] = [];
 

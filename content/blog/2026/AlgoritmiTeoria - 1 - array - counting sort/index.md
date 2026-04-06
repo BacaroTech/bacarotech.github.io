@@ -10,18 +10,17 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## sort/countingsort.ts
 
-```typescript
-/*
+# ALGORITMO: COUNTING SORT 
 Questo algoritmo permette di mettere in ordine un array in base agli elementi che lo compongono
 visualizzazione: https://it.wikipedia.org/wiki/Counting_sort#/media/File:Counting_Sort_Animation.gif
 
 Descrizione dell'algoritmo
 Questo algoritmo presenta una **precondizione fondamentale**:  
 - Gli elementi dell'array devono trovarsi in un intervallo compreso tra **0** e **K**.  
+- La grandezza dell'intervallo determina anche la sua efficenza
 
-Funzionamento
+## FUNZIONAMENTO
 1. **Creazione di un array di supporto:**  
    - Viene creato un array di supporto di dimensione **K** chiamato "array delle occorrenze" (o `countArray`).  
    - Tutti i valori di questo array vengono inizializzati a **0**.  
@@ -37,12 +36,14 @@ Funzionamento
 
 Questo processo garantisce un ordinamento stabile e rapido per array che soddisfano la precondizione iniziale.  
 
-Output
-l'array ordinato
+## OUTPUT
+L'array di partenza ordinato senza mai fare dei confronti tra gli elementi
 
-Complessita' nel caso peggiore: O(n + k)
-*/
+## COMPLESSITÀ 
+Nel caso peggiore: O(n + k)
 
+## CODICE
+```typescript
 /**
  * Ordina l'array seguendo le logiche del countingSort
  * @param arr array da ordinare

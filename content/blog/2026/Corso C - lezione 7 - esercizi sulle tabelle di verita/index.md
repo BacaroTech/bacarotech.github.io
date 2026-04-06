@@ -10,13 +10,22 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 7 - esercizi sulle tabelle di verita.c
+# ESERCIZI SULLE TABELLE DI VERITA'
 
+## ES 1    
+Un utente può entrare in una stanza solo se ha la chiave e conosce il codice di sicurezza.
+Usare l’operatore AND per determinare se l’accesso è consentito.
+
+## ES 2
+Una persona può guidare un’auto se ha la patente oppure è accompagnata da un istruttore.
+Usare OR per stabilire se può guidare.
+
+## ES 3
+Un allarme deve scattare solo se la finestra è aperta e non c’è una persona autorizzata in casa.
+Usare NOT e AND.
+
+## SOLUZIONI
 ```c
-/*
-ESERCIZI SULLE TABELLE DI VERITA'
-*/
-
 #include <stdio.h>
 
 int main()

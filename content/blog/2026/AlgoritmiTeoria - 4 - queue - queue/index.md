@@ -10,13 +10,12 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## queue.ts
 
-```typescript
-/*
-──────────────────────────────
-  STRUTTURA DATI: QUEUE (CODA)
-──────────────────────────────
+
+
+
+# STRUTTURA DATI: QUEUE (CODA)
+
 La **Queue** (coda) è una struttura dati lineare che segue il principio
 **FIFO (First In, First Out)**:  
 ➡ Il primo elemento inserito è anche il primo a essere rimosso.  
@@ -26,16 +25,16 @@ La **Queue** (coda) è una struttura dati lineare che segue il principio
 - code di stampa,  
 - algoritmi di scheduling dei processi.
 
-──────────────────────────────
-  STRUTTURA INTERNA
-──────────────────────────────
+
+## STRUTTURA INTERNA
+
 - Gli elementi vengono **inseriti in fondo** (enqueue).  
 - Gli elementi vengono **rimossi dalla testa** (dequeue).  
 - L'ordine di arrivo viene sempre rispettato.  
 
-──────────────────────────────
-  OPERAZIONI PRINCIPALI
-──────────────────────────────
+
+## OPERAZIONI PRINCIPALI
+
 - `enqueue(element)` → inserisce un elemento in fondo alla coda.  
 - `dequeue()` → rimuove e restituisce l'elemento in testa (oppure `undefined` se vuota).  
 - `peek()` → restituisce l'elemento in testa senza rimuoverlo.  
@@ -43,9 +42,9 @@ La **Queue** (coda) è una struttura dati lineare che segue il principio
 - `size()` → restituisce il numero di elementi nella coda.  
 - `printQueue()` → stampa tutti gli elementi dalla testa alla fine.  
 
-──────────────────────────────
-  PRESTAZIONI
-──────────────────────────────
+
+## PRESTAZIONI
+
 - `enqueue` → **O(1)**  
 - `dequeue` → **O(1)**  
 - `peek` → **O(1)**  
@@ -55,16 +54,17 @@ La **Queue** (coda) è una struttura dati lineare che segue il principio
 ➡ Tutte le operazioni principali sono in tempo costante.  
 La coda è particolarmente efficiente per scenari di gestione in tempo reale.  
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - È la controparte "naturale" dello **Stack**.  
 - Può essere implementata tramite array o liste collegate.  
 - Varianti comuni includono:  
   • **Deque (Double-Ended Queue)** → inserimento/rimozione a entrambe le estremità.  
   • **Priority Queue** → rimozione basata su priorità, non sull'ordine di arrivo.
-*/
 
+## CODICE
+```typescript
 class Queue<T> {
 	private items: T[] = []
 

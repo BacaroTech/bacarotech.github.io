@@ -1,5 +1,5 @@
 +++
-title = "AlgoritmiTeoria - 7 - graph"
+title = "AlgoritmiTeoria - 7 - graph - edmons-karp"
 date = 2026-02-25T14:00:07Z
 draft = false
 featured = false
@@ -10,21 +10,17 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## maximumFlow/edmondsKarp.ts
 
-```typescript
-/*
-──────────────────────────────
-  ALGORITMO: EDMONDS-KARP
-──────────────────────────────
+# ALGORITMO: EDMONDS-KARP
+
 L’**algoritmo di Edmonds-Karp** è una specifica implementazione 
 dell’**algoritmo di Ford-Fulkerson** per il calcolo del flusso massimo 
 in un grafo connesso e pesato.  
 La differenza principale è l’uso della **ricerca in ampiezza (BFS)** per trovare i percorsi aumentanti.  
 
-──────────────────────────────
-  TERMINOLOGIA
-──────────────────────────────
+
+## TERMINOLOGIA
+
 - **Vertice (Vertex)** → nodo del grafo.  
 - **Arco con Capacità (Capacity Edge)** → connessione tra due vertici con capacità massima.  
 - **Flusso (Flow)** → quantità di risorsa trasportata lungo un arco.  
@@ -32,30 +28,30 @@ La differenza principale è l’uso della **ricerca in ampiezza (BFS)** per trov
 - **Sorgente (Source)** → nodo iniziale del flusso.  
 - **Pozzo / Destinazione (Sink)** → nodo finale del flusso.  
 
-──────────────────────────────
-  FUNZIONAMENTO DELL’ALGORITMO
-──────────────────────────────
+
+## FUNZIONAMENTO DELL’ALGORITMO
+
 1. Inizializza il flusso di tutti gli archi a 0.  
 2. Usa **BFS** per trovare il percorso aumentante più corto (minimo numero di archi) dalla sorgente alla destinazione.  
 3. Determina il flusso massimo possibile lungo questo percorso (minima capacità residua).  
 4. Aggiorna il flusso lungo gli archi diretti e inversi del percorso.  
 5. Ripeti finché non esistono più percorsi aumentanti.  
 
-──────────────────────────────
-  STRUTTURE DI SUPPORTO
-──────────────────────────────
+
+## STRUTTURE DI SUPPORTO
+
 - **Grafo con capacità residua** → memorizza capacità disponibili sugli archi.  
 - **Coda per BFS** → utilizzata per individuare il percorso aumentante più breve.  
 
-──────────────────────────────
-  COMPLESSITÀ
-──────────────────────────────
+
+## COMPLESSITÀ
+
 - Tempo → **O(V * E²)** nel caso peggiore.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le capacità residue.  
 
-──────────────────────────────
-  ESEMPIO DI UTILIZZO
-──────────────────────────────
+
+## ESEMPIO DI UTILIZZO
+
 Grafo con capacità:
 S → A(10), S → B(5), A → B(15), A → T(10), B → T(10)
 
@@ -67,29 +63,29 @@ Passaggi:
 
 Flusso massimo = 15
 
-──────────────────────────────
-  APPLICAZIONI
-──────────────────────────────
+
+## APPLICAZIONI
+
 - **Reti di comunicazione** → massimizzare il throughput.  
 - **Reti di trasporto** → flusso di merci o dati.  
 - **Sistemi di gestione delle risorse** → allocazione ottimale del flusso.  
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - Garantisce percorsi aumentanti più brevi, riducendo il numero di iterazioni rispetto a DFS.  
 - Complessità prevedibile **O(V * E²)**.  
 - Basato su concetti intuitivi di percorsi aumentanti e capacità residua.  
 
-──────────────────────────────
-  LIMITAZIONI
-──────────────────────────────
+
+## LIMITAZIONI
+
 - Inefficiente su grafi molto grandi rispetto a versioni avanzate come Push-Relabel.  
 - Richiede capacità non negative lungo gli archi.  
 - Complessità dipendente da numero di archi e vertici.  
-*/
 
-
+## CODICE
+```typescript
 import { DirectedGraph, Edge } from "../structure/orientedGraph";
 
 /**
@@ -222,15 +218,15 @@ console.log(`\nFlusso massimo da ${source} a ${sink}:`, flussoMassimo);
 
 ```typescript
 /*
-──────────────────────────────
+
   ALGORITMO: FORD-FULKERSON
-──────────────────────────────
+
 L’**algoritmo di Ford-Fulkerson** calcola il **flusso massimo** in un grafo **connesso e pesato**, 
 dove i pesi rappresentano le capacità massime degli archi.  
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → nodo del grafo.  
 - **Arco con Capacità (Capacity Edge)** → connessione tra due vertici con capacità massima.  
 - **Flusso (Flow)** → quantità di risorsa trasportata lungo un arco.  
@@ -238,9 +234,9 @@ dove i pesi rappresentano le capacità massime degli archi.
 - **Sorgente (Source)** → nodo iniziale del flusso.  
 - **Pozzo / Destinazione (Sink)** → nodo finale del flusso.  
 
-──────────────────────────────
+
   FUNZIONAMENTO DELL’ALGORITMO
-──────────────────────────────
+
 1. Inizializza il flusso di tutti gli archi a 0.  
 2. Cerca un **percorso aumentante** dalla sorgente alla destinazione con capacità residua > 0.  
 3. Determina il **flusso massimo possibile** lungo questo percorso (minima capacità residua).  
@@ -248,23 +244,23 @@ dove i pesi rappresentano le capacità massime degli archi.
 5. Aggiorna le capacità residue lungo gli archi diretti e inversi.  
 6. Ripeti finché non esistono più percorsi aumentanti.  
 
-──────────────────────────────
+
   STRUTTURE DI SUPPORTO
-──────────────────────────────
+
 - **Grafo con capacità residua** → memorizza capacità disponibili lungo gli archi.  
 - **Algoritmo di ricerca** → BFS (Edmonds-Karp) o DFS per trovare percorsi aumentanti.  
 
-──────────────────────────────
+
   COMPLESSITÀ
-──────────────────────────────
+
 - Dipende dalla scelta della tecnica di ricerca:  
   - Con BFS (Edmonds-Karp) → **O(V * E²)**  
   - Con DFS → complessità può variare e dipende dai valori dei flussi.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le capacità residue.  
 
-──────────────────────────────
+
   ESEMPIO DI UTILIZZO
-──────────────────────────────
+
 Grafo con capacità:
 S → A(10), S → B(5), A → B(15), A → T(10), B → T(10)
 
@@ -276,38 +272,38 @@ Passaggi:
 
 Flusso massimo = 10 + 5 = 15
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - **Reti di comunicazione** → massimizzare il throughput.  
 - **Trasporto di risorse** → flusso di merci o acqua in reti distribuite.  
 - **Flusso di dati su reti informatiche**.  
 - Pianificazione e ottimizzazione in sistemi logistici.  
 
-──────────────────────────────
+
   VANTAGGI
-──────────────────────────────
+
 - Calcolo semplice del flusso massimo in grafi con capacità note.  
 - Basato su concetti intuitivi di percorsi aumentanti e capacità residua.  
 - Adattabile a varie strategie di ricerca (BFS, DFS).  
 
-──────────────────────────────
+
   LIMITAZIONI
-──────────────────────────────
+
 - Può essere inefficiente su grafi grandi se non si usa BFS (Edmonds-Karp).  
 - Richiede capacità non negative lungo gli archi.  
 - La scelta della tecnica di ricerca influisce fortemente sulle prestazioni.  
 */
 /*
-──────────────────────────────
+
   ALGORITMO: FORD-FULKERSON
-──────────────────────────────
+
 L’**algoritmo di Ford-Fulkerson** calcola il **flusso massimo** in un grafo **connesso e pesato**, 
 dove i pesi rappresentano le capacità massime degli archi.  
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → nodo del grafo.  
 - **Arco con Capacità (Capacity Edge)** → connessione tra due vertici con capacità massima.  
 - **Flusso (Flow)** → quantità di risorsa trasportata lungo un arco.  
@@ -315,9 +311,9 @@ dove i pesi rappresentano le capacità massime degli archi.
 - **Sorgente (Source)** → nodo iniziale del flusso.  
 - **Pozzo / Destinazione (Sink)** → nodo finale del flusso.  
 
-──────────────────────────────
+
   FUNZIONAMENTO DELL’ALGORITMO
-──────────────────────────────
+
 1. Inizializza il flusso di tutti gli archi a 0.  
 2. Cerca un **percorso aumentante** dalla sorgente alla destinazione con capacità residua > 0.  
 3. Determina il **flusso massimo possibile** lungo questo percorso (minima capacità residua).  
@@ -325,23 +321,23 @@ dove i pesi rappresentano le capacità massime degli archi.
 5. Aggiorna le capacità residue lungo gli archi diretti e inversi.  
 6. Ripeti finché non esistono più percorsi aumentanti.  
 
-──────────────────────────────
+
   STRUTTURE DI SUPPORTO
-──────────────────────────────
+
 - **Grafo con capacità residua** → memorizza capacità disponibili lungo gli archi.  
 - **Algoritmo di ricerca** → BFS (Edmonds-Karp) o DFS per trovare percorsi aumentanti.  
 
-──────────────────────────────
+
   COMPLESSITÀ
-──────────────────────────────
+
 - Dipende dalla scelta della tecnica di ricerca:  
   - Con BFS (Edmonds-Karp) → **O(V * E²)**  
   - Con DFS → complessità può variare e dipende dai valori dei flussi.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le capacità residue.  
 
-──────────────────────────────
+
   ESEMPIO DI UTILIZZO
-──────────────────────────────
+
 Grafo con capacità:
 S → A(10), S → B(5), A → B(15), A → T(10), B → T(10)
 
@@ -353,24 +349,24 @@ Passaggi:
 
 Flusso massimo = 10 + 5 = 15
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - **Reti di comunicazione** → massimizzare il throughput.  
 - **Trasporto di risorse** → flusso di merci o acqua in reti distribuite.  
 - **Flusso di dati su reti informatiche**.  
 - Pianificazione e ottimizzazione in sistemi logistici.  
 
-──────────────────────────────
+
   VANTAGGI
-──────────────────────────────
+
 - Calcolo semplice del flusso massimo in grafi con capacità note.  
 - Basato su concetti intuitivi di percorsi aumentanti e capacità residua.  
 - Adattabile a varie strategie di ricerca (BFS, DFS).  
 
-──────────────────────────────
+
   LIMITAZIONI
-──────────────────────────────
+
 - Può essere inefficiente su grafi grandi se non si usa BFS (Edmonds-Karp).  
 - Richiede capacità non negative lungo gli archi.  
 - La scelta della tecnica di ricerca influisce fortemente sulle prestazioni.  
@@ -621,25 +617,25 @@ console.log("\nFlusso massimo da S a T:", flussoMassimo);
 
 ```typescript
 /*
-──────────────────────────────
+
   ALGORITMO: KRUSKAL
-──────────────────────────────
+
 L’**algoritmo di Kruskal** è utilizzato per trovare un **albero ricoprente minimo (Minimum Spanning Tree - MST)**
 in un grafo **connesso e pesato**.  
 L’MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi degli archi inclusi.
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → nodo del grafo.  
 - **Arco Pesato (Weighted Edge)** → connessione tra due vertici con un peso associato.  
 - **Albero Ricoprente (Spanning Tree)** → sottoinsieme di archi che collega tutti i vertici senza cicli.  
 - **MST (Minimum Spanning Tree)** → albero ricoprente con somma minima dei pesi degli archi.  
 - **Union-Find / Disjoint Set** → struttura dati per rilevare cicli durante l’inclusione degli archi.
 
-──────────────────────────────
+
   FUNZIONAMENTO DELL’ALGORITMO
-──────────────────────────────
+
 1. Ordina tutti gli archi del grafo in **ordine crescente di peso**.  
 2. Inizia con un grafo MST vuoto.  
 3. Per ciascun arco `(u, v)` nell’ordine ordinato:
@@ -647,21 +643,21 @@ L’MST collega tutti i vertici senza formare cicli e minimizza la somma dei pes
    - Altrimenti → scartalo.  
 4. Ripeti fino a includere **V - 1 archi**, dove V è il numero di vertici.  
 
-──────────────────────────────
+
   STRUTTURE DI SUPPORTO
-──────────────────────────────
+
 - **Union-Find (Disjoint Set)** → per verificare rapidamente se due vertici appartengono allo stesso sottoalbero (evita cicli).  
 - **Array / Lista di archi** → per ordinare gli archi in base al peso.  
 
-──────────────────────────────
+
   COMPLESSITÀ
-──────────────────────────────
+
 - Tempo → **O(E log E)**, principalmente per l’ordinamento degli archi.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le strutture ausiliarie.  
 
-──────────────────────────────
+
   ESEMPIO DI UTILIZZO
-──────────────────────────────
+
 Grafo con archi pesati:
 A - B(4), A - C(2), B - C(1), B - D(5), C - D(3)
 
@@ -673,24 +669,24 @@ Passaggi:
 
 MST finale → { B-C, A-C, C-D }, costo totale = 1 + 2 + 3 = 6
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - Progettazione di **reti di telecomunicazione**.  
 - Distribuzione efficiente di **risorse**.  
 - Progettazione di **reti di trasporto** e infrastrutture.  
 - Problemi di **ottimizzazione di costi** in grafi connessi.  
 
-──────────────────────────────
+
   VANTAGGI
-──────────────────────────────
+
 - Semplice e intuitivo da implementare con Union-Find.  
 - Garantisce il **MST corretto** per qualsiasi grafo connesso e pesato.  
 - Funziona bene anche su grafi sparsi (low density).  
 
-──────────────────────────────
+
   LIMITAZIONI
-──────────────────────────────
+
 - Necessita che il grafo sia **connesso**.  
 - Ordinamento degli archi può diventare costoso in grafi molto densi.  
 - Non adatto per grafi dinamici in cui archi vengono aggiunti/rimossi frequentemente.
@@ -793,45 +789,45 @@ console.log("Albero Ricoprente Minimo (MST):", mst);
 
 ```typescript
 /*
-──────────────────────────────
+
   ALGORITMO: PRIM
-──────────────────────────────
+
 L’**algoritmo di Prim** è utilizzato per trovare un **albero ricoprente minimo (Minimum Spanning Tree - MST)**
 in un grafo **connesso e pesato**.  
 L’MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi degli archi inclusi.
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → nodo del grafo.  
 - **Arco Pesato (Weighted Edge)** → connessione tra due vertici con un peso associato.  
 - **Albero Ricoprente (Spanning Tree)** → sottoinsieme di archi che collega tutti i vertici senza cicli.  
 - **MST (Minimum Spanning Tree)** → albero ricoprente con somma minima dei pesi degli archi.  
 - **Nodo Visitato / Non Visitato** → stato dei vertici durante l’esecuzione dell’algoritmo.  
 
-──────────────────────────────
+
   FUNZIONAMENTO DELL’ALGORITMO
-──────────────────────────────
+
 1. Scegli un nodo sorgente e aggiungilo al MST.  
 2. Seleziona l’**arco più leggero** che connette un nodo del MST con un nodo **non ancora incluso**.  
 3. Aggiungi il nodo collegato al MST e marca come visitato.  
 4. Ripeti fino a includere tutti i nodi.  
 
-──────────────────────────────
+
   STRUTTURE DI SUPPORTO
-──────────────────────────────
+
 - **Coda di priorità (Min-Heap)** → per selezionare rapidamente l’arco di peso minimo.  
 - **Array / Lista di adiacenza** → per memorizzare il grafo pesato.  
 
-──────────────────────────────
+
   COMPLESSITÀ
-──────────────────────────────
+
 - Tempo → **O(E log V)** con coda di priorità.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le strutture ausiliarie.  
 
-──────────────────────────────
+
   ESEMPIO DI UTILIZZO
-──────────────────────────────
+
 Grafo con archi pesati:
 A - B(4), A - C(2), B - C(1), B - D(5), C - D(3)
 
@@ -844,24 +840,24 @@ Passaggi:
 
 MST finale → { A-C, C-B, C-D }, costo totale = 2 + 1 + 3 = 6
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - Progettazione di **reti di comunicazione**.  
 - Progettazione di **circuiti elettrici** e infrastrutture.  
 - Reti di **distribuzione di energia o dati**.  
 - Problemi di **ottimizzazione dei costi** in grafi connessi.  
 
-──────────────────────────────
+
   VANTAGGI
-──────────────────────────────
+
 - Seleziona sempre l’arco più leggero disponibile → MST corretto.  
 - Efficienza elevata su grafi densi o sparsi con coda di priorità.  
 - Non richiede l’ordinamento iniziale di tutti gli archi (a differenza di Kruskal).  
 
-──────────────────────────────
+
   LIMITAZIONI
-──────────────────────────────
+
 - Necessita che il grafo sia **connesso**.  
 - La gestione della coda di priorità può aggiungere complessità implementativa.  
 - Più efficiente su grafi con vertici numerosi e densità variabile rispetto a Kruskal nei grafi sparsi.  
@@ -1060,32 +1056,32 @@ mst.forEach(edge => {
 
 ```typescript
 /*
-──────────────────────────────
+
   ALGORITMO: BELLMAN-FORD
-──────────────────────────────
+
 L’**algoritmo di Bellman-Ford** calcola i percorsi minimi da un nodo sorgente a tutti gli altri nodi
 in un **grafo orientato o non orientato pesato**, anche con **archi a peso negativo**, 
 a condizione che non siano presenti cicli negativi raggiungibili dalla sorgente.
 
-──────────────────────────────
+
   PRECONDIZIONI
-──────────────────────────────
+
 - Il grafo può contenere archi con **peso negativo**.  
 - Non devono esserci **cicli negativi** raggiungibili dalla sorgente.  
 - Funziona su grafi orientati e non orientati pesati.  
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → nodo del grafo.  
 - **Arco Pesato (Weighted Edge)** → connessione tra due vertici con un peso (positivo o negativo).  
 - **Distanza** → costo cumulativo minimo dal nodo sorgente a un nodo.  
 - **Predecessore (Parent/Predecessor)** → nodo precedente lungo il percorso minimo.  
 - **Rilassamento (Relaxation)** → operazione che aggiorna la distanza di un nodo se si trova un percorso più corto.
 
-──────────────────────────────
+
   OPERAZIONI PRINCIPALI
-──────────────────────────────
+
 - `aggiungiVertice(v)` → inserisce un nuovo vertice nel grafo.  
 - `aggiungiArco(v1, v2, peso)` → aggiunge un arco orientato o non orientato con peso.  
 - `bellmanFord(start)` → calcola i percorsi minimi dal nodo sorgente `start` a tutti gli altri nodi, restituendo:
@@ -1093,9 +1089,9 @@ a condizione che non siano presenti cicli negativi raggiungibili dalla sorgente.
   - i **predecessori** per ricostruire i percorsi.  
 - Rileva **cicli negativi**: se dopo |V|-1 rilassamenti un arco può ancora essere rilassato, esiste un ciclo negativo raggiungibile dalla sorgente.
 
-──────────────────────────────
+
   FUNZIONAMENTO DELL’ALGORITMO
-──────────────────────────────
+
 1. Inizializza tutte le distanze a **∞**, eccetto il nodo sorgente (distanza = 0).  
 2. Ripeti **|V| - 1 volte** (dove |V| è il numero di vertici):
    - Per ogni arco `(u, v)` con peso `w`:  
@@ -1105,15 +1101,15 @@ a condizione che non siano presenti cicli negativi raggiungibili dalla sorgente.
    - le **distanze minime** sono corrette se non ci sono cicli negativi.  
    - è possibile ricostruire i percorsi minimi seguendo i predecessori.
 
-──────────────────────────────
+
   COMPLESSITÀ
-──────────────────────────────
+
 - Tempo → **O(V * E)**  
 - Spazio → **O(V)** per memorizzare distanze e predecessori  
 
-──────────────────────────────
+
   ESEMPIO DI USCITA
-──────────────────────────────
+
 Grafo:
 A -> B(4), C(2)
 B -> C(-1), D(5)
@@ -1126,30 +1122,30 @@ Predecessori: { A: null, B: 'A', C: 'A', D: 'C', E: 'C' }
 
 Percorso minimo da A a E: **A → C → E**, costo 6.
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - Reti di telecomunicazione con costi variabili.  
 - Calcolo di percorsi minimi in grafi con pesi negativi.  
 - Rilevamento di cicli negativi nei grafi.  
 - Pianificazione di percorsi e analisi di dipendenze complesse.  
 
-──────────────────────────────
+
   VANTAGGI
-──────────────────────────────
+
 - Gestisce archi con pesi negativi.  
 - Rileva cicli negativi.  
 - Funziona su grafi orientati e non orientati pesati.  
 
-──────────────────────────────
+
   LIMITAZIONI
-──────────────────────────────
+
 - Più lento di Dijkstra per grafi senza pesi negativi (O(V*E) vs O(V+E log V)).  
 - Non può essere utilizzato se esistono cicli negativi raggiungibili dalla sorgente.  
 
-──────────────────────────────
+
   NOTE
-──────────────────────────────
+
 - Adatto per scenari in cui i pesi degli archi possono essere negativi.  
 - La struttura dati utilizzata può essere semplice (array/lista) poiché l’algoritmo visita tutti gli archi ripetutamente.  
 - Può essere combinato con Dijkstra per ottimizzazioni in grafi misti.
@@ -1244,47 +1240,47 @@ if (risultato) {
 
 ```typescript
 /*
-──────────────────────────────
+
   ALGORITMO: DIJKSTRA
-──────────────────────────────
+
 L’**algoritmo di Dijkstra** calcola i percorsi minimi da un nodo sorgente a tutti gli altri nodi
 in un **grafo orientato o non orientato pesato**, con pesi **non negativi**.  
 È uno degli algoritmi fondamentali per il calcolo di percorsi minimi in informatica e nelle reti.
 
-──────────────────────────────
+
   PRECONDIZIONI
-──────────────────────────────
+
 - Il grafo può essere orientato o non orientato.  
 - I pesi degli archi devono essere **non negativi**.  
 - Non gestisce correttamente grafi con archi a peso negativo (per quelli serve Bellman-Ford).
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → nodo del grafo.  
 - **Arco Pesato (Weighted Edge)** → connessione tra due vertici con peso associato.  
 - **Distanza** → costo cumulativo minimo dal nodo sorgente a un nodo.  
 - **Predecessore (Parent/Predecessor)** → nodo precedente lungo il percorso minimo.  
 - **Coda di Priorità (Priority Queue / Min-Heap)** → struttura utilizzata per selezionare il nodo con distanza minima.
 
-──────────────────────────────
+
   OPERAZIONI PRINCIPALI
-──────────────────────────────
+
 - `aggiungiVertice(v)` → inserisce un nuovo vertice nel grafo.  
 - `aggiungiArco(v1, v2, peso)` → aggiunge un arco orientato o non orientato con peso.  
 - `dijkstra(start)` → calcola i percorsi minimi dal nodo sorgente `start` a tutti gli altri nodi, restituendo:
   - le **distanze minime**  
   - i **predecessori** per ricostruire i percorsi.
 
-──────────────────────────────
+
   RAPPRESENTAZIONE
-──────────────────────────────
+
 - **Lista di adiacenza con pesi**:  
   Esempio → `{ A: [{node: B, peso: 4}, {node: C, peso: 2}], B: [{node: C, peso: 5}], ... }`  
 
-──────────────────────────────
+
   FUNZIONAMENTO DELL’ALGORITMO
-──────────────────────────────
+
 1. Inizializza tutte le distanze a **∞**, eccetto il nodo sorgente (distanza = 0).  
 2. Inserisci tutti i nodi in una **coda di priorità** basata sulla distanza minima.  
 3. Finché la coda non è vuota:
@@ -1295,18 +1291,18 @@ in un **grafo orientato o non orientato pesato**, con pesi **non negativi**.
    - la **distanza minima** da sorgente a ogni nodo  
    - il **cammino più breve** ricostruibile seguendo i predecessori.
 
-──────────────────────────────
+
   COMPLESSITÀ
-──────────────────────────────
+
 - Inserimento vertice → **O(1)**  
 - Inserimento arco → **O(1)**  
 - Calcolo percorso minimo:
   - Con **min-heap / coda di priorità** → **O(V + E log V)**  
   - Con semplice array → **O(V^2)**  
 
-──────────────────────────────
+
   ESEMPIO DI USCITA
-──────────────────────────────
+
 Grafo:
 A -> B(4), C(2)
 B -> C(5), D(10)
@@ -1319,17 +1315,17 @@ Predecessori: { A: null, B: 'A', C: 'A', D: 'C', E: 'C' }
 
 Percorso minimo da A a E: **A → C → E**, costo 6.
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - Reti stradali e navigazione GPS.  
 - Routing nei protocolli di rete (es. OSPF).  
 - Pianificazione dei percorsi in sistemi di trasporto.  
 - Problemi di logistica e distribuzione.  
 
-──────────────────────────────
+
   NOTE
-──────────────────────────────
+
 - Adatto **solo a pesi non negativi**.  
 - Per grafi con pesi negativi → usare **Bellman-Ford**.  
 - La scelta della struttura dati per la coda di priorità influisce direttamente sulle prestazioni.  
@@ -1549,15 +1545,15 @@ console.log('Predecessori:', risultato.predecessori);
 
 ```typescript
 /*
-──────────────────────────────
+
   STRUTTURA DATI: GRAFO NON ORIENTATO
-──────────────────────────────
+
 Un **grafo non orientato** è una collezione di nodi (vertici) 
 connessi da archi che rappresentano relazioni bidirezionali.  
 
-──────────────────────────────
+
   PROPRIETÀ PRINCIPALI
-──────────────────────────────
+
 - Rappresentato come coppia (V, E):  
   - V → insieme dei vertici (nodi).  
   - E → insieme degli archi (coppie non ordinate di vertici).  
@@ -1565,9 +1561,9 @@ connessi da archi che rappresentano relazioni bidirezionali.
   se esiste un arco tra `A` e `B`, si può navigare sia da `A` a `B` 
   che da `B` a `A`.  
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → un nodo del grafo.  
 - **Arco (Edge)** → connessione tra due vertici.  
 - **Grado (Degree)** → numero di archi connessi a un vertice.  
@@ -1576,9 +1572,9 @@ connessi da archi che rappresentano relazioni bidirezionali.
 - **Componente Connessa** → sottoinsieme di vertici in cui 
   ogni coppia è collegata direttamente o indirettamente.  
 
-──────────────────────────────
+
   OPERAZIONI PRINCIPALI
-──────────────────────────────
+
 - `aggiungiVertice(v)` → inserisce un nuovo vertice.  
 - `aggiungiArco(v1, v2)` → crea un arco tra due vertici 
   (aggiunge i vertici se non esistono).  
@@ -1588,46 +1584,46 @@ connessi da archi che rappresentano relazioni bidirezionali.
 - `visitaAmpiezza(v)` → BFS a partire da un vertice.  
 - `visitaProfondità(v)` → DFS a partire da un vertice.  
 
-──────────────────────────────
+
   RAPPRESENTAZIONE
-──────────────────────────────
+
 - **Lista di adiacenza** (efficiente in grafi sparsi):  
   Esempio → { A: [B, C], B: [A, D], C: [A], D: [B] }  
 - **Matrice di adiacenza** (più adatta in grafi densi).  
 
-──────────────────────────────
+
   EFFICIENZA
-──────────────────────────────
+
 - Inserimento vertice → **O(1)**  
 - Inserimento arco → **O(1)**  
 - Rimozione arco → **O(d)** (d = grado massimo tra i due vertici).  
 - Attraversamento BFS/DFS → **O(V + E)**  
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - Reti sociali.  
 - Mappe stradali.  
 - Reti di computer.  
 - Pianificazione di percorsi senza direzione.  
 - Analisi di sistemi complessi.  
 
-──────────────────────────────
+
   VANTAGGI
-──────────────────────────────
+
 - Struttura flessibile, adatta a molti problemi reali.  
 - Operazioni ottimizzabili a seconda della rappresentazione.  
 
-──────────────────────────────
+
   LIMITAZIONI
-──────────────────────────────
+
 - Grafi densi → memoria elevata.  
 - Operazioni come rimozione arco o verifica connessione 
   possono essere costose rispetto a strutture specializzate.  
 
-──────────────────────────────
+
   NOTE
-──────────────────────────────
+
 - Base per algoritmi fondamentali:  
   - calcolo delle componenti connesse,  
   - rilevamento cicli,  
@@ -1891,24 +1887,24 @@ console.log("Visita in profondità da A:", graph.visitaProfondita("A"));
 
 ```typescript
 /*
-──────────────────────────────
+
   STRUTTURA DATI: GRAFO ORIENTATO
-──────────────────────────────
+
 Un **grafo orientato** è una collezione di nodi (vertici) connessi da archi direzionati, 
 dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.  
 
-──────────────────────────────
+
   PROPRIETÀ PRINCIPALI
-──────────────────────────────
+
 - Rappresentato come coppia (V, E):  
   - V → insieme dei vertici (nodi).  
   - E → insieme degli archi (coppie ordinate di vertici).  
 - Gli archi hanno direzione:  
   se esiste un arco da `A` a `B`, si può navigare **solo da A a B** e non viceversa.  
 
-──────────────────────────────
+
   TERMINOLOGIA
-──────────────────────────────
+
 - **Vertice (Vertex)** → un nodo del grafo.  
 - **Arco (Edge)** → connessione direzionata tra due vertici.  
 - **Grado di Entrata (In-Degree)** → numero di archi che arrivano a un vertice.  
@@ -1918,9 +1914,9 @@ dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.
 - **Componente Fortemente Connessa** → sottoinsieme di vertici in cui ogni coppia 
   è raggiungibile reciprocamente.  
 
-──────────────────────────────
+
   OPERAZIONI PRINCIPALI
-──────────────────────────────
+
 - `aggiungiVertice(v)` → inserisce un nuovo vertice.  
 - `aggiungiArco(v1, v2)` → crea un arco orientato da `v1` a `v2`.  
 - `rimuoviArco(v1, v2)` → elimina l’arco orientato da `v1` a `v2`.  
@@ -1929,45 +1925,45 @@ dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.
 - `visitaAmpiezza(v)` → BFS a partire da un vertice.  
 - `visitaProfondità(v)` → DFS a partire da un vertice.  
 
-──────────────────────────────
+
   RAPPRESENTAZIONE
-──────────────────────────────
+
 - **Lista di adiacenza** (più comune):  
   Esempio → { A: [B, C], B: [D], C: [], D: [B] }  
 - **Matrice di adiacenza** (più adatta in grafi densi).  
 
-──────────────────────────────
+
   EFFICIENZA
-──────────────────────────────
+
 - Inserimento vertice → **O(1)**  
 - Inserimento arco → **O(1)**  
 - Rimozione arco → **O(d)** (d = grado di uscita del vertice).  
 - Attraversamento BFS/DFS → **O(V + E)**  
 
-──────────────────────────────
+
   APPLICAZIONI
-──────────────────────────────
+
 - Reti sociali con relazioni asimmetriche.  
 - Modellazione di flussi di dati.  
 - Reti di computer.  
 - Pianificazione di percorsi con direzione.  
 - Analisi di dipendenze in sistemi complessi.  
 
-──────────────────────────────
+
   VANTAGGI
-──────────────────────────────
+
 - Modellano in modo naturale relazioni asimmetriche.  
 - Utili per processi sequenziali e dipendenze.  
 
-──────────────────────────────
+
   LIMITAZIONI
-──────────────────────────────
+
 - Più complessi da visualizzare rispetto ai grafi non orientati.  
 - La connettività richiede algoritmi specifici.  
 
-──────────────────────────────
+
   NOTE
-──────────────────────────────
+
 - Base per algoritmi fondamentali:  
   - calcolo delle componenti fortemente connesse,  
   - rilevamento di cicli orientati,  

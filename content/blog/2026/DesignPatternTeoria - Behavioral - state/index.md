@@ -10,40 +10,37 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## state.ts
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: STATE
-──────────────────────────────
+# DESIGN PATTERN: STATE
+
 Lo State è un pattern comportamentale che permette a un oggetto di 
 modificare il proprio comportamento quando cambia il suo stato interno.  
 È come se l'oggetto cambiasse "classe" in modo dinamico.
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - Un oggetto deve cambiare comportamento in base al suo stato.
 - Vuoi evitare grandi istruzioni `if` o `switch` che controllano lo stato.
 - Vuoi centralizzare i comportamenti di uno stato in una classe dedicata.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - Elimina `if-else` o `switch-case` complessi.
 - Ogni stato è isolato in una classe separata (Single Responsibility Principle).
 - Facile aggiungere nuovi stati senza modificare quelli esistenti.
 - Migliora leggibilità e manutenzione del codice.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+## POTENZIALI SVANTAGGI
+
 - Aumenta il numero di classi nel sistema.
 - Può risultare eccessivo per macchine a stati semplici.
-*/
 
+## CODICE
 
+```typescript
 /**
  * Classe con internamente il riferimento a uno degli stati esterni
  */

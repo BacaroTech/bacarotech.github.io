@@ -10,13 +10,9 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## decorator.ts
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: DECORATOR
-──────────────────────────────
+#  DESIGN PATTERN: DECORATOR
+
 Il Decorator è un pattern strutturale che consente di aggiungere,
 in modo dinamico, nuove funzionalità a un oggetto senza modificarne
 la classe originale.
@@ -25,28 +21,29 @@ Il principio di base è "impacchettare" (wrapping) l'oggetto originale
 all'interno di un altro oggetto che implementa la stessa interfaccia,
 delegando le chiamate e arricchendole prima o dopo l'esecuzione.
 
-──────────────────────────────
-  QUANDO UTILIZZARLO
-──────────────────────────────
+
+## QUANDO UTILIZZARLO
+
 - Vuoi estendere il comportamento di un oggetto a runtime senza usare l'ereditarietà.
 - Vuoi evitare la proliferazione di sottoclassi per ogni combinazione di funzionalità
   (es. `ButtonBlueLargeWithIcon`, `ButtonRedSmallNoIcon`, ecc.).
 - Necessiti di combinare funzionalità in modo flessibile e modulare.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - **Modularità**: aggiungi funzionalità senza toccare la classe originale.
 - **Flessibilità**: puoi impilare più decoratori in qualunque ordine.
 - **Open/Closed Principle**: estendi il comportamento senza modificare codice esistente.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+## POTENZIALI SVANTAGGI
+
 - **Maggiore complessità**: troppi oggetti annidati possono rendere il flusso poco chiaro.
 - **Configurazione verbosa**: la creazione e combinazione dei decoratori può diventare prolissa.
-*/
 
+## CODICE
+```typescript
 /**
  * Interfaccia comune per DataSource
  */

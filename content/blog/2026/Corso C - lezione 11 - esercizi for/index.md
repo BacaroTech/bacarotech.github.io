@@ -10,13 +10,20 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 11 - esercizi for.c
 
+# ESERCIZI FOR
+
+## ES 1
+Scrivi un programma che stampi i numeri da 10 a 1 in ordine decrescente utilizzando un ciclo for.
+
+## ES 2
+Calcola la somma di tutti i numeri pari da 1 a 100 usando un ciclo for.
+
+## ES 3
+Chiedi all’utente un numero n e stampa la sua tabellina fino a n × 10.
+
+## SOLUZIONI
 ```c
-/*
-ESERCIZI FOR
-*/
-
 #include <stdio.h>
 
 int main() {

@@ -9,14 +9,24 @@ tags = ['c', 'coding', 'corso']
 authors = []
 series = ["Corso C"]
 +++
+# ESERCIZI SUI PUNTATORI
 
-## lezione 18 - esercizi puntatori.c
+## ES 1
+Scrivi un programma in C che dichiari due variabili intere. 
+Implementa una funzione swap che prende in input due puntatori a intero e scambia i valori delle due variabili.
+
+## ES 2
+Scrivi un programma che dichiari una funzione int quadrato(int x) che restituisce il quadrato di un numero.
+Nel main, dichiara un puntatore a funzione e usalo per chiamare la funzione quadrato.
+
+## ES 3
+Scrivi un programma che dichiari una variabile intera, un puntatore a intero e un puntatore a puntatore.
+Assegna alla variabile un valore.
+Fai in modo che il puntatore punti a quella variabile.
+Fai in modo che il puntatore a puntatore punti al puntatore.
+Stampa il valore della variabile utilizzando sia il puntatore che il puntatore a puntatore.
 
 ```c
-/*
- * ESERCIZI SUI PUNTATORI
- */
-
 #include <stdio.h>
 
 /*

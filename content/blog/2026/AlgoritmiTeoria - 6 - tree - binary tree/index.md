@@ -10,13 +10,9 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## binaryTree.ts
 
-```typescript
-/*
-──────────────────────────────
-  STRUTTURA DATI: ALBERO BINARIO
-──────────────────────────────
+# STRUTTURA DATI: ALBERO BINARIO
+
 L'**Albero Binario** è una struttura dati gerarchica formata da nodi, 
 dove ciascun nodo può avere al massimo **due figli**:  
 ➡ un **figlio sinistro** e un **figlio destro**.  
@@ -24,9 +20,9 @@ dove ciascun nodo può avere al massimo **due figli**:
 È ideale per rappresentare dati con relazioni gerarchiche e per 
 implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).  
 
-──────────────────────────────
-  TERMINOLOGIA
-──────────────────────────────
+
+## TERMINOLOGIA
+
 - **Nodo** → elemento dell'albero contenente un valore e puntatori ai figli.  
 - **Radice (Root)** → il nodo principale, punto di partenza di tutte le operazioni.  
 - **Foglia (Leaf)** → nodo senza figli.  
@@ -41,17 +37,17 @@ implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).
 - **Altezza dell'Albero** → percorso più lungo radice → foglia.  
 - **Dimensione (Size)** → numero totale di nodi.  
 
-──────────────────────────────
-  OPERAZIONI DI VISITA
-──────────────────────────────
+
+## OPERAZIONI DI VISITA
+
 - **Pre-Ordine** → Nodo → Sottoalbero Sinistro → Sottoalbero Destro.  
 - **In-Ordine** → Sottoalbero Sinistro → Nodo → Sottoalbero Destro.  
 - **Post-Ordine** → Sottoalbero Sinistro → Sottoalbero Destro → Nodo.  
 - **Per Livelli (Level-Order)** → attraversamento livello per livello (con una coda).  
 
-──────────────────────────────
-  OPERAZIONI PRINCIPALI
-──────────────────────────────
+
+## OPERAZIONI PRINCIPALI
+
 - `inserisci(valore)` → aggiunge un nuovo nodo nell'albero.  
 - `cerca(valore)` → verifica se un valore è presente.  
 - `elimina(valore)` → rimuove un nodo con valore specifico.  
@@ -61,9 +57,9 @@ implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).
 - `altezza()` → calcola la profondità massima.  
 - `contaNodi()` → restituisce il numero totale di nodi.  
 
-──────────────────────────────
-  PRESTAZIONI
-──────────────────────────────
+
+## PRESTAZIONI
+
 - Alberi **bilanciati**:  
   • Inserimento → **O(log n)**  
   • Ricerca → **O(log n)**  
@@ -73,16 +69,17 @@ implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).
 
 ➡ L'efficienza dipende dal bilanciamento dell'albero.  
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - È la base per strutture come **Binary Search Tree (BST)**, **AVL**, **Heap**.  
 - Per evitare perdita di riferimenti, conviene usare copie dei nodi 
 nelle funzioni ricorsive → si preserva un backup al nodo originale.  
 - Le modifiche si propagano grazie agli effetti collaterali, mantenendo 
 la coerenza della struttura.  
-*/
 
+## CODICES
+```typescript
 // Classe Nodo
 class Nodo<E> {
     valore: E;

@@ -10,46 +10,44 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## observer.ts
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: OBSERVER
-──────────────────────────────
+# DESIGN PATTERN: OBSERVER
+
 L'Observer è un pattern comportamentale che permette a un oggetto 
 (Subject) di notificare automaticamente un insieme di oggetti (Observers) 
 ogni volta che il suo stato cambia.  
 È alla base di molti sistemi basati su eventi e della programmazione reattiva.
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - Più oggetti devono reagire ai cambiamenti di stato di un altro oggetto.
 - Vuoi implementare sistemi di eventi o flussi di dati asincroni.
 - Vuoi disaccoppiare il publisher dai subscriber, evitando dipendenze dirette.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - Broadcasting semplice verso più listener contemporaneamente.
 - Disaccoppiamento tra chi emette eventi e chi li gestisce.
 - Perfetto per UI reattive, flussi di dati in tempo reale e sistemi asincroni.
 - Supportato nativamente in librerie come RxJS.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+## POTENZIALI SVANTAGGI
+
 - Possibili **memory leak** se gli observer non vengono disiscritti.
 - La complessità aumenta con il numero di observer e interazioni.
 - Debug più complesso in sistemi con molti eventi concatenati.
 
-──────────────────────────────
-  STRUTTURA
-──────────────────────────────
-SUBJECT -> OBSERVER 1, OBSERVER 2, ..., OBSERVER N(stesso tipo) -> NOTIFICATION
-*/
 
+## STRUTTURA
+
+SUBJECT -> OBSERVER 1, OBSERVER 2, ..., OBSERVER N(stesso tipo) -> NOTIFICATION
+
+## CODICE
+
+```typescript
 /**
  * Interfaccia comune per l'Observer(reazione agli eventi) 
  */

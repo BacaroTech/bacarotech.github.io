@@ -10,13 +10,10 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## adapter.ts
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: ADAPTER
-──────────────────────────────
+
+# DESIGN PATTERN: ADAPTER
+
 L'Adapter (o Adattatore / Wrapper) è un pattern strutturale che consente
 a due classi con interfacce incompatibili di collaborare.
 
@@ -24,29 +21,30 @@ L'adattatore funge da "traduttore" tra l'interfaccia attesa dal codice client
 (Target) e quella realmente offerta da un oggetto esistente (Adaptee),
 senza modificare né il client né la classe originale.
 
-──────────────────────────────
-  QUANDO UTILIZZARLO
-──────────────────────────────
+
+## QUANDO UTILIZZARLO
+
 - Integrazione di librerie o componenti di terze parti.
 - Uniformare formati di input/output differenti (es. XML ⇆ JSON, sistemi di coordinate diversi).
 - Migrare verso una nuova API senza interrompere il funzionamento del codice esistente.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - **Basso accoppiamento**: il client dipende solo dall'interfaccia Target.
 - **Nessuna modifica a codice esistente**: adattamento non invasivo.
 - **Flessibilità nella sostituzione**: puoi introdurre più adattatori per transizioni graduali.
 - **Riutilizzo di codice**: componenti vecchi possono integrarsi con sistemi nuovi.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+## POTENZIALI SVANTAGGI
+
 - **Aumento della complessità**: più formati = più adapter da gestire.
 - **Prestazioni**: un layer aggiuntivo può introdurre overhead.
 - **Soluzione temporanea**: spesso è un "cerotto" invece di una riprogettazione strutturale.
-*/
 
+## CODICE
+```typescript
 /**
  * Sorgenti dati JSON ok
  */

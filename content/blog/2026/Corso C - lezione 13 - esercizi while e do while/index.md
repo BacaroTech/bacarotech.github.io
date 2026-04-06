@@ -10,13 +10,21 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 13 - esercizi while e do while.c
+# ESERCIZI SUI WHILE E DO WHILE
 
+# ES 1
+Scrivi un programma che chieda all’utente un numero intero positivo e stampi a video un conto alla rovescia fino a 0.
+
+# ES 2
+Chiedi all’utente di inserire numeri interi. Il programma continua a chiedere numeri fino a quando l’utente inserisce 0. 
+Alla fine stampa la somma di tutti i numeri inseriti (escluso lo zero).
+
+# ES 3
+Il computer sceglie un numero casuale tra 1 e 100. L’utente deve indovinare il numero. Dopo ogni tentativo il programma 
+dice se il numero da indovinare è più alto o più basso di quello inserito. Il ciclo termina quando l’utente indovina.
+
+## SOLUZIONI
 ```c
-/*
- * ESERCIZI CICLI WHILE
- */
-
 #include <stdio.h>
 #include <stdlib.h> // Per le funzioni rand() e srand()
 #include <time.h>   // Per la funzione time()

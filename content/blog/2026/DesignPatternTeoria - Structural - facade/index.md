@@ -10,40 +10,37 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## facade.ts
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: FACADE
-──────────────────────────────
+#  DESIGN PATTERN: FACADE
+
 Il Facade è un pattern strutturale che fornisce un'interfaccia unificata
 e semplificata a un insieme di sottosistemi complessi.
 
 La "facciata" nasconde i dettagli interni e offre al client un solo punto
 di accesso, riducendo l'accoppiamento tra componenti e migliorando la leggibilità.
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+##  QUANDO USARLO
+
 - Quando il sistema ha API verbose, complesse o frammentate.
 - Quando vuoi esporre solo facciate e non classi interne ai livelli superiori.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+##  VANTAGGI
+
 - Semplifica l'uso del sistema, nascondendo la complessità.
 - Riduce l'accoppiamento tra client e sottosistemi.
 - Fornisce un punto unico di controllo (utile per logging, sicurezza, transazioni).
 - Facilita modifiche e manutenzione, isolando le dipendenze.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+##  POTENZIALI SVANTAGGI
+
 - Se il client necessita di funzionalità molto specifiche, potrebbe comunque dover accedere ai sottosistemi.
 - Un eccessivo numero di facciate può portare a duplicazione di logica già presente nei moduli interni.
-*/
 
+## CODICE
+```typescript
 /**
  * Interfaccia comune
  */

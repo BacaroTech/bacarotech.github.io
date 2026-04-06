@@ -10,17 +10,28 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 10 - for.c
+# FOR
 
+Nel linguaggio C, il ciclo for è una struttura iterativa che permette di eseguire un blocco di istruzioni più volte, in modo controllato.
+
+## COSA SONO
+
+I for sono costrutti utilizzati per ripetere una sequenza di operazioni per un numero definito di volte. Sono particolarmente adatti quando si conosce in anticipo quante iterazioni devono essere eseguite.
+
+## PERCHÈ SERVONO
+
+Servono per automatizzare operazioni ripetitive, evitando di scrivere più volte lo stesso codice. Sono molto utilizzati, ad esempio, per scorrere sequenze di dati, eseguire calcoli ripetuti o iterare su strutture come array.
+
+## SINTASSI
+
+La struttura di un for in C include tre elementi principali: una fase di inizializzazione, una condizione che determina se il ciclo deve continuare e un aggiornamento che modifica lo stato a ogni iterazione. Questo schema permette di avere tutto il controllo del ciclo in un’unica struttura compatta.
+
+## COMBINAZIONI
+
+I cicli for possono essere combinati tra loro o con altre strutture come if e while per creare logiche più complesse. Ad esempio, è possibile avere cicli annidati o condizioni interne che modificano il comportamento del ciclo durante l’esecuzione.
+
+## CODICE
 ```c
-/*
-FOR
-cosa sono
-perchè servono
-sintassi
-combinazioni
-*/
-
 #include <stdio.h>
 
 int main()

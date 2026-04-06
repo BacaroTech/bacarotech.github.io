@@ -10,40 +10,41 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 6 - tabelle di verita.c
+# TABELLE DI VERITA
 
-```c
-/*
-TABELLE DI VERITA
-*/
+## NOT
+Nel linguaggio C, l’operatore NOT serve per invertire il valore di una condizione booleana. È un operatore unario, quindi agisce su una sola espressione. Il simbolo utilizzato per rappresentare il NOT in C è il punto esclamativo. Viene posto prima della condizione che si vuole invertire.
 
-/*
-NOT
 !
 1 -> 0
 0 -> 1
-*/
 
-/*
-AND
+## AND
+Nel linguaggio C, l’operatore AND viene utilizzato per combinare due o più condizioni booleane. Il risultato è vero solo se tutte le condizioni coinvolte sono vere. L’AND lavora confrontando almeno due condizioni. Queste condizioni vengono valutate insieme per determinare un unico risultato logico. Il simbolo utilizzato per rappresentare l’AND in C è la doppia e commerciale. Serve per collegare più condizioni all’interno di un’unica espressione.
+
 Date (almeno) 2 condizioni booleane A e B
 
 &&      A vera A Falsa
 B vera    vero   falso
 B falsa  falso   falso
-*/
 
-/*
-OR
+## OR
+Nel linguaggio C, l’operatore OR viene utilizzato per verificare se almeno una tra più condizioni è vera. È meno restrittivo rispetto all’AND. Anche l’OR combina almeno due condizioni booleane per produrre un unico risultato logico. Il simbolo utilizzato per rappresentare l’OR in C è la doppia barra verticale. Serve per collegare condizioni alternative.
+
+
 Date (almeno) 2 condizioni booleane A e B
 
 ||      A vera A Falsa
 B vera    vero    vero
 B falsa   vero   falso
 
-AND E OR POSSONO ESSERE COMBINATI TRA LORO
-*/
+## NOTE
 
+AND OR e NOT possono essere combinati tra di loro per rappresentare delle condizioni booleane complesse
+
+## CODICE
+
+```c
 #include <stdio.h>
 
 int main()

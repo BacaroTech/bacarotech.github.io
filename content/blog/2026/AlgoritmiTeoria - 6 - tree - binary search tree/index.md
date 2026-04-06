@@ -10,20 +10,17 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## binarySearchTree.ts
 
-```typescript
-/*
-──────────────────────────────
-  STRUTTURA DATI: ALBERO BINARIO DI RICERCA (BST)
-──────────────────────────────
+
+# STRUTTURA DATI: ALBERO BINARIO DI RICERCA (BST)
+
 Un **Binary Search Tree (BST)** è una struttura dati ad albero 
 che organizza i valori in modo ordinato per consentire 
 ricerca, inserimento e rimozione efficienti.  
 
-──────────────────────────────
-  PROPRIETÀ DI RICERCA
-──────────────────────────────
+
+## PROPRIETÀ DI RICERCA
+
 - Ogni nodo contiene un valore univoco.  
 - Per ogni nodo `N`:  
   - Sottoalbero sinistro → valori < `N.value`  
@@ -31,9 +28,9 @@ ricerca, inserimento e rimozione efficienti.
 - Grazie a questa proprietà, è possibile sfruttare 
   la **ricerca binaria** durante la navigazione.  
 
-──────────────────────────────
-  TERMINOLOGIA
-──────────────────────────────
+
+## TERMINOLOGIA
+
 - **Nodo** → contiene un valore e i puntatori a sinistra e destra.  
 - **Radice (Root)** → nodo principale dell'albero.  
 - **Foglia (Leaf)** → nodo senza figli.  
@@ -42,9 +39,8 @@ ricerca, inserimento e rimozione efficienti.
 - **Sottoalbero (Subtree)** → albero discendente da un nodo.  
 - **Altezza dell'Albero** → percorso più lungo dalla radice a una foglia.  
 
-──────────────────────────────
-  OPERAZIONI PRINCIPALI
-──────────────────────────────
+## OPERAZIONI PRINCIPALI
+
 - `inserisci(valore)` → aggiunge un nodo rispettando la proprietà BST.  
 - `cerca(valore)` → verifica la presenza di un valore.  
 - `elimina(valore)` → rimuove un nodo:  
@@ -57,38 +53,39 @@ ricerca, inserimento e rimozione efficienti.
 - `altezza()` → calcola la profondità massima.  
 - `contaNodi()` → numero totale di nodi.  
 
-──────────────────────────────
-  OPERAZIONI AUSILIARIE
-──────────────────────────────
+
+## OPERAZIONI AUSILIARIE
+
 - `getMin()` → valore minimo (nodo più a sinistra).  
 - `getMax()` → valore massimo (nodo più a destra).  
 - `isBalanced()` → verifica che le altezze dei sottoalberi 
   differiscano al massimo di 1.  
 
-──────────────────────────────
-  EFFICIENZA
-──────────────────────────────
+
+## EFFICIENZA
+
 - Ricerca → **O(log n)** (medio), **O(n)** (peggiore caso).  
 - Inserimento → **O(log n)** (medio), **O(n)** (peggiore caso).  
 - Eliminazione → **O(log n)** (medio), **O(n)** (peggiore caso).  
 - Spazio → **O(n)**.  
 
-──────────────────────────────
-  APPLICAZIONI
-──────────────────────────────
+
+## APPLICAZIONI
+
 - Strutture di database.  
 - Implementazioni di insiemi e mappe ordinate.  
 - Algoritmi di ordinamento.  
 - Gestione di intervalli e dati gerarchici.  
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - Più semplice rispetto ad AVL.  
 - Non garantisce bilanciamento automatico.  
 - Può degradare in una lista se i dati sono inseriti in ordine.  
-*/
 
+## CODICE
+```typescript
 class Node<E> {
     value: E;
     left: Node<E> | null;

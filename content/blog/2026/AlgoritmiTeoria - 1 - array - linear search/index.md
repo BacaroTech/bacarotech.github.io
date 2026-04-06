@@ -10,52 +10,48 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## search/linearsearch.ts
+# ALGORITMO: RICERCA LINEARE
 
-```typescript
-/*
-──────────────────────────────
-  ALGORITMO: RICERCA LINEARE
-──────────────────────────────
 La ricerca lineare è un algoritmo che consente di verificare se un
 elemento è presente all'interno di un array.  
 Non richiede che l'array sia ordinato: controlla gli elementi uno a uno
 fino a trovare il valore cercato oppure fino alla fine dell'array.
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - Vuoi cercare un elemento in un array **non ordinato**.
 - L'array è di piccole dimensioni, quindi la semplicità conta più
   dell'efficienza.
 - Non hai bisogno di strutture dati avanzate o logiche di ricerca complesse.
 
-──────────────────────────────
-  FUNZIONAMENTO
-──────────────────────────────
+
+## FUNZIONAMENTO
+
 1. Si scorre l'array dall'inizio alla fine.
 2. Per ogni elemento si confronta con quello da cercare:
    - **Se uguale**, restituisce la posizione e termina.
    - **Se diverso**, continua con l'elemento successivo.
 3. Se si arriva alla fine senza trovare l'elemento, l'algoritmo restituisce `-1`.
 
-──────────────────────────────
-  OUTPUT
-──────────────────────────────
+
+## OUTPUT
+
 - Restituisce la posizione (tra 0 e n-1) se l'elemento è presente.
 - Restituisce `-1` se l'elemento non è stato trovato.
 
-──────────────────────────────
-  COMPLESSITÀ
-──────────────────────────────
+
+## COMPLESSITÀ
+
 - **Caso migliore:** O(1)  
   (se l'elemento si trova subito all'inizio).
 - **Caso medio:** O(n)  
   (in media deve scorrere metà dell'array).
 - **Caso peggiore:** O(n)  
   (se l'elemento è alla fine o non è presente).
-*/
 
+## CODICE
+```typescript
 /**
  * Ricerca di un elmento all'interno dell'array tramite scansione lineare
  * @param arr array sul quale dobbiamo fare la ricerca

@@ -10,65 +10,62 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## sort/bubblesort.ts
+# ALGORITMO: BUBBLE SORT
 
-```typescript
-/*
-──────────────────────────────
-  ALGORITMO: BUBBLE SORT
-──────────────────────────────
 Il Bubble Sort è un algoritmo di ordinamento semplice che riordina un
 array confrontando ripetutamente coppie di elementi adiacenti e
-scambiandoli se sono nell'ordine sbagliato.  
+scambiandoli se sono nell'ordine sbagliato.
 Il processo continua finché l'array non risulta ordinato.
 
-Visualizzazione:  
+Visualizzazione:
 https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - Vuoi un algoritmo di ordinamento **semplice da comprendere e implementare**.
 - Stai lavorando con array di piccole dimensioni.
 - Vuoi un algoritmo didattico per introdurre i concetti di ordinamento.
 
-──────────────────────────────
-  FUNZIONAMENTO
-──────────────────────────────
+
+## FUNZIONAMENTO
+
 1. Si confrontano due elementi consecutivi:
-   - **Se il primo ≤ il secondo**, non si fa nulla.
+- **Se il primo ≤ il secondo**, non si fa nulla.
 	 Esempio: (1, 3) → (1, 3)
-   - **Se il primo > il secondo**, si scambiano.
+- **Se il primo > il secondo**, si scambiano.
 	 Esempio: (3, 2) → (2, 3)
 2. Questo confronto viene fatto per tutte le coppie di elementi.
 3. Una scansione completa dell'array si chiama **passata**.
 4. Alla fine di ogni passata, l'elemento più grande "scivola" in fondo
-   all'array, nella sua posizione definitiva.
+all'array, nella sua posizione definitiva.
 5. L'algoritmo termina quando una passata non esegue alcuno scambio.
 
-──────────────────────────────
-  OUTPUT
-──────────────────────────────
+
+## OUTPUT
+
 - Restituisce l'array ordinato.
 
-──────────────────────────────
-  COMPLESSITÀ
-──────────────────────────────
-- **Caso migliore:** O(n)  
-  (quando l'array è già ordinato, basta una sola passata).
-- **Caso medio:** O(n²)  
-  (numerosi scambi distribuiti tra le passate).
-- **Caso peggiore:** O(n²)  
-  (array ordinato al contrario, massimo numero di scambi).
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+## COMPLESSITÀ
+
+- **Caso migliore:** O(n)
+(quando l'array è già ordinato, basta una sola passata).
+- **Caso medio:** O(n²)
+(numerosi scambi distribuiti tra le passate).
+- **Caso peggiore:** O(n²)
+(array ordinato al contrario, massimo numero di scambi).
+
+
+## NOTE
+
 - È un algoritmo **semplice ma inefficiente** per array grandi.
 - È stabile (non cambia l'ordine relativo di elementi uguali).
 - Non è adatto a contesti pratici di ordinamento su grandi dataset.
-*/
 
+## CODICE
+
+```typescript
 /**
  * Ordina l'array seguendo le logiche del bubbleSort
  * @param arr array da ordinare

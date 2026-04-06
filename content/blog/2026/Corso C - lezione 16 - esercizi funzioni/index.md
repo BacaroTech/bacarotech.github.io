@@ -10,11 +10,23 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 16 - esercizi funzioni.c
+# ESERCIZI SULLE FUNZIONI
 
+## ES 1
+Scrivi una funzione area_rettangolo(base, altezza) che restituisca l’area di un rettangolo. 
+Poi chiedi all’utente i valori di base e altezza e stampa il risultato.
+
+## ES 2
+Scrivi una funzione pari_o_dispari(n) che ritorni 
+la valore 1 se il numero è pari e 0 se il numero è dispari.
+
+## ES 3
+Scrivi una funzione calcola(a, b, operatore) che prenda due numeri e una carattere che rappresenta 
+l’operazione ('+', '-', '*', '/'). La funzione deve restituire il risultato dell’operazione.
+Poi crea un programma che chieda i due numeri e l’operatore all’utente e mostri il risultato.
+
+## SOLUZIONI
 ```c
-// ESERCIZI SULLE FUNZIONI
-
 #include <stdio.h>
 
 /*

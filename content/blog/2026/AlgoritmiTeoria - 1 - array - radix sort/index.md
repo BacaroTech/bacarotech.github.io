@@ -10,13 +10,9 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## sort/radicsort.ts
 
-```typescript
-/*
-──────────────────────────────
-  ALGORITMO: RADIX SORT
-──────────────────────────────
+# ALGORITMO: RADIX SORT
+
 Il Radix Sort è un algoritmo di ordinamento **non basato sui confronti** che
 ordina i numeri considerando le loro cifre, dalla meno significativa
 alla più significativa (LSD – Least Significant Digit).  
@@ -25,17 +21,17 @@ alla più significativa (LSD – Least Significant Digit).
 Visualizzazione:  
 https://it.wikipedia.org/wiki/Radix_sort#/media/File:Radix.JPG
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - Gli elementi sono **numeri interi non negativi**.
 - Le cifre dei numeri si trovano in un intervallo limitato **[0, K]**.
 - Vuoi un ordinamento stabile e più efficiente di O(n log n) per insiemi di numeri con range limitato.
 - Utile come base per algoritmi più complessi di ordinamento di grandi dataset.
 
-──────────────────────────────
-  FUNZIONAMENTO
-──────────────────────────────
+
+## FUNZIONAMENTO
+
 1. Si considerano tutti i numeri dell'array.
 2. Si ordina ogni numero **cifra per cifra**, partendo dalla cifra meno significativa (unità) fino alla più significativa:
    - Esempio: Array iniziale: 142, 456, 228  
@@ -44,14 +40,14 @@ https://it.wikipedia.org/wiki/Radix_sort#/media/File:Radix.JPG
 	 - Passo 3: ordino le cifre più significative → 142, 228, 456
 3. Dopo l'ultima iterazione, l'array risulta completamente ordinato.
 
-──────────────────────────────
-  OUTPUT
-──────────────────────────────
+
+## OUTPUT
+
 - Restituisce l'array ordinato in modo **stabile**.
 
-──────────────────────────────
-  COMPLESSITÀ
-──────────────────────────────
+
+## COMPLESSITÀ
+
 - **Caso migliore:** O(m(n + K))  
 - **Caso medio:** O(m(n + K))  
 - **Caso peggiore:** O(m(n + K))  
@@ -60,14 +56,15 @@ https://it.wikipedia.org/wiki/Radix_sort#/media/File:Radix.JPG
   - n = numero di cifre di ciascun elemento  
   - K = valore massimo possibile delle cifre
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - È un algoritmo **stabile**, quindi mantiene l'ordine relativo di elementi uguali.
 - Non utilizza confronti diretti tra numeri.
 - Particolarmente efficiente per grandi array di numeri con cifre limitate.
-*/
 
+## CODICE
+```typescript
 /**
  * Calcola la cifra di un numero in una certa posizione
  * @param num numero di partenza

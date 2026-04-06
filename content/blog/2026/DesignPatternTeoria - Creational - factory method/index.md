@@ -10,13 +10,8 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## factoryMethod.ts
+# DESIGN PATTERN: FACTORY METHOD
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: FACTORY METHOD
-──────────────────────────────
 Il Factory Method è un pattern creazionale che definisce un'interfaccia
 per la creazione di oggetti, delegando alle sottoclassi la decisione
 su quale classe concreta istanziare.
@@ -24,29 +19,30 @@ su quale classe concreta istanziare.
 Questo approccio separa la logica di creazione dal codice che utilizza
 gli oggetti, migliorando flessibilità e manutenibilità.
 
-──────────────────────────────
-  QUANDO UTILIZZARLO
-──────────────────────────────
+
+## QUANDO UTILIZZARLO
+
 - Quando non conosci a priori la classe concreta da istanziare.
 - Quando vuoi centralizzare la logica di creazione degli oggetti.
 - Quando desideri ridurre le dipendenze dirette da classi specifiche.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - **Separazione delle responsabilità**: isola la logica di istanziazione dal codice client.
 - **Estendibilità**: per supportare nuovi tipi di oggetti basta estendere la factory.
 - **Open/Closed Principle**: il codice client dipende da interfacce, non da implementazioni concrete.
 - **Codice più pulito e modulare**: la creazione è incapsulata.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+## POTENZIALI SVANTAGGI
+
 - Potrebbe richiedere molte sottoclassi o rami condizionali per gestire vari tipi di oggetti.
 - Non è ottimale per oggetti con numerose varianti di configurazione.
 - L'aggiunta di nuovi tipi può richiedere modifiche alla factory esistente.
-*/
 
+## CODICE
+```typescript
 /**
  * Interfaccia di base(necessaria)
  */

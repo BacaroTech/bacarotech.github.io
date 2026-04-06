@@ -10,13 +10,8 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## sort/quicksort.ts
+# ALGORITMO: QUICK SORT
 
-```typescript
-/*
-──────────────────────────────
-  ALGORITMO: QUICK SORT
-──────────────────────────────
 Il Quick Sort è un algoritmo di ordinamento **Divide et Impera** che
 suddivide ricorsivamente l'array intorno a un elemento chiamato **pivot**.  
 Gli elementi minori del pivot vengono posizionati a sinistra, quelli
@@ -25,17 +20,17 @@ maggiori a destra, e il processo viene ripetuto su entrambe le sotto-sezioni.
 Visualizzazione:  
 https://en.wikipedia.org/wiki/Quicksort#/media/File:Sorting_quicksort_anim.gif
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - Vuoi un algoritmo di ordinamento **rapido** e con buona performance media.
 - L'array è di grandi dimensioni.
 - Puoi tollerare casi peggiori rari (O(n²)) con scelte di pivot non ottimali.
 - È utile quando serve un algoritmo in-place (senza array aggiuntivi significativi).
 
-──────────────────────────────
-  FUNZIONAMENTO
-──────────────────────────────
+
+## FUNZIONAMENTO
+
 1. **Scelta del pivot:**  
    - Si seleziona un elemento dell'array (spesso primo, ultimo o centrale).
 2. **Partizionamento:**  
@@ -46,28 +41,29 @@ https://en.wikipedia.org/wiki/Quicksort#/media/File:Sorting_quicksort_anim.gif
    - La procedura viene applicata ricorsivamente alla sotto-sezione sinistra e destra del pivot.
 4. L'array diventa ordinato quando tutte le sotto-sezioni sono ordinate.
 
-──────────────────────────────
-  OUTPUT
-──────────────────────────────
+
+## OUTPUT
+
 - Restituisce l'array ordinato come **side effect** (modifica in-place).
 
-──────────────────────────────
-  COMPLESSITÀ
-──────────────────────────────
+
+## COMPLESSITÀ
+
 - **Caso migliore:** O(n log n)  
   (pivot divide sempre in modo bilanciato).
 - **Caso medio:** O(n log n)  
 - **Caso peggiore:** O(n²)  
   (pivot scelto male, ad esempio array già ordinato e pivot sempre massimo/minimo).
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - È un algoritmo **non stabile** (l'ordine relativo di elementi uguali può cambiare).  
 - Molto efficiente in media e con poca memoria aggiuntiva.  
 - L'uso di strategie di pivot migliori (es. pivot casuale) riduce il rischio di caso peggiore.
-*/
 
+## CODICE
+```typescript
 /**
  * Funzione ausiliaria del quickSort per individuare e posizionare correttamente il pivot
  * @param arr array da ordinare

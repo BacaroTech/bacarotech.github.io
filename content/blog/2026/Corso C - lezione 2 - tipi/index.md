@@ -10,17 +10,28 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 2 - tipi.c
+# TIPI
 
+Nel linguaggio C, i tipi di dato definiscono la natura delle informazioni che una variabile può contenere. Sono fondamentali perché permettono al compilatore di sapere come interpretare i dati e quanta memoria allocare.
+
+## QUANTI SONO
+
+In C esistono diversi tipi di dato primitivi, come numeri interi, numeri con virgola, caratteri e valori booleani (anche se questi ultimi non sono nativi nelle versioni più vecchie). Ogni tipo ha caratteristiche specifiche in termini di dimensione e utilizzo.
+
+## VARIABILI DI TEMPLATE
+
+In C non esistono vere e proprie “variabili di template” come in altri linguaggi più moderni. Tuttavia, il concetto può essere avvicinato all’idea di usare lo stesso schema logico con tipi diversi, grazie a strumenti come le macro o la programmazione generica limitata.
+
+## ESEMPI
+
+Un esempio concettuale di tipi in C include variabili che rappresentano numeri interi per contatori, numeri decimali per misure più precise e caratteri per rappresentare simboli o lettere. Ogni scelta del tipo dipende dal contesto in cui viene utilizzata la variabile.
+
+## SPOILER: TIPI CUSTOM
+
+Oltre ai tipi primitivi, in C è possibile creare tipi personalizzati. Questo avviene tramite strutture, unioni o definizioni di tipo, che permettono di modellare dati più complessi e organizzati, rendendo il codice più leggibile e modulare.
+
+## CODICE
 ```c
-/*
-TIPI
-quanti sono
-variabili di template
-esempi
-spoiler: tipi custom
-*/
-
 #include <stdio.h>
 #include <stdbool.h> // Per il tipo bool
 

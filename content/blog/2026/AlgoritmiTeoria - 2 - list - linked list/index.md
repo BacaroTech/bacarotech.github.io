@@ -10,13 +10,8 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## linkedList.ts
+# STRUTTURA DATI: LISTA SEMPLICE
 
-```typescript
-/*
-──────────────────────────────
-  STRUTTURA DATI: LISTA SEMPLICE
-──────────────────────────────
 La **Lista Semplice** è una struttura dati dinamica composta da nodi
 collegati tra loro.  
 A differenza degli array, non ha una dimensione fissa e permette di
@@ -25,9 +20,9 @@ struttura.
 L'accesso agli elementi, però, è **sequenziale**, poiché non esiste un
 indice diretto.
 
-──────────────────────────────
-  STRUTTURA INTERNA
-──────────────────────────────
+
+## STRUTTURA INTERNA
+
 Ogni **nodo** della lista è composto da due campi:
 - `data`: il valore contenuto nel nodo.
 - `next`: riferimento al nodo successivo (oppure `null` se è l'ultimo).
@@ -35,9 +30,9 @@ Ogni **nodo** della lista è composto da due campi:
 La lista è gestita tramite un puntatore alla **testa** (head), che
 rappresenta il primo nodo e consente di accedere all'intera struttura.
 
-──────────────────────────────
-  PROBLEMA DELLA "FRAGILITÀ DELLA TESTA"
-──────────────────────────────
+
+## PROBLEMA DELLA "FRAGILITÀ DELLA TESTA"
+
 Durante l'iterazione della lista, se si utilizza direttamente la testa,
 il riferimento al primo nodo può essere perso.  
 
@@ -51,34 +46,35 @@ perdendo l'accesso alla struttura.
 Soluzione: usare una **copia della testa** per iterare, così il
 riferimento originale alla lista rimane intatto.
 
-──────────────────────────────
-  OPERAZIONI PRINCIPALI
-──────────────────────────────
+
+## OPERAZIONI PRINCIPALI
+
 - `inserisciInTesta(valore)` → inserisce un nodo in testa alla lista.  
 - `inserisciInCoda(valore)` → inserisce un nodo in fondo alla lista.  
 - `rimuovi(valore)` → rimuove il primo nodo con valore uguale a quello dato.  
 - `cerca(valore)` → restituisce il primo nodo che contiene il valore dato.  
 - `stampaLista()` → stampa tutti i valori partendo dalla testa.
 
-──────────────────────────────
-  PRESTAZIONI
-──────────────────────────────
+
+## PRESTAZIONI
+
 - Inserimento in testa → **O(1)**  
 - Rimozione in testa → **O(1)**  
 - Inserimento in coda → **O(n)** (se non si mantiene un puntatore alla coda)  
 - Ricerca di un elemento → **O(n)**  
 - Accesso diretto ad una posizione → **O(n)**  
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+
+## NOTE
+
 - Struttura **semplice ed efficiente** per inserimenti/rimozioni in
 testa.  
 - Poco adatta per accessi casuali (serve scorrere sequenzialmente).  
 - È la base per strutture più complesse come **liste doppiamente collegate** o **liste circolari**.
 */
 
-
+## CODICE
+```typescript
 // Nodo generico
 class ListNode<E> {
     data: E;

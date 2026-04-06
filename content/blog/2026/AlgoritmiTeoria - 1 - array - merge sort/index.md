@@ -12,11 +12,10 @@ series = ["AlgoritmiTeoria"]
 
 ## sort/mergesort.ts
 
-```typescript
-/*
-──────────────────────────────
-  ALGORITMO: MERGE SORT
-──────────────────────────────
+
+
+# ALGORITMO: MERGE SORT
+
 Il Merge Sort è un algoritmo di ordinamento basato sul paradigma
 **Divide et Impera**.  
 Divide ricorsivamente l'array in parti sempre più piccole, le ordina e
@@ -25,16 +24,16 @@ poi le ricompone fino a ottenere l'array ordinato completo.
 Visualizzazione:  
 https://it.wikipedia.org/wiki/Merge_sort#/media/File:Merge_sort_animation2.gif
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - L'array è di **grandi dimensioni**.
 - Vuoi un algoritmo **stabile** e con complessità garantita O(n log n).
 - È utile quando serve un ordinamento prevedibile, indipendente dalla disposizione iniziale dei dati.
 
-──────────────────────────────
-  FUNZIONAMENTO
-──────────────────────────────
+
+## FUNZIONAMENTO
+
 1. **Divisione:**  
    - L'array viene suddiviso ricorsivamente in due metà fino a ottenere
 	 micro-array di un solo elemento.
@@ -44,26 +43,28 @@ https://it.wikipedia.org/wiki/Merge_sort#/media/File:Merge_sort_animation2.gif
    - Questo processo si ripete risalendo la ricorsione, fino a
 	 ricomporre l'intero array ordinato.
 
-──────────────────────────────
-  OUTPUT
-──────────────────────────────
-- Restituisce l'array ordinato.
 
-──────────────────────────────
-  COMPLESSITÀ
-──────────────────────────────
+## OUTPUT
+
+- Restituisce l'array ordinato sfruttando dei sottoarray
+
+
+## COMPLESSITÀ
+
 - **Caso migliore:** O(n log n)  
 - **Caso medio:** O(n log n)  
 - **Caso peggiore:** O(n log n)  
 
-──────────────────────────────
-  NOTE
-──────────────────────────────
+Nota di merito alla complessità spaziale aggiuntiva, che in questo caso è O(n) in quanto ho bisogno di un array di supporto grande quanto quello di input 
+
+## NOTE
+
 - È un algoritmo **stabile**.
 - Richiede **memoria aggiuntiva** proporzionale alla dimensione dell'array.
 - Particolarmente efficiente su array grandi e distribuzioni casuali.
-*/
 
+## CODICE
+```typescript
 /**
  * Funzione ausiliaria merge che permette di combinare 2 array ordinati
  * @param left primo array da combinare

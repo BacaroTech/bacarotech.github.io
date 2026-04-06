@@ -10,13 +10,24 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 14 - confronto tra for, while e do while.c
+# CONFRONTO FOR, WHILE E DO WHILE
 
+Nel linguaggio C, i cicli for, while e do while servono tutti a ripetere un blocco di codice, ma si differenziano per struttura e modalità di utilizzo.
+
+## CICLO FOR
+Il ciclo for è ideale quando si conosce in anticipo il numero di iterazioni da eseguire, perché racchiude inizializzazione, condizione e aggiornamento in un’unica struttura compatta.
+
+## CICLO WHILE
+Il ciclo while è più flessibile ed è utilizzato quando il numero di iterazioni non è noto a priori, ma dipende da una condizione che viene valutata prima di ogni esecuzione del ciclo.
+
+## CICLO DO WHILE
+Il ciclo do while, invece, garantisce che il blocco di codice venga eseguito almeno una volta, poiché la condizione viene controllata solo al termine dell’iterazione.
+
+## CONCLUSIONI
+In sintesi, la scelta tra questi cicli dipende dal contesto: for per iterazioni controllate, while per condizioni dinamiche e do while quando è necessaria almeno un’esecuzione iniziale.
+
+## CODICE
 ```c
-/*
- * CONFRONTO FOR, WHILE E DO WHILE
- */
-
 #include <stdio.h>
 
 int main() {

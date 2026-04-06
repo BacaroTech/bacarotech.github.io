@@ -10,49 +10,36 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-## search/binarysearch.ts
-
-```typescript
-/*
-──────────────────────────────
-  ALGORITMO: RICERCA BINARIA
-──────────────────────────────
+# ALGORITMO: RICERCA BINARIA
 La ricerca binaria è un algoritmo che consente di verificare se un
-elemento è presente all'interno di un array ordinato.  
+elemento è presente all'interno di un array ordinato.
 Funziona dividendo progressivamente l'array a metà fino a trovare
 l'elemento cercato o determinare che non esiste.
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+## QUANDO USARLO
 - Vuoi cercare un elemento in un array **ordinato** (crescente o decrescente).
 - Vuoi ridurre i tempi di ricerca rispetto alla scansione sequenziale.
 - Vuoi un algoritmo efficiente con complessità logaritmica.
 
-──────────────────────────────
-  FUNZIONAMENTO
-──────────────────────────────
+## FUNZIONAMENTO
 1. Si considerano gli estremi dell'array (inizialmente 0 e n-1).
 2. Si calcola l'indice dell'elemento centrale.
 3. Si confronta l'elemento centrale con quello da cercare:
-   - **Se uguale**, restituisce la posizione.
-   - **Se maggiore**, si ripete la ricerca nella prima metà.
-   - **Se minore**, si ripete la ricerca nella seconda metà.
+- **Se uguale**, restituisce la posizione.
+- **Se maggiore**, si ripete la ricerca nella prima metà.
+- **Se minore**, si ripete la ricerca nella seconda metà.
 4. Il processo continua fino a trovare l'elemento o esaurire l'array.
 
-──────────────────────────────
-  OUTPUT
-──────────────────────────────
+## OUTPUT
 - Restituisce la posizione (tra 0 e n-1) se l'elemento è presente.
 - Restituisce `-1` se l'elemento non è stato trovato.
 
-──────────────────────────────
-  COMPLESSITÀ
-──────────────────────────────
-- **Caso peggiore:** O(log n)  
-  (a ogni passo la dimensione del problema si dimezza).
-*/
+## COMPLESSITÀ
+**Caso peggiore:** O(log n) 
+a ogni passo la dimensione del problema si dimezza.
 
+## CODICE
+```typescript
 /**
  * Ricerca di un elmento all'interno dell'array tramite binary search
  * @param arr array sul quale dobbiamo fare la ricerca
@@ -92,5 +79,4 @@ let arr = [1, 3, 5, 7, 8, 9];
 console.log("Visualizza array:", arr);
 console.log("Ricerca all'interno dell'array dell'elemento 5 con ricerca binaria, indice:", binarySearch(arr, 5, 0, arr.length - 1));
 console.log("Ricerca all'interno dell'array dell'elemento 12 con ricerca binaria, indice:", binarySearch(arr, 12, 0, arr.length - 1)); 
-
 ```

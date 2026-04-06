@@ -10,20 +10,19 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 5 - esercizi if else.c
+# ESERCIZI SUGLI IF
 
-```c
-/*
-es 1
+## ES 1
 Utilizzare una struttura if per determinare se un numero è positivo, negativo o zero.
 
-es 2
+## ES 2
 Confrontare due numeri interi e stampare il maggiore.
 
-es 3
+## ES 3
 Controllare se un voto è valido (0–30) e determinare se è sufficiente (≥18).
-*/
 
+## SOLUZIONI
+```c
 #include <stdio.h>
 
 int main()

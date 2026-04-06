@@ -14,9 +14,9 @@ series = ["AlgoritmiTeoria"]
 
 ```typescript
 /*
-──────────────────────────────
+
   ALGORITMO: INSERTION SORT
-──────────────────────────────
+
 L'Insertion Sort è un algoritmo di ordinamento semplice e intuitivo, che
 costruisce progressivamente una parte ordinata dell'array inserendo ogni
 nuovo elemento nella posizione corretta.  
@@ -26,16 +26,16 @@ gioco in mano.
 Visualizzazione:  
 https://it.wikipedia.org/wiki/Insertion_sort#/media/File:Sorting_insertion_sort_anim.gif
 
-──────────────────────────────
+
   QUANDO USARLO
-──────────────────────────────
+
 - L'array ha **piccole dimensioni** o è già **quasi ordinato**.
 - Vuoi un algoritmo semplice da implementare e stabile.
 - È utile come parte di algoritmi più complessi (es. **Shell Sort**).
 
-──────────────────────────────
+
   FUNZIONAMENTO
-──────────────────────────────
+
 1. Si assume che il primo elemento sia già ordinato.
 2. Per ogni elemento successivo (dal secondo fino all'ultimo):
    - Si confronta l'elemento con quelli nella parte ordinata.
@@ -46,14 +46,14 @@ https://it.wikipedia.org/wiki/Insertion_sort#/media/File:Sorting_insertion_sort_
 3. La parte ordinata cresce progressivamente di un elemento per volta,
    fino a includere l'intero array.
 
-──────────────────────────────
+
   OUTPUT
-──────────────────────────────
+
 - Restituisce l'array ordinato.
 
-──────────────────────────────
+
   COMPLESSITÀ
-──────────────────────────────
+
 - **Caso migliore:** O(n)  
   (array già ordinato → basta un confronto per elemento).
 - **Caso medio:** O(n²)  
@@ -61,9 +61,9 @@ https://it.wikipedia.org/wiki/Insertion_sort#/media/File:Sorting_insertion_sort_
 - **Caso peggiore:** O(n²)  
   (array ordinato in senso opposto, massimo numero di spostamenti).
 
-──────────────────────────────
+
   NOTE
-──────────────────────────────
+
 - È un algoritmo **stabile** (mantiene l'ordine relativo di elementi uguali).
 - Funziona bene su insiemi **piccoli o quasi ordinati**.
 - Per array grandi non è efficiente rispetto a QuickSort, MergeSort, ecc.

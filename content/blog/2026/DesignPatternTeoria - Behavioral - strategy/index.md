@@ -10,41 +10,39 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-## strategy.ts
 
-```typescript
-/*
-──────────────────────────────
-  DESIGN PATTERN: STRATEGY
-──────────────────────────────
+
+# DESIGN PATTERN: STRATEGY
+
 Lo Strategy è un pattern comportamentale che permette di definire una 
 famiglia di algoritmi, incapsularli e renderli intercambiabili a runtime 
 senza modificare il contesto che li utilizza.  
 In pratica, consente di cambiare il "comportamento" di un oggetto in modo flessibile.
 
-──────────────────────────────
-  QUANDO USARLO
-──────────────────────────────
+
+## QUANDO USARLO
+
 - Più algoritmi alternativi devono essere scelti dinamicamente.
 - Vuoi evitare lunghi `if-else` o `switch-case` pieni di logica condizionale.
 - Vuoi rispettare l'Open/Closed Principle: estendere il comportamento senza modificare il codice esistente.
 
-──────────────────────────────
-  VANTAGGI
-──────────────────────────────
+
+## VANTAGGI
+
 - Possibilità di aggiungere nuovi algoritmi senza modificare il codice principale.
 - Migliora leggibilità eliminando `if/switch` complessi.
 - Promuove la composizione invece dell'ereditarietà.
 - Algoritmi intercambiabili a runtime.
 
-──────────────────────────────
-  POTENZIALI SVANTAGGI
-──────────────────────────────
+
+## POTENZIALI SVANTAGGI
+
 - Aumenta il numero di classi/funzioni (una per strategia).
 - Il contesto deve conoscere l'interfaccia comune.
 - Più complesso rispetto a una semplice funzione inline per problemi banali.
-*/
 
+## CODICE
+```typescript
 /**
  * Strategy astratta comune
  */

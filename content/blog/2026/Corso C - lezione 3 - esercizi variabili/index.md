@@ -10,24 +10,21 @@ authors = []
 series = ["Corso C"]
 +++
 
-## lezione 3 - esercizi variabili.c
+# ESERCIZI SUI TIPI
 
-```c
-/*
-ESERCIZI SUI TIPI
-es1
+## ES1
 Dichiarare due variabili intere, assegnare loro un valore e stampare la loro somma.
 
-es2
+## ES2
 Usare variabili float per calcolare area e perimetro di un rettangolo.
 
-es3
+## ES3
 Scambiare i valori di due variabili intere utilizzando una variabile temporanea.
 
-*/
-
+## SOLUZIONI
+```c
 #include <stdio.h>
-#include <stdbool.h> // Per il tipo bool
+#include <stdbool.h> // Per il tipo bool(non nativo di C, in caso si possono usare gli interi)
 
 int main()
 {
