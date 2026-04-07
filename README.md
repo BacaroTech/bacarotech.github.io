@@ -74,4 +74,5 @@ Se hai dei consigli facci sapere!
 - 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
 - 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
 - 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
-- 📫 Email: **bacarotech@gmail.com**
+- 👨‍💻 [Github](https://github.com/BacaroTech)
+- 📫 [Email](bacarotech@gmail.com)
