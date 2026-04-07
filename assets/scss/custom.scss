@@ -116,3 +116,22 @@ body {
         width: 100%;
     }
 }
+
+.col-sidebar {
+    width: 100%;
+    min-width: 280px;
+
+    @media (min-width: 768px) {
+        min-width: 10%;
+    }
+
+    @media (max-width: 180px) {
+        min-width: 80px;
+    }
+}
+
+.blog {
+    .col-content.narrow-content {
+        max-width: 90%;
+    }
+}
