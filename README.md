@@ -45,15 +45,6 @@ Ogni post é diviso in due parti:
 
 Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione del post
 
-## Social e Contatti
-
-Se hai dei consigli facci sapere!
-- 🌳 [Linkedin](https://www.linkedin.com/company/bacarotech)
-- 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
-- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
-- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
-- 📫 Email: **bacarotech@gmail.com**
-
 ## Comandi npm
 
 | Comando | Descrizione |
@@ -75,3 +66,12 @@ Se hai dei consigli facci sapere!
 | `npm run build` | Build per sviluppo |
 | `npm run deploy` | Build per produzione con minify |
 | `npm run deploy:prod` | Build per produzione con aggiornamento dipendenze |
+
+## Social e Contatti
+
+Se hai dei consigli facci sapere!
+- 🌳 [Linkedin](https://www.linkedin.com/company/bacarotech)
+- 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
+- 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
+- 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
+- 📫 Email: **bacarotech@gmail.com**
