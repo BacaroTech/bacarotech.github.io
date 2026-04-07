@@ -46,9 +46,6 @@ build: clean ## Build for dev
 deploy: update ## Ready to deploy
 	@hugo --minify
 
-broadcast: clean ## broadcast the site
-	@hugo server --disableFastRender --buildFuture --buildDrafts -bind=0.0.0.0
-
 deploy_prod: ## Ready to deploy
 	@npm update
 	@hugo mod get -u
