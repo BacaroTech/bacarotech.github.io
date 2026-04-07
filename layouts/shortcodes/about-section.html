@@ -12,7 +12,7 @@
 {{- $btnIcon := "" -}}
 {{- $btnText := "" -}}
 
-{{- $btnURL = hugo.Data.homepage.about.button.URL -}}
+{{- $btnURL = .Get "button_url" -}}
 
 <div class="col-4 pb-5">
 	<div class="card h-100">
