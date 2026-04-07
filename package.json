@@ -33,6 +33,7 @@
     "content": "node scripts/make-post.js",
     "post": "node scripts/make-post.js post",
     "redirect": "node scripts/make-post.js redirect",
+    "youtube": "node scripts/generate-youtube-posts.js",
     "youtube-posts": "node scripts/generate-youtube-posts.js"
   }
 }
