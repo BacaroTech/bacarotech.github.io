@@ -110,3 +110,9 @@ body {
 .term-page ul.posts-list-simple li.post .post-tags a {
     color: var(--bs-body-color) !important;
 }
+
+.light-border-top {
+    &::before {
+        width: 100%;
+    }
+}
