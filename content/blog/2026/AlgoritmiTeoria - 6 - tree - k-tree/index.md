@@ -10,7 +10,6 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 #  STRUTTURA DATI: K-ARY TREE
 
 Un **K-Ary Tree** è una struttura dati gerarchica in cui ogni nodo può 
@@ -18,14 +17,12 @@ avere al massimo **K figli**.
 È una generalizzazione dell'albero binario (dove K=2) e viene usato in 
 contesti dove servono più di due rami di navigazione.
 
-
 ## QUANDO USARLO
 
 - Implementazione di **B-Tree** e **B+ Tree** per database.
 - File system gerarchici.
 - rappresentazione di **alberi di decisione** con più alternative.
 - Strutture per **trie** (alberi di prefissi).
-
 
 ## TERMINOLOGIA
 
@@ -36,7 +33,6 @@ contesti dove servono più di due rami di navigazione.
 - **Altezza** → percorso più lungo dalla radice a una foglia.
 - **Profondità** → livello del nodo (radice = 0).
 
-
 ## OPERAZIONI PRINCIPALI
 
 - `inserisci(valore, parent)` → aggiunge un nodo come figlio di parent.
@@ -46,20 +42,17 @@ contesti dove servono più di due rami di navigazione.
 - `contaNodi()` → numero totale di nodi.
 - `getProfondità()` → profondità massima dell'albero.
 
-
 ## IMPLEMENTAZIONE
 
 - Ogni nodo ha un array `figli` di dimensione massima K.
 - L'inserimento fillows la prima posizione disponibile nell'array.
 - La ricerca è tipicamente in ampiezza (BFS) o profondità (DFS).
 
-
 ## PRESTAZIONI
 
 - Inserimento → **O(1)** (se c'è spazio nel parent), altrimenti ricerca.
 - Ricerca → **O(n)** (caso peggiore, bisogna visitare tutti i nodi).
 - Attraversamento → **O(n)**.
-
 
 ## NOTE
 

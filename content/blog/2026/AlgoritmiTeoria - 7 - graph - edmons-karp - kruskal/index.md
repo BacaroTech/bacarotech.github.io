@@ -10,13 +10,11 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # ALGORITMO: KRUSKAL
 
 L'**algoritmo di Kruskal** è utilizzato per trovare un **albero ricoprente minimo (Minimum Spanning Tree - MST)**
 in un grafo **connesso e pesato**.  
 L'MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi degli archi inclusi.
-
 
 ## TERMINOLOGIA
 
@@ -25,7 +23,6 @@ L'MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi 
 - **Albero Ricoprente (Spanning Tree)** → sottoinsieme di archi che collega tutti i vertici senza cicli.  
 - **MST (Minimum Spanning Tree)** → albero ricoprente con somma minima dei pesi degli archi.  
 - **Union-Find / Disjoint Set** → struttura dati per rilevare cicli durante l'inclusione degli archi.
-
 
 ## FUNZIONAMENTO DELL'ALGORITMO
 
@@ -36,18 +33,15 @@ L'MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi 
    - Altrimenti → scartalo.  
 4. Ripeti fino a includere **V - 1 archi**, dove V è il numero di vertici.  
 
-
 ## STRUTTURE DI SUPPORTO
 
 - **Union-Find (Disjoint Set)** → per verificare rapidamente se due vertici appartengono allo stesso sottoalbero (evita cicli).  
 - **Array / Lista di archi** → per ordinare gli archi in base al peso.  
 
-
 ## COMPLESSITÀ
 
 - Tempo → **O(E log E)**, principalmente per l'ordinamento degli archi.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le strutture ausiliarie.  
-
 
 ## ESEMPIO DI UTILIZZO
 
@@ -62,7 +56,6 @@ Passaggi:
 
 MST finale → { B-C, A-C, C-D }, costo totale = 1 + 2 + 3 = 6
 
-
 ## APPLICAZIONI
 
 - Progettazione di **reti di telecomunicazione**.  
@@ -70,13 +63,11 @@ MST finale → { B-C, A-C, C-D }, costo totale = 1 + 2 + 3 = 6
 - Progettazione di **reti di trasporto** e infrastrutture.  
 - Problemi di **ottimizzazione di costi** in grafi connessi.  
 
-
 ## VANTAGGI
 
 - Semplice e intuitivo da implementare con Union-Find.  
 - Garantisce il **MST corretto** per qualsiasi grafo connesso e pesato.  
 - Funziona bene anche su grafi sparsi (low density).  
-
 
 ## LIMITAZIONI
 

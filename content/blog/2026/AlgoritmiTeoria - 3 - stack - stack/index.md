@@ -11,7 +11,6 @@ series = ["AlgoritmiTeoria"]
 +++
 
 
-
 # STRUTTURA DATI: STACK (PILA)
 
 Lo **Stack** (pila) è una struttura dati lineare che segue il principio
@@ -24,13 +23,11 @@ inverso rispetto all'inserimento, ad esempio:
 - algoritmi di backtracking,  
 - undo/redo in editor di testo.
 
-
 ## STRUTTURA INTERNA
 
 - Gli elementi vengono inseriti e rimossi **solo dalla cima** (top).  
 - Gli elementi sottostanti restano temporaneamente **inaccessibili** finché
 non si rimuove quello in cima.  
-
 
 ## OPERAZIONI PRINCIPALI
 
@@ -40,7 +37,6 @@ non si rimuove quello in cima.
 - `isEmpty()` → restituisce `true` se la pila è vuota, `false` altrimenti.  
 - `size()` → restituisce il numero di elementi nello stack.  
 - `printStack()` → stampa tutti gli elementi dallo **top** alla **base**.
-
 
 ## PRESTAZIONI
 
@@ -53,13 +49,11 @@ non si rimuove quello in cima.
 ➡ Tutte le operazioni avvengono in tempo costante, poiché non richiedono
 spostamenti o ridistribuzioni degli elementi.
 
-
 ## NOTE
 
 - Struttura semplice ma estremamente efficiente.  
 - Usata come building block di numerosi algoritmi.  
 - Spesso implementata con array o liste collegate.
-
 
 ## CODICE
 ```typescript

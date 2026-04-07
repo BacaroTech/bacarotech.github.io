@@ -70,7 +70,6 @@ target = "assets/js/vendor/bootstrap.bundle.min.js"
 source = "node_modules/bootstrap-print-css/css/bootstrap-print.css"
 target = "assets/css/bootstrap-print.css"
 
-
 [params]
 title = 'BacaroTech'
 description = 'La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!'
@@ -196,7 +195,6 @@ URL = "js/library/fontfaceobserver.js"
 [[params.plugins.scss]]
 URL = "scss/adritian.scss"
 
-
 # theme/color style
 [params.colorTheme]
 
@@ -228,10 +226,8 @@ listLayout = "default"         # options: default, cards
 featured_sort_by_weight = true
 featured_sort_by_date = false
 
-
 [params.experience]
 showJobCard = true # Set to false to hide the job card
-
 
 # Performance optimizations
 
@@ -268,7 +264,6 @@ keepWhitespace = false
 precision = 0
 [minify.tdewolff.js]
 precision = 0
-
 
 [params.sharing]
 enabled = true

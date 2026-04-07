@@ -10,7 +10,6 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # STRUTTURA DATI: ALBERO BINARIO
 
 L'**Albero Binario** è una struttura dati gerarchica formata da nodi, 
@@ -19,7 +18,6 @@ dove ciascun nodo può avere al massimo **due figli**:
 
 È ideale per rappresentare dati con relazioni gerarchiche e per 
 implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).  
-
 
 ## TERMINOLOGIA
 
@@ -37,14 +35,12 @@ implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).
 - **Altezza dell'Albero** → percorso più lungo radice → foglia.  
 - **Dimensione (Size)** → numero totale di nodi.  
 
-
 ## OPERAZIONI DI VISITA
 
 - **Pre-Ordine** → Nodo → Sottoalbero Sinistro → Sottoalbero Destro.  
 - **In-Ordine** → Sottoalbero Sinistro → Nodo → Sottoalbero Destro.  
 - **Post-Ordine** → Sottoalbero Sinistro → Sottoalbero Destro → Nodo.  
 - **Per Livelli (Level-Order)** → attraversamento livello per livello (con una coda).  
-
 
 ## OPERAZIONI PRINCIPALI
 
@@ -57,7 +53,6 @@ implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).
 - `altezza()` → calcola la profondità massima.  
 - `contaNodi()` → restituisce il numero totale di nodi.  
 
-
 ## PRESTAZIONI
 
 - Alberi **bilanciati**:  
@@ -68,7 +63,6 @@ implementare altre strutture complesse (es. BST, Heap, Alberi Bilanciati).
   • Tutte le operazioni possono degradare a **O(n)**.  
 
 ➡ L'efficienza dipende dal bilanciamento dell'albero.  
-
 
 ## NOTE
 
@@ -326,7 +320,6 @@ class AlberoBinario<E> {
 
         return min;
     }
-
 
     /**
      * calcola l'altezza dell'albero

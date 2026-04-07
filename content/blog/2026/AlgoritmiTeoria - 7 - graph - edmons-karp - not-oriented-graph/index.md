@@ -10,12 +10,10 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # STRUTTURA DATI: GRAFO NON ORIENTATO
 
 Un **grafo non orientato** è una collezione di nodi (vertici) 
 connessi da archi che rappresentano relazioni bidirezionali.  
-
 
 ## PROPRIETÀ PRINCIPALI
 
@@ -26,7 +24,6 @@ connessi da archi che rappresentano relazioni bidirezionali.
   se esiste un arco tra `A` e `B`, si può navigare sia da `A` a `B` 
   che da `B` a `A`.  
 
-
 ## TERMINOLOGIA
 
 - **Vertice (Vertex)** → un nodo del grafo.  
@@ -36,7 +33,6 @@ connessi da archi che rappresentano relazioni bidirezionali.
 - **Ciclo (Cycle)** → percorso chiuso (inizio = fine).  
 - **Componente Connessa** → sottoinsieme di vertici in cui 
   ogni coppia è collegata direttamente o indirettamente.  
-
 
 ## OPERAZIONI PRINCIPALI
 
@@ -49,13 +45,11 @@ connessi da archi che rappresentano relazioni bidirezionali.
 - `visitaAmpiezza(v)` → BFS a partire da un vertice.  
 - `visitaProfondità(v)` → DFS a partire da un vertice.  
 
-
 ## RAPPRESENTAZIONE
 
 - **Lista di adiacenza** (efficiente in grafi sparsi):  
   Esempio → { A: [B, C], B: [A, D], C: [A], D: [B] }  
 - **Matrice di adiacenza** (più adatta in grafi densi).  
-
 
 ## EFFICIENZA
 
@@ -63,7 +57,6 @@ connessi da archi che rappresentano relazioni bidirezionali.
 - Inserimento arco → **O(1)**  
 - Rimozione arco → **O(d)** (d = grado massimo tra i due vertici).  
 - Attraversamento BFS/DFS → **O(V + E)**  
-
 
 ## APPLICAZIONI
 
@@ -73,19 +66,16 @@ connessi da archi che rappresentano relazioni bidirezionali.
 - Pianificazione di percorsi senza direzione.  
 - Analisi di sistemi complessi.  
 
-
 ## VANTAGGI
 
 - Struttura flessibile, adatta a molti problemi reali.  
 - Operazioni ottimizzabili a seconda della rappresentazione.  
-
 
 ## LIMITAZIONI
 
 - Grafi densi → memoria elevata.  
 - Operazioni come rimozione arco o verifica connessione 
   possono essere costose rispetto a strutture specializzate.  
-
 
 ## NOTE
 

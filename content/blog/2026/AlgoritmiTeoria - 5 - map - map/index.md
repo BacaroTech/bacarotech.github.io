@@ -10,7 +10,6 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # STRUTTURA DATI: MYMAP
 
 La **MyMap** è una struttura dati che implementa il concetto di 
@@ -24,7 +23,6 @@ a un valore, ad esempio:
 - cache di dati,  
 - configurazioni applicative.  
 
-
 ## STRUTTURA INTERNA
 
 - Utilizza un **array** come struttura sottostante.  
@@ -32,7 +30,6 @@ a un valore, ad esempio:
 - In caso di collisione (più chiavi con stesso indice), viene 
 utilizzato il **chaining** → ogni bucket contiene una lista di coppie 
 `[chiave, valore]`.  
-
 
 ## OPERAZIONI PRINCIPALI
 
@@ -45,7 +42,6 @@ utilizzato il **chaining** → ogni bucket contiene una lista di coppie
 - `size()` → restituisce il numero totale di coppie presenti.  
 - `clear()` → rimuove tutte le coppie chiave-valore.  
 
-
 ## PRESTAZIONI
 
 - `set` → **O(1)** in media, **O(n)** in caso di collisioni estreme.  
@@ -56,7 +52,6 @@ utilizzato il **chaining** → ogni bucket contiene una lista di coppie
 
 ➡ La mappa è molto efficiente per la maggior parte delle operazioni, 
 ma la qualità della funzione di hash influisce notevolmente sulle prestazioni.  
-
 
 ## NOTE
 
@@ -228,6 +223,5 @@ console.log("Has 'country' dopo delete:", myMap.has("country"));
 
 myMap.clear();
 console.log("Size dopo clear:", myMap.size());
-
 
 ```

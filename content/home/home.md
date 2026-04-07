@@ -4,7 +4,6 @@ type = "home"
 draft = false
 +++
 
-
 ![Logo](img/logo.png)
 
 {{< showcase-section
@@ -36,10 +35,8 @@ draft = false
 
 {{< /showcase-section >}}
 
-
 {{< project-list
     title="I nostri progetti" >}}
-
 
 {{< workshop-list
     title="I nostri Workshop" >}}

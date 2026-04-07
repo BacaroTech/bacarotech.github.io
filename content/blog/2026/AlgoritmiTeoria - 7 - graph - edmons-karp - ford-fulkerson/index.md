@@ -10,12 +10,10 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # ALGORITMO: FORD-FULKERSON
 
 L'**algoritmo di Ford-Fulkerson** calcola il **flusso massimo** in un grafo **connesso e pesato**, 
 dove i pesi rappresentano le capacità massime degli archi.  
-
 
 ## TERMINOLOGIA
 
@@ -26,7 +24,6 @@ dove i pesi rappresentano le capacità massime degli archi.
 - **Sorgente (Source)** → nodo iniziale del flusso.  
 - **Pozzo / Destinazione (Sink)** → nodo finale del flusso.  
 
-
 ## FUNZIONAMENTO DELL'ALGORITMO
 
 1. Inizializza il flusso di tutti gli archi a 0.  
@@ -36,12 +33,10 @@ dove i pesi rappresentano le capacità massime degli archi.
 5. Aggiorna le capacità residue lungo gli archi diretti e inversi.  
 6. Ripeti finché non esistono più percorsi aumentanti.  
 
-
 ## STRUTTURE DI SUPPORTO
 
 - **Grafo con capacità residua** → memorizza capacità disponibili lungo gli archi.  
 - **Algoritmo di ricerca** → BFS (Edmonds-Karp) o DFS per trovare percorsi aumentanti.  
-
 
 ## COMPLESSITÀ
 
@@ -49,7 +44,6 @@ dove i pesi rappresentano le capacità massime degli archi.
   - Con BFS (Edmonds-Karp) → **O(V * E²)**  
   - Con DFS → complessità può variare e dipende dai valori dei flussi.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le capacità residue.  
-
 
 ## ESEMPIO DI UTILIZZO
 
@@ -64,7 +58,6 @@ Passaggi:
 
 Flusso massimo = 10 + 5 = 15
 
-
 ## APPLICAZIONI
 
 - **Reti di comunicazione** → massimizzare il throughput.  
@@ -72,13 +65,11 @@ Flusso massimo = 10 + 5 = 15
 - **Flusso di dati su reti informatiche**.  
 - Pianificazione e ottimizzazione in sistemi logistici.  
 
-
 ## VANTAGGI
 
 - Calcolo semplice del flusso massimo in grafi con capacità note.  
 - Basato su concetti intuitivi di percorsi aumentanti e capacità residua.  
 - Adattabile a varie strategie di ricerca (BFS, DFS).  
-
 
 ## LIMITAZIONI
 
@@ -184,7 +175,6 @@ export function fordFulkerson<E>(
 
     return maxFlow;
 }
-
 
 // =============================
 // Main di prova

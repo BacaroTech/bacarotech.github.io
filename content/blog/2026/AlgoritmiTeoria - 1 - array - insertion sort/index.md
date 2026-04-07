@@ -26,13 +26,11 @@ gioco in mano.
 Visualizzazione:  
 https://it.wikipedia.org/wiki/Insertion_sort#/media/File:Sorting_insertion_sort_anim.gif
 
-
   QUANDO USARLO
 
 - L'array ha **piccole dimensioni** o è già **quasi ordinato**.
 - Vuoi un algoritmo semplice da implementare e stabile.
 - È utile come parte di algoritmi più complessi (es. **Shell Sort**).
-
 
   FUNZIONAMENTO
 
@@ -46,11 +44,9 @@ https://it.wikipedia.org/wiki/Insertion_sort#/media/File:Sorting_insertion_sort_
 3. La parte ordinata cresce progressivamente di un elemento per volta,
    fino a includere l'intero array.
 
-
   OUTPUT
 
 - Restituisce l'array ordinato.
-
 
   COMPLESSITÀ
 
@@ -60,7 +56,6 @@ https://it.wikipedia.org/wiki/Insertion_sort#/media/File:Sorting_insertion_sort_
   (inserimenti distribuiti con vari spostamenti).
 - **Caso peggiore:** O(n²)  
   (array ordinato in senso opposto, massimo numero di spostamenti).
-
 
   NOTE
 

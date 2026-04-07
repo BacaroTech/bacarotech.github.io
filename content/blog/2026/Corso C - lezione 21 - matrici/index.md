@@ -26,7 +26,6 @@ Le matrici in C hanno dimensioni fisse definite al momento della dichiarazione. 
 
 Una matrice viene dichiarata specificando il tipo degli elementi, il nome e le dimensioni (numero di righe e colonne). Questo consente al compilatore di allocare correttamente la memoria necessaria.
 
-
 ## CODICE
 ```c
 #include <stdio.h>

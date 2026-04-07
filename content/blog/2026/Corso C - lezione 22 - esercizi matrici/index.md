@@ -21,7 +21,6 @@ Calcolo della diagonale maggiore
 ## ES 3 
 Calcolo della diagonale minore
 
-
 ```c
 #include <stdio.h>
 

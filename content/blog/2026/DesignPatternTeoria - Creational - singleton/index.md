@@ -10,7 +10,6 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-
 # DESIGN PATTERN: SINGLETON
 
 Il pattern Singleton è una soluzione architetturale che garantisce la creazione
@@ -23,7 +22,6 @@ a una risorsa condivisa, ad esempio:
 - connessioni a database
 - sistemi di logging
 
-
 ##  QUANDO UTILIZZARLO
 
 - Serve una sola istanza condivisa
@@ -31,20 +29,17 @@ a una risorsa condivisa, ad esempio:
 - L'oggetto è costoso da creare
 - È richiesta una visione globale dello stato
 
-
 ##  VANTAGGI
 
 - **Consistenza globale**: tutti gli utilizzatori condividono lo stesso stato.
 - **Controllo centralizzato**: gestione unificata della risorsa.
 - **Risparmio di memoria**: un'unica istanza evita duplicazioni inutili.
 
-
 ##  POTENZIALI SVANTAGGI
 
 - **Testing più complesso**: può introdurre dipendenze nascoste, ostacolando i test unitari.
 - **Accesso globale rischioso**: se abusato, può portare a un design meno modulare
   e più difficile da manutenere.
-
 
 ## CODICE
 ```typescript

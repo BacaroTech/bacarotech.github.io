@@ -10,10 +10,6 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
-
-
-
 # STRUTTURA DATI: QUEUE (CODA)
 
 La **Queue** (coda) è una struttura dati lineare che segue il principio
@@ -25,13 +21,11 @@ La **Queue** (coda) è una struttura dati lineare che segue il principio
 - code di stampa,  
 - algoritmi di scheduling dei processi.
 
-
 ## STRUTTURA INTERNA
 
 - Gli elementi vengono **inseriti in fondo** (enqueue).  
 - Gli elementi vengono **rimossi dalla testa** (dequeue).  
 - L'ordine di arrivo viene sempre rispettato.  
-
 
 ## OPERAZIONI PRINCIPALI
 
@@ -41,7 +35,6 @@ La **Queue** (coda) è una struttura dati lineare che segue il principio
 - `isEmpty()` → restituisce `true` se la coda è vuota, `false` altrimenti.  
 - `size()` → restituisce il numero di elementi nella coda.  
 - `printQueue()` → stampa tutti gli elementi dalla testa alla fine.  
-
 
 ## PRESTAZIONI
 
@@ -53,7 +46,6 @@ La **Queue** (coda) è una struttura dati lineare che segue il principio
 
 ➡ Tutte le operazioni principali sono in tempo costante.  
 La coda è particolarmente efficiente per scenari di gestione in tempo reale.  
-
 
 ## NOTE
 

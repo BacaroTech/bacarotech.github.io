@@ -13,7 +13,6 @@ series = ["AlgoritmiTeoria"]
 ## sort/mergesort.ts
 
 
-
 # ALGORITMO: MERGE SORT
 
 Il Merge Sort è un algoritmo di ordinamento basato sul paradigma
@@ -24,13 +23,11 @@ poi le ricompone fino a ottenere l'array ordinato completo.
 Visualizzazione:  
 https://it.wikipedia.org/wiki/Merge_sort#/media/File:Merge_sort_animation2.gif
 
-
 ## QUANDO USARLO
 
 - L'array è di **grandi dimensioni**.
 - Vuoi un algoritmo **stabile** e con complessità garantita O(n log n).
 - È utile quando serve un ordinamento prevedibile, indipendente dalla disposizione iniziale dei dati.
-
 
 ## FUNZIONAMENTO
 
@@ -43,11 +40,9 @@ https://it.wikipedia.org/wiki/Merge_sort#/media/File:Merge_sort_animation2.gif
    - Questo processo si ripete risalendo la ricorsione, fino a
 	 ricomporre l'intero array ordinato.
 
-
 ## OUTPUT
 
 - Restituisce l'array ordinato sfruttando dei sottoarray
-
 
 ## COMPLESSITÀ
 

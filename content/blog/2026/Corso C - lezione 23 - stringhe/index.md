@@ -10,7 +10,6 @@ authors = []
 series = ["Corso C"]
 +++
 
-
 # STRING IN C
 
 Nel linguaggio C, le stringhe non sono un tipo di dato primitivo, ma vengono rappresentate come array di caratteri terminati da un carattere speciale che indica la fine della sequenza.

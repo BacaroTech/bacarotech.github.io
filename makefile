@@ -26,7 +26,6 @@ gomodule: ## Update Go Module
 update: clean ## Update the site requirements
 	@npm update
 
-
 hugo: ## Run the site local
 	@hugo server --disableFastRender --renderToMemory
 
@@ -54,7 +53,6 @@ deploy_prod: ## Ready to deploy
 	@npm update
 	@hugo mod get -u
 	@hugo --minify
-
 
 .PHONY: submodule
 submodule: ## Get submodule for this repo

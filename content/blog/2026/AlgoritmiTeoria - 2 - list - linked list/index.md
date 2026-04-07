@@ -20,7 +20,6 @@ struttura.
 L'accesso agli elementi, però, è **sequenziale**, poiché non esiste un
 indice diretto.
 
-
 ## STRUTTURA INTERNA
 
 Ogni **nodo** della lista è composto da due campi:
@@ -29,7 +28,6 @@ Ogni **nodo** della lista è composto da due campi:
 
 La lista è gestita tramite un puntatore alla **testa** (head), che
 rappresenta il primo nodo e consente di accedere all'intera struttura.
-
 
 ## PROBLEMA DELLA "FRAGILITÀ DELLA TESTA"
 
@@ -46,7 +44,6 @@ perdendo l'accesso alla struttura.
 Soluzione: usare una **copia della testa** per iterare, così il
 riferimento originale alla lista rimane intatto.
 
-
 ## OPERAZIONI PRINCIPALI
 
 - `inserisciInTesta(valore)` → inserisce un nodo in testa alla lista.  
@@ -55,7 +52,6 @@ riferimento originale alla lista rimane intatto.
 - `cerca(valore)` → restituisce il primo nodo che contiene il valore dato.  
 - `stampaLista()` → stampa tutti i valori partendo dalla testa.
 
-
 ## PRESTAZIONI
 
 - Inserimento in testa → **O(1)**  
@@ -63,7 +59,6 @@ riferimento originale alla lista rimane intatto.
 - Inserimento in coda → **O(n)** (se non si mantiene un puntatore alla coda)  
 - Ricerca di un elemento → **O(n)**  
 - Accesso diretto ad una posizione → **O(n)**  
-
 
 ## NOTE
 

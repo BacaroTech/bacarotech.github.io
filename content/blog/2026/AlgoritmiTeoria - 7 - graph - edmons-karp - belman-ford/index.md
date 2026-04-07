@@ -10,20 +10,17 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # ALGORITMO: BELLMAN-FORD
 
 L'**algoritmo di Bellman-Ford** calcola i percorsi minimi da un nodo sorgente a tutti gli altri nodi
 in un **grafo orientato o non orientato pesato**, anche con **archi a peso negativo**, 
 a condizione che non siano presenti cicli negativi raggiungibili dalla sorgente.
 
-
 ## PRECONDIZIONI
 
 - Il grafo può contenere archi con **peso negativo**.  
 - Non devono esserci **cicli negativi** raggiungibili dalla sorgente.  
 - Funziona su grafi orientati e non orientati pesati.  
-
 
 ## TERMINOLOGIA
 
@@ -33,7 +30,6 @@ a condizione che non siano presenti cicli negativi raggiungibili dalla sorgente.
 - **Predecessore (Parent/Predecessor)** → nodo precedente lungo il percorso minimo.  
 - **Rilassamento (Relaxation)** → operazione che aggiorna la distanza di un nodo se si trova un percorso più corto.
 
-
 ## OPERAZIONI PRINCIPALI
 
 - `aggiungiVertice(v)` → inserisce un nuovo vertice nel grafo.  
@@ -42,7 +38,6 @@ a condizione che non siano presenti cicli negativi raggiungibili dalla sorgente.
   - le **distanze minime**  
   - i **predecessori** per ricostruire i percorsi.  
 - Rileva **cicli negativi**: se dopo |V|-1 rilassamenti un arco può ancora essere rilassato, esiste un ciclo negativo raggiungibile dalla sorgente.
-
 
 ## FUNZIONAMENTO DELL'ALGORITMO
 
@@ -55,12 +50,10 @@ a condizione che non siano presenti cicli negativi raggiungibili dalla sorgente.
    - le **distanze minime** sono corrette se non ci sono cicli negativi.  
    - è possibile ricostruire i percorsi minimi seguendo i predecessori.
 
-
 ## COMPLESSITÀ
 
 - Tempo → **O(V * E)**  
 - Spazio → **O(V)** per memorizzare distanze e predecessori  
-
 
 ## ESEMPIO DI USCITA
 
@@ -76,7 +69,6 @@ Predecessori: { A: null, B: 'A', C: 'A', D: 'C', E: 'C' }
 
 Percorso minimo da A a E: **A → C → E**, costo 6.
 
-
 ## APPLICAZIONI
 
 - Reti di telecomunicazione con costi variabili.  
@@ -84,19 +76,16 @@ Percorso minimo da A a E: **A → C → E**, costo 6.
 - Rilevamento di cicli negativi nei grafi.  
 - Pianificazione di percorsi e analisi di dipendenze complesse.  
 
-
 ## VANTAGGI
 
 - Gestisce archi con pesi negativi.  
 - Rileva cicli negativi.  
 - Funziona su grafi orientati e non orientati pesati.  
 
-
 ## LIMITAZIONI
 
 - Più lento di Dijkstra per grafi senza pesi negativi (O(V*E) vs O(V+E log V)).  
 - Non può essere utilizzato se esistono cicli negativi raggiungibili dalla sorgente.  
-
 
 ## NOTE
 

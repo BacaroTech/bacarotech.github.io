@@ -20,14 +20,12 @@ maggiori a destra, e il processo viene ripetuto su entrambe le sotto-sezioni.
 Visualizzazione:  
 https://en.wikipedia.org/wiki/Quicksort#/media/File:Sorting_quicksort_anim.gif
 
-
 ## QUANDO USARLO
 
 - Vuoi un algoritmo di ordinamento **rapido** e con buona performance media.
 - L'array è di grandi dimensioni.
 - Puoi tollerare casi peggiori rari (O(n²)) con scelte di pivot non ottimali.
 - È utile quando serve un algoritmo in-place (senza array aggiuntivi significativi).
-
 
 ## FUNZIONAMENTO
 
@@ -41,11 +39,9 @@ https://en.wikipedia.org/wiki/Quicksort#/media/File:Sorting_quicksort_anim.gif
    - La procedura viene applicata ricorsivamente alla sotto-sezione sinistra e destra del pivot.
 4. L'array diventa ordinato quando tutte le sotto-sezioni sono ordinate.
 
-
 ## OUTPUT
 
 - Restituisce l'array ordinato come **side effect** (modifica in-place).
-
 
 ## COMPLESSITÀ
 
@@ -54,7 +50,6 @@ https://en.wikipedia.org/wiki/Quicksort#/media/File:Sorting_quicksort_anim.gif
 - **Caso medio:** O(n log n)  
 - **Caso peggiore:** O(n²)  
   (pivot scelto male, ad esempio array già ordinato e pivot sempre massimo/minimo).
-
 
 ## NOTE
 

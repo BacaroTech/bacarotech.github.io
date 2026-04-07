@@ -31,7 +31,6 @@ B falsa  falso   falso
 ## OR
 Nel linguaggio C, l’operatore OR viene utilizzato per verificare se almeno una tra più condizioni è vera. È meno restrittivo rispetto all’AND. Anche l’OR combina almeno due condizioni booleane per produrre un unico risultato logico. Il simbolo utilizzato per rappresentare l’OR in C è la doppia barra verticale. Serve per collegare condizioni alternative.
 
-
 Date (almeno) 2 condizioni booleane A e B
 
 ||      A vera A Falsa

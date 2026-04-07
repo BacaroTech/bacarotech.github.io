@@ -11,7 +11,6 @@ series = ["DesingPatternTeoria"]
 +++
 
 
-
 # DESIGN PATTERN: ADAPTER
 
 L'Adapter (o Adattatore / Wrapper) è un pattern strutturale che consente
@@ -21,13 +20,11 @@ L'adattatore funge da "traduttore" tra l'interfaccia attesa dal codice client
 (Target) e quella realmente offerta da un oggetto esistente (Adaptee),
 senza modificare né il client né la classe originale.
 
-
 ## QUANDO UTILIZZARLO
 
 - Integrazione di librerie o componenti di terze parti.
 - Uniformare formati di input/output differenti (es. XML ⇆ JSON, sistemi di coordinate diversi).
 - Migrare verso una nuova API senza interrompere il funzionamento del codice esistente.
-
 
 ## VANTAGGI
 
@@ -35,7 +32,6 @@ senza modificare né il client né la classe originale.
 - **Nessuna modifica a codice esistente**: adattamento non invasivo.
 - **Flessibilità nella sostituzione**: puoi introdurre più adattatori per transizioni graduali.
 - **Riutilizzo di codice**: componenti vecchi possono integrarsi con sistemi nuovi.
-
 
 ## POTENZIALI SVANTAGGI
 

@@ -10,7 +10,6 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-
 # DESIGN PATTERN: OBSERVER
 
 L'Observer è un pattern comportamentale che permette a un oggetto 
@@ -18,13 +17,11 @@ L'Observer è un pattern comportamentale che permette a un oggetto
 ogni volta che il suo stato cambia.  
 È alla base di molti sistemi basati su eventi e della programmazione reattiva.
 
-
 ## QUANDO USARLO
 
 - Più oggetti devono reagire ai cambiamenti di stato di un altro oggetto.
 - Vuoi implementare sistemi di eventi o flussi di dati asincroni.
 - Vuoi disaccoppiare il publisher dai subscriber, evitando dipendenze dirette.
-
 
 ## VANTAGGI
 
@@ -33,13 +30,11 @@ ogni volta che il suo stato cambia.
 - Perfetto per UI reattive, flussi di dati in tempo reale e sistemi asincroni.
 - Supportato nativamente in librerie come RxJS.
 
-
 ## POTENZIALI SVANTAGGI
 
 - Possibili **memory leak** se gli observer non vengono disiscritti.
 - La complessità aumenta con il numero di observer e interazioni.
 - Debug più complesso in sistemi con molti eventi concatenati.
-
 
 ## STRUTTURA
 

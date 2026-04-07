@@ -10,7 +10,6 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-
 # DESIGN PATTERN: BUILDER
 
 Il Builder è un pattern creazionale che consente di costruire oggetti
@@ -20,14 +19,12 @@ A differenza del Factory, che si concentra solo sulla creazione,
 il Builder gestisce anche la composizione graduale dell'oggetto,
 rendendo il processo più leggibile e flessibile.
 
-
 ## QUANDO UTILIZZARLO
 
 - La costruzione dell'oggetto richiede molti passaggi o parametri opzionali.
 - Vuoi evitare il "telescoping constructor" (costruttori con troppi parametri).
 - Vuoi che l'oggetto finale sia immutabile, ma la sua creazione rimanga flessibile.
 - Necessiti di creare varianti partendo da una configurazione di base.
-
 
 ## VANTAGGI
 
@@ -37,13 +34,11 @@ rendendo il processo più leggibile e flessibile.
 - **Pulizia del costruttore**: evita l'uso di costruttori con troppi parametri.
 - **Riutilizzo**: puoi partire da un builder già configurato per creare varianti.
 
-
 ## POTENZIALI SVANTAGGI
 
 - **Maggiore complessità**: richiede classi aggiuntive anche per casi semplici.
 - **Overkill**: non necessario per oggetti con poche proprietà.
 - **Validazione assente**: di default non impone controlli sui dati forniti.
-
 
 ## CHICCA OPZIONALE: DIRETTIVE
 

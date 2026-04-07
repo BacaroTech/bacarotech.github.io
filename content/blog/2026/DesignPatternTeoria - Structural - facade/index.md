@@ -10,7 +10,6 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-
 #  DESIGN PATTERN: FACADE
 
 Il Facade è un pattern strutturale che fornisce un'interfaccia unificata
@@ -19,12 +18,10 @@ e semplificata a un insieme di sottosistemi complessi.
 La "facciata" nasconde i dettagli interni e offre al client un solo punto
 di accesso, riducendo l'accoppiamento tra componenti e migliorando la leggibilità.
 
-
 ##  QUANDO USARLO
 
 - Quando il sistema ha API verbose, complesse o frammentate.
 - Quando vuoi esporre solo facciate e non classi interne ai livelli superiori.
-
 
 ##  VANTAGGI
 
@@ -32,7 +29,6 @@ di accesso, riducendo l'accoppiamento tra componenti e migliorando la leggibilit
 - Riduce l'accoppiamento tra client e sottosistemi.
 - Fornisce un punto unico di controllo (utile per logging, sicurezza, transazioni).
 - Facilita modifiche e manutenzione, isolando le dipendenze.
-
 
 ##  POTENZIALI SVANTAGGI
 

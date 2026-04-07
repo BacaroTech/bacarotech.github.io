@@ -20,13 +20,11 @@ Ripetendo questo processo, l'array diventa ordinato.
 Visualizzazione:  
 https://en.wikipedia.org/wiki/Selection_sort#/media/File:Selection-Sort-Animation.gif
 
-
 ## QUANDO USARLO
 
 - L'array è di piccole dimensioni.
 - Vuoi un algoritmo semplice da implementare.
 - Non hai necessità di stabilità nell'ordinamento.
-
 
 ## FUNZIONAMENTO
 
@@ -36,18 +34,15 @@ https://en.wikipedia.org/wiki/Selection_sort#/media/File:Selection-Sort-Animatio
    fino alla fine dell'array.
 4. L'array è ordinato quando tutti gli elementi sono stati posizionati.
 
-
 ## OUTPUT
 
 - Restituisce l'array ordinato.
-
 
 ## COMPLESSITÀ
 
 - **Caso migliore:** O(n²)  
 - **Caso medio:** O(n²)  
 - **Caso peggiore:** O(n²)  
-
 
 ## NOTE
 

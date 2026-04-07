@@ -11,7 +11,6 @@ series = ["DesingPatternTeoria"]
 +++
 
 
-
 # DESIGN PATTERN: STRATEGY
 
 Lo Strategy è un pattern comportamentale che permette di definire una 
@@ -19,13 +18,11 @@ famiglia di algoritmi, incapsularli e renderli intercambiabili a runtime
 senza modificare il contesto che li utilizza.  
 In pratica, consente di cambiare il "comportamento" di un oggetto in modo flessibile.
 
-
 ## QUANDO USARLO
 
 - Più algoritmi alternativi devono essere scelti dinamicamente.
 - Vuoi evitare lunghi `if-else` o `switch-case` pieni di logica condizionale.
 - Vuoi rispettare l'Open/Closed Principle: estendere il comportamento senza modificare il codice esistente.
-
 
 ## VANTAGGI
 
@@ -33,7 +30,6 @@ In pratica, consente di cambiare il "comportamento" di un oggetto in modo flessi
 - Migliora leggibilità eliminando `if/switch` complessi.
 - Promuove la composizione invece dell'ereditarietà.
 - Algoritmi intercambiabili a runtime.
-
 
 ## POTENZIALI SVANTAGGI
 

@@ -10,7 +10,6 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # ALGORITMO: RADIX SORT
 
 Il Radix Sort è un algoritmo di ordinamento **non basato sui confronti** che
@@ -21,14 +20,12 @@ alla più significativa (LSD – Least Significant Digit).
 Visualizzazione:  
 https://it.wikipedia.org/wiki/Radix_sort#/media/File:Radix.JPG
 
-
 ## QUANDO USARLO
 
 - Gli elementi sono **numeri interi non negativi**.
 - Le cifre dei numeri si trovano in un intervallo limitato **[0, K]**.
 - Vuoi un ordinamento stabile e più efficiente di O(n log n) per insiemi di numeri con range limitato.
 - Utile come base per algoritmi più complessi di ordinamento di grandi dataset.
-
 
 ## FUNZIONAMENTO
 
@@ -40,11 +37,9 @@ https://it.wikipedia.org/wiki/Radix_sort#/media/File:Radix.JPG
 	 - Passo 3: ordino le cifre più significative → 142, 228, 456
 3. Dopo l'ultima iterazione, l'array risulta completamente ordinato.
 
-
 ## OUTPUT
 
 - Restituisce l'array ordinato in modo **stabile**.
-
 
 ## COMPLESSITÀ
 
@@ -55,7 +50,6 @@ https://it.wikipedia.org/wiki/Radix_sort#/media/File:Radix.JPG
   - m = numero di elementi nell'array  
   - n = numero di cifre di ciascun elemento  
   - K = valore massimo possibile delle cifre
-
 
 ## NOTE
 

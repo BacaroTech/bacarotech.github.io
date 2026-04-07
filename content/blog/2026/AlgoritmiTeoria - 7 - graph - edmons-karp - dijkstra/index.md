@@ -10,20 +10,17 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # ALGORITMO: DIJKSTRA
 
 L'**algoritmo di Dijkstra** calcola i percorsi minimi da un nodo sorgente a tutti gli altri nodi
 in un **grafo orientato o non orientato pesato**, con pesi **non negativi**.  
 È uno degli algoritmi fondamentali per il calcolo di percorsi minimi in informatica e nelle reti.
 
-
 ## PRECONDIZIONI
 
 - Il grafo può essere orientato o non orientato.  
 - I pesi degli archi devono essere **non negativi**.  
 - Non gestisce correttamente grafi con archi a peso negativo (per quelli serve Bellman-Ford).
-
 
 ## TERMINOLOGIA
 
@@ -33,7 +30,6 @@ in un **grafo orientato o non orientato pesato**, con pesi **non negativi**.
 - **Predecessore (Parent/Predecessor)** → nodo precedente lungo il percorso minimo.  
 - **Coda di Priorità (Priority Queue / Min-Heap)** → struttura utilizzata per selezionare il nodo con distanza minima.
 
-
 ## OPERAZIONI PRINCIPALI
 
 - `aggiungiVertice(v)` → inserisce un nuovo vertice nel grafo.  
@@ -42,12 +38,10 @@ in un **grafo orientato o non orientato pesato**, con pesi **non negativi**.
   - le **distanze minime**  
   - i **predecessori** per ricostruire i percorsi.
 
-
 ## RAPPRESENTAZIONE
 
 - **Lista di adiacenza con pesi**:  
   Esempio → `{ A: [{node: B, peso: 4}, {node: C, peso: 2}], B: [{node: C, peso: 5}], ... }`  
-
 
 ## FUNZIONAMENTO DELL'ALGORITMO
 
@@ -61,7 +55,6 @@ in un **grafo orientato o non orientato pesato**, con pesi **non negativi**.
    - la **distanza minima** da sorgente a ogni nodo  
    - il **cammino più breve** ricostruibile seguendo i predecessori.
 
-
 ## COMPLESSITÀ
 
 - Inserimento vertice → **O(1)**  
@@ -69,7 +62,6 @@ in un **grafo orientato o non orientato pesato**, con pesi **non negativi**.
 - Calcolo percorso minimo:
   - Con **min-heap / coda di priorità** → **O(V + E log V)**  
   - Con semplice array → **O(V^2)**  
-
 
 ## ESEMPIO DI USCITA
 
@@ -85,14 +77,12 @@ Predecessori: { A: null, B: 'A', C: 'A', D: 'C', E: 'C' }
 
 Percorso minimo da A a E: **A → C → E**, costo 6.
 
-
 ## APPLICAZIONI
 
 - Reti stradali e navigazione GPS.  
 - Routing nei protocolli di rete (es. OSPF).  
 - Pianificazione dei percorsi in sistemi di trasporto.  
 - Problemi di logistica e distribuzione.  
-
 
 ## NOTE
 

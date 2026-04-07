@@ -10,14 +10,12 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # ALGORITMO: EDMONDS-KARP
 
 L'**algoritmo di Edmonds-Karp** è una specifica implementazione 
 dell'**algoritmo di Ford-Fulkerson** per il calcolo del flusso massimo 
 in un grafo connesso e pesato.  
 La differenza principale è l'uso della **ricerca in ampiezza (BFS)** per trovare i percorsi aumentanti.  
-
 
 ## TERMINOLOGIA
 
@@ -28,7 +26,6 @@ La differenza principale è l'uso della **ricerca in ampiezza (BFS)** per trovar
 - **Sorgente (Source)** → nodo iniziale del flusso.  
 - **Pozzo / Destinazione (Sink)** → nodo finale del flusso.  
 
-
 ## FUNZIONAMENTO DELL'ALGORITMO
 
 1. Inizializza il flusso di tutti gli archi a 0.  
@@ -37,18 +34,15 @@ La differenza principale è l'uso della **ricerca in ampiezza (BFS)** per trovar
 4. Aggiorna il flusso lungo gli archi diretti e inversi del percorso.  
 5. Ripeti finché non esistono più percorsi aumentanti.  
 
-
 ## STRUTTURE DI SUPPORTO
 
 - **Grafo con capacità residua** → memorizza capacità disponibili sugli archi.  
 - **Coda per BFS** → utilizzata per individuare il percorso aumentante più breve.  
 
-
 ## COMPLESSITÀ
 
 - Tempo → **O(V * E²)** nel caso peggiore.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le capacità residue.  
-
 
 ## ESEMPIO DI UTILIZZO
 
@@ -63,20 +57,17 @@ Passaggi:
 
 Flusso massimo = 15
 
-
 ## APPLICAZIONI
 
 - **Reti di comunicazione** → massimizzare il throughput.  
 - **Reti di trasporto** → flusso di merci o dati.  
 - **Sistemi di gestione delle risorse** → allocazione ottimale del flusso.  
 
-
 ## VANTAGGI
 
 - Garantisce percorsi aumentanti più brevi, riducendo il numero di iterazioni rispetto a DFS.  
 - Complessità prevedibile **O(V * E²)**.  
 - Basato su concetti intuitivi di percorsi aumentanti e capacità residua.  
-
 
 ## LIMITAZIONI
 

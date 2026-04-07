@@ -10,7 +10,6 @@ authors = []
 series = ["DesingPatternTeoria"]
 +++
 
-
 #  DESIGN PATTERN: DECORATOR
 
 Il Decorator è un pattern strutturale che consente di aggiungere,
@@ -21,7 +20,6 @@ Il principio di base è "impacchettare" (wrapping) l'oggetto originale
 all'interno di un altro oggetto che implementa la stessa interfaccia,
 delegando le chiamate e arricchendole prima o dopo l'esecuzione.
 
-
 ## QUANDO UTILIZZARLO
 
 - Vuoi estendere il comportamento di un oggetto a runtime senza usare l'ereditarietà.
@@ -29,13 +27,11 @@ delegando le chiamate e arricchendole prima o dopo l'esecuzione.
   (es. `ButtonBlueLargeWithIcon`, `ButtonRedSmallNoIcon`, ecc.).
 - Necessiti di combinare funzionalità in modo flessibile e modulare.
 
-
 ## VANTAGGI
 
 - **Modularità**: aggiungi funzionalità senza toccare la classe originale.
 - **Flessibilità**: puoi impilare più decoratori in qualunque ordine.
 - **Open/Closed Principle**: estendi il comportamento senza modificare codice esistente.
-
 
 ## POTENZIALI SVANTAGGI
 
@@ -105,7 +101,6 @@ class DataSourceDecorator implements DataSource{
 		return data.split("").reverse().join("");
 	}
 }
-
 
 //Da questo momento in poi potrei procedere in 2 modi:
 //VERTICALE: Aggiungo un nuovo decoratore(virtuale e concreto) 'wrappando' un oggetto di tipo CompressionDecorator

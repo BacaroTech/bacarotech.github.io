@@ -159,4 +159,3 @@ Vuoi accedere a un percorso di studio completo in stile universitario, ma open s
 
 [OSSU computer-science](https://github.com/ossu/computer-science)
 
-

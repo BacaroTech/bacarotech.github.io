@@ -17,14 +17,12 @@ elemento è presente all'interno di un array.
 Non richiede che l'array sia ordinato: controlla gli elementi uno a uno
 fino a trovare il valore cercato oppure fino alla fine dell'array.
 
-
 ## QUANDO USARLO
 
 - Vuoi cercare un elemento in un array **non ordinato**.
 - L'array è di piccole dimensioni, quindi la semplicità conta più
   dell'efficienza.
 - Non hai bisogno di strutture dati avanzate o logiche di ricerca complesse.
-
 
 ## FUNZIONAMENTO
 
@@ -34,12 +32,10 @@ fino a trovare il valore cercato oppure fino alla fine dell'array.
    - **Se diverso**, continua con l'elemento successivo.
 3. Se si arriva alla fine senza trovare l'elemento, l'algoritmo restituisce `-1`.
 
-
 ## OUTPUT
 
 - Restituisce la posizione (tra 0 e n-1) se l'elemento è presente.
 - Restituisce `-1` se l'elemento non è stato trovato.
-
 
 ## COMPLESSITÀ
 

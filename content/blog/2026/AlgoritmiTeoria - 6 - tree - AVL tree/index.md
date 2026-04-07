@@ -11,14 +11,12 @@ series = ["AlgoritmiTeoria"]
 +++
 
 
-
 # STRUTTURA DATI: ALBERO AVL
 
 L'**Albero AVL** (Adelson-Velsky e Landis) è una variante bilanciata 
 dei **Binary Search Tree (BST)**.  
 Mantiene l'altezza dei sottoalberi sempre bilanciata, evitando il problema 
 degli alberi sbilanciati e garantendo prestazioni efficienti.  
-
 
 ## PROPRIETÀ DI BILANCIAMENTO
 
@@ -28,13 +26,11 @@ Per ogni nodo `N`:
 Questa proprietà viene mantenuta **dinamicamente** attraverso **rotazioni** 
 dopo inserimenti o eliminazioni.  
 
-
 ## PROPRIETÀ DI RICERCA
 
 Come in un **BST**:  
 - Nel sottoalbero sinistro → valori < `N.key`  
 - Nel sottoalbero destro → valori > `N.key`  
-
 
 ## TERMINOLOGIA
 
@@ -44,7 +40,6 @@ Come in un **BST**:
 - **Sottoalbero (Subtree)** → albero discendente da un nodo.  
 - **Altezza del Nodo** → percorso più lungo fino a una foglia.  
 
-
 ## OPERAZIONI PRINCIPALI
 
 - `inserisci(key)` → aggiunge una chiave e riequilibra con rotazioni.  
@@ -53,14 +48,12 @@ Come in un **BST**:
 - `visitaInOrdine()` → attraversa i nodi in ordine crescente.  
 - `getAltezza()` → restituisce la profondità massima dell'albero.  
 
-
 ## MECCANISMI DI BILANCIAMENTO
 
 - **Rotazione Destra (Right Rotation)** → quando il sottoalbero sinistro è troppo alto.  
 - **Rotazione Sinistra (Left Rotation)** → quando il sottoalbero destro è troppo alto.  
 - **Rotazione Sinistra-Destra (Left-Right)** → sbilanciamento nel figlio sinistro del destro.  
 - **Rotazione Destra-Sinistra (Right-Left)** → sbilanciamento nel figlio destro del sinistro.  
-
 
 ## EFFICIENZA
 
@@ -71,20 +64,17 @@ Come in un **BST**:
 
 ➡ Prestazioni garantite grazie al bilanciamento automatico.  
 
-
 ## VANTAGGI
 
 - Mantiene sempre un albero bilanciato.  
 - Prestazioni prevedibili e stabili anche con frequenti inserimenti/eliminazioni.  
 - Più efficiente dei BST tradizionali nei contesti dinamici.  
 
-
 ## OPERAZIONI AUSILIARIE
 
 - `getMin()` → restituisce la chiave minima.  
 - `getMax()` → restituisce la chiave massima.  
 - `isBalance()` → verifica il rispetto della proprietà AVL.  
-
 
 ## APPLICAZIONI
 
@@ -93,7 +83,6 @@ Gli alberi AVL sono usati in sistemi che richiedono accesso rapido e aggiornamen
 - Motori di ricerca.  
 - Implementazioni di **set** e **mappe ordinate**.  
 - Algoritmi su intervalli e dati gerarchici.  
-
 
 ## NOTE
 
@@ -174,7 +163,6 @@ class AVLTree<E> {
         // Nuova radice del sottoalbero
         return y;
     }
-
 
     /**
      * Rotazione a sinistra

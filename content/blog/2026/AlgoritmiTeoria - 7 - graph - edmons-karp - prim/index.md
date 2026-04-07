@@ -10,13 +10,11 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # ALGORITMO: PRIM
 
 L'**algoritmo di Prim** è utilizzato per trovare un **albero ricoprente minimo (Minimum Spanning Tree - MST)**
 in un grafo **connesso e pesato**.  
 L'MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi degli archi inclusi.
-
 
 ## TERMINOLOGIA
 
@@ -26,7 +24,6 @@ L'MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi 
 - **MST (Minimum Spanning Tree)** → albero ricoprente con somma minima dei pesi degli archi.  
 - **Nodo Visitato / Non Visitato** → stato dei vertici durante l'esecuzione dell'algoritmo.  
 
-
 ## FUNZIONAMENTO DELL'ALGORITMO
 
 1. Scegli un nodo sorgente e aggiungilo al MST.  
@@ -34,18 +31,15 @@ L'MST collega tutti i vertici senza formare cicli e minimizza la somma dei pesi 
 3. Aggiungi il nodo collegato al MST e marca come visitato.  
 4. Ripeti fino a includere tutti i nodi.  
 
-
 ## STRUTTURE DI SUPPORTO
 
 - **Coda di priorità (Min-Heap)** → per selezionare rapidamente l'arco di peso minimo.  
 - **Array / Lista di adiacenza** → per memorizzare il grafo pesato.  
 
-
 ## COMPLESSITÀ
 
 - Tempo → **O(E log V)** con coda di priorità.  
 - Spazio → **O(V + E)** per memorizzare il grafo e le strutture ausiliarie.  
-
 
 ## ESEMPIO DI UTILIZZO
 
@@ -61,7 +55,6 @@ Passaggi:
 
 MST finale → { A-C, C-B, C-D }, costo totale = 2 + 1 + 3 = 6
 
-
 ## APPLICAZIONI
 
 - Progettazione di **reti di comunicazione**.  
@@ -69,13 +62,11 @@ MST finale → { A-C, C-B, C-D }, costo totale = 2 + 1 + 3 = 6
 - Reti di **distribuzione di energia o dati**.  
 - Problemi di **ottimizzazione dei costi** in grafi connessi.  
 
-
 ## VANTAGGI
 
 - Seleziona sempre l'arco più leggero disponibile → MST corretto.  
 - Efficienza elevata su grafi densi o sparsi con coda di priorità.  
 - Non richiede l'ordinamento iniziale di tutti gli archi (a differenza di Kruskal).  
-
 
 ## LIMITAZIONI
 

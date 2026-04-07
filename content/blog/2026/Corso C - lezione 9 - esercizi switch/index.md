@@ -10,7 +10,6 @@ authors = []
 series = ["Corso C"]
 +++
 
-
 # ESERCIZI SWITCH
 
 ## ES 1

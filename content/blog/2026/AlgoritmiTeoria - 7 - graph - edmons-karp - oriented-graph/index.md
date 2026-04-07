@@ -10,12 +10,10 @@ authors = []
 series = ["AlgoritmiTeoria"]
 +++
 
-
 # STRUTTURA DATI: GRAFO ORIENTATO
 
 Un **grafo orientato** è una collezione di nodi (vertici) connessi da archi direzionati, 
 dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.  
-
 
 ## PROPRIETÀ PRINCIPALI
 
@@ -24,7 +22,6 @@ dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.
   - E → insieme degli archi (coppie ordinate di vertici).  
 - Gli archi hanno direzione:  
   se esiste un arco da `A` a `B`, si può navigare **solo da A a B** e non viceversa.  
-
 
 ## TERMINOLOGIA
 
@@ -37,7 +34,6 @@ dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.
 - **Componente Fortemente Connessa** → sottoinsieme di vertici in cui ogni coppia 
   è raggiungibile reciprocamente.  
 
-
 ## OPERAZIONI PRINCIPALI
 
 - `aggiungiVertice(v)` → inserisce un nuovo vertice.  
@@ -48,13 +44,11 @@ dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.
 - `visitaAmpiezza(v)` → BFS a partire da un vertice.  
 - `visitaProfondità(v)` → DFS a partire da un vertice.  
 
-
 ## RAPPRESENTAZIONE
 
 - **Lista di adiacenza** (più comune):  
   Esempio → { A: [B, C], B: [D], C: [], D: [B] }  
 - **Matrice di adiacenza** (più adatta in grafi densi).  
-
 
 ## EFFICIENZA
 
@@ -62,7 +56,6 @@ dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.
 - Inserimento arco → **O(1)**  
 - Rimozione arco → **O(d)** (d = grado di uscita del vertice).  
 - Attraversamento BFS/DFS → **O(V + E)**  
-
 
 ## APPLICAZIONI
 
@@ -72,18 +65,15 @@ dove ciascun arco rappresenta una relazione unidirezionale tra due nodi.
 - Pianificazione di percorsi con direzione.  
 - Analisi di dipendenze in sistemi complessi.  
 
-
 ## VANTAGGI
 
 - Modellano in modo naturale relazioni asimmetriche.  
 - Utili per processi sequenziali e dipendenze.  
 
-
 ## LIMITAZIONI
 
 - Più complessi da visualizzare rispetto ai grafi non orientati.  
 - La connettività richiede algoritmi specifici.  
-
 
 ## NOTE
 

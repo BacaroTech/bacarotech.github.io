@@ -20,7 +20,6 @@ supportare funzionalità come undo/redo.
 Il pattern separa chi invoca un'operazione (Invoker) da chi la esegue
 (Receiver), permettendo maggiore flessibilità nella gestione delle azioni.
 
-
 ## QUANDO USARLO
 
 - Vuoi separare il codice che invoca un'operazione dal codice che la esegue.
@@ -28,14 +27,12 @@ Il pattern separa chi invoca un'operazione (Invoker) da chi la esegue
 - Vuoi registrare, ritardare o eseguire operazioni in batch.
 - Vuoi implementare macro che combinano più comandi in sequenza.
 
-
 ## VANTAGGI
 
 - **Separazione delle responsabilità**: chi invoca non conosce i dettagli dell'esecuzione.
 - **Flessibilità**: code di comandi, esecuzione ritardata, batch, macro.
 - **Undo/Redo**: possibile mantenendo lo stato o registrando operazioni inverse.
 - **Estendibilità**: nuovi comandi possono essere aggiunti senza modificare il codice esistente.
-
 
 ## POTENZIALI SVANTAGGI
 

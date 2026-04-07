@@ -10,7 +10,6 @@ authors = []
 series = ["Corso C"]
 +++
 
-
 # ESERCIZI FOR
 
 ## ES 1

@@ -20,13 +20,11 @@ Il processo continua finché l'array non risulta ordinato.
 Visualizzazione:
 https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif
 
-
 ## QUANDO USARLO
 
 - Vuoi un algoritmo di ordinamento **semplice da comprendere e implementare**.
 - Stai lavorando con array di piccole dimensioni.
 - Vuoi un algoritmo didattico per introdurre i concetti di ordinamento.
-
 
 ## FUNZIONAMENTO
 
@@ -41,11 +39,9 @@ https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.
 all'array, nella sua posizione definitiva.
 5. L'algoritmo termina quando una passata non esegue alcuno scambio.
 
-
 ## OUTPUT
 
 - Restituisce l'array ordinato.
-
 
 ## COMPLESSITÀ
 
@@ -55,7 +51,6 @@ all'array, nella sua posizione definitiva.
 (numerosi scambi distribuiti tra le passate).
 - **Caso peggiore:** O(n²)
 (array ordinato al contrario, massimo numero di scambi).
-
 
 ## NOTE
 

@@ -11,13 +11,11 @@ series = ["AlgoritmiTeoria"]
 +++
 
 
-
 # STRUTTURA DATI: ALBERO BINARIO DI RICERCA (BST)
 
 Un **Binary Search Tree (BST)** è una struttura dati ad albero 
 che organizza i valori in modo ordinato per consentire 
 ricerca, inserimento e rimozione efficienti.  
-
 
 ## PROPRIETÀ DI RICERCA
 
@@ -27,7 +25,6 @@ ricerca, inserimento e rimozione efficienti.
   - Sottoalbero destro → valori > `N.value`  
 - Grazie a questa proprietà, è possibile sfruttare 
   la **ricerca binaria** durante la navigazione.  
-
 
 ## TERMINOLOGIA
 
@@ -53,14 +50,12 @@ ricerca, inserimento e rimozione efficienti.
 - `altezza()` → calcola la profondità massima.  
 - `contaNodi()` → numero totale di nodi.  
 
-
 ## OPERAZIONI AUSILIARIE
 
 - `getMin()` → valore minimo (nodo più a sinistra).  
 - `getMax()` → valore massimo (nodo più a destra).  
 - `isBalanced()` → verifica che le altezze dei sottoalberi 
   differiscano al massimo di 1.  
-
 
 ## EFFICIENZA
 
@@ -69,14 +64,12 @@ ricerca, inserimento e rimozione efficienti.
 - Eliminazione → **O(log n)** (medio), **O(n)** (peggiore caso).  
 - Spazio → **O(n)**.  
 
-
 ## APPLICAZIONI
 
 - Strutture di database.  
 - Implementazioni di insiemi e mappe ordinate.  
 - Algoritmi di ordinamento.  
 - Gestione di intervalli e dati gerarchici.  
-
 
 ## NOTE
 
