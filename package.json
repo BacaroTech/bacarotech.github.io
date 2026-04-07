@@ -30,6 +30,7 @@
   "scripts": {
     "content": "node scripts/make-post.js",
     "post": "node scripts/make-post.js post",
-    "redirect": "node scripts/make-post.js redirect"
+    "redirect": "node scripts/make-post.js redirect",
+    "author": "node scripts/make-author.js"
   }
 }
