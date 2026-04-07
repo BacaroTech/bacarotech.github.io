@@ -31,52 +31,34 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 
 ## Il Team
 
+<div class="container">
+<div class="row">
 
 {{< about-section
     title="Giorgio Basile"
     content="CoFounder - Sviluppatore Frontend"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/giorgiobasile00/"
     imgSrc="images/giorgio.jpg"
-    imgScale="0.5"
-    v_align="center"
-    h_align="left"
  >}}
 
 {{< about-section
     title="Michele Scarpa"
     content="CoFounder - Sviluppatore Full-Stack"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/michele-scarpa-90-arco/"
     imgSrc="images/michele.jpg"
-    imgScale="0.5"
-    v_align="center"
-    h_align="left"
  >}}
 
 {{< about-section
     title="Moreno Frigo Turco"
     content="Sviluppatore Backend"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/"
     imgSrc="images/moreno.jpg"
-    imgScale="0.5"
-    v_align="center"
-    h_align="left"
  >}}
 
 {{< about-section
     title="Danilo Macchion"
     content="IT Specialist"
     imgSrc="images/danilo.jpg"
-    imgScale="0.5"
-    v_align="center"
-    h_align="left"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/danilo-macchion/"
  >}}
 
@@ -84,11 +66,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Davide Carraretto"
     content="Sviluppatore Full-Stack"
     imgSrc="images/davide.jpg"
-    imgScale="0.5"
-    v_align="center"
-    h_align="left"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/davide-carraretto-57a855239/"
  >}}
 
@@ -110,11 +87,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Vittorio Terreran"
     content="Grafico"
     imgSrc="images/vittorio.png"
-    imgScale="1"
-    v_align="center"
-    h_align="left"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/vittorio-terreran/"
  >}}
 
@@ -122,11 +94,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Matteo Scarpa"
     content="Sviluppatore"
     imgSrc="images/matteo.jpg"
-    imgScale="1"
-    v_align="center"
-    h_align="left"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/matteo-scarpa-03031992/"
  >}}
 
@@ -135,11 +102,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Alessandro Gigliarano"
     content="Sviluppatore"
     imgSrc="images/Gigliarano.jpg"
-    imgScale="1"
-    v_align="center"
-    h_align="left"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/alessandro-gigliarano-99609147/"
  >}}
 
@@ -147,11 +109,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Andrea Della Porta"
     content="Divulgatore"
     imgSrc="images/DallaPorta.jpg"
-    imgScale="1"
-    v_align="center"
-    h_align="left"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/andrea-della-porta-01/"
  >}}
 
@@ -160,10 +117,8 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     title="Andrea Volterrani"
     content="Sviluppatore"
     imgSrc="images/Volterrani.jpg"
-    imgScale="1"
-    v_align="center"
-    h_align="left"
-    button_icon="icon-user"
-    button_text="Linkedin"
     button_url="https://www.linkedin.com/in/andrea-volterrani-b50a70131/"
  >}}
+
+</div>
+</div>

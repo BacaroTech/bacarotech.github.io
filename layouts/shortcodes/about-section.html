@@ -1,0 +1,30 @@
+{{- $contextType := printf "%T" . -}}
+
+{{- $title := "" -}}
+{{- $content := "" -}}
+{{- $imgSrc := "" -}}
+
+{{- $title = .Get "title" -}}
+{{- $content = .Get "content" -}}
+{{- $imgSrc = resources.Get ( .Get "imgSrc" ) -}}
+
+{{- $btnURL := "" -}}
+{{- $btnIcon := "" -}}
+{{- $btnText := "" -}}
+
+{{- $btnURL = hugo.Data.homepage.about.button.URL -}}
+
+<div class="col-4 pb-5">
+	<div class="card h-100">
+		<img src="{{ $imgSrc }}" class="card-img-top">
+		<div class="card-body">
+			<h5 class="card-title text-center">{{ $title }}</h5>
+			<p class="card-text text-center">{{ $content }}</p>
+		</div>
+		<a href="{{ $btnURL | absURL }}" target="_blank" class="btn card-footer">
+
+			<i class="icon-user"></i>
+			Linkedin
+		</a>
+	</div>
+</div>
