@@ -10,7 +10,24 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+> Merge nums2 into nums1 as one sorted array.
+> The final sorted array should not be returned, but instead be stored inside nums1.
+
+Possiamo risolvere questo problema unendo i due array ordinati, come nel codice proposto, utilizzando una struttura temporanea per costruire il risultato.
+
+L’idea chiave è:
+
+- utilizziamo due puntatori per scorrere nums1 e nums2 fino agli indici m e n
+- confrontiamo gli elementi correnti dei due array
+- inseriamo il valore minore in un array temporaneo
+- avanziamo il puntatore dell’array da cui abbiamo preso l’elemento
+- una volta esaurito uno dei due array, aggiungiamo tutti gli elementi rimanenti dell’altro
+- infine, copiamo il contenuto dell’array temporaneo dentro nums1
+
+Questo approccio permette di ottenere una complessità O(m + n) ed è semplice da implementare. Tuttavia, utilizza memoria aggiuntiva, mentre la soluzione ottimale sfrutta lo spazio già disponibile in nums1 e lavora al contrario (dalla fine), evitando l’uso di un array ausiliario.
 
 ```typescript
 /**
@@ -47,3 +64,4 @@ series = ["CodingLeetCode"]
 };
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

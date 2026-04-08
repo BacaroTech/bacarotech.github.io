@@ -10,7 +10,24 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> Given the head of a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.
+> You should preserve the original relative order of the nodes in each of the two partitions.
+
+Possiamo risolvere questo problema separando i valori in due gruppi distinti e poi ricombinandoli, come nel codice proposto.
+
+L’idea chiave è:
+
+- scorriamo la linked list una prima volta
+- per ogni nodo, separiamo i valori in due array:
+- uno per i valori minori di x
+- uno per i valori maggiori o uguali a x
+- in questo modo manteniamo anche l’ordine relativo degli elementi
+- una volta terminata la scansione, concateniamo i due array
+- infine, ricostruiamo la linked list a partire dall’array risultante
+
+Questo approccio permette di ottenere una complessità O(n), dove n è il numero di nodi, ed è semplice da implementare. Tuttavia, utilizza memoria aggiuntiva per gli array e ricostruisce completamente la lista, mentre una soluzione più ottimale collega direttamente i nodi originali senza strutture ausiliarie.
 
 ```typescript
 /**
@@ -55,3 +72,4 @@ function buildList(list: number[], position: number) : ListNode | null {
 }
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

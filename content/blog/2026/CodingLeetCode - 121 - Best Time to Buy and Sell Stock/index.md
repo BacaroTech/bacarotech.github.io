@@ -10,7 +10,25 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> You are given an array prices where prices[i] is the price of a given stock on the i-th day.
+> You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+> Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+
+Possiamo risolvere questo problema tenendo traccia del prezzo minimo e aggiornando il profitto massimo durante la scansione, come nel codice proposto.
+
+L’idea chiave è:
+
+- inizializziamo il prezzo minimo con il primo elemento dell’array
+- scorriamo l’array a partire dal secondo elemento
+- se troviamo un prezzo più basso, aggiorniamo il minimo e “resettiamo” la possibile vendita
+- altrimenti, consideriamo il prezzo corrente come possibile vendita
+- calcoliamo il profitto come differenza tra prezzo corrente e minimo
+- aggiorniamo il profitto massimo se troviamo un valore migliore
+- alla fine, se non è stato possibile ottenere profitto, restituiamo 0
+
+Questo approccio permette di ottenere una complessità O(n), poiché analizziamo l’array una sola volta. Tuttavia, nel codice proposto vengono utilizzate variabili aggiuntive come le posizioni (minPos, maxPos) e controlli extra che rendono la soluzione più complessa del necessario: è sufficiente mantenere solo il minimo e il profitto massimo per ottenere lo stesso risultato in modo più semplice ed efficace.
 
 ```typescript
 /*
@@ -133,3 +151,4 @@ var maxProfit = function(prices) {
 };
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

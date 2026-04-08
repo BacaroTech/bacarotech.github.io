@@ -1,5 +1,5 @@
 +++
-title = "AlgoritmiTeoria - 7 - graph - edmons-karp - kruskal"
+title = "AlgoritmiTeoria - 7 - graph - kruskal"
 date = 2026-02-25T14:00:07Z
 draft = false
 featured = false
