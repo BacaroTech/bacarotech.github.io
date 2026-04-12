@@ -10,7 +10,30 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> Design a parking system for a parking lot.
+> The parking lot has three types of parking spaces: big, medium, and small.
+> Each type has a fixed number of slots.
+
+> Implement the ParkingSystem class:
+
+> ParkingSystem(int big, int medium, int small)
+> bool addCar(int carType)
+
+Possiamo risolvere questo problema modellando direttamente lo stato del parcheggio, come nel codice proposto.
+
+L’idea chiave è:
+
+- memorizziamo il numero di posti disponibili per ogni tipo di auto: big, medium, small
+- nel costruttore inizializziamo la disponibilità di ciascuna categoria
+- quando arriva una richiesta addCar(carType):
+    - se il tipo è 1 (big) e c’è disponibilità, decrementiamo e ritorniamo true
+    - se il tipo è 2 (medium) e c’è disponibilità, decrementiamo e ritorniamo true
+    - se il tipo è 3 (small) e c’è disponibilità, decrementiamo e ritorniamo true
+    - se non c’è spazio disponibile per quel tipo, ritorniamo false
+
+Questo approccio permette di ottenere una complessità O(1) per ogni operazione, ed è efficiente perché rappresenta direttamente lo stato del sistema senza strutture dati aggiuntive o logica complessa.
 
 ```typescript
 class ParkingSystem {

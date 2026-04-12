@@ -10,7 +10,42 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> You are given a string s consisting of lowercase English letters and an integer array distance of length 26.
+> For every letter from 'a' to 'z', if it appears twice in s, the distance between its two occurrences must be equal to distance[i].
+> Return true if all distances match, otherwise return false.
+
+Possiamo risolvere questo problema calcolando la distanza tra le due occorrenze di ogni carattere, come nei due codici proposti.
+
+L’idea chiave è:
+
+- per ogni lettera dell’alfabeto dobbiamo trovare le sue due posizioni nella stringa
+- la distanza tra queste due occorrenze deve essere uguale a quella fornita nell’array distance
+- se una lettera appare una sola volta, la ignoriamo
+- se appare due volte, controlliamo che la differenza tra gli indici sia corretta
+- se tutte le lettere rispettano la condizione, restituiamo true, altrimenti false
+
+Nel primo approccio (TypeScript):
+
+- utilizziamo una mappa per memorizzare la prima occorrenza di ogni lettera
+- quando la incontriamo di nuovo, calcoliamo la distanza tra le due posizioni
+- confrontiamo il risultato con il valore atteso in distance
+- infine verifichiamo tutti i caratteri dell’alfabeto
+
+semplice e diretto
+richiede gestione esplicita delle lettere e conversione ASCII
+
+Nel secondo approccio (Python):
+
+- utilizziamo un array di dimensione 26 per rappresentare le lettere dell’alfabeto
+- scansioniamo la stringa da destra verso sinistra
+- alla prima occorrenza memorizziamo l’indice
+- alla seconda occorrenza calcoliamo direttamente la distanza
+- confrontiamo infine tutti i risultati con distance
+
+più compatto e leggermente più efficiente
+evita strutture dinamiche come Map
 
 ```typescript
 function checkDistances(s: string, distance: number[]): boolean {
@@ -38,8 +73,6 @@ function checkDistances(s: string, distance: number[]): boolean {
     return checked;
 };
 ```
-
-## sol2.py
 
 ```python
 class Solution(object):

@@ -10,7 +10,23 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> You're given strings jewels representing the types of stones that are jewels, and stones representing the stones you have.
+> Each character in stones is a type of stone you have.
+> You want to know how many of the stones you have are also jewels.
+
+Possiamo risolvere questo problema usando una struttura dati che ci permetta di verificare rapidamente se un carattere è un “jewel”, come nel codice proposto.
+
+L’idea chiave è:
+
+- creiamo una mappa contenente tutti i caratteri presenti in jewels
+- inizializziamo per ciascun jewel un contatore a 0
+- scorriamo la stringa stones
+- se uno stone è presente nella mappa, incrementiamo il suo contatore
+- alla fine sommiamo tutti i valori della mappa per ottenere il risultato finale
+
+Questo approccio permette di ottenere una complessità O(n + m), dove n è la lunghezza di jewels e m è la lunghezza di stones. È una soluzione corretta e chiara, anche se si può semplificare ulteriormente usando un Set invece di una Map, evitando il conteggio per singolo carattere e incrementando direttamente un totale durante la scansione.
 
 ```typescript
 function numJewelsInStones(jewels: string, stones: string): number {
