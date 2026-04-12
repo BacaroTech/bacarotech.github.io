@@ -10,7 +10,24 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> You are given an array of integers nums, and there is a sliding window of size k which is moving from the very left of the array to the very right.
+> You can only see the k numbers in the window.
+> Each time the sliding window moves right by one position, return the maximum value in the window.
+
+Possiamo risolvere questo problema calcolando il massimo per ogni finestra, come nel codice proposto.
+
+L’idea chiave è:
+
+- scorriamo l’array considerando ogni possibile finestra di dimensione k
+- per ogni posizione i, analizziamo gli elementi da i a i + k - 1
+- inizializziamo il massimo con il primo elemento della finestra
+- confrontiamo tutti gli elementi della finestra per trovare il massimo
+- aggiungiamo il massimo trovato all’array risultato
+- continuiamo fino a coprire tutte le finestre possibili
+
+Questo approccio permette di ottenere una complessità O(n * k), poiché per ogni finestra analizziamo k elementi. È una soluzione semplice e corretta, ma non ottimale: esiste un approccio con deque che consente di ottenere una complessità O(n), mantenendo il massimo aggiornato senza dover riesaminare ogni finestra da zero.
 
 ```typescript
 function maxSlidingWindow(nums: number[], k: number): number[] {
@@ -57,3 +74,4 @@ function maxSlidingWindow(nums: number[], k: number): number[] {
 };*/
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

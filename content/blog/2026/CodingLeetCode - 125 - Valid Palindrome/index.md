@@ -10,7 +10,23 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward.
+> Given a string s, return true if it is a palindrome, or false otherwise.
+
+Possiamo risolvere questo problema normalizzando prima la stringa e poi confrontandola simmetricamente, come nel codice proposto.
+
+L’idea chiave è:
+
+- scorriamo la stringa e costruiamo una nuova stringa contenente solo caratteri alfanumerici
+- convertiamo tutti i caratteri in minuscolo per evitare problemi di confronto
+- confrontiamo i caratteri agli estremi: il primo con l’ultimo, il secondo con il penultimo, e così via
+- se troviamo una differenza, la stringa non è palindroma
+- se tutti i confronti vanno a buon fine, la stringa è palindroma
+- gestiamo come casi validi anche stringhe vuote o con un solo carattere
+
+Questo approccio permette di ottenere una complessità O(n), dove n è la lunghezza della stringa, ed è efficace perché filtra prima i caratteri non validi e poi applica un semplice confronto simmetrico. Una possibile ottimizzazione consiste nell’evitare la creazione di una nuova stringa e lavorare direttamente con due puntatori sulla stringa originale.
 
 ```typescript
 function isPalindrome(s: string): boolean {
@@ -41,3 +57,4 @@ function isPalindrome(s: string): boolean {
 };
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

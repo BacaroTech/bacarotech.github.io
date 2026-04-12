@@ -10,7 +10,23 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+Possiamo risolvere questo problema confrontando le versioni ordinate delle due stringhe, come nel codice proposto.
+
+L’idea chiave è:
+
+- controlliamo subito se le due stringhe hanno lunghezze diverse
+- se sì, non possono essere anagrammi
+- convertiamo entrambe le stringhe in array di caratteri
+- ordiniamo i due array
+- confrontiamo i caratteri posizione per posizione
+- se troviamo una differenza, le stringhe non sono anagrammi
+- se tutti i caratteri coincidono, allora sono anagrammi
+
+Questo approccio permette di ottenere una complessità O(n log n) a causa dell’ordinamento. È una soluzione semplice e intuitiva, anche se non la più efficiente: si può migliorare utilizzando una struttura di conteggio delle frequenze per raggiungere una complessità O(n).
 
 ```typescript
 function isAnagram(s: string, t: string): boolean {
@@ -34,3 +50,4 @@ function isAnagram(s: string, t: string): boolean {
 
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)

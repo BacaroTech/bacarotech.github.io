@@ -10,7 +10,22 @@ authors = []
 series = ["CodingLeetCode"]
 +++
 
-## sol1.ts
+Oggi vediamo il seguente esercizio di LeetCode:
+
+> Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+Possiamo risolvere questo problema ordinando l’array e controllando elementi consecutivi, come nel codice proposto.
+
+L’idea chiave è:
+
+- ordiniamo l’array utilizzando un algoritmo di ordinamento (in questo caso merge sort)
+- una volta ordinato, eventuali duplicati saranno adiacenti
+- scorriamo l’array a partire dal secondo elemento
+- confrontiamo ogni elemento con il precedente
+- se troviamo due elementi uguali consecutivi, esiste un duplicato
+- altrimenti, se arriviamo alla fine senza trovare uguaglianze, tutti gli elementi sono distinti
+
+Questo approccio permette di ottenere una complessità O(n log n) a causa dell’ordinamento. Tuttavia, utilizza più operazioni del necessario: una soluzione più efficiente sfrutta una struttura dati come un set per ottenere una complessità O(n), evitando l’ordinamento.
 
 ```typescript
 function containsDuplicate(nums: number[]): boolean {
@@ -50,3 +65,4 @@ function merge(left, right) {
 
 ```
 
+Se hai dubbi in merito non esitare a contattarci sui nostri social, saremo più che felici di risponderti :)
