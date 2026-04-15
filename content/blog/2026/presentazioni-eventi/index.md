@@ -46,6 +46,7 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [Design pattern, come costruire una codebase di successo - Giorgio Basile](/presentazioniNostre/Design%20pattern,%20come%20costruire%20una%20codebase%20di%20successo.pdf)
 - [GitFlow, caratteristiche ed alternative - Giorgio Basile](/presentazioniNostre/GitFlow,%20caratteristiche%20ed%20alternative.pdf)
 - [Da flask ad angular, la mia evoluzione - Giorgio Basile](/presentazioniNostre/Da%20flask%20ad%20angular,%20la%20mia%20evoluzione.pdf)
+- [Superset, dashboard, embeding e dolori - Giorgio Basile e Fabrizio Baldazzi](/presentazioniNostre/Superset,%20dashboard,%20embeding%20e%20dolori)
 
 ### Michele Scarpa
 
@@ -78,6 +79,7 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [Biagio Nuzzo](https://www.linkedin.com/in/biagio-nuzzo-332a99112/)
 - [Martino Scarcia](https://www.linkedin.com/in/martinoscarcia/)
 - [Romina Alina Danci](https://www.linkedin.com/in/romina-alina-danci-62ba59248/)
+- [Fabrizio Baldazzi](https://www.linkedin.com/in/fabrizio-baldazzi-b8a060b6/)
 
 ### Crediti di ragazzi del team di BacaroTech che hanno partecipato ad almeno un talk
 - [Giorgio Basile](https://www.linkedin.com/in/giorgiobasile00/)

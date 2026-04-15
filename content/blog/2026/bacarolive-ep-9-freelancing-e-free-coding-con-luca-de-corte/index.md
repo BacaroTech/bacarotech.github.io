@@ -10,7 +10,7 @@ authors = []
 series = []
 +++
 
-27 FEBBRAIO ALLE 18:30 - BACAROLIVE EP 9 - FREELANCING E (FREE)CODING CON LUCA DA CORTE
+# 27 FEBBRAIO ALLE 18:30 - BACAROLIVE EP 9 - FREELANCING E (FREE)CODING CON LUCA DA CORTE
 
 Link alla live: https://www.youtube.com/live/2WuPzDCclZM?si=PQv2qPFeikh-yE8b
 

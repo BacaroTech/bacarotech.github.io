@@ -10,7 +10,6 @@ links:
 
 Add a short author bio here.
 
-
 Example of links for labels
 
 ```

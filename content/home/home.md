@@ -4,7 +4,6 @@ type = "home"
 draft = false
 +++
 
-
 ![Logo](img/logo.png)
 
 {{< showcase-section
@@ -159,7 +158,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 
 {{< project-list
     title="I nostri progetti" >}}
-
 
 {{< workshop-list
     title="I nostri Workshop" >}}

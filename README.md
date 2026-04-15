@@ -10,29 +10,17 @@
 Per lanciare il sito in dev devi prima lanciare il comando per le dipendenze (lo fai solo la prima volta)
 
 ~~~ bash
-make install
+npm run install
 ~~~
 
-o se non hai make
-
-~~~ bash
-npm install
-hugo mod get -u
-~~~
 
 ## Lanciare il sito in locale
 
 Fatto questo con il comando qui sotto lanci il sito in locale. Il log ti dice anche a che indirizzo é disponibile in locale
 
 ~~~ bash
-make run
+npm run run
 ~~~
-
-o se non hai make 
-
-~~~ bash
-hugo server --disableFastRender --renderToMemory
-~~~ 
 
 NB: il sito è dotato di Hot realod, quindi non è necessario ricompilare ogni volta lo stesso dopo qualsiasi modifica
 
@@ -42,7 +30,7 @@ Perché ricordarsi tutti i comandi e come funzionano le cose é un casino, sono 
 Una volta installato é possibile lanciare il seguente comando e rispondere alle sue domande per generare un nuovo post e, se necessario, il file ics collegato
 
 ~~~ bash
-make new
+npm new
 ~~~
 
 seguire lo step successivo per la creazione completa del post
@@ -57,6 +45,28 @@ Ogni post é diviso in due parti:
 
 Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione del post
 
+## Comandi npm
+
+| Comando | Descrizione |
+|---------|-------------|
+| `npm run content` | Avvia l'assistente per creare un nuovo contenuto |
+| `npm run post` | Crea direttamente un nuovo post |
+| `npm run redirect` | Crea un nuovo redirect |
+| `npm run author` | Avvia l'assistente per creare un nuovo autore-team member |
+| `npm run youtube` | Avvia la creazione dei post dai video YouTube |
+| `npm run install` | Installa dipendenze npm e hugo |
+| `npm run cache` | Pulisci la cache e genera i colori per la syntax highlighting |
+| `npm run clean` | Pulisci cache, moduli go e file vuoti |
+| `npm run run` | Avvia il server hugo in locale |
+| `npm run gomodule` | Aggiorna i go module |
+| `npm run update` | Aggiorna le dipendenze npm |
+| `npm run develop` | Avvia il server hugo in locale |
+| `npm run developfuture` | Avvia il server includendo articoli futuri |
+| `npm run developall` | Avvia il server includendo draft e articoli futuri |
+| `npm run build` | Build per sviluppo |
+| `npm run deploy` | Build per produzione con minify |
+| `npm run deploy:prod` | Build per produzione con aggiornamento dipendenze |
+
 ## Social e Contatti
 
 Se hai dei consigli facci sapere!
@@ -64,4 +74,5 @@ Se hai dei consigli facci sapere!
 - 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
 - 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
 - 🎥 [Youtube](https://www.youtube.com/@Bacarotech)
-- 📫 Email: **bacarotech@gmail.com**
+- 👨‍💻 [Github](https://github.com/BacaroTech)
+- 📫 [Email](bacarotech@gmail.com)

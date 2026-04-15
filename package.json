@@ -33,6 +33,22 @@
     "content": "node scripts/make-post.js",
     "post": "node scripts/make-post.js post",
     "redirect": "node scripts/make-post.js redirect",
+    "author": "node scripts/make-author.js",
+    "install": "npm install && hugo mod get -u",
+    "cache": "hugo --gc && hugo gen chromastyles --style=catppuccin-frappe > assets/code-highlight.css",
+    "clean": "hugo --gc && hugo mod get -u ./... && hugo mod tidy && hugo mod get -u && find . -type d -empty -delete",
+    "run": "hugo server --disableFastRender --renderToMemory",
+    "gomodule": "hugo mod get -u ./... && hugo mod tidy && hugo mod get -u",
+    "update": "npm update",
+    "hugo": "hugo server --disableFastRender --renderToMemory",
+    "develop": "hugo server --disableFastRender --renderToMemory",
+    "developfuture": "hugo server --disableFastRender --buildFuture --renderToMemory",
+    "developall": "hugo server --disableFastRender --buildFuture --buildDrafts --renderToMemory",
+    "build": "hugo --gc && hugo mod get -u && hugo",
+    "deploy": "npm update && hugo --minify",
+    "broadcast": "hugo server --disableFastRender --buildFuture --buildDrafts -bind=0.0.0.0",
+    "deploy:prod": "npm update && hugo mod get -u && hugo --minify"
+    "redirect": "node scripts/make-post.js redirect",
     "youtube": "node scripts/generate-youtube-posts.js",
     "youtube-posts": "node scripts/generate-youtube-posts.js"
   }
