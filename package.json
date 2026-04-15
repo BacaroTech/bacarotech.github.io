@@ -34,7 +34,7 @@
     "post": "node scripts/make-post.js post",
     "redirect": "node scripts/make-post.js redirect",
     "author": "node scripts/make-author.js",
-    "install": "npm install && hugo mod get -u",
+    "install-all": "npm install && hugo mod get -u",
     "cache": "hugo --gc && hugo gen chromastyles --style=catppuccin-frappe > assets/code-highlight.css",
     "clean": "hugo --gc && hugo mod get -u ./... && hugo mod tidy && hugo mod get -u && find . -type d -empty -delete",
     "run": "hugo server --disableFastRender --renderToMemory",

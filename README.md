@@ -10,7 +10,7 @@
 Per lanciare il sito in dev devi prima lanciare il comando per le dipendenze (lo fai solo la prima volta)
 
 ~~~ bash
-npm run install
+npm run install-all
 ~~~
 
 
@@ -54,7 +54,7 @@ Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione de
 | `npm run redirect` | Crea un nuovo redirect |
 | `npm run author` | Avvia l'assistente per creare un nuovo autore-team member |
 | `npm run youtube` | Avvia la creazione dei post dai video YouTube |
-| `npm run install` | Installa dipendenze npm e hugo |
+| `npm run install-all` | Installa dipendenze npm e hugo |
 | `npm run cache` | Pulisci la cache e genera i colori per la syntax highlighting |
 | `npm run clean` | Pulisci cache, moduli go e file vuoti |
 | `npm run run` | Avvia il server hugo in locale |
