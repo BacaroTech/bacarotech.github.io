@@ -47,8 +47,7 @@
     "build": "hugo --gc && hugo mod get -u && hugo",
     "deploy": "npm update && hugo --minify",
     "broadcast": "hugo server --disableFastRender --buildFuture --buildDrafts -bind=0.0.0.0",
-    "deploy:prod": "npm update && hugo mod get -u && hugo --minify"
-    "redirect": "node scripts/make-post.js redirect",
+    "deploy:prod": "npm update && hugo mod get -u && hugo --minify",
     "youtube": "node scripts/generate-youtube-posts.js",
     "youtube-posts": "node scripts/generate-youtube-posts.js"
   }
