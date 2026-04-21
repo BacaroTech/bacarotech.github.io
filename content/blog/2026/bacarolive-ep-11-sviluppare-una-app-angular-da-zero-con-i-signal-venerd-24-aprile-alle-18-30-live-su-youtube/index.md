@@ -1,7 +1,6 @@
 +++
 title = "Bacarolive Ep 11 Sviluppare Una App Angular Da Zero Con I Signal Venerd 24 Aprile Alle 18 30 Live Su Youtube"
 date = 2026-04-19T23:02:22+02:00
-draft = true
 featured = false
 weight = 100  # Lower weight appears first in featured sections
 description = ""
