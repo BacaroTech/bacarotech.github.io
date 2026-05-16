@@ -17,10 +17,15 @@ In questo talk facciamo il punto sulle novità più rilevanti introdotte da Java
 Niente teoria fine a sé stessa — ogni concetto è accompagnato da codice reale, esempi concreti e consigli pratici.
 
 Cosa imparerai?
-✅ Scrivere codice più espressivo con var, text blocks e switch expressions
+
+✅ Scrivere codice più espressivo con var, text blocks e switch expressions.
+
 ✅ Modellare i dati in modo sicuro con records e sealed classes
+
 ✅ Eliminare il boilerplate grazie al pattern matching — addio instanceof a cascata
+
 ✅ Gestire migliaia di connessioni concorrenti con i virtual threads
+
 ✅ Le novità di Java 25 — cosa aspettarsi dal Java di oggi
 
 Recupera gli anni persi ed esci con una mappa aggiornata del Java moderno. 😉
