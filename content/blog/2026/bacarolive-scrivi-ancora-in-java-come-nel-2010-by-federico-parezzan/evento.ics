@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:c5a81f83-05ef-4e77-bb21-28461c83028f
+DTSTAMP:20260516T103258Z
+DTSTART;TZID=Europe/Rome:20260522T120000
+DTEND;TZID=Europe/Rome:20260522T140000
+SUMMARY:BacaroLive: Scrivi ancora in Java come nel 2010? by Federico Parezzan
+DESCRIPTION:Quante feature di Java 17 o 21 stai già usando? Quante hai solo sentito nominare? - In questo talk facciamo il punto sulle novità più rilevanti introdotte da Java 11 a Java 25: nuove sintassi, pattern più espressivi, concorrenza ripensata.
+END:VEVENT
+END:VCALENDAR
