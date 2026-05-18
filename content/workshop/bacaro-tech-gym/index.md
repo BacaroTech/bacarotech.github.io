@@ -1,7 +1,7 @@
 ---
 date: '2023-08-08T09:53:42+02:00' # date in which the content is created - defaults to "today"
 title: 'Bacaro Tech Gym'
-draft: false # set to "true" if you want to hide the content 
+draft: true # set to "true" if you want to hide the content 
 
 link: "https://github.com/BacaroTech/BacaroTech-tech-gym" # optional URL to link the logo to
 
