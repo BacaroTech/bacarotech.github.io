@@ -2,7 +2,7 @@
 title: "Alberto Pesce"
 name: "Alberto Pesce"
 role: "Socio"
-avatar: "images/segnaposto.png"
+avatar: "images/alberto-pesce.jpg"
 bio: ""
 links:
   - label: "Linkedin"

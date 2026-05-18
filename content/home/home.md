@@ -165,7 +165,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 {{< about-section
     title="Alberto Pesce"
     content="Socio"
-    imgSrc="images/segnaposto.png"
+    imgSrc="images/alberto-pesce.jpg"
     button_url="https://www.linkedin.com/in/alberto-pesce-7439b0213/"
   >}}
 
