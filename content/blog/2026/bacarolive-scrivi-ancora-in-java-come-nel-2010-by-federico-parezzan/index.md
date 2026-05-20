@@ -12,6 +12,10 @@ series=[ "BacaroLive"]
 
 BACAROLIVE EP 13 - SCRIVI ANCORA IN JAVA COME NEL 2010 CON FEDERICO PAREZZAN - 22 MAGGIO - ORE 20:30
 
+
+LINK ALLA LIVE: [Live Youtube](https://www.youtube.com/live/C-bWbIJEb3U)
+
+
 Quante feature di Java 17 o 21 stai già usando? Quante hai solo sentito nominare?
 In questo talk facciamo il punto sulle novità più rilevanti introdotte da Java 11 a Java 25: nuove sintassi, pattern più espressivi, concorrenza ripensata.
 Niente teoria fine a sé stessa — ogni concetto è accompagnato da codice reale, esempi concreti e consigli pratici.
@@ -34,3 +38,5 @@ Federico Parezzan è uno sviluppatore appassionato di tecnologia e innovazione, 
 > Sono un essere umano, niente di ciò ch’è umano ritengo estraneo a me.
 > 
 > Ti aspetto alla Live! 😉
+
+
