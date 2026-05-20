@@ -157,7 +157,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 
 {{< about-section
     title="Lorenzo Fanton"
-    content="Soci0"
+    content="Socio"
     imgSrc="images/lorenzo-fanton.jpeg"
     button_url="https://www.linkedin.com/in/lorenzofanton/"
   >}}
