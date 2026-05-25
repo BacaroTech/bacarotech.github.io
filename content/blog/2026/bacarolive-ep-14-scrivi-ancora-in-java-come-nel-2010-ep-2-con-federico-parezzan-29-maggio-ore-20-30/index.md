@@ -1,6 +1,6 @@
 +++
 title = "Bacarolive Ep 14 Scrivi Ancora in Java Come Nel 2010 Ep 2 Con Federico Parezzan 29 Maggio Ore 20 30"
-date = 2026-05-26T00:31:25+02:00
+date = 2026-05-25T00:00:00+02:00
 featured = false
 weight = 100  # Lower weight appears first in featured sections
 description = "Quante feature di Java 17 o 21 stai già usando? Quante hai solo sentito nominare? In questo talk facciamo il punto sulle novità più rilevanti introdotte da Java 11 a Java 25: nuove sintassi, pattern più espressivi, concorrenza ripensata. Niente teoria fine a sé stessa — ogni concetto è accompagnato da codice reale, esempi concreti e consigli pratici."
