@@ -1,5 +1,5 @@
 +++
-title = "Bacarolive Scrivi Ancora in Java Come Nel 2010 by Federico Parezzan"
+title = "Bacarolive 13: Scrivi Ancora in Java Come Nel 2010 by Federico Parezzan"
 date = 2026-05-16T12:32:40+02:00
 featured = false
 weight = 100  # Lower weight appears first in featured sections
@@ -8,6 +8,7 @@ tags=["video", "java"]
 topics = []
 authors = []
 series=[ "BacaroLive"]
+aliases =["/blog/2026/bacarolive-scrivi-ancora-in-java-come-nel-2010-by-federico-parezzan/"]
 +++
 
 BACAROLIVE EP 13 - SCRIVI ANCORA IN JAVA COME NEL 2010 CON FEDERICO PAREZZAN - 22 MAGGIO - ORE 20:30
