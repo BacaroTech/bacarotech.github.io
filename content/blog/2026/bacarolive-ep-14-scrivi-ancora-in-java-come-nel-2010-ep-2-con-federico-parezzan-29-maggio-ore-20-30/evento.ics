@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:63eb2199-c7c3-419c-bfaa-62a873bba69e
+DTSTAMP:20260525T223148Z
+DTSTART;TZID=Europe/Rome:20260529T120000
+DTEND;TZID=Europe/Rome:20260529T120000
+SUMMARY:BACAROLIVE EP 14 - SCRIVI ANCORA IN JAVA COME NEL 2010 - EP 2 - CON FEDERICO PAREZZAN - 29 MAGGIO - ORE 20:30
+DESCRIPTION:Quante feature di Java 17 o 21 stai già usando? Quante hai solo sentito nominare? - In questo talk facciamo il punto sulle novità più rilevanti introdotte da Java 11 a Java 25: nuove sintassi, pattern più espressivi, concorrenza ripensata.
+END:VEVENT
+END:VCALENDAR
