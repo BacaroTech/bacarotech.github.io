@@ -58,5 +58,8 @@ submodule: ## Get submodule for this repo
 new: ## Make new object for the blog
 	@npm run content
 
+member: ## Add a new team member to data/team.yaml (optionally creates author entry)
+	@npm run member
+
 youtube: ## Generate posts from youtube channel
 	@npm run youtube-posts

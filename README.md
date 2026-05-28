@@ -13,7 +13,6 @@ Per lanciare il sito in dev devi prima lanciare il comando per le dipendenze (lo
 npm run install-all
 ~~~
 
-
 ## Lanciare il sito in locale
 
 Fatto questo con il comando qui sotto lanci il sito in locale. Il log ti dice anche a che indirizzo é disponibile in locale
@@ -48,10 +47,11 @@ Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione de
 ## Comandi npm
 
 | Comando | Descrizione |
-|---------|-------------|
+| ------- | ----------- |
 | `npm run content` | Avvia l'assistente per creare un nuovo contenuto |
 | `npm run post` | Crea direttamente un nuovo post |
 | `npm run redirect` | Crea un nuovo redirect |
+| `npm run member` | Aggiunge un nuovo membro a `data/team.yaml` (opzionalmente crea anche la voce autore) |
 | `npm run author` | Avvia l'assistente per creare un nuovo autore-team member |
 | `npm run youtube` | Avvia la creazione dei post dai video YouTube |
 | `npm run install-all` | Installa dipendenze npm e hugo |
@@ -70,6 +70,7 @@ Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione de
 ## Social e Contatti
 
 Se hai dei consigli facci sapere!
+
 - 🌳 [Linkedin](https://www.linkedin.com/company/bacarotech)
 - 📷 [Instagram](https://www.instagram.com/bacarotechofficial/)
 - 🎵 [TikTok](https://www.tiktok.com/@bacarotech)
