@@ -3,10 +3,12 @@
 {{- $title := "" -}}
 {{- $content := "" -}}
 {{- $imgSrc := "" -}}
+{{- $ruolo := "" -}}
 
 {{- $title = .Get "title" -}}
 {{- $content = .Get "content" -}}
 {{- $imgSrc = resources.Get ( .Get "imgSrc" ) -}}
+{{- $ruolo = .Get "ruolo" -}}
 
 {{- $btnURL := "" -}}
 {{- $btnIcon := "" -}}
@@ -19,6 +21,7 @@
 		<img src="{{ $imgSrc }}" class="card-img-top">
 		<div class="card-body">
 			<h5 class="card-title text-center">{{ $title }}</h5>
+			<h6 class="card-title text-center">{{ $ruolo }}</h6>
 			<p class="card-text text-center">{{ $content }}</p>
 		</div>
 		<a href="{{ $btnURL | absURL }}" target="_blank" class="btn card-footer">

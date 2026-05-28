@@ -28,25 +28,54 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 <div class="container">
 <div class="row">
 
+
+
 {{< about-section
     title="Giorgio Basile"
-    content="CoFounder - Sviluppatore Frontend"
+    ruolo="CoFounder - Presidente"
+    content="Sviluppatore Frontend"
     button_url="https://www.linkedin.com/in/giorgiobasile00/"
     imgSrc="images/giorgio.jpg"
  >}}
 
-{{< about-section
+ {{< about-section
     title="Michele Scarpa"
+    ruolo="CoFounder - Vicepresidente"
     content="CoFounder - Sviluppatore Full-Stack"
     button_url="https://www.linkedin.com/in/michele-scarpa-90-arco/"
     imgSrc="images/michele.jpg"
  >}}
 
+   {{< about-section
+    title="Romina Alina Danci"
+    ruolo="Segretaria"
+    content="Socia"
+    imgSrc="images/romina-alina-danci.jpg"
+    button_url="https://www.linkedin.com/in/romina-alina-danci-62ba59248/"
+  >}}
+
+  {{< about-section
+    title="Alberto Pesce"
+    ruolo="Responsabile Finanze"
+    content="Sviluppatore"
+    imgSrc="images/alberto-pesce.jpg"
+    button_url="https://www.linkedin.com/in/alberto-pesce-7439b0213/"
+  >}}
+
 {{< about-section
     title="Moreno Frigo Turco"
+    ruolo="Responsabile Sviluppo"
     content="Sviluppatore Backend"
     button_url="https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/"
     imgSrc="images/moreno.jpg"
+ >}}
+
+{{< about-section
+    title="Matteo Scarpa"
+    ruolo="Responsabile Contenuti"
+    content="Sviluppatore"
+    imgSrc="images/matteo.jpg"
+    button_url="https://www.linkedin.com/in/matteo-scarpa-03031992/"
  >}}
 
 {{< about-section
@@ -76,13 +105,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
     content="Grafico"
     imgSrc="images/vittorio.png"
     button_url="https://www.linkedin.com/in/vittorio-terreran/"
- >}}
-
-{{< about-section
-    title="Matteo Scarpa"
-    content="Sviluppatore"
-    imgSrc="images/matteo.jpg"
-    button_url="https://www.linkedin.com/in/matteo-scarpa-03031992/"
  >}}
 
 {{< about-section
@@ -116,21 +138,7 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 
 {{< about-section
     title="Lorenzo Fanton"
-    content="Soci0"
+    content="Socio"
     imgSrc="images/lorenzo-fanton.jpeg"
     button_url="https://www.linkedin.com/in/lorenzofanton/"
-  >}}
-
-{{< about-section
-    title="Alberto Pesce"
-    content="Socio"
-    imgSrc="images/segnaposto.png"
-    button_url="https://www.linkedin.com/in/alberto-pesce-7439b0213/"
-  >}}
-
-  {{< about-section
-    title="Romina Alina Danci"
-    content="Socia"
-    imgSrc="images/romina-alina-danci.jpg"
-    button_url="https://www.linkedin.com/in/romina-alina-danci-62ba59248/"
   >}}
