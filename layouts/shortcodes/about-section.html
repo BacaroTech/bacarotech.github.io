@@ -24,8 +24,9 @@
 			<h6 class="card-title text-center">{{ $ruolo }}</h6>
 			<p class="card-text text-center">{{ $content }}</p>
 		</div>
-		<a href="{{ $btnURL | absURL }}" target="_blank" class="btn card-footer">
-
+		<a href="{{ $btnURL | absURL }}" target="_blank" class="btn card-footer"
+			data-umami-event="profile"
+			data-umami-event-profile-name="{{ $title }}">
 			<i class="icon-user"></i>
 			Linkedin
 		</a>
