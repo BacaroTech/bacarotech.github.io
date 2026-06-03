@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{- $.Lang }}" dir="{{ .Site.Language.LanguageDirection | default "ltr" }}"
+	{{- if .Site.Params.colorTheme.auto.disable }}
+	data-bs-theme="{{ .Site.Params.colorTheme.forced.theme }}"
+	theme-forced="true"
+	theme-auto="false"
+	{{- end }}>
+	<head>
+		{{ partial "head.html" . }}
+		{{ partial "head_custom.html" . }}
+		{{- if or .Site.Params.viewTransitions (not (isset .Site.Params "viewTransitions")) }}
+		<meta name="view-transition" content="same-origin" />
+		{{- end }}
+	</head>
+
+	<body class="{{- if .IsHome }}home{{- end }}{{- with .File }} page-{{- .ContentBaseName }}{{- end }}">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHPLBGNH"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		{{ partial "reading-progress.html" . }}
+		{{ partial "header.html" . }}
+
+		<main class="container">
+			{{ block "main" . }}{{ end }}
+		</main>
+
+		<div class="d-print-none">
+			{{ partial "footer.html" . }}
+		</div>
+
+		{{ partial "base-foot.html" . }}
+
+		{{ block "footerfiles" . }}
+		{{ end }}
+	</body>
+</html>
