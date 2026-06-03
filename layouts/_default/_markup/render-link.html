@@ -1,5 +1,7 @@
 <a class="a-post interlink-script" href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}" {{ end }} {{ if strings.HasPrefix .Destination "http" }}
 	target="_blank" {{ end }}
+	{{ if strings.HasPrefix .Destination "/form-team" }}
+	target="_blank" {{ end }}
 	data-umami-event="link"
 	data-umami-event-link-title="{{ .Text | safeHTML  }}"
 	data-umami-event-link-url="{{ .Destination | safeURL }}">
