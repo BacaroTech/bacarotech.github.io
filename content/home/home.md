@@ -78,6 +78,6 @@ Portiamo avanti questa realtà dal 2023 e nel corso di questo tempo siamo riusci
 
 Vuoi diventare membro di BacaroTech? Compila il Google Form cliccando il pulsante qui sotto! 
 
-[Vai al form](https://docs.google.com/forms/d/e/1FAIpQLSdARSHfPwsEmbwq9DKZflc8GdHvZKXI6WxGZb5j3wD7oeNIng/viewform?usp=sharing&ouid=115289466104316446562)
+[Vai al form](https://docs.google.com/forms/d/e/1FAIpQLSerrbASp8EZDwGlokdwV0_b6VhBOIEa_RbfUrL49qJqDrQoIg/viewform?usp=dialog)
 
 {{< spacer size="large" >}}
