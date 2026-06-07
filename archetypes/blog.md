@@ -8,6 +8,7 @@ description = ""
 tags = []
 authors = []
 series = []
+slide_url = ""
 +++
 
 Add your content here.

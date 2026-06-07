@@ -5,7 +5,7 @@ languageCode = "it"
 theme = ["hugo-redirect", "github.com/zetxek/adritian-free-hugo-theme"]
 # Exclude footer section from generating list pages (index.html and index.xml)
 [pagination]
-pagerSize = 3
+pagerSize = 9
 
 [outputs]
 page = ["HTML"]

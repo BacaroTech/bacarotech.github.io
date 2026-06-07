@@ -5,9 +5,9 @@ draft = false
 featured = false
 weight = 100  # Lower weight appears first in featured sections
 description = ""
-tags = ["Keynote"]
+tags = ["keynote","talk","slide"]
 topics = []
-series = []
+series = ["Slide"]
 # series_order = 1  # Optional order within a series (lower comes first)
 +++
 

@@ -86,6 +86,12 @@
 			<div class="col-12 post-content">{{ .Content | safeHTML }}</div>
 		</div>
 
+		{{ with .Params.slide_url}}
+
+		{{partial "slide.html" .}}
+
+		{{ end }}
+
 		{{ partial "social-sharing.html" . }}
 
 		{{ partial "related-posts.html" . }}
