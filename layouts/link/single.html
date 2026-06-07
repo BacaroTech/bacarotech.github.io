@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="linktree-section flex-grow-1">
+	<div class="linktree-container">
+		<div class="linktree-header">
+			<a href="{{ .Site.BaseURL }}" class="linktree-home-link" aria-label="Home">
+				<img src="/img/logo.png" alt="{{ .Site.Params.title }}" class="linktree-logo">
+			</a>
+		</div>
+
+		<div class="linktree-links">
+			{{ range .Params.links }}
+			<a href="{{ .url }}"
+				{{ if not (hasPrefix .url "mailto:") }}target="_blank" rel="noopener noreferrer" {{ end }}
+				class="linktree-btn"
+				aria-label="{{ .label }}">
+				<span class="linktree-btn-icon">
+					<i class="fa-{{ default "brands" .iconType }} fa-{{ .icon }}"></i>
+				</span>
+				<span class="linktree-btn-label">{{ .label }}</span>
+				<span class="linktree-btn-spacer"></span>
+			</a>
+			{{ end }}
+		</div>
+	</div>
+</section>
+{{ end }}
