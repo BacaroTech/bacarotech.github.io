@@ -88,3 +88,9 @@ members:
     content: "Socio"
     button_url: "https://www.linkedin.com/in/lorenzofanton/"
     imgSrc: "images/lorenzo-fanton.jpeg"
+
+  - title: "Martin Todorov"
+    ruolo: ""
+    content: "Socio"
+    button_url: "https://www.linkedin.com/in/martintodorovdev/"
+    imgSrc: "images/Martin_Todorov.jpg"
