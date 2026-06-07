@@ -1,7 +1,6 @@
 +++
 title = "Bacarotech Storia Di Una Community Complicata Ma Divertente"
 date = 2026-06-06T08:59:55+02:00
-
 weight = 100  # Lower weight appears first in featured sections
 description = "Dal DevFest Vicenza 2026 ecco il talk di presentazione della nostra associazione"
 tags = ["talk", "devfest","vicenza", "community", "keynote"]
