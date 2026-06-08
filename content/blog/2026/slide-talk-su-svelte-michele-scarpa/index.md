@@ -1,7 +1,7 @@
 ---
 title: "Slide - Talk su Svelte (BacaroLive 1) - Michele Scarpa"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide del talk su Svelte presentato da Michele Scarpa durante il BacaroLive 1. Perché Svelte è diverso dagli altri framework JavaScript e perché vale la pena esplorarlo."

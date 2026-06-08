@@ -1,7 +1,7 @@
 ---
 title: "Slide - Kotlin ep2 (BacaroLive 0) - Moreno Frigo Turco"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide della seconda puntata su Kotlin, presentata da Moreno Frigo Turco durante il BacaroLive 0. Si approfondiscono i concetti più avanzati del linguaggio dopo le basi della prima puntata."

@@ -1,7 +1,7 @@
 ---
 title: "Slide - Cloudflare e altri drammi (BacaroLive 7) - Angela Petraglia"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide del talk 'Cloudflare e altri drammi' presentato da Angela Petraglia durante il BacaroLive 7. Un racconto diretto di problemi reali affrontati con Cloudflare e le soluzioni trovate."

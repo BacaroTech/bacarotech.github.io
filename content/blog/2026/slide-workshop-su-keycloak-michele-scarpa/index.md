@@ -1,7 +1,7 @@
 ---
 title: "Slide - Workshop su Keycloak - Michele Scarpa"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide del workshop su Keycloak tenuto da Michele Scarpa. Una guida pratica all'identity and access management con Keycloak: setup, configurazione e integrazione nelle applicazioni."

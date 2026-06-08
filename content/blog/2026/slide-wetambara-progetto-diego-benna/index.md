@@ -1,7 +1,7 @@
 ---
 title: "Slide - Wetambara: il progetto (BacaroLive 5) - Diego Benna"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide della presentazione del progetto Wetambara portata da Diego Benna durante il BacaroLive 5. La visione, gli obiettivi e il percorso dietro a questo progetto ambizioso."

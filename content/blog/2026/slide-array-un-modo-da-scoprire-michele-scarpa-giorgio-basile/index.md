@@ -1,7 +1,7 @@
 ---
 title: "Slide - Array, un modo da scoprire - Michele Scarpa e Giorgio Basile"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide del talk 'Array, un modo da scoprire' tenuto da Michele Scarpa e Giorgio Basile. Gli array visti da una prospettiva nuova: pattern, tecniche e approcci per sfruttarli al massimo."

@@ -1,7 +1,7 @@
 ---
 title: "Slide - Docker Happy Hour: Builda e Brinda - Vittorio Terreran"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide del talk 'Docker Happy Hour: Builda e Brinda' di Vittorio Terreran. Un'introduzione pratica a Docker: come containerizzare le applicazioni, gestire le immagini e orchestrare i servizi."

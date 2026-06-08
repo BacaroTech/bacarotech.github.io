@@ -1,7 +1,7 @@
 ---
 title: "Slide - Wetambara: il lato tecnico (BacaroLive 5) - Nicola Lovo"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide della presentazione tecnica di Wetambara portata da Nicola Lovo durante il BacaroLive 5. L'architettura, le tecnologie scelte e le sfide ingegneristiche del progetto."

@@ -1,7 +1,7 @@
 ---
 title: "Slide - GitFlow, caratteristiche ed alternative - Giorgio Basile"
 date: 2026-02-12T21:39:50+01:00
-draft: false
+draft: true
 featured: false
 weight: 100
 description: "Le slide del talk di Giorgio Basile su GitFlow: cos'è, come funziona, quando usarlo e quali sono le alternative disponibili per gestire il versionamento in un team."
