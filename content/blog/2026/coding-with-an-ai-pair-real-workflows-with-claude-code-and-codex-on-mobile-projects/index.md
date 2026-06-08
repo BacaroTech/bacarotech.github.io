@@ -1,7 +1,6 @@
 +++
 title = "Coding With an Ai Pair Real Workflows With Claude Code and Codex on Mobile Projects"
 date = 2026-06-07T20:35:41+02:00
-draft = true
 featured = false
 weight = 100  # Lower weight appears first in featured sections
 description = ""

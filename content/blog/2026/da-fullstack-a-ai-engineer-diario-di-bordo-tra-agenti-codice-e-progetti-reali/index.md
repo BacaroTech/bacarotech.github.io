@@ -1,7 +1,6 @@
 +++
 title = "Da Fullstack a Ai Engineer Diario Di Bordo Tra Agenti Codice E Progetti Reali"
 date = 2026-06-07T20:46:18+02:00
-draft = true
 featured = false
 weight = 100  # Lower weight appears first in featured sections
 description = ""
