@@ -22,6 +22,8 @@ const { google } = require("googleapis");
 // Configurazione
 const CHANNEL_HANDLE = "@Bacarotech";
 const OUTPUT_DIR = path.join(__dirname, "..", "content", "blog");
+const REDIRECT_DIR = path.join(__dirname, "..", "content", "redirect");
+const SITE_HOST = "bacarotech.github.io";
 
 // Legge la chiave API
 function getApiKey() {
@@ -285,6 +287,64 @@ function removeSocialLinks(description) {
 	return cleanedLines.join("\n").trim();
 }
 
+// Estrae un link al blog dalla descrizione del video (primo trovato)
+function extractBlogLink(description) {
+	if (!description) return null;
+
+	const pattern = new RegExp(
+		`https?://${SITE_HOST.replace(".", "\\.")}(/blog/[^\\s)"']+)`,
+		"i",
+	);
+	const match = description.match(pattern);
+	if (match) {
+		return match[1].replace(/\/$/, "");
+	}
+	return null;
+}
+
+// Trova il file index.md del blog post dato il path URL (/blog/year/slug)
+function findBlogPostOnDisk(blogUrlPath) {
+	const parts = blogUrlPath.split("/").filter(Boolean);
+	const contentPath = path.join(__dirname, "..", "content", ...parts);
+	const indexFile = path.join(contentPath, "index.md");
+	if (fs.existsSync(indexFile)) {
+		return indexFile;
+	}
+	return null;
+}
+
+// Aggiunge lo shortcode YouTube al post del blog se non già presente
+function updateBlogPostWithVideo(blogPostFile, videoId) {
+	const content = fs.readFileSync(blogPostFile, "utf-8");
+	if (content.includes(`{{< youtube ${videoId}`)) {
+		return false;
+	}
+	fs.writeFileSync(
+		blogPostFile,
+		content.trimEnd() + `\n\n{{< youtube ${videoId} >}}\n`,
+	);
+	return true;
+}
+
+// Crea un file di redirect TOML in content/redirect/<slug>/
+function generateRedirectFile(slug, year, targetBlogPath) {
+	const redirectDir = path.join(REDIRECT_DIR, slug);
+	if (fs.existsSync(redirectDir)) {
+		return false;
+	}
+	fs.mkdirSync(redirectDir, { recursive: true });
+	const redirectContent = `+++
+type = "redirect"
+url = "/blog/${year}/${slug}"
+redirect_to = "${targetBlogPath}"
+redirect_enabled = true
+private = true
++++
+`;
+	fs.writeFileSync(path.join(redirectDir, "index.md"), redirectContent);
+	return true;
+}
+
 // Genera il contenuto del post
 function generateContent(video, isShortVideo) {
 	// Pulisci la descrizione rimuovendo i link social
@@ -433,6 +493,8 @@ async function main() {
 
 	let created = 0;
 	let skipped = 0;
+	let updated = 0;
+	let redirected = 0;
 
 	for (const video of videos) {
 		const videoId = video.id;
@@ -458,8 +520,57 @@ async function main() {
 		// Genera lo slug
 		const slug = generateSlug(title);
 
+		const date = fullVideo.snippet.publishedAt;
+		const year = new Date(date).getFullYear();
+
+		// Controlla se la descrizione contiene un link a un post del blog
+		const blogLink = extractBlogLink(
+			fullVideo.snippet.description || "",
+		);
+
+		if (blogLink) {
+			const blogPostFile = findBlogPostOnDisk(blogLink);
+
+			if (blogPostFile) {
+				// Aggiorna il post esistente con lo shortcode YouTube
+				const wasUpdated = updateBlogPostWithVideo(
+					blogPostFile,
+					videoId,
+				);
+				if (wasUpdated) {
+					console.log(
+						`  ~ Aggiornato: ${title} -> ${blogLink}`,
+					);
+					updated++;
+				} else {
+					console.log(
+						`  - Skip aggiornamento: ${title} (shortcode già presente)`,
+					);
+					skipped++;
+				}
+
+				// Crea il redirect al posto del nuovo articolo
+				const redirectCreated = generateRedirectFile(
+					slug,
+					year,
+					blogLink,
+				);
+				if (redirectCreated) {
+					console.log(
+						`  > Redirect: /blog/${year}/${slug} -> ${blogLink}`,
+					);
+					redirected++;
+				}
+				continue;
+			} else {
+				console.log(
+					`  ! Link blog non trovato su disco (${blogLink}), creo nuovo articolo: ${title}`,
+				);
+			}
+		}
+
 		// Genera il frontmatter e il contenuto
-		const { frontmatter, year } = generateFrontmatter(
+		const { frontmatter } = generateFrontmatter(
 			fullVideo,
 			isShortVideo,
 			seriesName,
@@ -496,6 +607,8 @@ async function main() {
 	console.log("\n==================================");
 	console.log("Completato!");
 	console.log(`  - Post creati: ${created}`);
+	console.log(`  - Post aggiornati: ${updated}`);
+	console.log(`  - Redirect creati: ${redirected}`);
 	console.log(`  - Post saltati: ${skipped}`);
 	console.log(`  - Directory output: ${OUTPUT_DIR}`);
 }
