@@ -1,7 +1,7 @@
 ---
 title: "Slide - Design pattern, come costruire una codebase di successo - Giorgio Basile"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk di Giorgio Basile sui design pattern: come utilizzarli per costruire una codebase solida, scalabile e di successo nel lungo periodo."

@@ -1,7 +1,7 @@
 ---
 title: "Slide - Kotlin ep1 (BacaroLive 0) - Moreno Frigo Turco"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide della prima puntata sul linguaggio Kotlin, presentata da Moreno Frigo Turco durante il BacaroLive 0. Un'introduzione pratica a uno dei linguaggi più moderni per lo sviluppo backend e Android."

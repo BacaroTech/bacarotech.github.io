@@ -1,7 +1,7 @@
 ---
 title: "Slide - Introduzione alla Blockchain (BacaroLive 0)"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk introduttivo alla blockchain presentato durante il BacaroLive 0. Dai concetti fondamentali alla tecnologia che sta trasformando il mondo finanziario e non solo."

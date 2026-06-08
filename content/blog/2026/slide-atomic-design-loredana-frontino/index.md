@@ -1,7 +1,6 @@
 ---
 title: "Slide - Atomic Design (BacaroLive 4) - Loredana Frontino"
 date: 2026-02-12T21:39:50+01:00
-draft: true
 featured: false
 weight: 100
 description: "Le slide del talk sull'Atomic Design presentato da Loredana Frontino durante il BacaroLive 4. Come costruire un design system scalabile e manutenibile partendo dagli atomi fino ai template."
