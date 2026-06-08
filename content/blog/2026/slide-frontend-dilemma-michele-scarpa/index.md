@@ -1,7 +1,7 @@
 ---
 title: "Slide - Frontend Dilemma - Michele Scarpa"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk 'Frontend Dilemma' di Michele Scarpa. Un'analisi delle scelte difficili che ogni sviluppatore frontend affronta: quale framework scegliere, come strutturare il progetto e come non impazzire."

@@ -1,7 +1,6 @@
 ---
 title: "Slide - Clean code e gitflow, come li abbiamo usati per risollevare un progetto - Giorgio Basile"
 date: 2026-02-12T21:39:50+01:00
-draft: true
 featured: false
 weight: 100
 description: "Le slide del talk in cui Giorgio Basile racconta come l'adozione di clean code e gitflow ha permesso di risollevare un progetto in difficoltà. Un caso reale tra pratiche di sviluppo e risultati concreti."

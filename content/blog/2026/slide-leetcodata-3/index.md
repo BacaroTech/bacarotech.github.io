@@ -1,7 +1,7 @@
 ---
 title: "Slide - Leetcodata 3"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide della terza sessione di Leetcodata, il nostro format di coding in compagnia dove affrontiamo esercizi algoritmici insieme alla community."

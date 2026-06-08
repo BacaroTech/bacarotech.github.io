@@ -1,7 +1,7 @@
 ---
 title: "Slide - Pokédex a confronto - Michele Scarpa"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk 'Pokédex a confronto' di Michele Scarpa. Un confronto pratico tra diversi approcci e framework frontend attraverso l'implementazione dello stesso progetto: un Pokédex."

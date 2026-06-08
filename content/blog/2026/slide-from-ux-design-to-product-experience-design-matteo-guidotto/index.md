@@ -1,7 +1,7 @@
 ---
 title: "Slide - From UX Design to Product Experience Design (BacaroLive 3) - Matteo Guidotto"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk 'From UX Design to Product Experience Design' presentato da Matteo Guidotto durante il BacaroLive 3. L'evoluzione del ruolo del designer nel contesto dei prodotti digitali moderni."

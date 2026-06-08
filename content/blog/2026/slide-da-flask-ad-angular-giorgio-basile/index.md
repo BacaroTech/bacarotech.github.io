@@ -1,7 +1,7 @@
 ---
 title: "Slide - Da Flask ad Angular, la mia evoluzione - Giorgio Basile"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk autobiografico di Giorgio Basile che racconta il suo percorso come sviluppatore: dalle prime esperienze con Flask fino al mondo del frontend moderno con Angular."

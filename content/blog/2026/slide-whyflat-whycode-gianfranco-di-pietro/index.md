@@ -1,7 +1,7 @@
 ---
 title: "Slide - whyflat-whycode (BacaroLive 2) - Gianfranco Di Pietro"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk whyflat-whycode presentato da Gianfranco Di Pietro durante il BacaroLive 2. Un'esplorazione del design piatto e del suo rapporto con il codice e l'esperienza utente."

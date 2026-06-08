@@ -1,7 +1,7 @@
 ---
 title: "Slide - Svelte: A Game-Changer for Web Developer - Michele Scarpa"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk 'Svelte: A Game-Changer for Web Developer' presentato da Michele Scarpa al GDG DevFest Lecce 2025. Perché Svelte rappresenta un cambio di paradigma nel mondo del frontend."

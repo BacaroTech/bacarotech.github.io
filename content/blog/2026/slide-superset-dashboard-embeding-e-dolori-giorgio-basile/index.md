@@ -1,7 +1,7 @@
 ---
 title: "Slide - Superset, dashboard, embedding e dolori - Giorgio Basile e Fabrizio Baldazzi"
 date: 2026-02-12T21:39:50+01:00
-draft: true
+
 featured: false
 weight: 100
 description: "Le slide del talk su Apache Superset tenuto da Giorgio Basile e Fabrizio Baldazzi. Come usare Superset per creare dashboard e affrontare i dolori dell'embedding in applicativi aziendali."
