@@ -24,7 +24,7 @@ on:
   # Run when webmentions are fetched
   workflow_run:
     workflows:
-      - Fetch webmentions
+      - Build and deploy Site
     branches:
       - master
     types:
