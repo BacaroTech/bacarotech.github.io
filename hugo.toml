@@ -7,9 +7,10 @@ theme = ["hugo-redirect", "github.com/zetxek/adritian-free-hugo-theme"]
 [pagination]
 pagerSize = 9
 
+
 [outputs]
 page = ["HTML"]
-home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON", "humanstxt"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML", "RSS"]
 term = ["HTML", "RSS"]
@@ -21,6 +22,11 @@ category = "categories"
 author = "authors"
 series = "series"
 topic = "topics"
+
+[outputFormats.humanstxt]
+baseName = "humans"
+isPlainText = true
+mediaType = "text/plain"
 
 [outputFormats.footerSection]
 
