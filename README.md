@@ -67,6 +67,10 @@ Avviso che il metadata __*draft*__ é quello che comanda per la pubblicazione de
 | `npm run deploy` | Build per produzione con minify |
 | `npm run deploy:prod` | Build per produzione con aggiornamento dipendenze |
 
+## Contribuire
+
+Se vuoi contribuire al blog puoi compilare una issue se hai trovato un bug o aprire una pr per aggiungere nuovi articoli e/o creare nuove sezioni o cambiare la grafica
+
 ## Social e Contatti
 
 Se hai dei consigli facci sapere!
