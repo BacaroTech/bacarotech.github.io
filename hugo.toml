@@ -77,6 +77,7 @@ source = "node_modules/bootstrap-print-css/css/bootstrap-print.css"
 target = "assets/css/bootstrap-print.css"
 
 [params]
+fediverse = ""
 title = 'BacaroTech'
 description = 'La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!'
 images = ['/img/icon.png']

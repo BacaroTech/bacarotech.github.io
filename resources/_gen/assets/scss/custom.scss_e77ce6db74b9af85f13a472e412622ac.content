@@ -176,3 +176,6 @@ body.page-link .footer {
 .linktree-btn-spacer {
   width: 2rem;
   flex-shrink: 0; }
+
+.tag {
+  color: #000 !important; }

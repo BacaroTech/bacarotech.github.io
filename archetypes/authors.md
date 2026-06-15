@@ -6,6 +6,7 @@ role: ""
 avatar: ""
 bio: ""
 links: 
+fediverse: ""
 ---
 
 Add a short author bio here.

@@ -1,0 +1,13 @@
+{{ $authorTerms := .GetTerms "authors" }}
+{{ $hasAuthorFediverse := false }}
+{{ range $authorTerms }}
+{{ with .Page.Params.fediverse }}
+<meta name="fediverse:creator" content="{{ . }}">
+{{ $hasAuthorFediverse = true }}
+{{ end }}
+{{ end }}
+{{ if not $hasAuthorFediverse }}
+{{ with .Site.Params.fediverse }}
+<meta name="fediverse:creator" content="{{ . }}">
+{{ end }}
+{{ end }}
