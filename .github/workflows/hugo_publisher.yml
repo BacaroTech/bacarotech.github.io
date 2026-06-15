@@ -19,16 +19,6 @@ on:
       - master
   schedule:
     - cron: "*/15 * * * *"
-  workflow_dispatch:
-
-  # Run when webmentions are fetched
-  workflow_run:
-    workflows:
-      - Build and deploy Site
-    branches:
-      - master
-    types:
-      - completed
 
 # Jobs
 jobs:
