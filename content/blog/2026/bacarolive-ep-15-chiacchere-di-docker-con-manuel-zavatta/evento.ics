@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:4a787518-16f4-45d6-a028-3527f29018a6
+DTSTAMP:20260615T200131Z
+DTSTART;TZID=Europe/Rome:20260619T120000
+DTEND;TZID=Europe/Rome:20260619T120000
+SUMMARY:BACAROLIVE EP 15 - CHICCHERE DI DOCKER CON MANUEL ZAVATTA
+DESCRIPTION:In questa live parleremo di Docker insieme a Manuel Zavatta, sviluppatore, formatore e creator molto attivo nella community tech. Manuel ha una profonda esperienza sul tema, tanto da aver pubblicato un corso dedicato su Udemy (trovi i link qui sotto!) e altri corsi inerenti a Git e PHP. - https://youtube.com/live/toJeXXjcms8
+END:VEVENT
+END:VCALENDAR
