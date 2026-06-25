@@ -16,3 +16,5 @@ Dal DevFest Vicenza 2026[^1] ecco il nostro Talk.
 What does it actually look like to build a mobile app with AI assistance in the loop? Not the demos — the real thing: the prompts that work, the ones that don't, the moments where the AI surprises you and the moments where you have to take back control. This hands-on session walks through concrete workflows using Claude Code and OpenAI Codex in a mobile development context. We'll cover prompt engineering for code generation, how to structure projects so AI tools are maximally effective, and how to review and integrate AI-generated code without losing quality or ownership.
 
 {{< youtube iEqYQNzUvkU >}}
+
+{{< youtube qNOrogjsMgw >}}
