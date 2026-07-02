@@ -21,3 +21,4 @@ Ogni sviluppatore ha una storia. In questo talk **Giorgio Basile** racconta la p
 
 Se ti sei perso il talk o vuoi ripassare i concetti, qui trovi le slide complete.
 
+{{< youtube eqL0AVZp9Bw >}}
