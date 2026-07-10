@@ -39,3 +39,12 @@ Ci si vede in live! 👇
 #BacaroTech #BacaroLive #Android #iOS #MobileDev #TechCommunity #CodeAndFun
 
 {{< youtube Ri7aSZtTRjw >}}
+
+
+## Riferimenti
+
+- [YouTube Live](https://www.youtube.com/live/7aSZtTRjw)
+- [Keep Android Open](https://keepandroidopen.org/it/)
+- [Philipp Lackner on YouTube](https://www.youtube.com/@PhilippLackner)
+- [Android Developer Courses](https://developer.android.com/courses)
+- [Apple Swift Tutorials](https://developer.apple.com/tutorials/develop-in-swift)
