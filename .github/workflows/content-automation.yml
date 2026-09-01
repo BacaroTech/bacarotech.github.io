@@ -1,0 +1,83 @@
+name: Content automation
+
+# Genera contenuti da fonti esterne e li committa su master.
+# I job scrivono entrambi sul repo: sono serializzati (needs) e il workflow
+# non si sovrappone a se stesso.
+concurrency:
+  group: content-automation
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  youtube-posts:
+    name: Genera i post da YouTube
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Installa le dipendenze
+        run: npm ci
+
+      - name: Genera i post
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/generate-youtube-posts.js
+
+      - name: Commit dei post generati
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/blog content/redirect
+          if git diff --cached --quiet; then
+            echo "Nessun nuovo post."
+            exit 0
+          fi
+          git commit -m "chore: sync YouTube posts [skip ci]"
+          git push || (git pull --rebase --autostash && git push)
+
+  social-stats:
+    name: Aggiorna i follower dei social
+    runs-on: ubuntu-latest
+    needs: youtube-posts
+    # Gira anche se il job precedente fallisce, ma non se il run è annullato.
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version-file: .nvmrc
+
+      # scripts/follower-count.js usa solo moduli built-in di Node: niente npm ci.
+      - name: Recupera i follower
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node scripts/follower-count.js
+
+      - name: Commit di data/social.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/social.json
+          if git diff --cached --quiet; then
+            echo "Follower invariati."
+            exit 0
+          fi
+          git commit -m "chore: update social follower counts [skip ci]"
+          git push || (git pull --rebase --autostash && git push)

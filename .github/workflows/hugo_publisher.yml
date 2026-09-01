@@ -1,110 +1,94 @@
-name: Build and deploy Site
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+name: Build and deploy site
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Pattern consigliato per Pages: una sola coda "pages", senza annullare
+# un deploy già in corso.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 permissions:
   contents: read
   pages: write
   id-token: write
 
 on:
-  # Run when the master branch is pushed or a pull request is made
   push:
-    branches:
-      - master
+    branches: [master]
   pull_request:
-    branches:
-      - master
+    branches: [master]
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
-# Jobs
+env:
+  HUGO_VERSION: "0.165.0"
+  # Le date dei post sono in ora italiana: build e cutoff dei contenuti futuri
+  # devono usare lo stesso fuso.
+  TZ: Europe/Rome
+
 jobs:
   build:
-    name: Install dependencies
+    name: Build con Hugo
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.165.0
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
       - name: Checkout
         uses: actions/checkout@v6.0.1
         with:
           submodules: recursive
 
-      - name: Cache node modules
-        uses: actions/cache@v5.0.1
-        env:
-          cache-name: cache-node-modules-v1
-        with:
-          path: |
-            ~/.npm
-            node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - name: Setup GitHub Pages
-        id: pages
-        uses: actions/configure-pages@v4.0.0
-
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v6.1.0
         with:
-          node-version: 16
+          node-version-file: .nvmrc
+          cache: npm
 
-      - name: Install Node.js dependencies
-        run: npm install
+      # bootstrap è montato da node_modules in hugo.toml: le dipendenze npm
+      # servono al build anche se nessuno script Node viene eseguito.
+      - name: Installa le dipendenze npm
+        run: npm ci
 
-      - name: Configure timezone as Europe/Rome
-        uses: szenius/set-timezone@v2.0
-        with:
-          timezoneLinux: Europe/Rome
-          timezoneMacos: Europe/Rome
+      - name: Installa Hugo ${{ env.HUGO_VERSION }}
+        run: |
+          curl -sSL -o "${{ runner.temp }}/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
 
-      - name: Cache built website
+      - name: Configura GitHub Pages
+        uses: actions/configure-pages@v4.0.0
+
+      - name: Cache dei moduli Hugo e delle risorse generate
         uses: actions/cache@v5.0.1
-        env:
-          cache-name: cache-website-v1
         with:
           path: |
-            .publish
+            ~/.cache/hugo_cache
             resources/_gen
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('config', 'content', 'data', 'themes') }}
+          key: hugo-${{ runner.os }}-${{ hashFiles('go.mod', 'go.sum', 'hugo.toml', 'package-lock.json', 'assets/**', 'data/**') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}
+            hugo-${{ runner.os }}-
 
-      - name: Build with Hugo
+      - name: Build
         env:
-          # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: make deploy_prod
+        run: |
+          hugo mod get
+          hugo --gc --minify
 
-      - name: Upload artifact
+      - name: Upload dell'artifact per Pages
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4.0.0
         with:
           path: ./public
 
   deploy:
-    name: Deploy Hugo into GitHub Pages
-    if: github.ref == 'refs/heads/master'
+    name: Deploy su GitHub Pages
+    needs: build
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4.0.5
