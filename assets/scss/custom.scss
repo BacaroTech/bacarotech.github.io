@@ -30,6 +30,57 @@ body {
     min-height: 20px !important;
 }
 
+// Numeri follower nella hero (dati da data/social.json)
+.social-stats {
+    margin-top: 1.75rem;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem 2.25rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1.1;
+    }
+
+    &__item > i {
+        font-size: 0.95rem;
+        opacity: 0.7;
+        margin-bottom: 0.35rem;
+    }
+
+    &__count {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: var(--bs-body-color);
+    }
+
+    &__label {
+        margin-top: 0.15rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        opacity: 0.65;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .social-stats__list {
+        gap: 1rem 1.5rem;
+    }
+
+    .social-stats__count {
+        font-size: 1.3rem;
+    }
+}
+
 [data-bs-theme="dark"] {
     .blog {
         .post {

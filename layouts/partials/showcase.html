@@ -77,6 +77,14 @@ sectionId: Optional argument to override the default HTML id for this section. I
 					{{ $buttonText }}
 				</a>
 				{{ end }}
+
+				{{ partial "social-stats.html" . }}
+
+				{{- if $inner }}
+				<div class="inner-content">
+					{{ $inner }}
+				</div>
+				{{ end }}
 			</div>
 			<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 profile-image">
 				{{ partial "lazypicture" (dict "src" $imgSrc "width" $imgWidth "height" $imgHeight "scale" $imgScale "class" "")}}
@@ -84,12 +92,6 @@ sectionId: Optional argument to override the default HTML id for this section. I
 				<!-- future "right text -->
 
 			</div>
-
-			{{- if $inner }}
-			<div class="col-12 inner-content">
-				{{ $inner }}
-			</div>
-			{{ end }}
 
 		</div>
 

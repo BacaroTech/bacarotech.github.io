@@ -1,0 +1,32 @@
+{{/*
+  social-stats.html — mostra il numero di follower per ogni social,
+  leggendo i dati da data/social.json (generato da scripts/follower-count.js).
+  I social senza voce nel file non vengono mostrati.
+*/}}
+{{- $social := site.Data.social -}}
+{{- with $social -}}
+{{- $order := slice "youtube" "instagram" "tiktok" "linkedin" "mastodon" "bluesky" -}}
+{{- $meta := dict
+    "youtube"   (dict "icon" "fa-youtube"   "label" "YouTube")
+    "instagram" (dict "icon" "fa-instagram" "label" "Instagram")
+    "tiktok"    (dict "icon" "fa-tiktok"    "label" "TikTok")
+    "linkedin"  (dict "icon" "fa-linkedin"  "label" "LinkedIn")
+    "mastodon"  (dict "icon" "fa-mastodon"  "label" "Mastodon")
+    "bluesky"   (dict "icon" "fa-bluesky"   "label" "Bluesky")
+-}}
+<div class="social-stats" aria-label="Follower BacaroTech">
+  <ul class="social-stats__list">
+    {{- range $key := $order -}}
+      {{- with index $social $key -}}
+        {{- $m := index $meta $key -}}
+        {{- $count := int .followers -}}
+        <li class="social-stats__item">
+          <i class="fa-brands {{ $m.icon }}" aria-hidden="true"></i>
+          <span class="social-stats__count">{{ lang.FormatNumberCustom 0 $count "- , ." }}</span>
+          <span class="social-stats__label">{{ $m.label }}</span>
+        </li>
+      {{- end -}}
+    {{- end -}}
+  </ul>
+</div>
+{{- end -}}
