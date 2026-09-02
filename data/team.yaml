@@ -100,3 +100,9 @@ members:
     content: ""
     button_url: "https://www.linkedin.com/in/spdivn"
     imgSrc: "images/Ivan-Spada.jpg"
+
+  - title: "Matteo Tagliapietra"
+    ruolo: "Socio"
+    content: "Socio"
+    button_url: "https://www.linkedin.com/in/matteo-tagliapietra-537208268/"
+    imgSrc: "images/MatteoTagliapietra.jpeg"
