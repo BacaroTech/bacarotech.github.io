@@ -136,7 +136,7 @@ disabled = false
 languageCode = 'it'
 languageDirection = 'ltr'
 languageName = 'Italian'
-title = ''
+title = 'BacaroTech'
 weight = 0
 
 [languages.it.menus]
