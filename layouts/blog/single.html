@@ -82,10 +82,11 @@
 
 		{{ partial "toc.html" . }}
 
-		<div class="row flex-column-reverse flex-md-row rad-fade-down">
-			<div class="col-12 post-content">{{ .Content | safeHTML }}</div>
+		<div class="row flex-column-reverse flex-md-row rad-fade-down h-entry">
+			<div class="col-12 post-content e-content">{{ .Content | safeHTML }}</div>
 		</div>
-
+		<a href="https://brid.gy/publish/bluesky"></a>
+		<a href="https://brid.gy/publish/mastodon"></a>
 		{{ with .Params.slide_url}}
 
 		{{partial "slide.html" .}}
