@@ -2,7 +2,7 @@
 title: "Lorenzo Fanton"
 name: "Lorenzo Fanton"
 role: "Socio"
-avatar: "images/lorenzo-fanton.jpeg"
+avatar: "images/lorenzo-fanton.jpg"
 bio: ""
 links:
   - label: "Linkedin"
