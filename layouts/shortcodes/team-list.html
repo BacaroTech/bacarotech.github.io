@@ -4,7 +4,7 @@
 		{{- $imgSrc := resources.Get .imgSrc -}}
 		<div class="col-sm-6 col-md-4 col-12 pb-5">
 			<div class="card h-100">
-				<img src="{{ $imgSrc }}" class="card-img-top">
+				<img src="{{ with $imgSrc }}{{ .RelPermalink }}{{ end }}" class="card-img-top">
 				<div class="card-body">
 					<h5 class="card-title text-center">{{ .title }}</h5>
 					{{ with .ruolo }}<h6 class="card-title text-center">{{ . }}</h6>{{ end }}
