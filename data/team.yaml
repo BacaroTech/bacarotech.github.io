@@ -94,3 +94,9 @@ members:
     content: "Socio"
     button_url: "https://www.linkedin.com/in/martintodorovdev/"
     imgSrc: "images/Martin_Todorov.jpg"
+
+  - title: "Ivan Spada"
+    ruolo: ""
+    content: ""
+    button_url: "https://www.linkedin.com/in/spdivn"
+    imgSrc: "images/assets/Ivan-Spada.jpeg"
