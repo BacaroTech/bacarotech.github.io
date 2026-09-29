@@ -91,5 +91,185 @@
 				"added": "2026-09-29"
 			}
 		]
+	},
+	"mcO0Vh9efE0C": {
+		"id": "mcO0Vh9efE0C",
+		"title": "The UNIX Programming Environment\nPrentice-Hall software series, ISSN 0891-4516",
+		"subtitle": "",
+		"authors": [
+			"Brian W. Kernighan",
+			"Rob Pike"
+		],
+		"publisher": "Prentice-Hall",
+		"publishedDate": "1984",
+		"description": "Designed for first-time and experienced users, this book describes the UNIX(R) programming environment and philosophy in detail. Readers will gain an understanding not only of how to use the system, its components, and the programs, but also how these fit into the total environment.",
+		"isbn10": "013937681X",
+		"isbn13": "9780139376818",
+		"pageCount": 357,
+		"categories": [
+			"Computers / Operating Systems / UNIX",
+			"Computers / Programming / General"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=mcO0Vh9efE0C&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=mcO0Vh9efE0C",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	},
+	"161QAAAAMAAJ": {
+		"id": "161QAAAAMAAJ",
+		"title": "The C Programming Language\nPrentice-Hall software series, ISSN 0891-4516",
+		"subtitle": "",
+		"authors": [
+			"Brian W. Kernighan",
+			"Dennis M. Ritchie"
+		],
+		"publisher": "Prentice Hall",
+		"publishedDate": "1988",
+		"description": "The definitive reference guide to C programming from K&R for writing good code that works and is easy to modify Learn how to program in C from the developers of C, Brian Kernighan and Dennis Ritchie. Intended for those with at least some experience with one other language (even if you are a novice), this book contains a tutorial introduction to get new users started as soon as possible and separate chapters on each major feature:   Types, operators, and expressions Control flow Functions and program structure Pointers and arrays Structures Input and output  This second edition of The C Programming Language describes C as defined by the ANSI standard and includes a reference manual that conveys the essentials of the standard in a smaller space for easy comprehension for programmers. \"K&R is one of my favorite books. The style of the tutorial chapters is so deceptively light and simple and the manual so crisp. Much of C's reputation of simplicity comes from the clarity and great little examples from this book. My 1978 copy has lost its cover and my K&R2 is somewhat dog eared. Above all, K&R is a useful book.\" Bjarne Stroustrup, designer and original implementer of C++, and author of The C++ Programming Language",
+		"isbn10": "0131103628",
+		"isbn13": "9780131103627",
+		"pageCount": 272,
+		"categories": [
+			"Computers / Languages / C",
+			"Computers / Languages / General",
+			"Technology & Engineering / Food Science / General"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=161QAAAAMAAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=161QAAAAMAAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	},
+	"iV4AEAAAQBAJ": {
+		"id": "iV4AEAAAQBAJ",
+		"title": "Understanding the Digital World",
+		"subtitle": "What You Need to Know about Computers, the Internet, Privacy, and Security, Second Edition",
+		"authors": [
+			"Brian W. Kernighan"
+		],
+		"publisher": "Princeton University Press",
+		"publishedDate": "2021",
+		"description": "A brand-new edition of the popular introductory textbook that explores how computer hardware, software, and networks workComputers are everywhere. Some are highly visible, in laptops, tablets, cell phones, and smart watches. But most are invisible, like those in appliances, cars, medical equipment, transportation systems, power grids, and weapons. We never see the myriad computers that quietly collect, share, and sometimes leak personal data about us. Governments and companies increasingly use computers to monitor what we do. Social networks and advertisers know more about us than we should be comfortable with. Criminals have all-too-easy access to our data. Do we truly understand the power of computers in our world?In this updated edition of Understanding the Digital World, Brian Kernighan explains how computer hardware, software, and networks work. Topics include how computers are built and how they compute; what programming is; how the Internet and web operate; and how all of these affect security, privacy, property, and other important social, political, and economic issues. Kernighan touches on fundamental ideas from computer science and some of the inherent limitations of computers, and new sections in the book explore Python programming, big data, machine learning, and much more. Numerous color illustrations, notes on sources for further exploration, and a glossary explaining technical terms and buzzwords are included.Understanding the Digital World is a must-read for readers of all backgrounds who want to know more about computers and communications.",
+		"isbn10": "069121896X",
+		"isbn13": "9780691218960",
+		"pageCount": 304,
+		"categories": [
+			"Computers / General",
+			"Computers / Internet / General",
+			"Computers / Internet / Online Safety & Privacy"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=iV4AEAAAQBAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=iV4AEAAAQBAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	},
+	"wq5QAAAAMAAJ": {
+		"id": "wq5QAAAAMAAJ",
+		"title": "The UNIX System V Environment\nInternat.Computer Sci.S\nInternational computer science series",
+		"subtitle": "",
+		"authors": [
+			"S. R. Bourne"
+		],
+		"publisher": "Addison-Wesley",
+		"publishedDate": "1987",
+		"description": "Getting started. Editing files. The shell. The C programming language. UNIX system programming. Document preparation. Data manipulation tools. Commands. System calls. C subroutines. adb requests. ed requests. sh requests. troff requests. vi requests. A macro library. The ASCII character set.",
+		"isbn10": "0201184842",
+		"isbn13": "9780201184846",
+		"pageCount": 378,
+		"categories": [
+			"Computers / Operating Systems / UNIX",
+			"Computers / Operating Systems / Windows Desktop"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=wq5QAAAAMAAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=wq5QAAAAMAAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	},
+	"5dYpAQAAMAAJ": {
+		"id": "5dYpAQAAMAAJ",
+		"title": "A Retargetable C Compiler",
+		"subtitle": "Design and Implementation",
+		"authors": [
+			"Christopher W. Fraser",
+			"David R. Hanson"
+		],
+		"publisher": "Benjamin/Cummings Publishing Company",
+		"publishedDate": "1995",
+		"description": "This new text examines the design and implementation of Icc, a production-quality, retargetable compiler, designed at AT&T Bell Laboratories and Princeton University for the ANSI C programming language. The authors' innovative approach - a \"literate program\" that intermingles the text with the source code - gives a detailed tour of the code that explains the implementation and design decisions reflected in the software. And while most books describe toy compilers or focus on isolated pieces of code, the authors have made available the entire source code for a real compiler. Structured as a self-study guide that describes the real-world tradeoffs encountered in building a production-quality compiler, A Retargetable C Compiler is also useful to individuals who work in application areas using or creating language-based tools and techniques. Features: discusses the implementation and design tradeoffs made while constructing a real ANSI C compiler, illustrating the interaction between theory and practice; covers compiler theory only as needed to understand the implementation of Icc, focusing instead on practical, applied issues; encourages a deeper understanding of programming in C, by providing C programmers with a tour of the language from the perspective of compiler authors; includes coverage of code generators for the MIPS R3000, SPARC, and Intel 386 and its successors; and provides access to the full source code for the Icc compiler, the three back ends, and the code-generator generator, either on disk or via FTP.",
+		"isbn10": "0805316701",
+		"isbn13": "9780805316704",
+		"pageCount": 564,
+		"categories": [
+			"Computers / Languages / C",
+			"Computers / Languages / General",
+			"Computers / Programming / Compilers"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=5dYpAQAAMAAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=5dYpAQAAMAAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	},
+	"TvsYAQAAIAAJ": {
+		"id": "TvsYAQAAIAAJ",
+		"title": "The Standard C Library",
+		"subtitle": "",
+		"authors": [
+			"P. J. Plauger"
+		],
+		"publisher": "Prentice Hall",
+		"publishedDate": "1992",
+		"description": "This work offers a comprehensive treatment of ANSI and ISO standards for the C library. The code in the book is compatible with C compilers from Borland, Saber, Sun UNIX and VAX UNIX.",
+		"isbn10": "0138380120",
+		"isbn13": "9780138380120",
+		"pageCount": 498,
+		"categories": [
+			"Computers / Languages / C",
+			"Computers / Languages / General"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=TvsYAQAAIAAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=TvsYAQAAIAAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
 	}
 }
