@@ -26,7 +26,12 @@
 			{{ block "main" . }}{{ end }}
 		</main>
 		
-		<a rel="me" href="https://mastodon.social/@bacarotech"></a>
+		<div class="h-card" hidden>
+			<a class="p-name u-url u-uid" href="{{ site.BaseURL }}">{{ site.Title }}</a>
+			<img class="u-logo" src="{{ "img/logo.png" | absURL }}" alt="{{ site.Title }}">
+			<p class="p-note">{{ site.Params.description }}</p>
+			<a class="u-url" rel="me" href="https://mastodon.social/@bacarotech"></a>
+		</div>
 
 		<div class="d-print-none">
 			{{ partial "footer.html" . }}

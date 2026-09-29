@@ -1,7 +1,7 @@
 name: Content automation
 
-# Genera contenuti da fonti esterne e li committa su master.
-# I job scrivono entrambi sul repo: sono serializzati (needs) e il workflow
+# Genera contenuti da fonti esterne, invia le webmention e committa su master.
+# I job scrivono tutti sul repo: sono serializzati (needs) e il workflow
 # non si sovrappone a se stesso.
 concurrency:
   group: content-automation
@@ -80,4 +80,41 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update social follower counts [skip ci]"
+          git push || (git pull --rebase --autostash && git push)
+
+  webmentions:
+    name: Invia le webmention
+    runs-on: ubuntu-latest
+    needs: social-stats
+    # Legge i post dal sito online: vengono notificati solo quelli già
+    # pubblicati. Gira anche se i job precedenti falliscono.
+    if: ${{ !cancelled() }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Installa le dipendenze
+        run: npm ci
+
+      - name: Invia le webmention tramite Telegraph
+        env:
+          TELEGRAPH_TOKEN: ${{ secrets.TELEGRAPH_TOKEN }}
+        run: node scripts/send-webmentions.js
+
+      - name: Commit dello stato delle webmention
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/data/webmentions-sent.json
+          if git diff --cached --quiet; then
+            echo "Nessuna nuova webmention."
+            exit 0
+          fi
+          git commit -m "chore: update sent webmentions [skip ci]"
           git push || (git pull --rebase --autostash && git push)

@@ -16,6 +16,7 @@
     "fuse.js": "^7.1.0",
     "glob": "^13.0.6",
     "googleapis": "^144.0.0",
+    "microformats-parser": "^2.0.6",
     "readline-sync": "^1.4.10",
     "uuid": "^13.0.0"
   },
@@ -52,6 +53,7 @@
     "youtube": "node scripts/generate-youtube-posts.js",
     "youtube-posts": "node scripts/generate-youtube-posts.js",
     "followers": "node scripts/follower-count.js",
+    "webmentions": "node scripts/send-webmentions.js",
     "book": "node scripts/make-book.js"
   }
 }
