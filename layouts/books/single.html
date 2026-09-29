@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section id="main-content" tabindex="-1" class="section flex-grow-1">
+	<div class="container">
+		<h1 id="title">{{ .Title }}</h1>
+		{{ .Content }}
+
+		{{- $books := slice -}}
+		{{- range $id, $book := hugo.Data.book -}}
+		{{- $books = $books | append $book -}}
+		{{- end -}}
+
+		{{- with $books }}
+		<div class="post-books">
+			<ul class="post-books__list">
+				{{- range sort . "title" -}}
+				{{- partial "book-card.html" (dict "book" . "showReferences" true) -}}
+				{{- end -}}
+			</ul>
+		</div>
+		{{- else }}
+		<p>Nessun libro ancora.</p>
+		{{- end }}
+	</div>
+</section>
+{{ end }}

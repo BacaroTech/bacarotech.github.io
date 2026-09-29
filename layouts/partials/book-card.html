@@ -1,0 +1,37 @@
+{{- /* Card di un libro di data/book.json. Parametri: book, showReferences (bool) */ -}}
+{{- $book := .book -}}
+<li class="post-books__item">
+	<a class="post-books__cover" href="{{ $book.link }}" target="_blank" rel="noopener">
+		<img src="{{ $book.thumbnail }}" alt="Copertina di {{ $book.title }}" loading="lazy" width="80">
+	</a>
+	<div class="post-books__info">
+		<a class="post-books__name" href="{{ $book.link }}" target="_blank" rel="noopener">{{ $book.title }}</a>
+		{{- with $book.subtitle }}
+		<span class="post-books__subtitle">{{ . }}</span>
+		{{- end }}
+		{{- with $book.authors }}
+		<span class="post-books__meta">{{ delimit . ", " }}</span>
+		{{- end }}
+		{{- if or $book.publisher $book.publishedDate }}
+		<span class="post-books__meta">{{ $book.publisher }}{{ if and $book.publisher $book.publishedDate }}, {{ end }}{{ $book.publishedDate }}</span>
+		{{- end }}
+		{{- with (or $book.isbn13 $book.isbn10) }}
+		<span class="post-books__meta">ISBN {{ . }}</span>
+		{{- end }}
+		{{- if .showReferences }}
+		{{- with $book.references }}
+		<details class="post-books__refs">
+			<summary>Citato in {{ len . }} {{ cond (eq (len .) 1) "contenuto" "contenuti" }}</summary>
+			<ul>
+				{{- range . }}
+				<li>
+					<a href="{{ .url }}"{{ if eq .type "video" }} target="_blank" rel="noopener"{{ end }}>{{ .title | default .url }}</a>
+					{{- if eq .type "video" }} <span class="post-books__meta">(video)</span>{{ end }}
+				</li>
+				{{- end }}
+			</ul>
+		</details>
+		{{- end }}
+		{{- end }}
+	</div>
+</li>

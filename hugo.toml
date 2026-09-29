@@ -164,6 +164,15 @@ weight = 3
 name = 'Entra nel Team'
 URL = '#entra-nel-team'
 weight = 4
+[[languages.it.menus.header]]
+name = 'Risorse'
+identifier = 'risorse'
+weight = 7
+[[languages.it.menus.header]]
+name = 'Libri'
+URL = '/risorse/libri/'
+parent = 'risorse'
+weight = 1
 
 [[languages.it.menus.header]]
 name = '🔍'
@@ -217,6 +226,10 @@ footer = true
 header = true
 mobileHeader = false
 ## by default we allow override AND automatic selection
+
+# Disattiva lo spostamento automatico delle voci del menu nel dropdown "More"
+[params.navbarOverflow]
+mode = "none"
 
 # Page transition settings
 [params.pageTransition]

@@ -305,3 +305,115 @@ body.page-link {
 .tag {
     color: #000 !important;
 }
+
+// Libri citati in fondo al post (dati da data/book.json)
+.post-books {
+    margin: 2rem 0;
+    padding-top: 1.5rem;
+
+    &__title {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+
+    // Doppia classe per battere `.section ul li` del tema (pallino e display: block)
+    & &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        &::before {
+            content: none;
+            display: none;
+        }
+    }
+
+    &__cover {
+        display: block;
+    }
+
+    &__cover img {
+        display: block;
+        width: 80px;
+        height: auto;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        min-width: 0;
+    }
+
+    &__name {
+        font-weight: 700;
+        line-height: 1.25;
+    }
+
+    &__subtitle {
+        font-size: 0.875rem;
+        line-height: 1.3;
+    }
+
+    &__meta {
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+}
+
+// Elenco dei contenuti che citano il libro (pagina Risorse > Libri)
+.post-books__refs {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+
+    summary {
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    ul {
+        margin: 0.5rem 0 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    // Doppia classe per battere `.section ul li` del tema
+    .post-books & li {
+        margin-bottom: 0.35rem;
+        padding-left: 0;
+        line-height: 1.3;
+
+        &::before {
+            content: none;
+            display: none;
+        }
+    }
+}
+
+// Voce del menu con sottomenu (layouts/partials/header.html)
+.header .nav-submenu-toggle {
+    background: none;
+    border: 0;
+    font: inherit;
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .header .nav-item.dropdown .dropdown-item {
+        text-align: center;
+    }
+}

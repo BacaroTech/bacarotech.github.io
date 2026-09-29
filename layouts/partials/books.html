@@ -1,0 +1,22 @@
+{{- /* Libri citati nel post (dati da data/book.json, generati con scripts/make-book.js) */ -}}
+{{- $pagePath := strings.TrimSuffix "/" .RelPermalink -}}
+{{- $books := slice -}}
+{{- range $id, $book := hugo.Data.book -}}
+{{- range $book.references -}}
+{{- if eq (strings.TrimSuffix "/" (urls.Parse .url).Path) $pagePath -}}
+{{- $books = $books | append $book -}}
+{{- break -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+{{- with $books -}}
+<aside class="post-books light-border-top" aria-labelledby="post-books-title">
+	<h2 id="post-books-title" class="post-books__title">Libri citati</h2>
+	<ul class="post-books__list">
+		{{- range sort . "title" -}}
+		{{- partial "book-card.html" (dict "book" . "showReferences" false) -}}
+		{{- end -}}
+	</ul>
+</aside>
+{{- end -}}

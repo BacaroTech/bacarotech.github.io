@@ -85,6 +85,8 @@
 		<div class="row flex-column-reverse flex-md-row rad-fade-down h-entry">
 			<div class="col-12 post-content e-content">{{ .Content | safeHTML }}</div>
 		</div>
+
+		{{ partial "books.html" . }}
 		<a href="https://brid.gy/publish/bluesky"></a>
 		<a href="https://brid.gy/publish/mastodon"></a>
 		{{ with .Params.slide_url}}

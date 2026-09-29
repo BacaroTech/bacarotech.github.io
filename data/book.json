@@ -1,0 +1,95 @@
+{
+	"6NRJDwAAQBAJ": {
+		"id": "6NRJDwAAQBAJ",
+		"title": "Embedded Linux Development Using Yocto Project Cookbook",
+		"subtitle": "Practical recipes to help you leverage the power of Yocto to build exciting Linux-based systems",
+		"authors": [
+			"Alex González"
+		],
+		"publisher": "Packt Publishing Ltd",
+		"publishedDate": "2018",
+		"description": "Over 79 hands-on recipes for professional embedded Linux developers to optimize and boost their Yocto Project know-howKey FeaturesOptimize your Yocto setup to speed up development and debug build issuesUse what is quickly becoming the standard embedded Linux product builder framework—the Yocto ProjectRecipe-based implementation of best practices to optimize your Linux systemBook DescriptionThe Yocto Project has become the de facto distribution build framework for reliable and robust embedded systems with a reduced time to market.You'll get started by working on a build system where you set up Yocto, create a build directory, and learn how to debug it. Then, you'll explore everything about the BSP layer, from creating a custom layer to debugging device tree issues. In addition to this, you’ll learn how to add a new software layer, packages, data, scripts, and configuration files to your system. You will then cover topics based on application development, such as using the Software Development Kit and how to use the Yocto project in various development environments. Toward the end, you will learn how to debug, trace, and profile a running system. This second edition has been updated to include new content based on the latest Yocto release.What you will learnOptimize your Yocto Project setup to speed up development and debug build issuesUse Docker containers to build Yocto Project-based systemsTake advantage of the user-friendly Toaster web interface to the Yocto Project build systemBuild and debug the Linux kernel and its device treesCustomize your root filesystem with already-supported and new Yocto packagesOptimize your production systems by reducing the size of both the Linux kernel and root filesystemsExplore the mechanisms to increase the root filesystem securityUnderstand the open source licensing requirements and how to comply with them when cohabiting with proprietary programsCreate recipes, and build and run applications in C, C++, Python, Node.js, and JavaWho this book is forIf you are an embedded Linux developer with the basic knowledge of Yocto Project, this book is an ideal way to broaden your knowledge with recipes for embedded development.",
+		"isbn10": "1788392922",
+		"isbn13": "9781788392921",
+		"pageCount": 456,
+		"categories": [
+			"Computers / Operating Systems / Linux",
+			"Computers / System Administration / General"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=6NRJDwAAQBAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=6NRJDwAAQBAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	},
+	"K4ApEAAAQBAJ": {
+		"id": "K4ApEAAAQBAJ",
+		"title": "Mastering Embedded Linux Programming",
+		"subtitle": "Create fast and reliable embedded solutions with Linux 5.4 and the Yocto Project 3.1 (Dunfell)",
+		"authors": [
+			"Frank Vasquez",
+			"Chris Simmonds"
+		],
+		"publisher": "Packt Publishing Ltd",
+		"publishedDate": "2021",
+		"description": "Build, customize, and deploy Linux-based embedded systems with confidence using Yocto, bootloaders, and build toolsKey FeaturesMaster build systems, toolchains, and kernel integration for embedded LinuxSet up custom Linux distros with Yocto and manage board-specific configurationsLearn real-world debugging, memory handling, and system performance tuningBook DescriptionIf you’re looking for a book that will demystify embedded Linux, then you’ve come to the right place. Mastering Embedded Linux Programming is a fully comprehensive guide that can serve both as means to learn new things or as a handy reference. The first few chapters of this book will break down the fundamental elements that underpin all embedded Linux projects: the toolchain, the bootloader, the kernel, and the root filesystem. After that, you will learn how to create each of these elements from scratch and automate the process using Buildroot and the Yocto Project. As you progress, the book will show you how to implement an effective storage strategy for flash memory chips and install updates to a device remotely once it’s deployed. You’ll also learn about the key aspects of writing code for embedded Linux, such as how to access hardware from apps, the implications of writing multi-threaded code, and techniques to manage memory in an efficient way. The final chapters demonstrate how to debug your code, whether it resides in apps or in the Linux kernel itself. You’ll also cover the different tracers and profilers that are available for Linux so that you can quickly pinpoint any performance bottlenecks in your system. By the end of this Linux book, you’ll be able to create efficient and secure embedded devices using Linux.What you will learnUse Buildroot and the Yocto Project to create embedded Linux systemsTroubleshoot BitBake build failures and streamline your Yocto development workflowUpdate IoT devices securely in the field using Mender or balenaPrototype peripheral additions by reading schematics, modifying device trees, soldering breakout boards, and probing pins with a logic analyzerInteract with hardware without having to write kernel device driversDivide your system up into services supervised by BusyBox runitDebug devices remotely using GDB and measure the performance of systems using tools such as perf, ftrace, eBPF, and CallgrindWho this book is forIf you’re a systems software engineer or system administrator who wants to learn how to implement Linux on embedded devices, then this book is for you. It's also aimed at embedded systems engineers accustomed to programming for low-power microcontrollers, who can use this book to help make the leap to high-speed systems on chips that can run Linux. Anyone who develops hardware that needs to run Linux will find something useful in this book – but before you get started, you'll need a solid grasp on POSIX standard, C programming, and shell scripting.",
+		"isbn10": "1789535115",
+		"isbn13": "9781789535112",
+		"pageCount": 758,
+		"categories": [
+			"Computers / Networking / General",
+			"Computers / Networking / Vendor Specific",
+			"Computers / Operating Systems / Linux",
+			"Computers / System Administration / Linux & UNIX Administration"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=K4ApEAAAQBAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=K4ApEAAAQBAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	},
+	"5rDbDwAAQBAJ": {
+		"id": "5rDbDwAAQBAJ",
+		"title": "Linux Bible",
+		"subtitle": "",
+		"authors": [
+			"Christopher Negus"
+		],
+		"publisher": "John Wiley & Sons",
+		"publishedDate": "2020",
+		"description": "The industry favorite Linux guide Linux Bible, 10th Edition is the ultimate hands-on Linux user guide, whether you're a true beginner or a more advanced user navigating recent changes. this updated tenth edition covers the latest versions of Red Hat Enterprise Linux (RHEL 8), Fedora 30, and Ubuntu 18.04 LTS. It includes information on cloud computing, with new guidance on containerization, Ansible automation, and Kubernetes and OpenShift. With a focus on RHEL 8, this new edition teaches techniques for managing storage, users, and security, while emphasizing simplified administrative techniques with Cockpit. Written by a Red Hat expert, this book provides the clear explanations and step-by-step instructions that demystify Linux and bring the new features seamlessly into your workflow. This useful guide assumes a base of little or no Linux knowledge, and takes you step by step through what you need to know to get the job done.  Get Linux up and running quickly Master basic operations and tackle more advanced tasks Get up to date on the recent changes to Linux server system management Bring Linux to the cloud using Openstack and Cloudforms Simplified Linux administration through the Cockpit Web Interface  Automated Linux Deployment with Ansible  Learn to navigate Linux with Amazon (AWS), Google (GCE), and Microsofr Azure Cloud services   Linux Bible, 10th Edition is the one resource you need, and provides the hands-on training that gets you on track in a flash.",
+		"isbn10": "1119578884",
+		"isbn13": "9781119578888",
+		"pageCount": 928,
+		"categories": [
+			"Computers / Hardware / General",
+			"Computers / Networking / General",
+			"Computers / Operating Systems / General",
+			"Computers / Operating Systems / Linux",
+			"Computers / System Administration / Linux & UNIX Administration"
+		],
+		"language": "",
+		"thumbnail": "https://books.google.com/books/content?id=5rDbDwAAQBAJ&printsec=frontcover&img=1&zoom=1",
+		"link": "https://books.google.com/books?id=5rDbDwAAQBAJ",
+		"references": [
+			{
+				"url": "https://bacarotech.github.io/blog/2026/bacarolive-ep-19-c-tua-e-nostra-con-paolo-caressa/",
+				"type": "post",
+				"title": "BACAROLIVE EP 19 - C tua (e nostra) con Paolo Caressa",
+				"added": "2026-09-29"
+			}
+		]
+	}
+}
