@@ -410,6 +410,33 @@ body.page-link {
     border: 0;
     font: inherit;
     width: 100%;
+
+    // Il tema usa ::after dei .nav-link come sottolineatura: lo ridisegna come triangolo in giù
+    &::after,
+    &:hover::after,
+    &:focus::after,
+    &:focus-visible::after {
+        content: "";
+        position: static;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 0.4em;
+        vertical-align: 0.2em;
+        background: none;
+        // Il tema dark colora lo sfondo con un selettore più specifico: content-box (0×0) non lo disegna
+        background-clip: content-box;
+        border-top: 0.35em solid currentColor;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+        transform: none;
+        transition: transform 0.2s ease;
+    }
+}
+
+.header .navbar .nav-item .nav-submenu-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
 }
 
 @media (max-width: 991.98px) {
