@@ -1,0 +1,21 @@
+{{- $themeColor := .Site.Params.themeColor | default "#478079" -}}
+{{- $siteTitle := .Site.Title | default "" -}}
+{{- $manifestData := dict
+  "name" $siteTitle
+  "short_name" $siteTitle
+  "start_url" "/"
+  "display" "standalone"
+  "background_color" "#ffffff"
+  "theme_color" $themeColor
+  "icons" (slice
+    (dict "src" ("/web-app-manifest-192x192.png" | absURL) "sizes" "192x192" "type" "image/png")
+    (dict "src" ("/web-app-manifest-512x512.png" | absURL) "sizes" "512x512" "type" "image/png")
+  )
+-}}
+{{- $manifest := resources.FromString "site.webmanifest" ($manifestData | jsonify) -}}
+
+<link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | absURL }}" />
+<link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | absURL }}" />
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "/favicon-96x96.png" | absURL }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | absURL }}" />
+<link rel="manifest" href="{{ $manifest.RelPermalink | absURL }}" />

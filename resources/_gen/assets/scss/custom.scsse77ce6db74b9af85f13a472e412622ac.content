@@ -1,0 +1,290 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto; } }
+
+body {
+  background-color: var(--bs-body-bg) !important; }
+
+.education {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+
+.about__profile-picture picture img {
+  max-height: 200px; }
+
+.rad-showcase {
+  padding-top: 20px;
+  min-height: 20px !important; }
+
+.social-stats {
+  margin-top: 1.75rem; }
+  .social-stats__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem 2.25rem; }
+  .social-stats__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1; }
+  .social-stats__item > i {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-bottom: 0.35rem; }
+  .social-stats__count {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--bs-body-color); }
+  .social-stats__label {
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.65; }
+
+@media (max-width: 575.98px) {
+  .social-stats__list {
+    gap: 1rem 1.5rem; }
+  .social-stats__count {
+    font-size: 1.3rem; } }
+
+[data-bs-theme="dark"] .blog .post .post-title a {
+  color: var(--bs-link-color); }
+
+::selection {
+  color: black !important; }
+
+::-moz-selection {
+  color: black !important; }
+
+:root[data-bs-theme="dark"] {
+  color-scheme: dark;
+  --bs-body-color: #fff;
+  --bs-body-bg: #181818; }
+
+:root[data-bs-theme="light"] {
+  color-scheme: light;
+  --bs-body-color: #fff;
+  --bs-body-bg: #181818; }
+
+.breadcrumb-item:not(:last-child)::after {
+  content: ""; }
+
+.breadcrumb-link {
+  padding: 0.25rem; }
+
+.p-3 {
+  padding: 1rem !important; }
+
+.svg-img {
+  fill: #fff; }
+  .svg-img img {
+    background: #fff; }
+
+.content-center {
+  vertical-align: center;
+  text-align: center; }
+
+.badge {
+  color: var(--bs-body-bg); }
+
+.input-group-text {
+  color: var(--bs-body-bg) !important; }
+
+.post-excerpt {
+  color: var(--bs-body-color) !important; }
+
+.term-page .col-12.col-lg-8 ul.posts-list-simple li.post .meta,
+.term-page ul.posts-list-simple li.post .meta {
+  color: var(--bs-body-color) !important; }
+
+.term-page .col-12.col-lg-8 ul.posts-list-simple li.post .post-tags a,
+.term-page ul.posts-list-simple li.post .post-tags a {
+  color: var(--bs-body-color) !important; }
+
+[data-bs-theme="dark"] .term-page .pagination .page-link {
+  color: var(--bs-link-color); }
+
+.badge {
+  color: var(--bs-link-color); }
+
+.light-border-top::before {
+  width: 100%; }
+
+.col-sidebar {
+  width: 100%;
+  min-width: 280px; }
+  @media (min-width: 768px) {
+    .col-sidebar {
+      min-width: 10%; } }
+  @media (max-width: 180px) {
+    .col-sidebar {
+      min-width: 80px; } }
+.blog .col-content.narrow-content {
+  max-width: 90%; }
+
+body.page-link #breadcrumb-bar,
+body.page-link #header,
+body.page-link .footer {
+  display: none !important; }
+
+.linktree-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem; }
+
+.linktree-container {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; }
+
+.linktree-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; }
+
+.linktree-logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 3px solid var(--bs-link-color); }
+
+.linktree-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.02em; }
+
+.linktree-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; }
+
+.linktree-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  border-radius: 999px;
+  border: 2px solid var(--bs-link-color);
+  background: transparent;
+  color: var(--bs-body-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease; }
+  .linktree-btn:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-color: var(--bs-link-color);
+    color: var(--bs-body-color);
+    transform: scale(1.02);
+    text-decoration: none; }
+  .linktree-btn:active {
+    transform: scale(0.98); }
+
+.linktree-btn-icon {
+  width: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; }
+
+.linktree-btn-label {
+  flex: 1;
+  text-align: center; }
+
+.linktree-btn-spacer {
+  width: 2rem;
+  flex-shrink: 0; }
+
+.tag {
+  color: #000 !important; }
+
+.post-books {
+  margin: 2rem 0;
+  padding-top: 1.5rem; }
+  .post-books__title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem; }
+  .post-books__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem; }
+  .post-books .post-books__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .post-books .post-books__item::before {
+      content: none;
+      display: none; }
+  .post-books__cover {
+    display: block; }
+  .post-books__cover img {
+    display: block;
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+  .post-books__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0; }
+  .post-books__name {
+    font-weight: 700;
+    line-height: 1.25; }
+  .post-books__subtitle {
+    font-size: 0.875rem;
+    line-height: 1.3; }
+  .post-books__meta {
+    font-size: 0.8rem;
+    opacity: 0.7; }
+
+.post-books__refs {
+  margin-top: 0.5rem;
+  font-size: 0.875rem; }
+  .post-books__refs summary {
+    cursor: pointer;
+    font-weight: 600; }
+  .post-books__refs ul {
+    margin: 0.5rem 0 0;
+    padding-left: 0;
+    list-style: none; }
+  .post-books .post-books__refs li {
+    margin-bottom: 0.35rem;
+    padding-left: 0;
+    line-height: 1.3; }
+    .post-books .post-books__refs li::before {
+      content: none;
+      display: none; }
+
+.header .nav-submenu-toggle {
+  background: none;
+  border: 0;
+  font: inherit;
+  width: 100%; }
+
+@media (max-width: 991.98px) {
+  .header .nav-item.dropdown .dropdown-item {
+    text-align: center; } }
