@@ -1,5 +1,5 @@
 +++
-title = "Notebooklm Come Finalmente Leggere Le Specifiche Di Progetto"
+title = "Slide - Notebooklm Come Finalmente Leggere Le Specifiche Di Progetto"
 date = 2026-10-25T19:55:58+01:00
 featured= false
 weight = 100  # Lower weight appears first in featured sections
