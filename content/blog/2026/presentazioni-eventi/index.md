@@ -64,7 +64,6 @@ Queste sono le presentazioni che abbiamo portato personalmente agli eventi come 
 - [ENG Debito tecnico - Danilo Macchion](/presentazioniNostre/ENG%20Debito%20tecnico.pdf)
 
 ### Collaborative
-- [Accenni di GIS - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Accenni%20di%20GIS.pdf)
 - [Array, un modo da scoprire - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Array,%20un%20modo%20da%20scoprire.pdf)
 - [Git Bare - Michele Scarpa e Giorgio Basile](/presentazioniNostre/Git%20Bare.pdf)
 

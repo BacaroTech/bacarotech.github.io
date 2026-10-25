@@ -2,6 +2,7 @@
 title: "Slide - Accenni di GIS - Michele Scarpa e Giorgio Basile"
 date: 2026-02-12T21:39:50+01:00
 featured: false
+draft: true
 weight: 100
 description: "Le slide del talk 'Accenni di GIS' tenuto da Michele Scarpa e Giorgio Basile. Un'introduzione ai Geographic Information Systems: cosa sono, come funzionano e come integrarli nelle applicazioni."
 tags:
