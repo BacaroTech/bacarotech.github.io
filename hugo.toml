@@ -78,6 +78,7 @@ target = "assets/css/bootstrap-print.css"
 
 [params]
 fediverse = ""
+codiceFiscale = "92054920266"
 title = 'BacaroTech'
 description = 'La tua community di sviluppatori dove si parla di programmazione a 360°: strutture dati, algoritmi, carriera tech e molto altro!'
 images = ['/img/icon.png']
