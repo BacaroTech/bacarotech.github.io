@@ -32,7 +32,7 @@ https://discord.gg/pxQmE4eXn2
 Buona visione e un saluto dai ragazzi di BacaroTech🍷
 
 --------- LINK E CREDITI ---------
-i nostri link: https://bacarotech.github.io/link/
+i nostri link: https://bacarotech.it/link/
 
 #Blockchain #Tecnologia #Innovazione
 

@@ -6,7 +6,7 @@ draft = false
 [[links]]
 icon = "link"
 iconType = "solid"
-url = "https://bacarotech.github.io/"
+url = "https://bacarotech.it/"
 label = "Sito/Blog"
 
 [[links]]

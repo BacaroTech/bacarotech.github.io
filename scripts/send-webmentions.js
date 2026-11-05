@@ -25,7 +25,7 @@
  * Opzioni:
  *   --dry-run          Non chiama Telegraph e non aggiorna lo stato
  *   --days <n>         Considera solo i post pubblicati negli ultimi n giorni (default 30)
- *   --site <url>       URL del sito (default https://bacarotech.github.io/)
+ *   --site <url>       URL del sito (default https://bacarotech.it/)
  *
  * Variabili d'ambiente (anche via file .env nella root):
  *   TELEGRAPH_TOKEN    Token API di Telegraph (https://telegraph.p3k.io/dashboard)
@@ -39,7 +39,7 @@ const ROOT_DIR = path.join(__dirname, "..");
 const STATE_FILE = path.join(__dirname, "data", "webmentions-sent.json");
 
 const TELEGRAPH_ENDPOINT = "https://telegraph.p3k.io/webmention";
-const DEFAULT_SITE = "https://bacarotech.github.io/";
+const DEFAULT_SITE = "https://bacarotech.it/";
 const DEFAULT_DAYS = 30;
 const FETCH_TIMEOUT_MS = 15000;
 // Pausa tra una richiesta e l'altra a Telegraph, per non sovraccaricarlo

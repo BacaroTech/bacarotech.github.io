@@ -30,6 +30,6 @@ Buona visione e un saluto dai ragazzi di BacaroTech🍷
 
 --------- LINK E CREDITI ---------
 Speaker: https://www.linkedin.com/in/moreno-frigo-turco-4a423a294/
-i nostri link: https://bacarotech.github.io/link/
+i nostri link: https://bacarotech.it/link/
 
 {{< youtube lEYqFXdId_I >}}

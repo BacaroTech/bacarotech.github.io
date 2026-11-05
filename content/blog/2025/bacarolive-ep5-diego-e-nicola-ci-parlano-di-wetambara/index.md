@@ -28,7 +28,7 @@ Nata nel 2022, oggi WeTambara si sta diffondendo in tutta Italia grazie al passa
 -------- LINK E CREDITI --------
 Speaker:  https://www.linkedin.com/in/diego-benna-58865548/
 Speaker:  https://www.linkedin.com/in/nicola-lovo-b208072bb/
-i nostri link: https://bacarotech.github.io/link/
+i nostri link: https://bacarotech.it/link/
 WeTambara: https://wetambara.com/
 
 🎙️ Nuovo allo streaming o vuoi migliorare? Dai un'occhiata a StreamYard e ottieni uno sconto di $10! 😍 https://streamyard.com/pal/d/6730714802159616

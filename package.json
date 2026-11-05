@@ -28,7 +28,7 @@
     "postcss": "^8.5.4",
     "postcss-cli": "^11.0.0"
   },
-  "name": "bacarotech.github.io",
+  "name": "bacarotech.it",
   "version": "1.0.0",
   "scripts": {
     "content": "node scripts/make-post.js",

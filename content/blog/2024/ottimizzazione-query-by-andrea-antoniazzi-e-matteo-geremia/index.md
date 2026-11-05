@@ -38,6 +38,6 @@ Buona visione e un saluto dai ragazzi di BacaroTech🍷
 --------- LINK E CREDITI ---------
 Speaker1: https://www.linkedin.com/in/andrea-antoniazzi/
 Speaker2: https://www.linkedin.com/in/matteo-geremia-205415209/
-i nostri link: https://bacarotech.github.io/link/
+i nostri link: https://bacarotech.it/link/
 
 {{< youtube aErfxskbWgY >}}

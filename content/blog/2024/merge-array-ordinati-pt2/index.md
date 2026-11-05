@@ -25,6 +25,6 @@ Buona visione e un saluto dai ragazzi di BacaroTech🍷
 
 --------- LINK E CREDITI ---------
 Speaker: https://www.linkedin.com/in/michele-scarpa-90-arco/
-i nostri link: https://bacarotech.github.io/link/
+i nostri link: https://bacarotech.it/link/
 
 {{< youtube UFCtEFNgWbc >}}
