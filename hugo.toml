@@ -180,6 +180,12 @@ name = '🔍'
 URL = '/search'
 weight = 99
 
+[[languages.it.menus.footer]]
+identifier = "privacy"
+name = "Privacy e Cookie Policy"
+URL = "/privacy/"
+weight = 1
+
 #  [[languages.it.menus.header]]
 #  name = "Experience"
 #  URL = "#experience"

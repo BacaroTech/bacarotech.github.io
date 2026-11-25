@@ -82,4 +82,7 @@ Vuoi diventare membro di BacaroTech? Compila il Google Form cliccando il pulsant
 
 [Vai al form](/form-team)
 
+Prima di inviare la candidatura, consulta
+[l’informativa privacy](/privacy/).
+
 {{< spacer size="large" >}}
